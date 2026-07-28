@@ -3,7 +3,7 @@ is-pinned-card: true
 tags: advisor, centrist
 card-image: img/portraits/SunYat-sen.jpe
 new-page: true
-view-if: sun_advisor = 1
+view-if: sunyatsen_advisor = 1
 
 = Sun Yat-sen
 
