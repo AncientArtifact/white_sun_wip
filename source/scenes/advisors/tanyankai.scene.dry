@@ -1,13 +1,13 @@
-title: Otto Wels
+title: Tan Yankai
 is-pinned-card: true
 tags: advisor, centrist
-card-image: img/portraits/WelsOtto.jpg
-view-if: wels_advisor = 1
+card-image: img/portraits/TanYankai.jpg
+view-if: tanyankai_advisor = 1
 new-page: true
 
-= Otto Wels
+= Tan Yankai
 
-Wels is the long-time chairman of the SPD. He is a gifted organizer and a member of the centrist faction.
+Tan Yankai is a home minister in Guangdong and a member of the Kuomintang. He is an important organizer in the party.
 
 - @clear_agenda
 - @party_discipline
