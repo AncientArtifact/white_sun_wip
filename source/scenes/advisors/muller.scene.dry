@@ -1,14 +1,14 @@
-title: Hermann Müller
+title: Sun Yat-sen
 is-pinned-card: true 
 tags: advisor, centrist
-card-image: img/portraits/MüllerHermann.jpg
+card-image: img/portraits/SunYat-sen.jpe
 new-page: true
-view-if: muller_advisor = 1
+view-if: sun_advisor = 1
 
-= Herman Müller
+= Sun Yat-sen
 
 
-Müller is a former [? if chancellor = "Müller": and current ?] Chancellor, and is a long-time Social Democratic leader.
+Sun Yat-sen is the founder of our party and a revolutionary who took down the Manchu monarchy in 1911. He is a living legend that inspired republican ideas across China.
 
 - @coalition
 - @toleration
