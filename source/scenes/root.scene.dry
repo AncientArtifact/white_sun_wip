@@ -6,7 +6,7 @@ go-to: post_event if started = 1; start_menu if started = 0
 new-page: true
 go-to: start_menu_2
 
-= Social Democracy: An Alternate History
+= Chinese Democracy: Rise of the White Sun
 
 @start_menu_2
 
@@ -21,7 +21,7 @@ on-arrival: {!
 Q.started = 1;
 // time elapsed (in months)
 Q.time = 1;
-Q.year = 1928;
+Q.year = 1924;
 Q.month = 1;
 // how many actions have been taken this month?
 Q.month_actions = 0;
@@ -625,10 +625,10 @@ audio: shuffle music/1928_1930/FruhlingsliedMendelssohn.mp3 music/1928_1930/AUF_
 new-page: true
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
-= 1928
+= 1924
 
-It is a bright time for German democracy. After a period of struggle, inflation is finally under control, and the economy is expanding steadily. In foreign policy, we have reached agreements with the Western powers and the Soviet Union that might make genuine peace a reality. 
+It is a bright time for Chinese democracy. After a period of struggle against Governor Jiongming, the state of Guangdong is finally under control, and the economy is expanding steadily. The NRA has begun to consolidate and expand after the establishment of the Whampoa Academy as our party gains a strong military arm. In foreign policy, we have reached agreements with the Soviet Union and CPC that might make reunification a reality. 
 
-Now, the task of Social Democracy is to prepare for the next election. The bourgeois-right government of Wilhelm Marx is unpopular, and we stand to gain. Perhaps the next government will have a socialist majority.
+Now, the task of the Guomindang is to prepare for the Northern Expedition. The warlord-led government of Wu Peifu is unpopular, and we stand to gain. Perhaps the next government will raise the flag of the White Sun.
 
 
