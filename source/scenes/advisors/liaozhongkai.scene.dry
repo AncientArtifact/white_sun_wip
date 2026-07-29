@@ -1,13 +1,13 @@
-title: Paul Levi
+title: Liao Zhongkai
 is-pinned-card: true
 tags: advisor, left
-card-image: img/portraits/LeviPaul.jpg
-view-if: levi_advisor = 1
+card-image: img/portraits/LiaoZhongkai.jpg
+view-if: liaozhongkai_advisor = 1
 new-page: true 
 
-= Paul Levi
+= Liao Zhongkai
 
-Levi is a former leader of the KPD who left over their devotion to violence and revolutionary adventurism.
+Liao Zhongkai is a veteran KMT member staunchly aligned with leftist ideals and eagerly supports the United Front.
 
 - @building_the_left
 - @kpd_cooperation
