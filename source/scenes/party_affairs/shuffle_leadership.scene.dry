@@ -444,17 +444,17 @@ tags: left_advisor
 
 Toni Sender is now an advisor.
 
-@add_rosenfeld
-title: Kurt Rosenfeld
-subtitle: Kurt Rosenfeld is a lawyer, anti-militarist activist, and Reichstag member. {!<br><br>!}[? if difficulty < 0 : Actions - Building the Left, Cooperation with the KPD, Against Toleration ?]
+@add_wangjingwei
+title: Wang Jingwei
+subtitle: Wang Jingwei is a major party leader in the left that advocates for democracy. {!<br><br>!}[? if difficulty < 0 : Actions - Building the Left, Cooperation with the KPD, Against Toleration ?]
 is-card: true
-card-image: img/portraits/RosenfeldKurt.jpg
-view-if: rosenfeld_advisor = 0 and n_advisors < 3 and left_split = 0
-on-arrival: rosenfeld_advisor = 1; n_advisors += 1; left_strength += 5
+card-image: img/portraits/WangJingwei.jpg
+view-if: wangjingwei_advisor = 0 and n_advisors < 3 and left_split = 0
+on-arrival: wangjingwei_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 tags: left_advisor
 
-Kurt Rosenfeld is now an advisor.
+Wang Jingwei is now an advisor.
 
 @add_seydewitz
 title: Max Seydewitz
