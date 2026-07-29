@@ -58,10 +58,3 @@ card-image: img/kmtgovaffairs.jpg
 is-deck: true
 
 - #govt_affairs
-
-@shuffle_leadership_pinned
-title: Shuffle Leadership
-card-image: img/kmtshuffle.jpg
-is-deck: true
-
-- #shuffle_leadership
