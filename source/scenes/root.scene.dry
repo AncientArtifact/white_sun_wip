@@ -538,22 +538,21 @@ Q.march_on_berlin_timer = 0;
 Q.tanyankai_advisor = 1; // Tan Yankai
 Q.sunyatsen_advisor = 1; // Sun Yat-sen
 Q.sunyatsen_dead = 0;
-Q.xuchongzhi_advisor = 1; // Xu Chongzhi
-Q.xuchongzhi_dead = 0;
+
 
 // left advisors
 Q.sender_advisor = 0; // Toni Sender
-Q.levi_advisor = 0; // Paul Levi
-Q.levi_dead = 0;
-Q.rosenfeld_advisor = 0; // Kurt Rosenfeld
+Q.liaozhongkai_advisor = 0; // Paul Levi
+Q.liaozhongkai_dead = 0;
+Q.wangjingwei_advisor = 0; // Kurt Rosenfeld
 Q.seydewitz_advisor = 0; // Max Seydewitz
 
 // centrist alternate advisors
 Q.pfulf_advisor = 0; // Antonie Pfülf
 Q.breitscheid_advisor = 0; // Rudolf Breitscheid
 
-// Reformist advisors
-Q.severing_advisor = 0; // Carl Severing
+// Right advisors
+Q.huhanmin_advisor = 0; // Hu Hanmin
 Q.braun_advisor = 0; // Otto Braun
 Q.juchacz_advisor = 0; // Marie Juchacz
 Q.baade_advisor = 0; // Fritz Baade
@@ -564,8 +563,10 @@ Q.aufhauser_advisor = 0; // Siegfried Aufhäuser
 Q.woytinsky_advisor = 0; // Wladimir Woytinsky (post-1930)
 Q.wissell_advisor = 0; // Rudolf Wissell
 
-// Revisionist advisors
-Q.mierendorff_advisor = 0; // Carlo Mierendorf (post-1930)
+// Whampoa advisors
+Q.chiangkaishek_advisor = 0; // Carlo Mierendorf (post-1930)
+Q.xuchongzhi_advisor = 1; // Xu Chongzhi
+Q.xuchongzhi_dead = 0;
 
 Q.leber_advisor = 0; // Julius Leber (post-1930)
 Q.schumacher_advisor = 0; // Kurt Schumacher (post-1930)
