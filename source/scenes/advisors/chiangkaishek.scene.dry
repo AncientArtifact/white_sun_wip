@@ -1,6 +1,6 @@
 title: Chiang Kai-shek
 is-pinned-card: true
-tags: advisor
+tags: advisor, whampoa
 card-image: img/portraits/ChiangKai-shek.jpg
 view-if: chiangkaishek_advisor = 1
 new-page: true
