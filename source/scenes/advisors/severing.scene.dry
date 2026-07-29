@@ -1,13 +1,13 @@
-title: Carl Severing
+title: Hu Hanmin
 is-pinned-card: true
-tags: advisor, reformist
-card-image: img/portraits/SeveringCarl.jpg
-view-if: severing_advisor = 1
+tags: advisor, right
+card-image: img/portraits/HuHanmin.jpg
+view-if: huhanmin_advisor = 1
 new-page: true 
 
-= Carl Severing
+= Hu Hanmin
 
-Severing has been Interior Minister for both the German Republic and for the state of Prussia, and his priority is using the security services to target the enemies of the republic.
+Hu Hanmin is a veteran politician within the Kuomintang, and is part of it's right faction. He supports nationalism and is staunchly opposed to the United Front.
 
 - @prussian_bulwark
 - @police_affairs
