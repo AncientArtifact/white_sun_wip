@@ -34,22 +34,22 @@ tags: remove_advisor
 
 
 @remove_hilferding
-title: Remove Hilferding
-view-if: hilferding_advisor = 1
-on-arrival: hilferding_advisor = 0; center_dissent += 5; n_advisors -= 1
+title: Remove Xu Chongzhi
+view-if: xuchongzhi_advisor = 1
+on-arrival: xuchongzhi_advisor = 0; center_dissent += 5; n_advisors -= 1
 tags: remove_advisor
 go-to: rm_main
 
-Hilferding has been removed as an advisor. The Centrist faction disapproves.
+Xu Chongzhi has been removed as an advisor. The Whampoa faction disapproves.
 
 @remove_wels
-title: Remove Wels
-view-if: wels_advisor = 1
+title: Remove Tan Yankai
+view-if: tanyankai_advisor = 1
 tags: remove_advisor
-on-arrival: wels_advisor = 0; center_dissent += 5; n_advisors -= 1
+on-arrival: tanyankai_advisor = 0; center_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Wels has been removed as an advisor. The Centrist faction disapproves.
+Tan Yankai has been removed as an advisor. The Centrist faction disapproves.
 
 @remove_sunyatsen
 title: Remove Sun Yat-sen
@@ -58,7 +58,7 @@ tags: remove_advisor
 on-arrival: sunyatsen_advisor = 0; center_dissent += 10; n_advisors -= 1
 go-to: rm_main
 
-Müller has been removed as an advisor. The Centrist faction disapproves.
+Sun Yat-sen has been removed as an advisor. The Centrist faction disapproves.
 
 
 @remove_breitscheid
