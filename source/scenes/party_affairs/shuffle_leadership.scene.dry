@@ -151,7 +151,7 @@ Woytinsky has been removed as an advisor. The Labor faction disapproves.
 
 # left
 
-@remove_liao zhongkai
+@remove_liaozhongkai
 title: Remove Liao Zhongkai
 view-if: liaozhongkai_advisor = 1
 tags: remove_advisor
