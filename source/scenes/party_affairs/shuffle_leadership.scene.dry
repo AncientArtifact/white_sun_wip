@@ -33,7 +33,7 @@ go-to: root
 tags: remove_advisor
 
 
-@remove_hilferding
+@remove_xuchongzhi
 title: Remove Xu Chongzhi
 view-if: xuchongzhi_advisor = 1
 on-arrival: xuchongzhi_advisor = 0; center_dissent += 5; n_advisors -= 1
@@ -42,7 +42,7 @@ go-to: rm_main
 
 Xu Chongzhi has been removed as an advisor. The Whampoa faction disapproves.
 
-@remove_wels
+@remove_tanyankai
 title: Remove Tan Yankai
 view-if: tanyankai_advisor = 1
 tags: remove_advisor
@@ -73,14 +73,14 @@ Breitscheid has been removed as an advisor. The Centrist faction disapproves.
 # reformists
 
 
-@remove_severing
-title: Remove Severing
-view-if: severing_advisor = 1
+@remove_huhanmin
+title: Remove Hu Hanmin
+view-if: Hu Hanmin = 1
 tags: remove_advisor
 on-arrival: severing_advisor = 0; reformist_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Severing has been removed as an advisor. The Reformist faction disapproves.
+Hu Hanmin has been removed as an advisor. The Right faction disapproves.
 
 @remove_braun
 title: Remove Braun
@@ -151,14 +151,14 @@ Woytinsky has been removed as an advisor. The Labor faction disapproves.
 
 # left
 
-@remove_levi
-title: Remove Levi
-view-if: levi_advisor = 1
+@remove_liao zhongkai
+title: Remove Liao Zhongkai
+view-if: liaozhongkai_advisor = 1
 tags: remove_advisor
-on-arrival: levi_advisor = 0; left_dissent += 5; n_advisors -= 1
+on-arrival: liaozhongkai_advisor = 0; left_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Levi has been removed as an advisor. The Leftist faction disapproves.
+Liao Zhongkai has been removed as an advisor. The Leftist faction disapproves.
 
 @remove_sender
 title: Remove Sender
@@ -169,14 +169,14 @@ go-to: rm_main
 
 Sender has been removed as an advisor. The Leftist faction disapproves.
 
-@remove_rosenfeld
-title: Remove Rosenfeld
-view-if: rosenfeld_advisor = 1
+@remove_wangjingwei
+title: Remove Wang Jingwei
+view-if: wangjingwei_advisor = 1
 tags: remove_advisor
-on-arrival: rosenfeld_advisor = 0; left_dissent += 3; n_advisors -= 1
+on-arrival: wangjingwei_advisor = 0; left_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-Rosenfeld has been removed as an advisor. The Leftist faction disapproves.
+Wang Jingwei has been removed as an advisor. The Leftist faction disapproves.
 
 @remove_seydewitz
 title: Remove Seydewitz
@@ -201,11 +201,11 @@ Siemsen has been removed as an advisor. The Leftist faction disapproves.
 
 # neorevisionists
 
-@remove_mierendorff
-title: Remove Mierendorff
-view-if: mierendorff_advisor = 1
+@remove_chiangkaishek
+title: Remove Chiang Kai-shek
+view-if: chiangkaishek_advisor = 1
 tags: remove_advisor
-on-arrival: mierendorff_advisor = 0; neorevisionist_dissent += 5; n_advisors -= 1
+on-arrival: chiangkaishek_advisor = 0; neorevisionist_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
 Mierendorff has been removed as an advisor. The Neorevisionist faction disapproves.
@@ -329,41 +329,29 @@ view-if: n_advisors < 3
 
 - #nonfactional_advisor
 
-@add_hilferding
-title: Rudolf Hilferding
-subtitle: Rudolf Hilferding is an economist and one of our chief Marxist theoreticians. {!<br><br>!}[? if difficulty < 0 : Actions - Against Right and Left, Defending Toleration, Fiscal Policy, Economic Democracy ?]
+@add_tanyankai
+title: Tan Yankai
+subtitle: Tan Yankai is a statesman and organizer within the party. {!<br><br>!}[? if difficulty < 0 : Actions -  Clear the Agenda, Party Discipline, Emergency Fundraising ?]
 is-card: true
-card-image: img/portraits/HilferdingRudolf.jpg
+card-image: img/portraits/TanYankai.jpg
 tags: center_advisor
-view-if: hilferding_advisor = 0 and n_advisors < 3 and centrists_resign = 0
-on-arrival: hilferding_advisor = 1; n_advisors += 1
+view-if: tanyankai_advisor = 0 and n_advisors < 3 and centrists_resign = 0
+on-arrival: tanyankai_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
-Rudolf Hilferding is now an advisor.
+Tan Yankai is now an advisor.
 
-@add_wels
-title: Otto Wels
-subtitle: Otto Wels is a long-time party organizer and member of the leadership, serving under Friedrich Ebert. {!<br><br>!}[? if difficulty < 0 : Actions -  Clear the Agenda, Party Discipline, Emergency Fundraising ?]
+@add_sunyatsen
+title: Sun Yat-sen
+subtitle: Sun Yat-sen is the father of our party and our nation. {!<br><br>!}[? if difficulty < 0 : Actions - Negotiating with the Coalition, Defending Toleration ?]
 is-card: true
-card-image: img/portraits/WelsRudolf.jpg
+card-image: img/portraits/SunYat-sen.jpg
 tags: center_advisor
-view-if: wels_advisor = 0 and n_advisors < 3 and centrists_resign = 0
-on-arrival: wels_advisor = 1; n_advisors += 1
+view-if: sunyatsen_advisor = 0 and sunyatsen_dead = 0 and n_advisors < 3 and centrists_resign = 0
+on-arrival: sunyatsen_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
-Otto Wels is now an advisor.
-
-@add_muller
-title: Hermann Müller
-subtitle: Hermann Müller is the last Social Democratic Chancellor. {!<br><br>!}[? if difficulty < 0 : Actions - Negotiating with the Coalition, Defending Toleration ?]
-is-card: true
-card-image: img/portraits/MüllerHermann.jpg
-tags: center_advisor
-view-if: muller_advisor = 0 and muller_dead = 0 and n_advisors < 3 and centrists_resign = 0
-on-arrival: muller_advisor = 1; n_advisors += 1
-go-to: advisor_menu
-
-Hermann Müller is now an advisor.
+Sun Yat-sen is now an advisor.
 
 @add_breitscheid
 title: Rudolf Breitscheid
@@ -380,14 +368,14 @@ Rudolf Breitscheid is now an advisor.
 # reformist
 
 
-@add_severing
-title: Carl Severing
-subtitle: Carl Severing is a one-time Prussian interior minister and police reformer. {!<br><br>!}[? if difficulty < 0 : Actions - Prussian Bulwark, Police Affairs ?]
+@add_huhanmin
+title: Hu Hanmin
+subtitle: Hu Hanmin is a veteran right politician in our party. {!<br><br>!}[? if difficulty < 0 : Actions - Prussian Bulwark, Police Affairs ?]
 is-card: true
-card-image: img/portraits/SeveringCarl.jpg
+card-image: img/portraits/HuHanmin.jpg
 tags: reformist_advisor
-view-if: severing_advisor = 0 and n_advisors < 3
-on-arrival: severing_advisor = 1; n_advisors += 1; reformist_strength += 5
+view-if: huhanmin_advisor = 0 and n_advisors < 3
+on-arrival: huhanmin_advisor = 1; n_advisors += 1; reformist_strength += 5
 go-to: advisor_menu
 
 Carl Severing is now an advisor.
@@ -432,17 +420,17 @@ Antonie Pfülf is now an advisor.
 
 # left
 
-@add_levi
-title: Paul Levi
-subtitle: Paul Levi is a former KPD leader who was purged for criticizing Communist policies. {!<br><br>!}[? if difficulty < 0 : Actions - Building the Left, Cooperation with the KPD ?]
+@add_liaozhongkai
+title: Liao Zhongkai
+subtitle: Liao Zhongkai is a radical leftist leader and veteran statesman. {!<br><br>!}[? if difficulty < 0 : Actions - Building the Left, Cooperation with the KPD ?]
 is-card: true
-card-image: img/portraits/LeviPaul.jpg
-view-if: levi_advisor = 0 and levi_dead = 0 and n_advisors < 3 and left_split = 0
-on-arrival: levi_advisor = 1; n_advisors += 1; left_strength += 5
+card-image: img/portraits/LiaoZhongkai.jpg
+view-if: liaozhongkai_advisor = 0 and liaozhongkai_dead = 0 and n_advisors < 3 and left_split = 0
+on-arrival: liaozhongkai_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 tags: left_advisor
 
-Paul Levi is now an advisor.
+Liao Zhongkai is now an advisor.
 
 @add_sender
 title: Toni Sender
@@ -548,17 +536,29 @@ Wladimir Woytinsky is now an advisor.
 
 # neorevisionist leaders
 
-@add_mierendorff
-title: Carlo Mierendorff
-subtitle: Carlo Mierendorff is one of the youngest members of the Reichstag, and the originator of the "Neo-Revisionist" movement. He is an anti-Nazi strategist. {!<br><br>!}[? if difficulty < 0 : Actions - Build the Iron Front, Warning About the Nazis ?]
+@add_chiangkaishek
+title: Chiang Kai-shek
+subtitle: Chiang Kai-shek is a young officer and superintendent of the Whampoa Military Academy {!<br><br>!}[? if difficulty < 0 : Actions - Build the Iron Front, Warning About the Nazis ?]
 is-card: true
-card-image: img/portraits/MierendorffCarlo.jpg
-view-if: mierendorff_advisor = 0 and n_advisors < 3
-on-arrival: mierendorff_advisor = 1; n_advisors += 1; neorevisionist_strength += 5
+card-image: img/portraits/ChiangKai-shek.jpg
+view-if: chiangkaishek_advisor = 0 and n_advisors < 3
+on-arrival: chiangkaishek_advisor = 1; n_advisors += 1; neorevisionist_strength += 5
 go-to: advisor_menu
 tags: neorev_advisor
 
-Carlo Mierendorff is now an advisor.
+Chiang Kai-shek is now an advisor.
+
+@add_xuchongzhi
+title: Xu Chongzhi
+subtitle: Xu Chongzhi is a Guangdongese general and head of the NRA. {!<br><br>!}[? if difficulty < 0 : Actions - Against Right and Left, Defending Toleration, Fiscal Policy, Economic Democracy ?]
+is-card: true
+card-image: img/portraits/XuChongzhi.jpg
+tags: center_advisor
+view-if: xuchongzhi_advisor = 0 and n_advisors < 3 and centrists_resign = 0
+on-arrival: xuchongzhi_advisor = 1; n_advisors += 1
+go-to: advisor_menu
+
+Rudolf Hilferding is now an advisor.
 
 @add_schumacher
 title: Kurt Schumacher
