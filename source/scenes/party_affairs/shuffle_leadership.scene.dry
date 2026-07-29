@@ -553,12 +553,12 @@ title: Xu Chongzhi
 subtitle: Xu Chongzhi is a Guangdongese general and head of the NRA. {!<br><br>!}[? if difficulty < 0 : Actions - Against Right and Left, Defending Toleration, Fiscal Policy, Economic Democracy ?]
 is-card: true
 card-image: img/portraits/XuChongzhi.jpg
-tags: center_advisor
+tags: neorev_advisor
 view-if: xuchongzhi_advisor = 0 and n_advisors < 3 and centrists_resign = 0
 on-arrival: xuchongzhi_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
-Rudolf Hilferding is now an advisor.
+Xu Chongzhi is now an advisor.
 
 @add_schumacher
 title: Kurt Schumacher
