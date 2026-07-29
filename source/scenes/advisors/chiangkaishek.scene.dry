@@ -1,14 +1,14 @@
-title: Carlo Mierendorff
+title: Chiang Kai-shek
 is-pinned-card: true
 tags: advisor
-card-image: img/portraits/MierendorffCarlo.jpg
-view-if: mierendorff_advisor = 1
+card-image: img/portraits/ChiangKai-shek.jpg
+view-if: chiangkaishek_advisor = 1
 new-page: true
-#face-image: img/portraits/MierendorffCarlo.jpg
+#face-image: img/portraits/ChiangKai-shek.jpg
 
-= Carlo Mierendorff
+= Chiang Kai-shek
 
-Carlo Mierendorff is the founder of the neo-revisionist ideological tendency, and supports both democratic reforms and extra-parliamentary action to combat the Nazis and authoritarian parties. He is from a middle-class, academic background, and is one of our youngest leaders.
+Chiang Kai-shek is a young officer in the National Revolutionary Army, currently serving as the superintendent of the Whampoa Military Academy.
 
 - @iron_front_buildup
 - @form_iron_front
