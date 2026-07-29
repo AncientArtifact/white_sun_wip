@@ -75,9 +75,9 @@ Breitscheid has been removed as an advisor. The Centrist faction disapproves.
 
 @remove_huhanmin
 title: Remove Hu Hanmin
-view-if: Hu Hanmin = 1
+view-if: huhanmin= 1
 tags: remove_advisor
-on-arrival: severing_advisor = 0; reformist_dissent += 5; n_advisors -= 1
+on-arrival: huhanmin_advisor = 0; reformist_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
 Hu Hanmin has been removed as an advisor. The Right faction disapproves.
@@ -378,7 +378,7 @@ view-if: huhanmin_advisor = 0 and n_advisors < 3
 on-arrival: huhanmin_advisor = 1; n_advisors += 1; reformist_strength += 5
 go-to: advisor_menu
 
-Carl Severing is now an advisor.
+Hu Hanmin is now an advisor.
 
 @add_braun
 title: Otto Braun
