@@ -99,13 +99,13 @@ Q.moderate_plan_adopted = 0;
 // organizations
 
 // inter-party relations
-Q.z_relation = 50;
+Q.gxc_relation = 50;
 Q.cpc_relation = 25;
-Q.ddp_relation = 60;
-Q.dvp_relation = 35;
-// DNVP and NSDAP are invariably hostile
-Q.DNVP_relation = 10;
-Q.NSDAP_relation = 0;
+Q.yun_relation = 60;
+Q.gui_relation = 35;
+Q.zhi_relation = 0;
+Q.feng_relation = 0;
+Q.anh_relation = 0;
 
 Q.cpc_leader = "Duxiu";
 // alternative is the Conciliators as party leader
