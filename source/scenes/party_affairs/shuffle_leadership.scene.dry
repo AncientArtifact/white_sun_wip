@@ -202,7 +202,7 @@ Siemsen has been removed as an advisor. The Leftist faction disapproves.
 
 @remove_xuchongzhi
 title: Remove Xu Chongzhi
-view-if: xuchongzhi_advisor = 1 and whampoa_built = 1
+view-if: xuchongzhi_advisor = 1
 on-arrival: xuchongzhi_advisor = 0; center_dissent += 5; n_advisors -= 1
 tags: remove_advisor
 go-to: rm_main
@@ -212,7 +212,7 @@ Xu Chongzhi has been removed as an advisor. The Whampoa faction disapproves.
 
 @remove_chiangkaishek
 title: Remove Chiang Kai-shek
-view-if: chiangkaishek_advisor = 1 and whampoa_built = 1
+view-if: chiangkaishek_advisor = 1
 tags: remove_advisor
 on-arrival: chiangkaishek_advisor = 0; neorevisionist_dissent += 5; n_advisors -= 1
 go-to: rm_main
@@ -563,7 +563,7 @@ subtitle: Xu Chongzhi is a Guangdongese general and head of the NRA. {!<br><br>!
 is-card: true
 card-image: img/portraits/XuChongzhi.jpg
 tags: whampoa_advisor
-view-if: xuchongzhi_advisor = 0 and n_advisors < 3 and and whampoa_built = 1
+view-if: xuchongzhi_advisor = 0 and n_advisors < 3 and whampoa_built = 1
 on-arrival: xuchongzhi_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
