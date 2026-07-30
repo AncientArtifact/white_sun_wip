@@ -77,54 +77,45 @@ Economic growth: [+ economic_growth_2 +]%
 
 @paramilitaries
 on-arrival: {!
-if (Q.rb_strength) {
-    Q.rb_strength_2 = Q.rb_strength.toFixed(1);
+if (Q.nra_strength) {
+    Q.nra_strength_2 = Q.rb_strength.toFixed(1);
 }
-if (Q.rfb_strength) {
-    Q.rfb_strength_2 = Q.rfb_strength.toFixed(1);
+if (Q.red_strength) {
+    Q.red_strength_2 = Q.rfb_strength.toFixed(1);
 }
-if (Q.sh_strength) {
-    Q.sh_strength_2 = Q.sh_strength.toFixed(1);
+if (Q.bei_strength) {
+    Q.bei_strength_2 = Q.sh_strength.toFixed(1);
 }
-if (Q.sa_strength) {
-    Q.sa_strength_2 = Q.sa_strength.toFixed(1);
+if (Q.feng_strength) {
+    Q.feng_strength_2 = Q.sa_strength.toFixed(1);
+}
+if (Q.gmj_strength) {
+    Q.gmj_strength_2 = Q.rb_strength.toFixed(1);
 }
 !}
 
 = Paramilitaries
 
-{!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the KMT.">Reichsbanner</span>!} Strength: [+ rb_strength_2 +] thousand
+{!<span class="tooltip-text" title="The National Revolutionary Army is the military arm of the KMT.">NRA</span>!} Strength: [+ nra_strength_2 +] thousand
 
-Reichsbanner Militarization: [+ rb_militancy : militancy +]
+National Revolutionary Army Militarization: [+ nra_militancy : militancy +]
 
-{!<span class="tooltip-text" title="The RFB (Rotfrontkämpferbund) is a communist group associated with the CPC.">RFB</span>!} Strength: [+ rfb_strength_2 +] thousand
+{!<span class="tooltip-text" title="The Chinese Worker's and Peasants Army is the military wing of the CPC.">Red Army</span>!} Strength: [+ red_strength_2 +] thousand
 
-RFB Militarization: [+ rfb_militancy : militancy +]
+Red Army Militarization: [+ red_militancy : militancy +]
 
-{!<span class="tooltip-text" title="The Stahlhelm is a right-wing organization of war veterans associated with the FENG.">Stahlhelm</span>!} Strength: [+ sh_strength_2 +] thousand
+{!<span class="tooltip-text" title="The Beiyang Army is the current military of the Zhili-led Republic of China.">Beiyang</span>!} Strength: [+ bei_strength_2 +] thousand
 
-Stahlhelm Militarization: [+ sh_militancy : militancy +]
+Beiyang Army Militarization: [+ bei_militancy : militancy +]
 
-{!<span class="tooltip-text" title="The SA (Sturmabteilung) is the Nazi paramilitary.">SA</span>!} Strength: [+ sa_strength_2 +] thousand
+{!<span class="tooltip-text" title="The Fengtian Army is the army of Zhang Zuolin and his Fengtian Clique.">Fengtian</span>!} Strength: [+ feng_strength_2 +] thousand
 
-SA Militarization: [+ sa_militancy : militancy +]
-
-= Official military/paramilitaries
-
-Reichswehr: [+ reichswehr_strength +] thousand troops.
-
-Reichswehr Loyalty: [+ reichswehr_loyalty : loyalty +]
-
-Prussian police: [+ prussian_police_strength +] thousand members.
-
-Prussian police loyalty: [+ prussian_police_loyalty : loyalty +]
-
-[? if KMT_in_government : Interior police loyalty: [+ interior_police_loyalty : loyalty +] ?]
+Fengtian Army Militarization: [+ sa_militancy : militancy +]
 
 @polls
 on-arrival: {!
-Q.pro_republic_disp = Math.round(Q.pro_republic);
-Q.nationalism_disp = Math.round(Q.nationalism);
+Q.pro_tridemist_disp = Math.round(Q.pro-tridemist);
+Q.warlordist_disp = Math.round(Q.warlordist);
 Q.socialism_disp = Math.round(Q.socialism);
 !}
 
@@ -158,4 +149,6 @@ Unemployed: KMT: [+ unemployed_KMT_display +]%, CPC: [+ unemployed_CPC_display +
 
 Catholics: KMT: [+ catholics_KMT_display +]%, CPC: [+ catholics_CPC_display +]%, ZHI: [+ catholics_ZHI_display +]%; FENG: [+ catholics_FENG_display +]%, ANH: [+ catholics_ANH_display +]%, Others: [+ catholics_other_display +]%
 
-Support for the Republic: [+ pro_republic_disp +]%
+Support for the Republic: [+ pro-tridemist_disp +]%
+Support for the Warlords: [+ warlordist_disp +]%
+Support for the Communists: [+ socialism_disp +]%
