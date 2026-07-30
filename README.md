@@ -1,4 +1,4 @@
-# Social Democracy: An Alternate History
+# Chinese Democracy: Rise of the White Sun
 
 ## Included Libraries
 
