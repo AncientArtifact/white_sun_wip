@@ -1,6 +1,7 @@
 title: Root Scene
 new-page: true
 go-to: post_event if started = 1; start_menu if started = 0
+tags: root
 
 @start_menu
 new-page: true
