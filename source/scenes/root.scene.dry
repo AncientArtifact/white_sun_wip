@@ -59,6 +59,7 @@ Q.right_strength = 25;
 Q.right_dissent = 10;
 Q.whampoa_strength = 10;
 Q.whampoa_dissent = 5;
+Q.whampoa_built = 0;
 
 // secret events...
 Q.unions_independent = 0;
@@ -478,13 +479,13 @@ Q.march_on_berlin_timer = 0;
 Q.tanyankai_advisor = 1; // Tan Yankai
 Q.sunyatsen_advisor = 1; // Sun Yat-sen
 Q.sunyatsen_dead = 0;
+Q.tvsoong_advisor = 1;
 
 
 // left advisors
 Q.sender_advisor = 0; // Toni Sender
-Q.liaozhongkai_advisor = 0; // Paul Levi
+Q.liaozhongkai_advisor = 0;
 Q.liaozhongkai_dead = 0;
-Q.wangjingwei_advisor = 0; // Kurt Rosenfeld
 Q.seydewitz_advisor = 0; // Max Seydewitz
 
 // centrist alternate advisors
@@ -498,6 +499,7 @@ Q.juchacz_advisor = 0; // Marie Juchacz
 Q.baade_advisor = 0; // Fritz Baade
 
 // Labor advisors
+Q.wangjingwei_advisor = 0;
 Q.leipart_advisor = 0; // Theodor Leipart
 Q.aufhauser_advisor = 0; // Siegfried Aufhäuser
 Q.woytinsky_advisor = 0; // Wladimir Woytinsky (post-1930)
@@ -505,7 +507,7 @@ Q.wissell_advisor = 0; // Rudolf Wissell
 
 // Whampoa advisors
 Q.chiangkaishek_advisor = 0; // Carlo Mierendorf (post-1930)
-Q.xuchongzhi_advisor = 1; // Xu Chongzhi
+Q.xuchongzhi_advisor = 0; // Xu Chongzhi
 Q.xuchongzhi_dead = 0;
 
 Q.leber_advisor = 0; // Julius Leber (post-1930)
@@ -557,7 +559,7 @@ go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
 = 1924
 
-It is a bright time for Chinese democracy. After a period of struggle against Governor Jiongming, the state of Guangdong is finally under control, and the economy is expanding steadily. The NRA has begun to consolidate and expand after the establishment of the Whampoa Academy as our party gains a strong military arm. In foreign policy, we have reached agreements with the Soviet Union and CPC that might make reunification a reality. 
+It is a bright time for Chinese democracy. After a period of struggle against Governor Jiongming, the state of Guangdong is finally under control, and the economy is expanding steadily. The NRA has begun to consolidate and expand as our party gains a strong military arm. In foreign policy, we have reached agreements with the Soviet Union and CPC that might make reunification a reality. 
 
 Now, the task of the Guomindang is to prepare for the Northern Expedition. The warlord-led government of Wu Peifu is unpopular, and we stand to gain. Perhaps the next government will raise the flag of the White Sun.
 
