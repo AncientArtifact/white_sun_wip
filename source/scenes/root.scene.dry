@@ -278,9 +278,9 @@ Q.economic_records = [];
 
 // State of the government
 Q.beiyang_leader = "Wu Peifu";
-// starting chancellor: Wilhelm Marx
+Q.beiyang_leader_party = 'Zhili';
 Q.deputy_beiyang_leader = "Sun Chuanfang";
-Q.chancellor_party = 'Zhili';
+Q.deputy_beiyang_leader_party = 'Zhili';
 Q.kmt_in_government = 0;
 Q.zhi_in_government = 1;
 Q.gxc_in_government = 0;
