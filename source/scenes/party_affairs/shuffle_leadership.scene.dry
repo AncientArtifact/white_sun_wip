@@ -32,16 +32,6 @@ title: Stop changing advisors.
 go-to: root
 tags: remove_advisor
 
-
-@remove_xuchongzhi
-title: Remove Xu Chongzhi
-view-if: xuchongzhi_advisor = 1
-on-arrival: xuchongzhi_advisor = 0; center_dissent += 5; n_advisors -= 1
-tags: remove_advisor
-go-to: rm_main
-
-Xu Chongzhi has been removed as an advisor. The Whampoa faction disapproves.
-
 @remove_tanyankai
 title: Remove Tan Yankai
 view-if: tanyankai_advisor = 1
@@ -60,7 +50,6 @@ go-to: rm_main
 
 Sun Yat-sen has been removed as an advisor. The Centrist faction disapproves.
 
-
 @remove_breitscheid
 title: Remove Breitscheid
 view-if: breitscheid_advisor = 1
@@ -70,14 +59,14 @@ go-to: rm_main
 
 Breitscheid has been removed as an advisor. The Centrist faction disapproves.
 
-# reformists
+# right
 
 
 @remove_huhanmin
 title: Remove Hu Hanmin
 view-if: huhanmin= 1
 tags: remove_advisor
-on-arrival: huhanmin_advisor = 0; reformist_dissent += 5; n_advisors -= 1
+on-arrival: huhanmin_advisor = 0; right_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
 Hu Hanmin has been removed as an advisor. The Right faction disapproves.
@@ -110,13 +99,32 @@ go-to: rm_main
 Pfülf has been removed as an advisor. The Reformist faction disapproves.
 
 
-# labor
+# center-left
+
+@remove_wangjingwei
+title: Remove Wang Jingwei
+view-if: wangjingwei_advisor = 1
+tags: remove_advisor
+on-arrival: wangjingwei_advisor = 0; center_left_dissent += 3; n_advisors -= 1
+go-to: rm_main
+
+Wang Jingwei has been removed as an advisor. The Leftist faction disapproves.
+
+@remove_tvsoong
+title: Remove T.V. Soong
+view-if: tvsoong_advisor = 1
+tags: remove_advisor
+on-arrival: tvsoong_advisor = 0; center_left_dissent += 3; n_advisors -= 1
+go-to: rm_main
+
+T.V. Soong has been removed as an advisor. The Centrist faction disapproves.
+
 
 @remove_leipart
 title: Remove Leipart
 view-if: leipart_advisor = 1
 tags: remove_advisor
-on-arrival: leipart_advisor = 0; labor_dissent += 5; n_advisors -= 1
+on-arrival: leipart_advisor = 0; center_left_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
 Leipart has been removed as an advisor. The Labor faction disapproves.
@@ -125,7 +133,7 @@ Leipart has been removed as an advisor. The Labor faction disapproves.
 title: Remove Aufhäuser
 view-if: aufhauser_advisor = 1
 tags: remove_advisor
-on-arrival: aufhauser_advisor = 0; labor_dissent += 5; n_advisors -= 1
+on-arrival: aufhauser_advisor = 0; center_left_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
 Aufhäuser has been removed as an advisor. The Labor faction disapproves.
@@ -134,7 +142,7 @@ Aufhäuser has been removed as an advisor. The Labor faction disapproves.
 title: Remove Wissell
 view-if: wissell_advisor = 1
 tags: remove_advisor
-on-arrival: wissell_advisor = 0; labor_dissent += 3; n_advisors -= 1
+on-arrival: wissell_advisor = 0; center_left_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
 Wissell has been removed as an advisor. The Labor faction disapproves.
@@ -169,15 +177,6 @@ go-to: rm_main
 
 Sender has been removed as an advisor. The Leftist faction disapproves.
 
-@remove_wangjingwei
-title: Remove Wang Jingwei
-view-if: wangjingwei_advisor = 1
-tags: remove_advisor
-on-arrival: wangjingwei_advisor = 0; left_dissent += 3; n_advisors -= 1
-go-to: rm_main
-
-Wang Jingwei has been removed as an advisor. The Leftist faction disapproves.
-
 @remove_seydewitz
 title: Remove Seydewitz
 view-if: seydewitz_advisor = 1
@@ -201,14 +200,24 @@ Siemsen has been removed as an advisor. The Leftist faction disapproves.
 
 # neorevisionists
 
+@remove_xuchongzhi
+title: Remove Xu Chongzhi
+view-if: xuchongzhi_advisor = 1 and whampoa_built = 1
+on-arrival: xuchongzhi_advisor = 0; center_dissent += 5; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+Xu Chongzhi has been removed as an advisor. The Whampoa faction disapproves.
+
+
 @remove_chiangkaishek
 title: Remove Chiang Kai-shek
-view-if: chiangkaishek_advisor = 1
+view-if: chiangkaishek_advisor = 1 and whampoa_built = 1
 tags: remove_advisor
 on-arrival: chiangkaishek_advisor = 0; neorevisionist_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Mierendorff has been removed as an advisor. The Neorevisionist faction disapproves.
+Chiang Kai-shek has been removed as an advisor. The Whampoa faction disapproves.
 
 @remove_leber
 title: Remove Leber
@@ -286,15 +295,15 @@ go-to: advisor_menu
 
 @advisor_menu
 title: Add other advisors.
-tags: center_advisor, left_advisor, reformist_advisor, labor_advisor, neorev_advisor, nonfactional_advisor
+tags: center_advisor, left_advisor, rightt_advisor, center_left_advisor, whampoa_advisor, nonfactional_advisor
 frequency: 1
 
 
 - @centrist: Add Centrists
 - @left: Add Leftists
-- @reformist: Add Reformists
-- @labor: Add Labor
-- @neorev: Add Neorevisionists
+- @right: Add Rightists
+- @center_left: Add Center Leftists
+- @whampoa: Add Whampoa Officers
 - @nonfactional: Add non-factional advisors
 - @rm_main: Remove advisors instead.
 - @remove_none: Stop changing advisors.
@@ -304,25 +313,25 @@ view-if: n_advisors < 3
 
 - #center_advisor
 
-@reformist
+@right
 view-if: n_advisors < 3
 
-- #reformist_advisor
+- #right_advisor
 
 @left
 view-if: n_advisors < 3
 
 - #left_advisor
 
-@labor
+@center_left
 view-if: n_advisors < 3
 
-- #labor_advisor
+- #center_left_advisor
 
-@neorev
+@whampoa
 view-if: neorevisionism > 0 and n_advisors < 3
 
-- #neorev_advisor
+- #whampoa_advisor
 
 @nonfactional
 view-if: n_advisors < 3
@@ -365,7 +374,7 @@ tags: center_advisor
 
 Rudolf Breitscheid is now an advisor.
 
-# reformist
+# right
 
 
 @add_huhanmin
@@ -373,7 +382,7 @@ title: Hu Hanmin
 subtitle: Hu Hanmin is a veteran right politician in our party. {!<br><br>!}[? if difficulty < 0 : Actions - Prussian Bulwark, Police Affairs ?]
 is-card: true
 card-image: img/portraits/HuHanmin.jpg
-tags: reformist_advisor
+tags: right_advisor
 view-if: huhanmin_advisor = 0 and n_advisors < 3
 on-arrival: huhanmin_advisor = 1; n_advisors += 1; reformist_strength += 5
 go-to: advisor_menu
@@ -444,18 +453,6 @@ tags: left_advisor
 
 Toni Sender is now an advisor.
 
-@add_wangjingwei
-title: Wang Jingwei
-subtitle: Wang Jingwei is a major party leader in the left that advocates for democracy. {!<br><br>!}[? if difficulty < 0 : Actions - Building the Left, Cooperation with the KPD, Against Toleration ?]
-is-card: true
-card-image: img/portraits/WangJingwei.jpg
-view-if: wangjingwei_advisor = 0 and n_advisors < 3 and left_split = 0
-on-arrival: wangjingwei_advisor = 1; n_advisors += 1; left_strength += 5
-go-to: advisor_menu
-tags: left_advisor
-
-Wang Jingwei is now an advisor.
-
 @add_seydewitz
 title: Max Seydewitz
 subtitle: Max Seydewitz is a former leader of the youth wing, current supporter of the left wing of the SPD, and advocates for class struggle. {!<br><br>!}[? if difficulty < 0 : Actions - Rally for Class Struggle, Socialist Youth, Against Toleration ?]
@@ -482,7 +479,19 @@ Anna Siemsen is now an advisor.
 
 
 
-# labor
+# center_left
+
+@add_wangjingwei
+title: Wang Jingwei
+subtitle: Wang Jingwei is a major party leader in the left that advocates for democracy. {!<br><br>!}[? if difficulty < 0 : Actions - Building the Left, Cooperation with the KPD, Against Toleration ?]
+is-card: true
+card-image: img/portraits/WangJingwei.jpg
+view-if: wangjingwei_advisor = 0 and n_advisors < 3 and left_split = 0
+on-arrival: wangjingwei_advisor = 1; n_advisors += 1; left_strength += 5
+go-to: advisor_menu
+tags: center_left_advisor
+
+Wang Jingwei is now an advisor.
 
 @add_leipart
 title: Theodor Leipart
@@ -534,17 +543,17 @@ go-to: advisor_menu
 Wladimir Woytinsky is now an advisor.
 
 
-# neorevisionist leaders
+# whampoa leaders
 
 @add_chiangkaishek
 title: Chiang Kai-shek
 subtitle: Chiang Kai-shek is a young officer and superintendent of the Whampoa Military Academy {!<br><br>!}[? if difficulty < 0 : Actions - Build the Iron Front, Warning About the Nazis ?]
 is-card: true
 card-image: img/portraits/ChiangKai-shek.jpg
-view-if: chiangkaishek_advisor = 0 and n_advisors < 3
+view-if: chiangkaishek_advisor = 0 and whampoa_built = 1 and n_advisors < 3
 on-arrival: chiangkaishek_advisor = 1; n_advisors += 1; neorevisionist_strength += 5
 go-to: advisor_menu
-tags: neorev_advisor
+tags: whampoa_advisor
 
 Chiang Kai-shek is now an advisor.
 
@@ -553,8 +562,8 @@ title: Xu Chongzhi
 subtitle: Xu Chongzhi is a Guangdongese general and head of the NRA. {!<br><br>!}[? if difficulty < 0 : Actions - Against Right and Left, Defending Toleration, Fiscal Policy, Economic Democracy ?]
 is-card: true
 card-image: img/portraits/XuChongzhi.jpg
-tags: neorev_advisor
-view-if: xuchongzhi_advisor = 0 and n_advisors < 3 and centrists_resign = 0
+tags: whampoa_advisor
+view-if: xuchongzhi_advisor = 0 and n_advisors < 3 and and whampoa_built = 1
 on-arrival: xuchongzhi_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
