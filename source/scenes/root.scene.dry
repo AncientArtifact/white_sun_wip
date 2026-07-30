@@ -46,27 +46,24 @@ Q.dissent = 0.05;
 Q.dissent_percent = 5;
 
 // factions
-Q.factions = ['left', 'center', 'labor', 'reformist', 'neorevisionist'];
+Q.factions = ['left', 'center_left', 'center', 'right', 'whampoa'];
 // should this be normalized to 100%?
 Q.left_strength = 15;
 Q.left_dissent = 20;
+Q.center_left_strength = 25;
+Q.center_left_dissent = 5;
 Q.center_strength = 30;
 Q.center_dissent = 0;
-Q.labor_strength = 25;
-Q.labor_dissent = 5;
-Q.reformist_strength = 25;
-Q.reformist_dissent = 5;
-Q.neorevisionist_strength = 5;
-Q.neorevisionist_dissent = 10;
+Q.right_strength = 25;
+Q.right_dissent = 10;
+Q.whampoa_strength = 10;
+Q.whampoa_dissent = 5;
 
 // secret events...
 Q.unions_independent = 0;
 Q.centrists_resign = 0;
 Q.left_split = 0;
 Q.reformists_resigned = 0;
-
-// have we discovered neorevisionism?
-Q.neorevisionism = 1;
 
 // crisis_urgency indicates how seriously the SPD is taking the economic crisis - scale from 0 to 10.
 Q.crisis_urgency = 0;
@@ -102,90 +99,60 @@ Q.moderate_plan_adopted = 0;
 
 // inter-party relations
 Q.z_relation = 50;
-Q.kpd_relation = 25;
+Q.cpc_relation = 25;
 Q.ddp_relation = 60;
 Q.dvp_relation = 35;
 // DNVP and NSDAP are invariably hostile
 Q.DNVP_relation = 10;
 Q.NSDAP_relation = 0;
 
-Q.kpd_leader = "Thälmann";
+Q.cpc_leader = "Duxiu";
 // alternative is the Conciliators as party leader
-Q.kpd_party_leader = "Thälmann";
-Q.z_leader = "Brüning";
+Q.cpc_deputy_leader = "Dazhao";
+Q.guangxi_leader = "Zongren";
 // party leader - can be Ludwig Kaas, Joseph Joos, or Adam Stegerwald after the 1928 December conference. Joos will be most friendly to the SPD.
-Q.z_party_leader = "Marx";
-Q.nsdap_leader = "Hitler";
+Q.guangxi_deputy_leader = "Chongxi";
+Q.zhili_leader = "Wu Peifu";
+Q.zhili_deputy_leader = "Sun Chuanfang";
+Q.fengtian_leader = "Zhang Zuolin";
+Q.fengtian_deputy_leader = "Zhang Xueliang";
+Q.anhui_leader = "Duan Qirui";
 
 // hmm... maybe we can play nice with Hindenburg???
-Q.hindenburg_relation = 25;
+Q.hindenburg_relation = 0;
 // whether or not hindenburg can dismiss the government.
 Q.hindenburg_enabled = 0;
 
 
 // Does the SPD lead in Prussia?
-Q.spd_prussia = 1;
+Q.spd_prussia = 0;
 // Options: spd, z, dnvp, papen, nsdap
-Q.prussian_government = "SPD";
 
 // The array of forces - paramilitary groups
 // Number of members in 1928 (in thousands)
 // Reichsbanner, stahlhelm, SA, rotfrontkämpferbund
-Q.rb_strength = 2000;
-Q.rb_militancy = 0.01;
-Q.women_in_rb = 0;
-Q.rb_banned = 0;
-Q.sh_strength = 500;
-Q.sh_militancy = 0.5;
-Q.sh_banned = 0;
-Q.sh_banned_prussia = 0;
-Q.sa_strength = 80;
-Q.sa_militancy = 0.5;
-Q.sa_banned = 0;
-Q.sa_banned_prussia = 0;
-Q.rfb_strength = 130;
-Q.rfb_militancy = 0.5;
-Q.rfb_banned = 0;
-Q.rfb_banned_prussia = 0;
-
-Q.interior_police_strength = 50;
-Q.interior_police_militancy = 1;
-Q.interior_police_loyalty = 0.45;
-
-Q.prussian_police_strength = 90;
-Q.prussian_police_militancy = 1;
-Q.prussian_police_loyalty = 0.5;
-
-// strength includes actual military and de facto reserves?
-Q.reichswehr_strength = 100;
-Q.reichswehr_militancy = 5;
-Q.reichswehr_loyalty = 0.2;
+Q.nra_strength = 50;
+Q.nra_militancy = 0.1;
+Q.bei_strength = 300;
+Q.bei_militancy = 0.5;
+Q.feng_strength = 200;
+Q.feng_militancy = 1;
+Q.red_strength = 2;
+Q.red_militancy = 0.05;
+Q.gmj_strength = 100;
+Q.gmj_militancy = 0.5;
+Q.gmj_enabled = 0;
 
 // The state of the country
 
 // popular opinion
 // national ideology - on a binary scale
 // nationalism vs internationalism or pacifism or non-nationalism
-Q.nationalism = 60;
+Q.warlordist = 60;
 // socialism vs capitalism
-Q.socialism = 40;
+Q.socialism = 10;
 // pro-republic vs anti-republic
-Q.pro_republic = 59;
-
-Q.emergency_rule = 0;
-
-// minimum percentage of votes to be represented in the Reichstag
-Q.electoral_threshold = 0;
-// constitutional reform level
-Q.constitutional_reform = 0;
-// constructive vote of no confidence
-Q.constructive_vonc = 0;
-// reduction in presidential powers
-Q.presidential_powers = 0;
-// allows banning of non-constitutional parties
-Q.constitutional_protection = 0;
-Q.kpd_banned = 0;
-Q.nsdap_banned = 0;
+Q.pro-tridemist = 59;
 
 // coups and capital strikes happen when you upset the right or the capitalists too much with your policies. they're an additional check on your policies, when purely electoral checks don't suffice.
 // when coup_progress reaches 10 or capital_strike_progress reaches 10, there's a special event that launches the coup.
@@ -196,14 +163,14 @@ Q.budget = 4;
 
 // Proportion of different social groups
 // source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 45, table 3.4 - using 1925 figures
-Q.workers = 48; // industry and trade
+Q.workers = 18; // industry and trade
 Q.old_middle = 13; // "old mittelstand"
 // 16.4 trade & commerce, 6.6 public and private services, 4.4 domestic help
 Q.new_middle = 14; // "new mittelstand"
-Q.rural = 25; // agriculture and forestry employment... but many of those are proletarians so...
+Q.rural = 55; // agriculture and forestry employment... but many of those are proletarians so...
 // source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 43, table 3.3
-Q.unemployed = 8.6;
-Q.catholics = 30;
+Q.unemployed = 4.2;
+Q.catholics = 0.1;
 
 // unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
 
@@ -212,7 +179,7 @@ Q.income = 1600;
 // what about incomes for different classes? rural workers? middle-class workers?
 
 // inflation (in %; 1928: 2.9; 1929: 0; 1930: -5%; 1931: -10%; 1932: -10%) - source: https://en.wikipedia.org/wiki/File:BSPDRWeltkriseEngl.PNG, derived from https://www.destatis.de/DE/Methoden/WISTA-Wirtschaft-und-Statistik/2009/03/rezession-betrachtung-032009.pdf?__blob=publicationFile
-Q.inflation = 2.9;
+Q.inflation = 5.1;
 
 // economic growth - same source as above, Table 2 (preisbereinigt) - this is also the source for the yearly changes in the great depression.
 Q.economic_growth = 4.4;
@@ -228,67 +195,52 @@ Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
-Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
+Q.parties = ['kmt', 'cpc', 'zhi', 'feng', 'gxc', 'anh', 'other'];
 
 // TODO: add 'sapd' later on
 Q.sapd_formed = 0;
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_spd = 60;
-Q.workers_kpd = 20;
-Q.workers_z = 5;
-Q.workers_ddp = 0;
-Q.workers_dvp = 0;
-Q.workers_dnvp = 5;
-Q.workers_nsdap = 0;
+Q.workers_kmt = 40;
+Q.workers_cpc = 30;
+Q.workers_zhi = 5;
+Q.workers_feng = 5;
+Q.workers_gxc = 0;
+Q.workers_anh = 5;
 Q.workers_other = 10;
 
-Q.old_middle_spd = 5;
-Q.old_middle_kpd = 0;
-Q.old_middle_z = 5;
-Q.old_middle_ddp= 10;
-Q.old_middle_dvp = 25;
-Q.old_middle_dnvp = 25;
-Q.old_middle_nsdap = 10;
+Q.old_middle_kmt = 5;
+Q.old_middle_cpc = 0;
+Q.old_middle_zhi = 20;
+Q.old_middle_feng = 15;
+Q.old_middle_gxc = 10;
+Q.old_middle_anh = 5;
 Q.old_middle_other = 10;
 
-Q.new_middle_spd = 5;
-Q.new_middle_kpd = 1;
-Q.new_middle_z = 10;
-Q.new_middle_ddp= 25;
-Q.new_middle_dvp = 25;
-Q.new_middle_dnvp = 10;
-Q.new_middle_nsdap = 5;
-Q.new_middle_other = 15;
+Q.new_middle_kmt = 12;
+Q.new_middle_cpc = 1;
+Q.new_middle_zhi = 15;
+Q.new_middle_feng = 5;
+Q.new_middle_gxc = 5;
+Q.new_middle_anh = 1;
+Q.new_middle_other = 10;
 
-Q.rural_spd = 10;
-Q.rural_kpd = 0;
-Q.rural_z = 5;
-Q.rural_ddp= 5;
-Q.rural_dvp = 15;
-Q.rural_dnvp = 45;
-Q.rural_nsdap = 5;
-Q.rural_other = 10;
+Q.rural_kmt = 50;
+Q.rural_cpc = 15;
+Q.rural_zhi = 60;
+Q.rural_feng = 59;
+Q.rural_gxc = 20;
+Q.rural_anh = 15;
+Q.rural_other = 5;
 
-Q.unemployed_spd = 25;
-Q.unemployed_kpd = 55;
-Q.unemployed_z = 1;
-Q.unemployed_ddp = 0;
-Q.unemployed_dvp = 0;
-Q.unemployed_dnvp = 5;
-Q.unemployed_nsdap = 15;
+Q.unemployed_kmt = 5;
+Q.unemployed_cpc = 5;
+Q.unemployed_zhi = 1;
+Q.unemployed_feng = 0;
+Q.unemployed_gxc = 0;
+Q.unemployed_anh = 0;
 Q.unemployed_other = 9;
-
-Q.catholics_spd = 15;
-Q.catholics_kpd = 2;
-Q.catholics_z = 50;
-Q.catholics_ddp = 0;
-Q.catholics_dvp = 5;
-Q.catholics_dnvp = 5;
-Q.catholics_nsdap = 0;
-Q.catholics_other = 12;
-
 
 // Current Reichstag composition
 // % of Reichstag in Jan 1928
@@ -315,13 +267,6 @@ Q.old_dnvp_r = 20;
 Q.old_nsdap_r = 3;
 Q.old_other_r = 9;
 
-// sapd isn't formed yet, but it may be formed
-Q.sapd_r = 0;
-Q.old_sapd_r = 0;
-
-// for changing the DDP's name to the DStP
-Q.ddp_name = "DDP";
-
 // array of objects of the form {date: Date(), spd: 10, kpd: 12, ...} for each election
 Q.election_records = [];
 // party support records for every month
@@ -331,35 +276,16 @@ Q.economic_records = [];
 
 
 // State of the government
-Q.president = "Hindenburg";
+Q.beiyang_leader = "Wu Peifu";
 // starting chancellor: Wilhelm Marx
-Q.chancellor = "Marx";
-Q.chancellor_party = 'Z';
-Q.spd_in_government = 0;
-Q.z_in_government = 1;
-Q.ddp_in_government = 0;
-Q.dvp_in_government = 1;
-Q.dnvp_in_government = 1;
-Q.kpd_in_government = 0;
-Q.nsdap_in_government = 0;
-
-Q.in_right_coalition = 0;
-// Weimar coalition = SPD + Z + DDP
-Q.in_weimar_coalition = 0;
-// Grand coalition = SPD + Z + BVP + DDP + DVP
-// also includes the "new grand coalition" of SPD + Z + BVP + DDP + DVP + Others
-Q.in_grand_coalition = 0;
-// Popular front = SPD + KPD + Z + DDP
-Q.in_popular_front = 0;
-// left coalition = SPD + KPD + left-splinters
-Q.in_left_front = 0;
-// emergency government containing the SPD: only president Braun can do this.
-Q.in_emergency_government = 0;
-Q.in_spd_majority = 0;
-Q.grand_coalition_failed = 0;
-// if the SPD is ruling as part of a minority government
-Q.in_minority_government = 0;
-// national unity governmet
+Q.deputy_beiyang_leader = "Sun Chuanfang";
+Q.chancellor_party = 'Zhili';
+Q.kmt_in_government = 0;
+Q.zhi_in_government = 1;
+Q.gxc_in_government = 0;
+Q.feng_in_government = 1;
+Q.anh_in_government = 0;
+Q.cpc_in_government = 0;
 
 // if you're in a coalition, this is an incremental counter for how many times dissent has happened from the right.
 Q.coalition_dissent = 0;
@@ -375,22 +301,35 @@ Q.minority_government = 0;
 // ministries - which parties control the ministries?
 // starting with the 4th Marx cabinet https://en.wikipedia.org/wiki/Fourth_Marx_cabinet
 // is the agricultural ministry useful at all?
-Q.foreign_minister = 'Streseman';
-Q.foreign_minister_party = 'DVP';
-Q.interior_minister = 'von Keudell';
-Q.interior_minister_party = 'DNVP';
-Q.justice_minister = 'Hergt';
-Q.justice_minister_party = 'DNVP';
-Q.labor_minister = 'Brauns';
-Q.labor_minister_party = 'Z';
-Q.reichswehr_minister = 'Groener';
-Q.reichswehr_minister_party = 'I';
-Q.economic_minister = 'Curtius';
-Q.economic_minister_party = 'DVP';
-Q.finance_minister = 'Köhler';
-Q.finance_minister_party = 'Z';
-Q.agriculture_minister = 'Schiele';
-Q.agriculture_minister_party = 'DNVP';
+Q.manchuria_governor = 'Zhang Zuolin';
+Q.manchuria_faction = 'Fengtian';
+Q.hebei_governor = 'Wu Peifu';
+Q.hebei_faction = 'Zhili';
+Q.shandong_governor = 'Zhang Zongchang';
+Q.shandong_faction = 'Fengtian';
+Q.nanjing8_governor = 'Sun Chuanfang';
+Q.nanjing8_faction = 'Zhili';
+Q.henan_governor = 'Wu Peifu';
+Q.henan_faction = 'Zhili';
+Q.shanxi_governor = 'Yan Xishan';
+Q.shanxi_faction = 'Zhili';
+Q.suiyuan_governor = 'Feng Yuxiang';
+Q.suiyuan_faction = 'Zhili';
+Q.wuhan_governor = 'Wu Peifu';
+Q.wuhan_faction = 'Zhili';
+Q.hunan_governor = 'Wu Peifu';
+Q.hunan_faction = 'Zhili';
+Q.sichuan_governor = 'Multiple';
+Q.sichuan_faction = 'N/A';
+Q.guizhou_governor = 'Yuan Zuming';
+Q.guizhou_faction = 'Guizhou';
+Q.yunnan_governor = 'Tang Jiyao';
+Q.yunnan_faction = 'Yunnan';
+Q.guangxi_governor = 'Li Zongren';
+Q.guangxi_faction = 'New Guangxi';
+Q.guangdong_governor = 'Sun Yat-sen';
+Q.guangdong_faction = 'Guomindang';
+
 
 // Events: what has occurred?
 Q.panzerkreuzer_seen = 0;
@@ -599,21 +538,13 @@ on-arrival: difficulty = 1; resources = 0; dues = 1; rb_strength = 1000; reformi
 go-to: 1924_main
 
 @1924_historical
-subtitle: Saving, loading, and polls will be disabled. [? if not achievement_game_completed: Not recommended for a first playthrough. ?]
+subtitle: Pretty much broken. Don't play historical mode.
 on-arrival: {!
 Q.difficulty = 2;
 Q.historical_mode = 1;
 Q.resources = 2;
 Q.dues = 1;
-Q.rb_strength = 2000;
-Q.reformist_dissent = 25;
-Q.left_dissent = 30;
-Q.labor_dissent = 25;
-Q.center_dissent = 25;
-Q.z_relation = 41;
-Q.kpd_relation = 16;
-Q.dvp_relation = 31;
-Q.budget = 2;
+
 this.state.disableSaves = true;
 !}
 go-to: 1924_main
