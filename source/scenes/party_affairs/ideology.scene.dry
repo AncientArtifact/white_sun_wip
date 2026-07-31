@@ -10,61 +10,74 @@ max-visits: 3
 
 = Questions of Ideology
 
-The SPD is torn between many different ideological currents. What should be our primary ideological guidance for now?
+The KMT is torn between many different ideological currents. What should be our primary ideological guidance for now?
 
 [? if ideology != 0 : We have previously chosen a [+ ideology +] ideology. Changing it will likely have drawbacks. ?]
 
-- @class_struggle: Class struggle and preparing the proletariat for the revolution are our primary goals.
-- @centrist: The Center Marxism of Karl Kautsky remains the best way to resolve our internal contradictions.
-- @labor: We should work with the trade unions to improve the lives of workers.
-- @reform: Following Eduard Bernstein, we should work for ethical socialism, strengthen democracy, and expand the party's electorate.
+- @left: Cooperation with the Communists should be prioritized.
+- @center_left: Wang Jingwei's ideas of democracy and worker's rights resonate well with our party.
+- @center: Sun Yat-sen's doctrine should be followed and respected to it's full meaning.
+- @right: We should cut ties with the Communists and inspire more nationalism in our people.
+- @whampoa: Our military arm deserves some attention.
 - @easy_discard
 
-@class_struggle
+@left
 on-arrival: {!
 if (Q.ideology && Q.ideology != "left") {
     Q.changed = 1;
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "left"; left_strength += 10; communist_coalition += 1; left_dissent -= 5; z_relation -= 3; dvp_relation -= 5; nationalization_support += 1; kpd_relation += 3
+on-departure: ideology = "left"; left_strength += 10; left_dissent -= 5; right_dissent += 5; gxc_relation -= 3; yun_relation -= 3; cpc_relation += 3
 
-The radical left of the party supports a course of class struggle, and potentially a reconcilliation with the Communists.
+The radical left of the party supports cooperation with the Communists.
 
-@centrist
+@center_left
 on-arrival: {!
-if (Q.ideology && Q.ideology != "centrist") {
+if (Q.ideology && Q.ideology != "center_leftist") {
     Q.changed = 1;
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "centrist"; center_strength += 10; center_dissent -= 10; left_dissent -= 5; reformist_dissent -= 5
+on-departure: ideology = "center_leftist"; center_left_strength += 10; center_left_dissent -= 10;
 
-The Center Marxists, represented by Kautsky and Hilferding, support a middle course of preparing for revolution while building up the consciousness of the working class.
+The Center-Leftists supporting Wang Jingwei seeks to speed up the path to democracy.
 
-@labor
+@center
 on-arrival: {!
-if (Q.ideology && Q.ideology != "labor") {
+if (Q.ideology && Q.ideology != "centerist") {
     Q.changed = 1;
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "labor"; labor_strength += 10; wtb_support += 1; labor_dissent -= 5; kpd_relation -= 3
+on-departure: ideology = "centerist"; center_strength += 10; center_dissent -= 10; left_dissent -= 5; right_dissent -= 5 center_left_dissent -= 5:
 
-The labor wing of the party supports continued particpation in government in order to provide benefits to the workers, and the creation of public works programs for employment.
+The Centrists follow Sun Yat-sen's ideals and acts as a mediatory force in the party.
 
-@reform
+@right
 on-arrival: {!
-if (Q.ideology && Q.ideology != "reformist") {
+if (Q.ideology && Q.ideology != "right") {
     Q.changed = 1;
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "reformist"; reformist_strength += 10; democratization += 1; reformist_dissent -= 5; z_relation += 5; dvp_relation += 5; kpd_relation -= 8; moderate_plan_support += 1
+on-departure: ideology = "right"; right_strength += 10; right_dissent -= 5; cpc_relation -= 8; left_dissent += 8; center_left_dissent += 5;
 
-The reformist wing of the party seeks to preserve the Republic and the democratic system of government, and is most supportive of coalitions with the other pro-democracy parties.
+The right wing of our party seeks to cut ties with the Communists and establish a strong government.
+
+@whampoa
+on-arrival: {!
+if (Q.ideology && Q.ideology != "nra") {
+    Q.changed = 1;
+}
+!}
+go-to: changed if changed = 1
+on-departure: ideology = "nra"; whampoa_strength += 10; whampoa_dissent -= 5; right_strength += 3; right_dissent -= 5; cpc_relation -= 8; left_dissent += 8; center_left_dissent += 5;
+
+The new officers of the NRA have been given more influence within the party.
+
 
 @changed
-on-arrival: left_dissent += 5; center_dissent += 5; labor_dissent += 5; reformist_dissent += 5
+on-arrival: left_dissent += 5; center_dissent += 5; center_left_dissent += 5; right_dissent += 5
 
 We have changed ideologies. Many in the party feel unmoored.
