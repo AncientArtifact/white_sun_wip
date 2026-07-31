@@ -6,46 +6,41 @@ view-if: international_relations_timer <= 0
 on-arrival: month_actions += 1; international_relations_timer += 12;
 card-image: img/kmtinternat.jpg
 max-visits: 4
-#subtitle: Building ties with our fraternal socialist parties.
+#subtitle: Building ties with foreign contacts.
 
-At the Labor and Socialist International, we can forge contacts with our fraternal socialist parties in Europe and across the world.
+We have some limited contacts with foreign powers, we should use this to our advantage.
 
-- @fr_uk: Build relationships with the French SFIO and British Labour Party to move their governments in Germany's favor.
-- @austria: Learn organization and street fighting from the Austrian SDAPÖ.
-- @scandi: Learn the path of economics and reform from the Scandinavian social democrats.
-- @comintern: Forget the second international - embed a spy in the Comintern's conference.
-- @america: Contact the Socialist party of America.
+- @west: Build relationships with the French, British and Germans to negotiate our unequal treaties and concessions.
+- @soviet: Continue cooperating with Stalin and the Soviet Union
+- @comintern: Get important military advisors and equipment through the Comintern
+- @japan: Try to build relationships with the Japanese Empire.
 - @return: We do not need international contacts at the moment.
 - @easy_discard
 - @cancel_advisor_action
 
-@fr_uk
+@west
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; west_relation += 1; reformist_strength += 5; pacifism += 1; moderate_plan_support += 1
+on-arrival: resources -= 1; west_relation += 1;
 
-The socialists of France and Britain can influence their governments to be friendlier towards Germany. Hopefully they will reduce our reparations burden.
+Negotiating with the French and British is undeniably hard. And it may take giving up a few cities to renegotiate our indemnities.
 
-@austria
-subtitle: -1 resources [? if austrian_parliament_seen and not austrian_civil_war_seen: - We will also help the Austrians oppose their dictatorship. ?]
-choose-if: resources >= 1
-unavailable-subtitle: Not enough resources.
-audio: shuffle music/communist/workers_of_vienna_normalized.mp3
-on-arrival: left_strength += 5; radicalization += 1; rb_militancy += 0.03; resources -= 1; austria_relation += 1; sdapo_strength += 1 if austrian_parliament_seen = 1
+@comintern
+subtitle: -1 resources 
+choose-if: east_relation >= 1
+unavailable-subtitle: The Soviets won't just let us have them for free.
+on-arrival: left_strength += 1; nra_militancy += 0.1; resources -= 1; east_relation -= 1;
 
-Our Reichsbanner can learn much in paramilitary organization and training from the Austrian Republikanischer Schutzbund (Republican Protection Units), the paramilitary branch of the Austrian social democrats.
+Our army can learn much in military organization and training from Soviet advisors and guns.
 
-[? if austrian_parliament_seen and not austrian_civil_war_seen: We are also helping the Austrian Social Democratic Worker's Party build up their resources in preparation for a future struggle, legally and illegally. ?]
-
-
-@scandi
+@soviet
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: reformist_strength += 8; wtb_support += 1; resources -= 1; moderate_plan_support += 1
+on-arrival: left_strength =+ 1; center_left_strength =+ 1; east_relation += 2; cpc_realtion += 1;
 
-The programs of the Nordic socialists involve active government intervention in the economy. We can learn from their economic strategies, and how they moved beyond their working-class base to attract a broader set of constituents.
+Sun Yat-sen's support of cooperation with the Soviet Union may bring benefits for our movement.
 
 @comintern
 subtitle: -1 resources
@@ -55,13 +50,13 @@ on-arrival: resources -= 1; kpd_relation += 5*(1-dissent); communist_coalition +
 
 The Stalinists of the KPD insists on calling us "social fascists", suggesting that we social democrats are as bad or worse than actual fascists. Needless to say, this is not good for our relationship with the Communists. By observing the Comintern, we can better understand the KPD, enabling us to potentially improve relations, or counter the KPD if it may come to that.
 
-@america
+@japan
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1
+on-arrival: resources -= 1; japan_relations += 1;
 
-The Socialist Party of America is tiny and has limited support. There is not much we can do for them, and conversely, not much they can do for us.
+Japan doesn't care for us at all right now.
 
 @reduce
 
