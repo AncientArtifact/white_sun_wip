@@ -1,0 +1,51 @@
+title: National Revolutionary Army
+new-page: true
+is-card: true
+tags: party_affairs
+view-if: nra_timer <= 0
+card-image: img/nationalarmy.jpg
+on-arrival: month_actions += 1; nra_timer += 6; nra_militarization_cost = 2 if nra_militancy > 0.1 else nra_militarization_cost = 1; nra_militarization_cost = 3 if nra_militancy > 0.25
+max-visits: 6
+#subtitle: Military organizing for the Northern Expedition.
+
+= National Revolutionary Army
+
+The *National Revolutionary Army* is the Guomindang's military wing. It is still in it's infancy but is quickly expanding in quality and size.
+
+- @militant: Fund more military-style training and equipment for the NRA.
+- @militant_2: Use our existing resources to support more training for the NRA.
+- @same: Keep the NRA as it is.
+- @cut_nra: Cut funding for the NRA.
+- @easy_discard
+- @cancel_advisor_action
+
+@militant
+choose-if: resources >= nra_militarization_cost
+unavailable-subtitle: Not enough resources ([+ nra_militarization_cost +] needed).
+subtitle: -[+ nra_militarization_cost +] resources
+on-arrival: resources -= nra_militarization_cost; nra_investment += 1; nra_strength += 100; nra_militancy += 0.05; left_strength += 2; left_dissent -= 2; reformist_dissent += 5; spd_militancy += 0.05; workers_spd += 2*(1-dissent); unemployed_spd += 2*(1-dissent); z_relation -= 5 if historical_mode 
+
+Some in our party decry the increasing militarization of the National Revolutionary Army. They say it is emulating the right-wing nationalists or the communists, and risks alienating our allies in the centrist parties. On the other hand, more left-leaning radicals are being lured to our organizations, away from the communists.
+
+[? if historical_mode : The Center Party decries the militarization of the National Revolutionary Army, and its members are leaving the republican organization. ?]
+
+
+@militant_2
+view-if: funded_nra >= 1
+on-arrival: nra_militancy += 0.02; funded_nra -= 1
+
+As we have already funded resources towards the National Revolutionary Army, we can invest in building up their militancy.
+
+
+@same
+
+The National Revolutionary Army is already serving the purpose it needs to serve. There is no reason to change what already works.
+
+- @return: Continue...
+
+
+@cut_nra
+subtitle: +1 resources
+on-arrival: resources += 1; nra_strength -= 100; nra_militancy -= 0.05; left_strength -= 2; left_dissent += 2; red_militancy += 0.05; workers_cpc += 2; unemployed_cpc += 2
+
+Cutting resources to the National Revolutionary Army causes a drop in the membership, and leads some would-be members to join the Communists instead.
