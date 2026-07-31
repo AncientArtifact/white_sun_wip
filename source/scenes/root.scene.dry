@@ -225,7 +225,7 @@ Q.new_middle_anh = 1;
 Q.new_middle_other = 10;
 
 Q.rural_kmt = 50;
-Q.rural_cpc = 15;
+Q.rural_cpc = 20;
 Q.rural_zhi = 60;
 Q.rural_feng = 59;
 Q.rural_anh = 15;
