@@ -325,16 +325,6 @@ Q.guangxi_faction = 'New Guangxi';
 Q.guangdong_governor = 'Sun Yat-sen';
 Q.guangdong_faction = 'Guomindang';
 
-
-// Events: what has occurred?
-Q.panzerkreuzer_seen = 0;
-Q.panzerkreuzer_funded = 0;
-Q.panzerkreuzer_failed = 0;
-Q.unemployment_insurance_seen = 0;
-// unemployment insurance event is seen if the unemployment level is at least 4 more than the threshold...
-Q.unemployment_insurance_threshold = 10;
-Q.blutmai = 0;
-
 // have we reformed these institutions to be more democratic?
 Q.judicial_reform = 0;
 Q.bureaucratic_reform = 0;
@@ -349,11 +339,11 @@ Q.land_reform = 0;
 Q.works_program = 0;
 Q.wtb_implemented = 0;
 // Relations with the Western countries (France, UK).
-Q.west_relation = 0;
+Q.west_relation = 1;
 // Relations with the Eastern countries (Poland, Czechoslovakia)
-Q.east_relation = 0;
+Q.east_relation = 3;
 // Relations with the Soviet Union
-Q.soviet_relation = 0;
+Q.japan_relation = 0;
 // How much have we exposed the secret rearmament programs?
 Q.rearmament_exposed = 0;
 // reparations vs baseline: young plan is -1.
