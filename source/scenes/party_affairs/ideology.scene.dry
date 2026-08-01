@@ -45,12 +45,12 @@ The Center-Leftists supporting Wang Jingwei seeks to speed up the path to democr
 
 @center
 on-arrival: {!
-if (Q.ideology && Q.ideology != "centerist") {
+if (Q.ideology && Q.ideology != "centrist") {
     Q.changed = 1;
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "centerist"; center_strength += 10; center_dissent -= 10; left_dissent -= 5; right_dissent -= 5 center_left_dissent -= 5:
+on-departure: ideology = "centrist"; center_strength += 10; center_dissent -= 10; left_dissent -= 5; right_dissent -= 5 center_left_dissent -= 5:
 
 The Centrists follow Sun Yat-sen's ideals and acts as a mediatory force in the party.
 
