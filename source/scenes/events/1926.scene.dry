@@ -1,9 +1,0 @@
-title: 1926
-subtitle: A new year 
-
-tags: event
-view-if: year = 1926 and month = 1 
-priority: 2
-max-visits: 1
-
-A new year begins. The Northern Expedition is almost ready.
