@@ -29,6 +29,6 @@ on-arrival: enemies = "communists"; left_strength -= 5; left_dissent += 7; cente
 Attacking the communists make the Left and Center-left more angry since they support allying them instead. Although, it makes the Whampoa and Right happy.
 
 @colonizers
-on-arrival: enemies = "imperialists"; west_relations -= 5; east_relations -= 5; japan_relations -= 5; old_middle_kmt += 2; rural_kmt += 2:
+on-arrival: enemies = "imperialists"; west_relations -= 5; east_relations -= 5; japan_relations -= 5; old_middle_kmt += 2; rural_kmt += 2;
 
 Only focusing on the unequal treaties raises some public support, while it jeopardizes our foreign affairs.
