@@ -23,7 +23,7 @@ The *National Revolutionary Army* is the Guomindang's military wing. It is still
 choose-if: resources >= nra_militarization_cost
 unavailable-subtitle: Not enough resources ([+ nra_militarization_cost +] needed).
 subtitle: -[+ nra_militarization_cost +] resources
-on-arrival: resources -= nra_militarization_cost; nra_investment += 1; nra_strength += 100; nra_militancy += 0.05; left_strength += 2; left_dissent -= 2; reformist_dissent += 5; spd_militancy += 0.05; workers_spd += 2*(1-dissent); unemployed_spd += 2*(1-dissent); z_relation -= 5 if historical_mode 
+on-arrival: resources -= nra_militarization_cost; nra_investment += 1; nra_strength += 50; nra_militancy += 0.05; left_strength += 2; left_dissent -= 2; reformist_dissent += 5;
 
 Some in our party decry the increasing militarization of the National Revolutionary Army. They say it is emulating the right-wing nationalists or the communists, and risks alienating our allies in the centrist parties. On the other hand, more left-leaning radicals are being lured to our organizations, away from the communists.
 
@@ -46,6 +46,6 @@ The National Revolutionary Army is already serving the purpose it needs to serve
 
 @cut_nra
 subtitle: +1 resources
-on-arrival: resources += 1; nra_strength -= 100; nra_militancy -= 0.05; left_strength -= 2; left_dissent += 2; red_militancy += 0.05; workers_cpc += 2; unemployed_cpc += 2
+on-arrival: resources += 1; nra_strength -= 50; nra_militancy -= 0.02; left_strength -= 2; left_dissent += 2; red_militancy += 0.05; workers_cpc += 2; unemployed_cpc += 2
 
 Cutting resources to the National Revolutionary Army causes a drop in the membership, and leads some would-be members to join the Communists instead.
