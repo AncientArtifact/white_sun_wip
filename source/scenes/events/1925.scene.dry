@@ -1,0 +1,9 @@
+title: 1925
+subtitle: A new year
+
+tags: event
+view-if: year = 1925 and month = 1
+priority: 2
+max-visits: 1
+
+A new year begins. Sun Yat-sen's health is starting to decline.
