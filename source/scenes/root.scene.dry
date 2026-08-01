@@ -523,11 +523,27 @@ That is all, enjoy!
 - @1924_historical: Begin (historical mode)
 
 @1924_easy
-on-arrival: difficulty = -1; resources = 4; dues = 3; budget = 5;
+on-arrival: {!
+difficulty = -1;
+resources = 4;
+dues = 3; 
+budget = 5;
+!}
+
 go-to: 1924_main
 
 @1924_hard
-on-arrival: difficulty = 1; resources = 0; dues = 1; rb_strength = 10; right_dissent = 25; left_dissent = 30; center_left_dissent = 25; center_dissent = 25; budget = 3;
+on-arrival: {! difficulty = 1;
+resources = 0;
+dues = 1;
+rb_strength = 10; 
+right_dissent = 25; 
+left_dissent = 30; 
+center_left_dissent = 25; 
+center_dissent = 25; 
+budget = 3;
+!}
+
 go-to: 1924_main
 
 @1924_historical
