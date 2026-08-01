@@ -523,24 +523,23 @@ That is all, enjoy!
 - @1924_historical: Begin (historical mode)
 
 @1924_easy
-on-arrival: difficulty = -1; resources = 4; dues = 3; rb_strength = 2500; kpd_relation = 29; z_relation = 54; dvp_relation = 49; budget = 5;
+on-arrival: difficulty = -1; resources = 4; dues = 3; budget = 5;
 go-to: 1924_main
 
 @1924_hard
-on-arrival: difficulty = 1; resources = 0; dues = 1; rb_strength = 1000; reformist_dissent = 25; left_dissent = 30; labor_dissent = 25; center_dissent = 25; z_relation = 41; kpd_relation = 16; dvp_relation = 31; budget = 3;
+on-arrival: difficulty = 1; resources = 0; dues = 1; rb_strength = 10; right_dissent = 25; left_dissent = 30; center_left_dissent = 25; center_dissent = 25; budget = 3;
 go-to: 1924_main
 
 @1924_historical
 subtitle: Pretty much broken. Don't play historical mode.
-on-arrival: {!
+on-arrival:
 Q.difficulty = 2;
 Q.historical_mode = 1;
 Q.resources = 2;
 Q.dues = 1;
-
 this.state.disableSaves = true;
 
-!}
+
 go-to: 1924_main
 
 @1924_main
