@@ -344,7 +344,7 @@ subtitle: Tan Yankai is a statesman and organizer within the party. {!<br><br>!}
 is-card: true
 card-image: img/portraits/TanYankai.jpg
 tags: center_advisor
-view-if: tanyankai_advisor = 0 and n_advisors < 3 and centrists_resign = 0
+view-if: tanyankai_advisor = 0 and n_advisors < 3
 on-arrival: tanyankai_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
@@ -379,7 +379,7 @@ Rudolf Breitscheid is now an advisor.
 
 @add_huhanmin
 title: Hu Hanmin
-subtitle: Hu Hanmin is a veteran right politician in our party. {!<br><br>!}[? if difficulty < 0 : Actions - Prussian Bulwark, Police Affairs ?]
+subtitle: Hu Hanmin is a veteran right politician in our party. {!<br><br>!}[? if difficulty < 0 : Actions - Cut ties with the CPC, Increase Right Influence ?]
 is-card: true
 card-image: img/portraits/HuHanmin.jpg
 tags: right_advisor
@@ -431,7 +431,7 @@ Antonie Pfülf is now an advisor.
 
 @add_liaozhongkai
 title: Liao Zhongkai
-subtitle: Liao Zhongkai is a radical leftist leader and veteran statesman. {!<br><br>!}[? if difficulty < 0 : Actions - Building the Left, Cooperation with the KPD ?]
+subtitle: Liao Zhongkai is a radical leftist leader and veteran statesman. {!<br><br>!}[? if difficulty < 0 : Actions - Building the Left, Cooperation with the CPC ?]
 is-card: true
 card-image: img/portraits/LiaoZhongkai.jpg
 view-if: liaozhongkai_advisor = 0 and liaozhongkai_dead = 0 and n_advisors < 3 and left_split = 0
@@ -483,7 +483,7 @@ Anna Siemsen is now an advisor.
 
 @add_wangjingwei
 title: Wang Jingwei
-subtitle: Wang Jingwei is a major party leader in the left that advocates for democracy. {!<br><br>!}[? if difficulty < 0 : Actions - Building the Left, Cooperation with the KPD, Against Toleration ?]
+subtitle: Wang Jingwei is a major party leader in the left that advocates for democracy. {!<br><br>!}[? if difficulty < 0 : Actions - Cooperation with the CPC, Increase Center-Left Influence, Limit Whampoa Influence ?]
 is-card: true
 card-image: img/portraits/WangJingwei.jpg
 view-if: wangjingwei_advisor = 0 and n_advisors < 3
@@ -493,14 +493,14 @@ tags: center_left_advisor
 
 Wang Jingwei is now an advisor.
 
-@add_leipart
-title: Theodor Leipart
-subtitle: Theodor Leipart is the leader of the ADGB, the German Trade Union Federation. {!<br><br>!}[? if difficulty < 0 : Actions - Organizing Workers, Addressing the Economic Crisis ?]
+@add_tvsoong
+title: T.V. Soong
+subtitle: T.V. Soong is a chinese businessman associated with Wang Jingwei. He handles government finances. {!<br><br>!}[? if difficulty < 0 : Actions - Organize the Middle Class, Finances ?]
 is-card: true
-card-image: img/portraits/LeipartTheodor.jpg
+card-image: img/portraits/TVSoong.jpg
 tags: center_left_advisor
-view-if: leipart_advisor = 0 and n_advisors < 3 and unions_independent = 0
-on-arrival: leipart_advisor = 1; n_advisors += 1; center_left_strength += 5
+view-if: tvsoong_advisor = 0 and n_advisors < 3
+on-arrival: tvsoong_advisor = 1; n_advisors += 1; center_left_strength += 5
 go-to: advisor_menu
 
 Theodor Leipart is now an advisor.
@@ -547,7 +547,7 @@ Wladimir Woytinsky is now an advisor.
 
 @add_chiangkaishek
 title: Chiang Kai-shek
-subtitle: Chiang Kai-shek is a young officer and superintendent of the Whampoa Military Academy {!<br><br>!}[? if difficulty < 0 : Actions - Build the Iron Front, Warning About the Nazis ?]
+subtitle: Chiang Kai-shek is a young officer and superintendent of the Whampoa Military Academy {!<br><br>!}[? if difficulty < 0 : Actions - NRA Buildup, NRA Training, Succeeding Sun Yat-sen ?]
 is-card: true
 card-image: img/portraits/ChiangKai-shek.jpg
 view-if: chiangkaishek_advisor = 0 and whampoa_built = 1 and n_advisors < 3
@@ -559,7 +559,7 @@ Chiang Kai-shek is now an advisor.
 
 @add_xuchongzhi
 title: Xu Chongzhi
-subtitle: Xu Chongzhi is a Guangdongese general and head of the NRA. {!<br><br>!}[? if difficulty < 0 : Actions - Against Right and Left, Defending Toleration, Fiscal Policy, Economic Democracy ?]
+subtitle: Xu Chongzhi is a Guangdongese general and head of the NRA. {!<br><br>!}[? if difficulty < 0 : Actions - NRA Buildup, NRA Training ?]
 is-card: true
 card-image: img/portraits/XuChongzhi.jpg
 tags: whampoa_advisor
