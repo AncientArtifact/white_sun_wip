@@ -28,7 +28,7 @@ if (Q.ideology && Q.ideology != "left") {
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "left"; left_strength += 10; left_dissent -= 5; right_dissent += 5; gxc_relation -= 3; yun_relation -= 3; cpc_relation += 3
+on-departure: ideology = "left"; left_strength += 10; left_dissent -= 5; right_dissent += 5; gxc_relation -= 3; yun_relation -= 3; cpc_relation += 3;
 
 The radical left of the party supports cooperation with the Communists.
 
