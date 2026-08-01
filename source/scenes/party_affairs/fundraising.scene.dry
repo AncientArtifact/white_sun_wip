@@ -30,7 +30,7 @@ Our current members appreciate this, but no one decides to join a party because 
 
 @increase
 subtitle: [+ dues + 1 +] resources gained.
-on-arrival: dues += 1; resources += dues; = 15; left_dissent += 8; center_left_dissent += 8; center_dissent += 8; right_dissent += 8; whmapoa_dissent += 8
+on-arrival: dues += 1; resources += dues; left_dissent += 8; center_left_dissent += 8; center_dissent += 8; right_dissent += 8; whmapoa_dissent += 8
 view-if: dues <= 4
 
 Our members grumble at this, and some of the less committed members leave. But now, we have access to additional resources. 
