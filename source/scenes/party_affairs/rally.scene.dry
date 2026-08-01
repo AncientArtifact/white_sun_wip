@@ -18,7 +18,7 @@ Mass rallies can be held to spread our messages to the masses. What are we going
 - @easy_discard
 
 @common_folk
-on-arrival: workers_kmt += 4*(1-dissent); rural_kmt += 4*(1-dissent) old_middle_kmt -= 3; new_middle_kmt -= 2;
+on-arrival: workers_kmt += 4*(1-dissent); rural_kmt += 4*(1-dissent); old_middle_kmt -= 3; new_middle_kmt -= 2;
 
 Our messages give the people hope for rights and a living.
 
