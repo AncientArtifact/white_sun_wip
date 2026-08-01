@@ -28,7 +28,9 @@ on-arrival: old_middle_kmt += 4*(1-dissent); new_middle_kmt += 4*(1-dissent)
 The reformist message appeals to the people who have studied in university or abroad and know the backwards-ness of the warlord government.
 
 @war
-on-arrival: whampoa_strength += 1; nra_strength += 10;
+on-arrival: whampoa_strength += 1; nra_strength += 25; nra_militancy -= 0.05;
+
+Recruiting more men to the NRA bodes well for our numbers but reduces the quality a bit.
 
 @democracy
 on-arrival: pro_republic += 5*(1 - dissent);
