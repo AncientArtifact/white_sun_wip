@@ -1,0 +1,31 @@
+title: Hu Hanmin
+is-pinned-card: true
+tags: advisor, right
+card-image: img/portraits/HuHanmin.jpg
+view-if: huhanmin_advisor = 1
+new-page: true 
+
+= Hu Hanmin
+
+Hu Hanmin is a veteran politician within the Kuomintang, and is part of it's right faction. He supports nationalism and is staunchly opposed to the United Front.
+
+- @cpc_cut_ties
+- @rightkmt
+- @root: Return to main
+
+@cpc_cut_ties
+title: Cut ties with the CPC.
+subtitle: Hu Hanmin is an anti-communist and avoids cooperation with them.
+choose-if: advisor_action_timer <= 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; last_advisor_action = 1; cpc_relations -= 10; left_dissent += 10; center_left_dissent += 10;
+
+We have decreased relations with the CPC. The leftist factions are upset.
+
+
+@rightkmt
+title: Increase Right-KMT influence.
+subtitle: We can increase the Right-KMT's influence.
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; last_advisor_action = 1; right_strength += 10; left_dissent += 10; center_left_dissent += 10;
