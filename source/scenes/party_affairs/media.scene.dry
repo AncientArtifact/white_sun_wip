@@ -62,7 +62,7 @@ on-arrival: radio += 1; resources -= 1; new_middle_kmt += 5*(1 - dissent); old_m
 
 Our new newspaper has a mix of popular and political programming, and is proving a success.
 
-@radio_3
+@newspaper_3
 title: We must keep on building up our newspaper.
 subtitle: It is now financially self-sufficient, and does not require any more resources.
 view-if: radio > 3 and radio <= 5 and year <= 1931
