@@ -21,7 +21,7 @@ Removing advisors will increase dissent from their faction of the party, while s
 
 @rm_main
 title: Remove advisors.
-tags: center_advisor, left_advisor, reformist_advisor, labor_advisor, neorev_advisor, nonfactional_advisor 
+tags: center_advisor, left_advisor, right_advisor, center_left_advisor, whampoa_advisor, nonfactional_advisor 
 frequency: 1
 
 - #remove_advisor
@@ -75,28 +75,28 @@ Hu Hanmin has been removed as an advisor. The Right faction disapproves.
 title: Remove Braun
 view-if: braun_advisor = 1
 tags: remove_advisor
-on-arrival: braun_advisor = 0; reformist_dissent += 5; n_advisors -= 1
+on-arrival: braun_advisor = 0; right_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Braun has been removed as an advisor. The Reformist faction disapproves.
+Braun has been removed as an advisor. The right faction disapproves.
 
 @remove_juchacz
 title: Remove Juchacz
 view-if: juchacz_advisor = 1
 tags: remove_advisor
-on-arrival: juchacz_advisor = 0; reformist_dissent += 5; n_advisors -= 1
+on-arrival: juchacz_advisor = 0; right_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Juchacz has been removed as an advisor. The Reformist faction disapproves.
+Juchacz has been removed as an advisor. The right faction disapproves.
 
 @remove_pfulf
 title: Remove Pfülf
 view-if: pfulf_advisor = 1
 tags: remove_advisor
-on-arrival: pfulf_advisor = 0; reformist_dissent += 5; n_advisors -= 1
+on-arrival: pfulf_advisor = 0; right_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Pfülf has been removed as an advisor. The Reformist faction disapproves.
+Pfülf has been removed as an advisor. The right faction disapproves.
 
 
 # center-left
@@ -108,7 +108,7 @@ tags: remove_advisor
 on-arrival: wangjingwei_advisor = 0; center_left_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-Wang Jingwei has been removed as an advisor. The Leftist faction disapproves.
+Wang Jingwei has been removed as an advisor. The Center Left faction disapproves.
 
 @remove_tvsoong
 title: Remove T.V. Soong
@@ -117,7 +117,7 @@ tags: remove_advisor
 on-arrival: tvsoong_advisor = 0; center_left_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-T.V. Soong has been removed as an advisor. The Centrist faction disapproves.
+T.V. Soong has been removed as an advisor. The Center Left faction disapproves.
 
 
 @remove_leipart
@@ -127,7 +127,7 @@ tags: remove_advisor
 on-arrival: leipart_advisor = 0; center_left_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Leipart has been removed as an advisor. The Labor faction disapproves.
+Leipart has been removed as an advisor. The center_left faction disapproves.
 
 @remove_aufhauser
 title: Remove Aufhäuser
@@ -136,7 +136,7 @@ tags: remove_advisor
 on-arrival: aufhauser_advisor = 0; center_left_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Aufhäuser has been removed as an advisor. The Labor faction disapproves.
+Aufhäuser has been removed as an advisor. The center_left faction disapproves.
 
 @remove_wissell
 title: Remove Wissell
@@ -145,17 +145,17 @@ tags: remove_advisor
 on-arrival: wissell_advisor = 0; center_left_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-Wissell has been removed as an advisor. The Labor faction disapproves.
+Wissell has been removed as an advisor. The center_left faction disapproves.
 
 
 @remove_woytinsky
 title: Remove Woytinsky
 view-if: woytinsky_advisor = 1
 tags: remove_advisor
-on-arrival: woytinsky_advisor = 0; labor_dissent += 3; n_advisors -= 1
+on-arrival: woytinsky_advisor = 0; center_left_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-Woytinsky has been removed as an advisor. The Labor faction disapproves.
+Woytinsky has been removed as an advisor. The center_left faction disapproves.
 
 # left
 
@@ -198,12 +198,12 @@ Siemsen has been removed as an advisor. The Leftist faction disapproves.
 
 
 
-# neorevisionists
+# whampoas
 
 @remove_xuchongzhi
 title: Remove Xu Chongzhi
 view-if: xuchongzhi_advisor = 1
-on-arrival: xuchongzhi_advisor = 0; center_dissent += 5; n_advisors -= 1
+on-arrival: xuchongzhi_advisor = 0; whampoa_dissent += 5; n_advisors -= 1
 tags: remove_advisor
 go-to: rm_main
 
@@ -214,7 +214,7 @@ Xu Chongzhi has been removed as an advisor. The Whampoa faction disapproves.
 title: Remove Chiang Kai-shek
 view-if: chiangkaishek_advisor = 1
 tags: remove_advisor
-on-arrival: chiangkaishek_advisor = 0; neorevisionist_dissent += 5; n_advisors -= 1
+on-arrival: chiangkaishek_advisor = 0; whampoa_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
 Chiang Kai-shek has been removed as an advisor. The Whampoa faction disapproves.
@@ -223,24 +223,24 @@ Chiang Kai-shek has been removed as an advisor. The Whampoa faction disapproves.
 title: Remove Leber
 view-if: leber_advisor = 1
 tags: remove_advisor
-on-arrival: leber_advisor = 0; neorevisionist_dissent += 3; n_advisors -= 1
+on-arrival: leber_advisor = 0; whampoa_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-Leber has been removed as an advisor. The Neorevisionist faction disapproves.
+Leber has been removed as an advisor. The whampoa faction disapproves.
 
 @remove_schumacher
 title: Remove Schumacher
 view-if: schumacher_advisor = 1
 tags: remove_advisor
-on-arrival: schumacher_advisor = 0; neorevisionist_dissent += 3; n_advisors -= 1
+on-arrival: schumacher_advisor = 0; whampoa_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-Schumacher has been removed as an advisor. The Neorevisionist faction disapproves.
+Schumacher has been removed as an advisor. The whampoa faction disapproves.
 
 
 ## nonfactional
 
-# tbh I'm not sure if Baade should be a reformist or nonfactional. same for stampfer. they were vaguely reformist-aligned but had pretty different ideas from the other reformists here. so they're non-factional.
+# tbh I'm not sure if Baade should be a right or nonfactional. same for stampfer. they were vaguely right-aligned but had pretty different ideas from the other rights here. so they're non-factional.
 
 @remove_baade
 title: Remove Baade
@@ -251,7 +251,7 @@ go-to: rm_main
 
 Baade has been removed as an advisor.
 
-#The Reformist faction disapproves.
+#The right faction disapproves.
 
 
 @remove_hirschfeld
@@ -295,7 +295,7 @@ go-to: advisor_menu
 
 @advisor_menu
 title: Add other advisors.
-tags: center_advisor, left_advisor, rightt_advisor, center_left_advisor, whampoa_advisor, nonfactional_advisor
+tags: center_advisor, left_advisor, right_advisor, center_left_advisor, whampoa_advisor, nonfactional_advisor
 frequency: 1
 
 
@@ -329,7 +329,7 @@ view-if: n_advisors < 3
 - #center_left_advisor
 
 @whampoa
-view-if: neorevisionism > 0 and n_advisors < 3
+view-if: whampoa_built > 0 and n_advisors < 3
 
 - #whampoa_advisor
 
@@ -352,7 +352,7 @@ Tan Yankai is now an advisor.
 
 @add_sunyatsen
 title: Sun Yat-sen
-subtitle: Sun Yat-sen is the father of our party and our nation. {!<br><br>!}[? if difficulty < 0 : Actions - Negotiating with the Coalition, Defending Toleration ?]
+subtitle: Sun Yat-sen is the father of our party and our nation. {!<br><br>!}[? if difficulty < 0 : Actions - Party Mediation, National Revolutionary Army, International Relations ?]
 is-card: true
 card-image: img/portraits/SunYat-sen.jpg
 tags: center_advisor
@@ -384,7 +384,7 @@ is-card: true
 card-image: img/portraits/HuHanmin.jpg
 tags: right_advisor
 view-if: huhanmin_advisor = 0 and n_advisors < 3
-on-arrival: huhanmin_advisor = 1; n_advisors += 1; reformist_strength += 5
+on-arrival: huhanmin_advisor = 1; n_advisors += 1; right_strength += 5
 go-to: advisor_menu
 
 Hu Hanmin is now an advisor.
@@ -394,9 +394,9 @@ title: Otto Braun
 subtitle: Otto Braun is the Minister-President of Prussia, and one of the most recognizable and well-known Social Democratic leaders. {!<br><br>!}[? if difficulty < 0 : Actions - Prussian Bulwark, Negotiating with the Coalition ?]
 is-card: true
 card-image: img/portraits/BraunOtto.jpg
-tags: reformist_advisor
+tags: right_advisor
 view-if: braun_advisor = 0 and n_advisors < 3
-on-arrival: braun_advisor = 1; n_advisors += 1; reformist_strength += 5
+on-arrival: braun_advisor = 1; n_advisors += 1; right_strength += 5
 go-to: advisor_menu
 
 Otto Braun is now an advisor.
@@ -407,9 +407,9 @@ subtitle: Marie Juchacz is the founder of Worker's Welfare, a mutual-aid organiz
 is-card: true
 card-image: img/portraits/JuchaczMarie.jpg
 view-if: juchacz_advisor = 0 and n_advisors < 3
-on-arrival: juchacz_advisor = 1; n_advisors += 1; reformist_strength += 5
+on-arrival: juchacz_advisor = 1; n_advisors += 1; right_strength += 5
 go-to: advisor_menu
-tags: reformist_advisor
+tags: right_advisor
 
 Marie Juchacz is now an advisor.
 
@@ -421,7 +421,7 @@ card-image: img/portraits/PfülfAntonie.jpg
 view-if: pfulf_advisor = 0 and n_advisors < 3
 on-arrival: pfulf_advisor = 1; n_advisors += 1
 go-to: advisor_menu
-tags: reformist_advisor
+tags: right_advisor
 
 Antonie Pfülf is now an advisor.
 
@@ -486,8 +486,8 @@ title: Wang Jingwei
 subtitle: Wang Jingwei is a major party leader in the left that advocates for democracy. {!<br><br>!}[? if difficulty < 0 : Actions - Building the Left, Cooperation with the KPD, Against Toleration ?]
 is-card: true
 card-image: img/portraits/WangJingwei.jpg
-view-if: wangjingwei_advisor = 0 and n_advisors < 3 and left_split = 0
-on-arrival: wangjingwei_advisor = 1; n_advisors += 1; left_strength += 5
+view-if: wangjingwei_advisor = 0 and n_advisors < 3
+on-arrival: wangjingwei_advisor = 1; n_advisors += 1; center_left_strength += 5
 go-to: advisor_menu
 tags: center_left_advisor
 
@@ -498,9 +498,9 @@ title: Theodor Leipart
 subtitle: Theodor Leipart is the leader of the ADGB, the German Trade Union Federation. {!<br><br>!}[? if difficulty < 0 : Actions - Organizing Workers, Addressing the Economic Crisis ?]
 is-card: true
 card-image: img/portraits/LeipartTheodor.jpg
-tags: labor_advisor
+tags: center_left_advisor
 view-if: leipart_advisor = 0 and n_advisors < 3 and unions_independent = 0
-on-arrival: leipart_advisor = 1; n_advisors += 1; labor_strength += 5
+on-arrival: leipart_advisor = 1; n_advisors += 1; center_left_strength += 5
 go-to: advisor_menu
 
 Theodor Leipart is now an advisor.
@@ -510,21 +510,21 @@ title: Siegfried Aufhäuser
 subtitle: Siegfried Aufhäuser is the leader of the AfA-Bund, the white-collar trade union federation. {!<br><br>!}[? if difficulty < 0 : Actions - Organizing White-Collar Workers, Union-Party Coordination, Addressing the Economic Crisis ?]
 is-card: true
 card-image: img/portraits/AufhäuserSiegfried.jpg
-tags: labor_advisor
+tags: center_left_advisor
 view-if: aufhauser_advisor = 0 and n_advisors < 3
-on-arrival: aufhauser_advisor = 1; n_advisors += 1; labor_strength += 5
+on-arrival: aufhauser_advisor = 1; n_advisors += 1; center_left_strength += 5
 go-to: advisor_menu
 
 Siegfried Aufhäuser is now an advisor.
 
 @add_wissell
 title: Rudolf Wissell
-subtitle: Rudolf Wissell is an economist who has been the Labor Minister, and is an advocate for the interests of labor within the government. {!<br><br>!}[? if difficulty < 0 : Actions - Union-Party Coordination, Labor Rights ?]
+subtitle: Rudolf Wissell is an economist who has been the center_left Minister, and is an advocate for the interests of center_left within the government. {!<br><br>!}[? if difficulty < 0 : Actions - Union-Party Coordination, center_left Rights ?]
 is-card: true
 card-image: img/portraits/WissellRudolf.jpg
-tags: labor_advisor
+tags: center_left_advisor
 view-if: wissell_advisor = 0 and n_advisors < 3 and unions_independent = 0
-on-arrival: wissell_advisor = 1; n_advisors += 1; labor_strength += 3
+on-arrival: wissell_advisor = 1; n_advisors += 1; center_left_strength += 3
 go-to: advisor_menu
 
 Rudolf Wissell is now an advisor.
@@ -535,9 +535,9 @@ title: Wladimir Woytinsky
 subtitle: Wladimir Woytinsky is a former Russian Menshevik who is now the lead trade union economist. {!<br><br>!}[? if difficulty < 0 : Actions - Addressing the Economic Crisis, Carrying Out the Economic Plan ?]
 is-card: true
 card-image: img/portraits/WoytinskyWladimir.jpg
-tags: labor_advisor
+tags: center_left_advisor
 view-if: woytinsky_advisor = 0 and n_advisors < 3 and unions_independent = 0
-on-arrival: woytinsky_advisor = 1; n_advisors += 1; labor_strength += 3
+on-arrival: woytinsky_advisor = 1; n_advisors += 1; center_left_strength += 3
 go-to: advisor_menu
 
 Wladimir Woytinsky is now an advisor.
@@ -551,7 +551,7 @@ subtitle: Chiang Kai-shek is a young officer and superintendent of the Whampoa M
 is-card: true
 card-image: img/portraits/ChiangKai-shek.jpg
 view-if: chiangkaishek_advisor = 0 and whampoa_built = 1 and n_advisors < 3
-on-arrival: chiangkaishek_advisor = 1; n_advisors += 1; neorevisionist_strength += 5
+on-arrival: chiangkaishek_advisor = 1; n_advisors += 1; whampoa_strength += 5
 go-to: advisor_menu
 tags: whampoa_advisor
 
@@ -571,12 +571,12 @@ Xu Chongzhi is now an advisor.
 
 @add_schumacher
 title: Kurt Schumacher
-subtitle: Kurt Schumacher is a Great War veteran and energetic speaker for the social-democratic cause, and favors reformist policies. {!<br><br>!}[? if difficulty < 0 : Actions - Emergency Fundraising, Building the Reichsbanner, Addressing the Economic Crisis ?]
+subtitle: Kurt Schumacher is a Great War veteran and energetic speaker for the social-democratic cause, and favors right policies. {!<br><br>!}[? if difficulty < 0 : Actions - Emergency Fundraising, Building the Reichsbanner, Addressing the Economic Crisis ?]
 is-card: true
 card-image: img/portraits/SchumacherKurt.jpg
 tags: neorev_advisor
 view-if: schumacher_advisor = 0 and n_advisors < 3
-on-arrival: schumacher_advisor = 1; n_advisors += 1; neorevisionist_strength += 5
+on-arrival: schumacher_advisor = 1; n_advisors += 1; whampoa_strength += 5
 go-to: advisor_menu
 
 Kurt Schumacher is now an advisor.
@@ -587,7 +587,7 @@ subtitle: Julius Leber is a former Reichswehr officer who resigned in opposition
 is-card: true
 card-image: img/portraits/LeberJulius.jpg
 view-if: leber_advisor = 0 and n_advisors < 3
-on-arrival: leber_advisor = 1; n_advisors += 1; neorevisionist_strength += 5
+on-arrival: leber_advisor = 1; n_advisors += 1; whampoa_strength += 5
 go-to: advisor_menu
 tags: neorev_advisor
 
