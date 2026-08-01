@@ -507,7 +507,7 @@ Q.hirschfeld_advisor = 0; // Magnus Hirschfeld
 Q.radbruch_advisor = 0; // Gustav Radbruch
 Q.stampfer_advisor = 0; // Friedrich Stampfer
 
-set-bg: img/map_2.jpg
+set-bg: img/bgchina.jpg
 new-page: true
 
 > *"Chinese republican politics is like a child who just started schooling. He must have a good teacher and be surrounded by good friends. By the same token, the Chinese people, new to the republican politics, must be educated properly. The revolutionary government should be the people's tutor to impart advanced awareness and experience."
