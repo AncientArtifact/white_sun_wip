@@ -31,7 +31,7 @@ The reformist message appeals to the people who have studied in university or ab
 on-arrival: whampoa_strength += 1; nra_strength += 10;
 
 @democracy
-on-arrival: pro_tridemist += 5*(1 - dissent);
+on-arrival: pro_republic += 5*(1 - dissent);
 
 Our speakers send messages rallying for Sun Yat-sen's democratic ideals and the participation of people in their government.
 
