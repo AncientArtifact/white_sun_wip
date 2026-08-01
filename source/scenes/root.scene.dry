@@ -107,14 +107,14 @@ Q.zhi_relation = 0;
 Q.feng_relation = 0;
 Q.anh_relation = 0;
 
-Q.cpc_leader = "Duxiu";
+Q.cpc_leader = "Chen Duxiu";
 // alternative is the Conciliators as party leader
-Q.cpc_deputy_leader = "Dazhao";
-Q.guangxi_leader = "Zongren";
+Q.cpc_deputy_leader = "Li Dazhao";
+Q.guangxi_leader = "Li Zongren";
 // party leader - can be Ludwig Kaas, Joseph Joos, or Adam Stegerwald after the 1928 December conference. Joos will be most friendly to the SPD.
-Q.guangxi_deputy_leader = "Chongxi";
-Q.zhili_leader = "Wu Peifu";
-Q.zhili_deputy_leader = "Sun Chuanfang";
+Q.guangxi_deputy_leader = "Bai Chongxi";
+Q.zhili_leader = "Cao Kun";
+Q.zhili_deputy_leader = "Wu Peifu";
 Q.fengtian_leader = "Zhang Zuolin";
 Q.fengtian_deputy_leader = "Zhang Xueliang";
 Q.anhui_leader = "Duan Qirui";
@@ -272,9 +272,9 @@ Q.economic_records = [];
 
 
 // State of the government
-Q.beiyang_leader = "Wu Peifu";
+Q.beiyang_leader = "Cao Kun";
 Q.beiyang_leader_party = 'Zhili';
-Q.deputy_beiyang_leader = "Sun Chuanfang";
+Q.deputy_beiyang_leader = "Wu Peifu";
 Q.deputy_beiyang_leader_party = 'Zhili';
 Q.kmt_in_government = 0;
 Q.zhi_in_government = 1;
@@ -301,7 +301,7 @@ Q.manchuria_faction = 'Fengtian';
 Q.hebei_governor = 'Wu Peifu';
 Q.hebei_faction = 'Zhili';
 Q.shandong_governor = 'Zhang Zongchang';
-Q.shandong_faction = 'Fengtian';
+Q.shandong_faction = 'Zhili';
 Q.nanjing8_governor = 'Sun Chuanfang';
 Q.nanjing8_faction = 'Zhili';
 Q.henan_governor = 'Wu Peifu';
