@@ -1,0 +1,42 @@
+title: Wang Jingwei
+is-pinned-card: true
+tags: advisor, left
+card-image: img/portraits/WangJingwei.jpg
+view-if: wangjingwei_advisor = 1
+new-page: true 
+
+= Wang Jingwei
+
+Wang Jingwei is an influential leader in the left. He supports some social ideas and the continuation of democracy through Sun Yat-sen's plan of political tutelage.
+
+- @building_the_left
+- @cpc_cooperation
+- @whampoa_crackdown
+- @root: Return to main
+
+@building_the_left
+title: Building the Left
+subtitle: Push the KMT to the center-left.
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer = 0
+on-arrival: advisor_action_timer = 6; center_left_strength += 6; center_left_dissent -= 8; right_dissent += 2
+
+We have increased the strength of the center-left faction with the KMT.
+
+@cpc_cooperation
+title: Cooperation with the CPC
+subtitle: Push the party to be more friendly towards the CPC.
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer = 0
+on-arrival: advisor_action_timer = 6; center_left_strength += 5; cpc_relation += 4*(1-dissent); right_dissent += 2;
+
+Through his work, Wang Jingwei has continued the cooperation with the Communists as instructed by the Soviet Union and Sun Yat-sen.
+
+@whampoa_crackdown
+title: Limit Whampoa Influence
+subtitle: Limit the influence of NRA officers within the party.
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if whampoa_built > 0 : The NRA is not that powerful yet. ?]
+choose-if: advisor_action_timer == 0
+on-arrival: advisor_action_timer = 6; whampoa_strength -= 4; center_left_strength += 4; whampoa_dissent += 8;
+
+We will try to limit the influence of the rising Whampoa clique of NRA officers.
