@@ -23,7 +23,7 @@ The *National Revolutionary Army* is the Guomindang's military wing. It is still
 choose-if: resources >= nra_militarization_cost
 unavailable-subtitle: Not enough resources ([+ nra_militarization_cost +] needed).
 subtitle: -[+ nra_militarization_cost +] resources
-on-arrival: resources -= nra_militarization_cost; nra_investment += 1; nra_strength += 50; nra_militancy += 0.05; left_strength += 2; left_dissent -= 2; reformist_dissent += 5;
+on-arrival: resources -= nra_militarization_cost; nra_investment += 1; nra_strength += 25; nra_militancy += 0.1; left_strength += 2; left_dissent -= 2; reformist_dissent += 5;
 
 Some in our party decry the increasing militarization of the National Revolutionary Army. They say it is emulating the right-wing nationalists or the communists, and risks alienating our allies in the centrist parties. On the other hand, more left-leaning radicals are being lured to our organizations, away from the communists.
 
@@ -32,7 +32,7 @@ Some in our party decry the increasing militarization of the National Revolution
 
 @militant_2
 view-if: funded_nra >= 1
-on-arrival: nra_militancy += 0.02; funded_nra -= 1
+on-arrival: nra_militancy += 0.1; funded_nra -= 1
 
 As we have already funded resources towards the National Revolutionary Army, we can invest in building up their militancy.
 
