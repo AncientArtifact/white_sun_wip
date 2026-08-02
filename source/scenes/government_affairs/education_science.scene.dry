@@ -56,7 +56,7 @@ China is still backwards. We must teach the people to build a better society for
 title: Fund building schools in the countryside.
 subtitle: -1 budget
 choose-if: budget >= 1
-on-arrival: budget -= 1; education += 1; economic_growth += 0.3 if economic_growth <= 8; unemployed -= 0.2 if unemployed >= 4; west_relation += 1; science_funding += 1; rural_kmt += 3*(1 dissent)
+on-arrival: budget -= 1; education += 1; economic_growth += 0.3 if economic_growth <= 8; unemployed -= 0.2; if unemployed >= 4; west_relation += 1; science_funding += 1; rural_kmt += 3*(1 dissent)
 
 Building schools in rural areas increases our popular support as well as their education.
 
@@ -88,7 +88,7 @@ We have cut funding for science. This has a negative effect on our economic grow
 @structure
 title: Change the structure and funding of education.
 
-Education in Germany has traditionally been organized on religious and class lines. Schools are often either Protestant or Catholic (or rarely Jewish), and religious classes are required in most mixed-denomination schools. In addition, the working class has at most eight years of public education in primary and middle schools, while the middle and upper classes have access to private schools and Gymnasiums that prepare students for universities. Thus, the universities tend to be dominated by conservatives and reactionaries, which has negative consequences for bureaucratic recruitment.
+Education in China has traditionally been organized on religious and class lines. In addition, the working class has at most eight years of public education in primary and middle schools, while the middle and upper classes have access to private schools and Gymnasiums that prepare students for universities. Thus, the universities tend to be dominated by conservatives and reactionaries, which has negative consequences for bureaucratic recruitment.
 
 - @westerniza
 - @public_hs
