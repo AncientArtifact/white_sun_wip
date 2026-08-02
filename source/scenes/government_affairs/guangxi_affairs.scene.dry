@@ -13,15 +13,15 @@ Guangxi is our twin province along with Guangdong, making up "Liangguang". Li Zo
 
 We can enact policies in Guangxi with Zongren's help.
 
-- @nra_buildup: Raise more troops from Guangxi
-- @nra_quality: Train the Guangxi NRA 7th Army.
+- @nrabuildup: Raise more troops from Guangxi
+- @nraquality: Train the Guangxi NRA 7th Army.
 - @build_gxc: Build relations with Li Zongren's clique.
 - @vs_cpc: Stamp out any Communists in Guangxi.
 - @root: No new policies are needed.
 - @easy_discard
 - @cancel_advisor_action
 
-@@nra_buildup
+@nrabuildup
 title: Build up the National Revolutionary Army
 subtitle: -1 resources - Increase our propaganda measures to recruit more members into the NRA.
 choose-if: resources >= 0
@@ -30,7 +30,7 @@ on-arrival: resources -= 1; nra_strength += 30
 
 We have recruited more members into the NRA.
 
-@nra_quality
+@nraquality
 title: Training the 7th Army
 subtitle: -1 - Better training and arms will ensure a more quality force.
 choose-if: resources >= 0
