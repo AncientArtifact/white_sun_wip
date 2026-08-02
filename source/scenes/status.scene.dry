@@ -94,7 +94,7 @@ if (Q.gmj_strength) {
 }
 !}
 
-= Paramilitaries
+= Militaries
 
 {!<span class="tooltip-text" title="The National Revolutionary Army is the military arm of the KMT.">NRA</span>!} Strength: [+ nra_strength_2 +] thousand
 
