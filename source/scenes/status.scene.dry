@@ -20,7 +20,7 @@ if (Q.economic_growth) {
 
 Resources available: [+ resources +]
 
-KMT position: [? if kmt_onlyguangdong : locked in guangdong ?][? if kmt_liangguang : leader of the south - ?][? if kmt_winnanjing : nanjing government ?][? if kmt_winbeijing : undisputed national government ?]
+KMT Leader: [+ kmt_leader +]
 
 Internal dissent: [+ dissent_percent : dissent +]
 
@@ -78,19 +78,19 @@ Economic growth: [+ economic_growth_2 +]%
 @paramilitaries
 on-arrival: {!
 if (Q.nra_strength) {
-    Q.nra_strength_2 = Q.rb_strength.toFixed(1);
+    Q.nra_strength_2 = Q.nra_strength.toFixed(1);
 }
 if (Q.red_strength) {
-    Q.red_strength_2 = Q.rfb_strength.toFixed(1);
+    Q.red_strength_2 = Q.red_strength.toFixed(1);
 }
 if (Q.bei_strength) {
-    Q.bei_strength_2 = Q.sh_strength.toFixed(1);
+    Q.bei_strength_2 = Q.bei_strength.toFixed(1);
 }
 if (Q.feng_strength) {
-    Q.feng_strength_2 = Q.sa_strength.toFixed(1);
+    Q.feng_strength_2 = Q.feng_strength.toFixed(1);
 }
 if (Q.gmj_strength) {
-    Q.gmj_strength_2 = Q.rb_strength.toFixed(1);
+    Q.gmj_strength_2 = Q.gmj_strength.toFixed(1);
 }
 !}
 
