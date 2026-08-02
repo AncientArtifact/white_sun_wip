@@ -55,10 +55,7 @@ We have increased recruiting to the NRA.
 choose-if: resources > 0
 unavailable-subtitle: Not enough resources.
 subtitle: -1 resources
-on-arrival: resources -= 1; nra_strength += 50; nra_militancy += 0.02; left_strength += 5; whampoa_strength += 5; (Q.education >= 2) {
-    Q.new_middle_kmt += 5;
-}
-!}
+on-arrival: resources -= 1; nra_strength += 50; nra_militancy += 0.02; left_strength += 5; whampoa_strength += 5;
 
 Our new youth members flock to the Left or Whampoa wings of the party, and also bring new radicalism to the NRA. [? if education >= 2 : Our education policies have also garnered the support of the new middle class youth. ?]
 
