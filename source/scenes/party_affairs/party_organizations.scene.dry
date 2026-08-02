@@ -15,8 +15,8 @@ In addition to being a political party, the KMT also serves as a newspaper, a te
 - @cadres: Fund our party cadres to increase our campaigning.
 - @welfare: Fund more welfare programs in the country.
 - @culture: Fund educational and cultural programs.
-- @nra: Fund the Reichsbanner, our self-defense organization.
-- @youth: We have the reputation of being a party for old men. Support the youth organizations.
+- @nra: Fund the NRA, our military wing.
+- @youth: Support the youth programs.
 - @nothing: Do not increase funding for any program.
 - @easy_discard
 
@@ -55,9 +55,9 @@ We have increased recruiting to the NRA.
 choose-if: resources > 0
 unavailable-subtitle: Not enough resources.
 subtitle: -1 resources
-on-arrival: resources -= 1; nra_strength += 50; nra_militancy += 0.02; young_socialists += 1; left_strength += 5; whampoa_strength += 5; radicalization += 1;
+on-arrival: resources -= 1; nra_strength += 50; nra_militancy += 0.02; left_strength += 5; whampoa_strength += 5; [? if education >= 2 : new_middle_kmt += 5; ?]
 
-Our new youth members flock to the Left or Whampoa wings of the party, and also bring new radicalism to the NRA.
+Our new youth members flock to the Left or Whampoa wings of the party, and also bring new radicalism to the NRA. [? if education >= 2 : Our education policies have also garnered the support of the new middle class youth. ?]
 
 @nothing
 
