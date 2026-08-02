@@ -125,7 +125,7 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 KMT: [+ kmt_votes +]%
 
-CPC: [+ CPC_votes +]%
+CPC: [+ cpc_votes +]%
 
 ZHI: [+ zhi_votes +]%
 
