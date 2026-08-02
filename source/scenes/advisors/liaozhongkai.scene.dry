@@ -10,23 +10,23 @@ new-page: true
 Liao Zhongkai is a veteran KMT member staunchly aligned with leftist ideals and eagerly supports the United Front.
 
 - @building_the_left
-- @kpd_cooperation
+- @cpc_cooperation
 - @root: Return to main
 
 @building_the_left
 title: Building the Left
-subtitle: Push the SPD to the left.
+subtitle: Push the KMT to the left.
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 choose-if: advisor_action_timer = 0
-on-arrival: advisor_action_timer = 6; left_strength += 10; left_dissent -= 8; reformist_dissent += 3
+on-arrival: advisor_action_timer = 6; left_strength += 10; left_dissent -= 8; right_dissent += 3
 
-We have increased the strength of the left faction with the SPD. This raised concern among the moderate reformists in the party.
+We have increased the strength of the left faction with the CPC. This raised concern among the rightists in the party.
 
-@kpd_cooperation
-title: Cooperation with the KPD
-subtitle: Any cooperation between the parties requires compromise from the KPD as well as the SPD.
+@cpc_cooperation
+title: Cooperation with the CPC
+subtitle: Cooperating with the Communists is one of Liao Zhongkai's biggest demands.
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 choose-if: advisor_action_timer = 0
-on-arrival: advisor_action_timer = 6; left_strength += 5; kpd_relation += 6*(1-dissent); reformist_dissent += 3; communist_coalition += 1 if kpd_cooperation_seen <= 1; kpd_cooperation_seen += 1
+on-arrival: advisor_action_timer = 6; left_strength += 5; cpc_relation += 6*(1-dissent); right_dissent += 3;
 
-Levi attempts to reach out to his former colleagues to dissuade the KPD from their current extreme Stalinist path. Some concessions are extracted.
+Liao Zhongkai has continued Sun Yat-sen's united front with Soviet assistance.
