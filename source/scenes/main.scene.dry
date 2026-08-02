@@ -14,8 +14,6 @@ max-cards: 3
 
 #Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
 
-[? if year = 1924 and month = 1 : It is a bright time for Chinese democracy. After a period of struggle against Governor Jiongming, the state of Guangdong is finally under control, and the economy is expanding steadily. The NRA has begun to consolidate and expand as our party gains a strong military arm. In foreign policy, we have reached agreements with the Soviet Union and CPC that might make reunification a reality. ?]
-
 - @party
 - @govt
 - #advisor
