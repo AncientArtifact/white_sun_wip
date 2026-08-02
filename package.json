@@ -8,10 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:AncientArtifact/white_sun_wip.git"
+    "url": "git+https://github.com/AncientArtifact/white_sun_wip.git"
   },
   "keywords": [],
-  "author": "Autumn Chen",
+  "author": "AncientArtifact",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/AncientArtifact/white_sun_wip"
