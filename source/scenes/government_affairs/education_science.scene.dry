@@ -56,7 +56,7 @@ China is still backwards. We must teach the people to build a better society for
 title: Fund building schools in the countryside.
 subtitle: -1 budget
 choose-if: budget >= 1
-on-arrival: budget -= 1; education += 1; economic_growth += 0.3 if economic_growth <= 8; unemployed -= 0.2; if unemployed >= 4; west_relation += 1; science_funding += 1; rural_kmt += 3*(1 dissent);
+on-arrival: budget -= 1; education += 1; economic_growth += 0.3; if economic_growth <= 8; unemployed -= 0.2; if unemployed >= 4; west_relation += 1; science_funding += 1; rural_kmt += 3*(1 dissent);
 
 Building schools in rural areas increases our popular support as well as their education.
 
