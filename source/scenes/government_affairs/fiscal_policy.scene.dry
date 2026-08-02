@@ -42,7 +42,7 @@ Making the tax system more progressive is popular among our base, but it upsets 
 subtitle: +2 budget
 unavailable-subtitle: Tax rates are already too high.
 choose-if: upper_tax_rates <= 5
-on-arrival: upper_tax_rates += 1; capital_strike_progress += 1; workers_kmt += 4*(1-dissent); old_middle_kmt -= 4; new_middle_kmt -= 4; unemployed += 1; inflation -= 0.6; economic_growth -= 0.4; new_middle_kmt -= 2; old_middle_kmt -= 2; if upper_tax_rates > 1; left_dissent -= 3; center_left_dissent -= 3
+on-arrival: upper_tax_rates += 1; workers_kmt += 4*(1-dissent); old_middle_kmt -= 4; new_middle_kmt -= 4; unemployed += 1; inflation -= 0.6; economic_growth -= 0.4; new_middle_kmt -= 2; old_middle_kmt -= 2; left_dissent -= 3; center_left_dissent -= 3
 
 Raising taxes on the rich is popular among our base, but it alienates the bourgeoisie. Increasing taxes also decreases economic demand, which may lead to more unemployment.
 
