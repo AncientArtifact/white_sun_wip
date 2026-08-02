@@ -10,42 +10,24 @@ new-page: true
 
 Xu Chongzhi is a Guangdongese general aligned with the Kuomintang. He is the commander of the National Revolutionary Army.
 
-- @against_right_and_left
-- @toleration
-- @finance_ministry_
-- @economic_democracy_
+- @nra_buildup
+- @nra_training
 - @root: Return to main
 
-@against_right_and_left
-title: Against Right and Left
-subtitle: As a Centrist, Hilferding seeks to steer a course between the party's factions.
+@nra_buildup
+title: Build up the National Revolutionary Army
+subtitle: Increase our propaganda measures to recruit more members into the NRA.
+choose-if: advisor_action_timer == 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-choose-if: advisor_action_timer = 0
-on-arrival: advisor_action_timer = 5; advisor_action_time = time; center_strength += 10; left_strength -= 5; labor_strength -= 5; neorevisionist_strength -= 5; center_dissent -= 10
+on-arrival: advisor_action_timer = 6; nra_strength += 30
 
-We have reduced the strength of the dissident factions in the party.
+We have recruited more members into the NRA.
 
-@toleration
-title: Defending Toleration
-subtitle: Hilferding supports cooperation with the bourgeois parties.
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_toleration: The SPD is not in toleration. ?]
-choose-if: spd_in_government = 0 and spd_toleration = 1 and advisor_action_timer = 0
-on-arrival: advisor_action_timer = 6; left_dissent -= 10; neorevisionist_dissent -= 8; center_dissent -= 5
 
-We have reduced dissent among the anti-toleration factions.
+@nra_quality
+title: Training the National Revolutionary Army
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; nra_militancy += 0.05;
 
-@finance_ministry_
-title: Fiscal Policy
-subtitle: As Finance Minister, Hilferding can enact tax policies.
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if spd_in_government = 0 : SPD not in government: ?] [? if finance_minister_party != "SPD" : The SPD does not control the finance ministry. ?]
-choose-if: advisor_action_timer == 0 and spd_in_government == 1 and finance_minister_party == "SPD"
-on-arrival: advisor_action_timer = 6; fiscal_policy_timer -= 6; last_advisor_action = 1
-go-to: fiscal_policy
-
-@economic_democracy_
-title: Economic Democracy
-subtitle: Enact policies to build a more democratic economy.
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if spd_in_government = 0 : SPD not in government: ?] [? if labor_minister_party != "SPD" or (finance_minister_party != "SPD" and economic_minister_party != "SPD") : We do not have the necessary government ministers. ?]
-choose-if: advisor_action_timer == 0 and spd_in_government == 1 and (economic_minister_party == "SPD" or finance_minister_party == "SPD") and (labor_minister_party == "SPD")
-on-arrival: advisor_action_timer = 6; economic_democracy_timer -= 10; last_advisor_action = 1
-go-to: economic_democracy
+The NRA's quality has been increased, with more arms and better training.
