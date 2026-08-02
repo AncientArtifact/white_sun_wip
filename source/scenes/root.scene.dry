@@ -529,8 +529,8 @@ difficulty = -1;
 resources = 4;
 dues = 3; 
 budget = 5;
-go-to: 1924_main
 !}
+go-to: 1924_main
 
 @1924_hard
 on-arrival: {! difficulty = 1;
@@ -542,8 +542,8 @@ left_dissent = 30;
 center_left_dissent = 25; 
 center_dissent = 25; 
 budget = 3;
-go-to: 1924_main
 !}
+go-to: 1924_main
 
 @1924_historical
 on-arrival: {!
@@ -552,8 +552,8 @@ Q.historical_mode = 1;
 Q.resources = 2;
 Q.dues = 1;
 this.state.disableSaves = true;
-go-to: 1924_main
 !}
+go-to: 1924_main
 
 @1924_main
 new-page: true
