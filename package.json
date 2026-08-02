@@ -7,15 +7,11 @@
     "dendrynexus": "dendrynexus"
   },
   "repository": {
-    "type": "git",
+    "type": "https",
     "url": "git+https://github.com/AncientArtifact/white_sun_wip.git"
   },
   "keywords": [],
   "author": "AncientArtifact",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/AncientArtifact/white_sun_wip"
-  },
   "homepage": "https://github.com/AncientArtifact/white_sun_wip",
   "dependencies": {
     "dendrynexus": "ancientartifact.github.io/white_sun_wip",
