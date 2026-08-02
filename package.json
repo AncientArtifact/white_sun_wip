@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://aucchen@github.com/aucchen/social_democracy_alternate_history.git"
+    "url": "git+https://github.com/AncientArtifact/white_sun_wip.git"
   },
   "keywords": [],
   "author": "Autumn Chen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aucchen/social_democracy_alternate_history/issues"
+    "url": "https://github.com/AncientArtifact/white_sun_wip/issues"
   },
-  "homepage": "https://github.com/aucchen/social_democracy_alternate_history",
+  "homepage": "https://github.com/AncientArtifact/white_sun_wip.git",
   "dependencies": {
     "dendrynexus": "github:aucchen/dendrynexus",
     "parliament-svg": "^3.0.0"
