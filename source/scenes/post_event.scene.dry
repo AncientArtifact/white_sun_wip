@@ -294,13 +294,13 @@ if (Q.month_actions >= 1) {
     ////////////////////////// annual support changes
     if (Q.year == 1925) {
         Q.workers_cpc += 5/12;
-        Q.zhi_strength += 50/12;
+        Q.bei_strength += 50/12;
         Q.feng_strength += 100/12;
         Q.rural_zhi += 10/12;
         Q.rural_feng += 10/12;
     } else if (Q.year == 1926) {
         Q.workers_cpc += 6/12;
-        Q.zhi_strength += 60/12;
+        Q.bei_strength += 60/12;
         Q.feng_strength += 120/12;
         Q.rural_zhi += 1;
         Q.rural_feng += 1;
