@@ -64,7 +64,7 @@ Building schools in rural areas increases our popular support as well as their e
 title: Fund school supplies to existing schools.
 subtitle: -1 budget
 choose-if: budget >= 1
-on-arrival: budget -= 1; education += 1; economic_growth += 0.5 if economic_growth <= 8 and applied_research <= 1; economic_growth += 3 if applied_research > 1; new_middle_kmt += 5*(1-dissent); workers_kmt += 3*(1-dissent);
+on-arrival: budget -= 1; education += 1; economic_growth += 0.5 if economic_growth <= 8; and applied_research <= 1; economic_growth += 3 if applied_research > 1; new_middle_kmt += 5*(1-dissent); workers_kmt += 3*(1-dissent);
 
 Giving more supplies to existing schools provide them with more means to learn and think.
 
