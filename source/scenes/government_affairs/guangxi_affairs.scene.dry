@@ -1,7 +1,7 @@
 title: Guangxi Province
 new-page: true
 is-card: true
-view-if: guangxi_governor = "Li Zongren";
+view-if: guangxi_governor = 'Li Zongren';
 on-arrival: guangxi_affairs_timer += 6; month_actions += 1
 tags: govt_affairs
 card-image: img/LiZongren.jpg
