@@ -13,7 +13,7 @@ for (var c of Q.classes) {
 }
 
 Q.pro_republic = Math.round(Q.pro_republic);
-Q.nationalism = Math.round(Q.nationalism);
+Q.warlordist = Math.round(Q.warlordist);
 Q.socialism = Math.round(Q.socialism);
 
 if (Q.pro_republic < 0) {
@@ -76,16 +76,16 @@ if (Q.unemployed <= 1) {
 }
 
 // re-calculate dissent.
-var total_strength = Q.left_strength + Q.center_strength + Q.labor_strength + Q.reformist_strength + Q.neorevisionist_strength;
+var total_strength = Q.left_strength + Q.center_strength + Q.center_left_strength + Q.right_strength + Q.whampoa_strength;
 
 // normalize strength for the different factions
 Q.left_strength = 100*Q.left_strength/total_strength;
 Q.center_strength = 100*Q.center_strength/total_strength;
-Q.labor_strength = 100*Q.labor_strength/total_strength;
-Q.reformist_strength = 100*Q.reformist_strength/total_strength;
-Q.neorevisionist_strength = 100*Q.neorevisionist_strength/total_strength;
+Q.center_left_strength = 100*Q.center_left_strength/total_strength;
+Q.right_strength = 100*Q.right_strength/total_strength;
+Q.whampoa_strength = 100*Q.whampoa_strength/total_strength;
 
-var total_dissent = Q.left_strength*Q.left_dissent + Q.center_strength*Q.center_dissent + Q.labor_strength*Q.labor_dissent + Q.reformist_strength*Q.reformist_dissent + Q.neorevisionist_strength*Q.neorevisionist_dissent;
+var total_dissent = Q.left_strength*Q.left_dissent + Q.center_strength*Q.center_dissent + Q.center_left_strength*Q.center_left_dissent + Q.right_strength*Q.right_dissent + Q.whampoa_strength*Q.whampoa_dissent;
 
 
 Q.dissent = 0.01*total_dissent/total_strength;
@@ -199,20 +199,17 @@ if (Q.month_actions >= 1) {
     // science bonus to economic growth
     // education bonus
     Q.science_bonus = 0;
-    if (Q.education_science) {
-        Q.science_bonus += Q.education_science;
+    if (Q.education) {
+        Q.science_bonus += Q.education;
     }
-    if (Q.science) {
-        if (Q.science >= 1) {
+    if (Q.education) {
+        if (Q.education >= 1) {
             Q.science_bonus += 1;
-        } else if (Q.science >= 3) {
+        } else if (Q.education >= 3) {
             Q.science_bonus += 2;
-        } else if (Q.science >= 5) {
+        } else if (Q.education >= 5) {
             Q.science_bonus += 3;
         }
-    }
-    if (Q.applied_research && Q.applied_research >= 1) {
-        Q.science_bonus += 0.5*Q.applied_research;
     }
     // cap the science bonus at 6
     if (Q.science_bonus > 6) {
@@ -240,9 +237,9 @@ if (Q.month_actions >= 1) {
             Q.economic_expansion += Q.economic_growth;
         }
     }
-    if (Q.economic_growth > 0 && Q.reparations <= -2 && Q.spd_in_government) {
+    if (Q.economic_growth > 0 && Q.reparations <= -2 && Q.kmt_in_government) {
         Q.economic_expansion += Q.economic_growth;
-    } else if (Q.economic_growth > 0 && Q.spd_in_government) {
+    } else if (Q.economic_growth > 0 && Q.kmt_in_government) {
         Q.economic_expansion += Q.economic_growth/2;
     }
     /////////////////////////////// update opinions based on economy
@@ -257,28 +254,28 @@ if (Q.month_actions >= 1) {
     }
 
     ///////////////////////////// change party support based on pro_republic
-    // if pro_republic is less than the support of the Weimar coalition, reduce SPD support...
-    if (Q.pro_republic < (Q.spd_votes + Q.ddp_votes + Q.z_votes - 3)) {
-        if (Q.new_middle_spd > 0) {
-            Q.new_middle_spd -= 5/12;
+    // if pro_republic is less than the support of the Weimar coalition, reduce kmt support...
+    if (Q.pro_republic < (Q.kmt_votes - 3)) {
+        if (Q.new_middle_kmt > 0) {
+            Q.new_middle_kmt -= 5/12;
             Q.new_middle_nsdap += 3/12;
         }
-        if (Q.old_middle_spd > 0) {
-            Q.old_middle_spd -= 5/12;
+        if (Q.old_middle_kmt > 0) {
+            Q.old_middle_kmt -= 5/12;
             Q.old_middle_nsdap += 3/12;
         }
-        if (Q.rural_spd > 0) {
-            Q.rural_spd -= 5/12;
+        if (Q.rural_kmt > 0) {
+            Q.rural_kmt -= 5/12;
             Q.rural_nsdap += 3/12;
         }
-        if (Q.workers_spd_normalized > 30) {
-            Q.workers_spd -= 4/12;
+        if (Q.workers_kmt_normalized > 30) {
+            Q.workers_kmt -= 4/12;
         }
-        if (Q.catholics_spd > 0) {
-            Q.catholics_spd -= 4/12;
+        if (Q.catholics_kmt > 0) {
+            Q.catholics_kmt -= 4/12;
         }
-        if (Q.unemployed_spd_normalized > 10) {
-            Q.unemployed_spd -= 4/12;
+        if (Q.unemployed_kmt_normalized > 10) {
+            Q.unemployed_kmt -= 4/12;
         }
         if (Q.new_middle_ddp > 0) {
             Q.new_middle_ddp -= 4/12;
@@ -434,30 +431,30 @@ if (Q.month_actions >= 1) {
             Q.unemployed_nsdap += 2/12;
             Q.old_middle_nsdap += 2/12;
             Q.new_middle_nsdap += 2/12;
-            if (Q.spd_in_government) {
-                Q.workers_spd -= 4/12;
+            if (Q.kmt_in_government) {
+                Q.workers_kmt -= 4/12;
             }
         }
     }
     // prevent forever support if the economy is bad
-    if (Q.year >= 1934 && (Q.inflation >= 8 || Q.unemployed >= 20) && Q.pro_republic <= 45 && Q.spd_in_government) {
-        if (Q.workers_spd_normalized > 40) {
-            Q.workers_spd -= 6/12;
+    if (Q.year >= 1934 && (Q.inflation >= 8 || Q.unemployed >= 20) && Q.pro_republic <= 45 && Q.kmt_in_government) {
+        if (Q.workers_kmt_normalized > 40) {
+            Q.workers_kmt -= 6/12;
         }
-        if (Q.unemployed_spd_normalized > 20) {
-            Q.unemployed_spd -= 6/12;
+        if (Q.unemployed_kmt_normalized > 20) {
+            Q.unemployed_kmt -= 6/12;
         }
-        if (Q.new_middle_spd_normalized > 20) {
-            Q.new_middle_spd -= 6/12;
+        if (Q.new_middle_kmt_normalized > 20) {
+            Q.new_middle_kmt -= 6/12;
         }
-        if (Q.old_middle_spd_normalized > 20) {
-            Q.old_middle_spd -= 6/12;
+        if (Q.old_middle_kmt_normalized > 20) {
+            Q.old_middle_kmt -= 6/12;
         }
-        if (Q.rural_spd_normalized > 20) {
-            Q.rural_spd -= 6/12;
+        if (Q.rural_kmt_normalized > 20) {
+            Q.rural_kmt -= 6/12;
         }
-        if (Q.catholics_spd_normalized > 20) {
-            Q.catholics_spd -= 6/12;
+        if (Q.catholics_kmt_normalized > 20) {
+            Q.catholics_kmt -= 6/12;
         }
     }
 }
@@ -490,6 +487,6 @@ go-to: events_choice if has_event = 1; main if has_event = 0 and difficulty >= 0
 
 @events_choice
 
-- #event
+- @event
 
 # This scene is solely for updating numbers after events, and routing to special events.
