@@ -1,9 +1,8 @@
 title: Education & Science
 new-page: true
 is-card: true
-view-if: spd_in_government and spd_prussia and chancellor_party = "SPD" and education_science_timer = 0 and (black_thursday_seen = 0 or return_to_normalcy = 1)
 on-arrival: education_science_timer += 9; month_actions += 1
-card-image: img/portraits/EinsteinAlbert.jpg
+card-image: img/portraits/kmtedu.jpg
 go-to: ed_menu
 tags: govt_affairs, cabinet
 
@@ -33,7 +32,7 @@ Education in Germany is an area of mixed responsibility between the state govern
 @ed_menu
 view-if: not last_advisor_action
 
-- @increase_science
+- @increase_education
 - @structure
 - @curriculum
 - @return: Do not enact any policies for now.
@@ -41,116 +40,90 @@ view-if: not last_advisor_action
 - @cancel_advisor_action
 
 
-@increase_science
-title: Increase funding for scientific research.
-choose-if: economic_minister_party = "SPD"
-unavailable-subtitle: This requires the Economic Ministry.
+@increase_education
+title: Increase funding for schools in China.
 
-Socialism has always stood for science and rationality. Despite the setbacks of the Great War, hyperinflation, and the politicized and reactionary attitudes of many academics, science in the German Republic is still the envy of the world. With a great expansion of funding, we hope to keep it that way, and expand on our achievements. 
+China is still backwards. We must teach the people to build a better society for all.
 
-- @kwg
-- @applied
+- @schoolbuild
+- @schoolsupplies
 - @medical
 - @cut_funding
 - @ed_menu: Do not increase research funding.
 - @cancel_advisor_action
 
-@kwg
-title: Fund the Kaiser Wilhelm Society for basic scientific research.
+@schoolbuild
+title: Fund building schools in the countryside.
 subtitle: -1 budget
 choose-if: budget >= 1
-on-arrival: budget -= 1; science += 1; kwg_research += 1; economic_growth += 0.3 if economic_growth <= 8; new_middle_spd += 5*(1-dissent); ddp_relation += 5*(1-dissent); unemployed -= 0.2 if unemployed >= 4; west_relation += 1; science_funding += 1
+on-arrival: budget -= 1; education += 1; economic_growth += 0.3 if economic_growth <= 8; unemployed -= 0.2 if unemployed >= 4; west_relation += 1; science_funding += 1; rural_kmt += 3*(1 dissent)
 
-The Kaiser Wilhelm Society is one of the most respected scientific research institutions in the world, with physicist Albert Einstein as its most famous employee. Our research program is to provide the Society with additional resources to hire and train scientists and conduct fundamental research, based on the scientists' own interests.
+Building schools in rural areas increases our popular support as well as their education.
 
-@applied
-title: Fund applied research in economically useful technologies.
+@schoolsupplies
+title: Fund school supplies to existing schools.
 subtitle: -1 budget
 choose-if: budget >= 1
-on-arrival: budget -= 1; science += 1; applied_research += 1; economic_growth += 0.5 if economic_growth <= 8 and applied_research <= 1; economic_growth += 3 if applied_research > 1; new_middle_spd += 5*(1-dissent); workers_spd += 3*(1-dissent); ddp_relation += 5*(1-dissent); unemployed -= 0.5 if unemployed >= 4; capital_strike_progress -= 1 if capital_strike_progress > 1; science_funding += 1
+on-arrival: budget -= 1; education += 1; economic_growth += 0.5 if economic_growth <= 8 and applied_research <= 1; economic_growth += 3 if applied_research > 1; new_middle_kmt += 5*(1-dissent); workers_kmt += 3*(1-dissent);
 
-Our research program focuses on collaborating with industry to develop useful technologies, creating new research institutions for applied science. This collaboration is focused on economic growth and development.
-
+Giving more supplies to existing schools provide them with more means to learn and think.
 
 @medical
 title: Fund biomedical research at the hospitals and medical schools.
 subtitle: -1 budget
 choose-if: budget >= 1
-on-arrival: budget -= 1; science += 1; medical_research += 1; economic_growth += 0.4 if economic_growth <= 8; new_middle_spd += 5*(1-dissent); workers_spd += 3*(1-dissent); ddp_relation += 5*(1-dissent); unemployed -= 0.2 if unemployed >= 4; science_funding += 1
+on-arrival: budget -= 1; education += 1; economic_growth += 0.4 if economic_growth <= 8; new_middle_kmt += 5*(1-dissent); workers_kmt += 3*(1-dissent);unemployed -= 0.2 if unemployed >= 4;
 
-Our research program focuses on medical research to improve the treatment of diseases and public health. [? if change_sex: Some of our medical advancements include new methods for sex change surgery and hormone therapy for transsexual individuals. ?]
+Our research program focuses on medical research to improve the treatment of diseases and public health.
 
 @cut_funding
 title: Cut science funding.
 subtitle: +1 budget
 choose-if: science_funding >= 1
 unavailable-subtitle: We have not funded science.
-on-arrival: budget += 1; science -= 1; science_funding -= 1; applied_research -= 0.33; kwg_research -= 0.33; medical_research -= 0.33; economic_growth -= 0.5; new_middle_spd -= 5; workers_spd -= 2; ddp_relation -= 5; unemployed += 0.3
+on-arrival: budget += 1; education -= 1; economic_growth -= 0.5; new_middle_kmt -= 5; workers_kmt -= 2; unemployed += 0.3
 
-We have cut funding for science. This has a negative effect on our economic growth, and unemployed scientists are less likely to support the SPD.
-
+We have cut funding for science. This has a negative effect on our economic growth, and the advancement of our society.
 
 @structure
 title: Change the structure and funding of education.
 
 Education in Germany has traditionally been organized on religious and class lines. Schools are often either Protestant or Catholic (or rarely Jewish), and religious classes are required in most mixed-denomination schools. In addition, the working class has at most eight years of public education in primary and middle schools, while the middle and upper classes have access to private schools and Gymnasiums that prepare students for universities. Thus, the universities tend to be dominated by conservatives and reactionaries, which has negative consequences for bureaucratic recruitment.
 
-- @secularize
+- @westerniza
 - @public_hs
-- @school_boards
+- @propaganda
 - @ed_menu: Do not change school funding or organization.
 - @cancel_advisor_action
 
-@secularize
-title: Support secular schools to end the religious dominance in education.
-subtitle: -1 budget
-unavailable-subtitle: -1 budget - requres a majority of parties to support secular schools.
-choose-if: budget >= 1 and (progressive_coalition + dvp_r >= 50)
-view-if: secularized = 0
+@westernize
+title: Support organizing schools more on Western systems.
+on-arrival: education += 1; west_relations += 1; new_middle_kmt += 3;
 
-Are you sure about this? The Weimar Coalition had an agreement to not touch religious schools; the Catholic Center Party will revolt.
-
-- @secularize_2: Yes, do it.
-- @ed_menu: No, do not touch religious education.
-- @cancel_advisor_action
-
-@secularize_2
-on-arrival: secularized = 1; catholics_spd -= 15; z_relation -= 15; dvp_relation += 6*(1-dissent); ddp_relation += 6*(1-dissent); kpd_relation += 6*(1-dissent); new_middle_spd += 3*(1-dissent); workers_spd += 3*(1-dissent); education_science += 0.5; new_middle_ddp += 4; new_middle_dvp += 4
-go-to: vote_of_no_confidence.vonc_menu if in_weimar_coalition or in_grand_coalition or in_popular_front or in_emergency_government
-
-# instant VONC from zentrum
-
-The SPD, [+ ddp_name +], DVP, and KPD vote in favor of secular education, overcoming the opposition of the religiously-oriented Center Party and DNVP. We have funded secular community schools to replace some previous denominational schools.
-
-[? if in_weimar_coalition or in_grand_coalition or in_popular_front or in_emergency_government: Of course, the Center Party is in revolt at this proposal, and have called for a vote of no confidence in our government. ?]
-
-
+More schools are now operating on Western systems instead of Japanese ones.
 
 @public_hs
 title: Increase educational opportunities for the working class by funding public high schools.
 subtitle: -1 budget
 choose-if: budget >= 1
-on-arrival: budget -= 1; public_hs += 1; workers_spd += 6*(1-dissent); unemployed_spd += 3*(1-dissent); prussian_police_loyalty += 0.04; education_science += 0.5; unemployed -= 0.2; economic_growth += 0.2; pro_republic += 4*(1-dissent);
+on-arrival: budget -= 1; workers_kmt += 6*(1-dissent); unemployed_kmt += 3*(1-dissent); education += 0.5; unemployed -= 0.2; economic_growth += 0.2; pro_republic += 4*(1-dissent);
 max-visits: 3
 
 # this makes the bureaucracy more proletarian
 We have funded more public secondary schools so that proletarian children may receive the same education as middle and upper-class children, and can be prepared for universities.
 
+@propaganda
+title: Add our propaganda campaigns as part of the curriculum.
+on-arrival: workers_kmt += 3*(1-dissent); new_middle_kmt += 3*(1-dissent); old_middle_kmt += 2*(1-dissent); pro_republic += 5;
 
-@school_boards
-title: Create elected school boards to give local areas more control over education.
-on-arrival: school_boards += 1; workers_spd += 3*(1-dissent); new_middle_spd += 3*(1-dissent); old_middle_spd += 2*(1-dissent); education_science += 0.2;
-view-if: school_boards = 0
-
-We have created local elected school boards, and delegated some of the decision-making for local schools to them.
-
+We have oriented schools to spread our message further.
 
 @curriculum
 title: Change the educational curriculum.
 choose-if: curriculum_timer = 0
-unavailable-subtitle: [? if curriculum_timer > 0 : It is too early to change the curriculum again. ?][? if not spd_prussia: We are not in control of the Prussian state government. ?]
+unavailable-subtitle: [? if curriculum_timer > 0 : It is too early to change the curriculum again. ?]
 
-Many socialists believe that education in Germany is not fit for the modern era. Much of the educational system still follows imperial-era traditions of militaristic discipline, and far-right professors and students rule the universities. Nevertheless, there have been strides in bringing working-class children into the schools.
+Many intellectuals believe that education in China is not fit for the modern era. Much of the educational system still follows imperial-era traditions of militaristic discipline, and far-right professors and students rule the universities. Nevertheless, there have been strides in bringing poor children into the schools.
 
 What should be the major focus of our new curriculum?
 
@@ -164,47 +137,46 @@ What should be the major focus of our new curriculum?
 
 # note: education_science is a variable that affects how much education affects economic growth.
 
-@dem_major
+@dem_minor
 title: Democratic curriculum
 subtitle: Critical thinking, democratic citizenship, and collaboration
-on-arrival: curriculum_timer = 50; major_curriculum = "democratic"; pro_republic += 5*(1-dissent); workers_spd += 3*(1-dissent); democratization += 1; z_relation -= 3; dvp_relation -= 5; coalition_dissent += 1 if in_grand_coalition; pacifism += 1; education_science += 0.3
-go-to: curriculum_minor
+view-if: major_curriculum != "democratic"
+on-arrival: minor_curriculum = "democratic"; pro_republic += 3*(1-dissent); workers_kmt += 2*(1-dissent); democratization += 1; z_relation -= 2; dvp_relation -= 3;
 
 We should teach students how to be citizens of a democratic republic, by teaching them to critically evaluate politics and current events, to exercise their rights and to respect the rights of other citizens. Traditionalists of all stripes are critical of this curriculum.
 
-@science_major
+@science_minor
 title: Scientific curriculum
 subtitle: Modern science, mathematics, and technical skills
-on-arrival: curriculum_timer = 50; major_curriculum = "scientific"; education_science += 1; coalition_dissent += 1 if in_weimar_coalition; z_relation -= 5; ddp_relation += 4*(1-dissent); kpd_relation += 3*(1-dissent); new_middle_spd += 3*(1-dissent); workers_spd += 2*(1-dissent)
-go-to: curriculum_minor
+view-if: major_curriculum != "scientific"
+on-arrival: minor_curriculum = "scientific"; education_science += 0.5; z_relation -= 3; ddp_relation += 3*(1-dissent); kpd_relation += 2*(1-dissent); new_middle_kmt += 2*(1-dissent); workers_kmt += 2*(1-dissent)
 
 Our educational system should reflect the modern age, and we should teach science and rational thinking. Religious conservatives tend to react negatively against this. 
 
-@human_major
+@human_minor
 title: Humanist curriculum
 subtitle: Arts, literature, history, and philosophy
-on-arrival: curriculum_timer = 50; major_curriculum = "humanist"; ddp_relation += 3*(1-dissent); new_middle_spd += 4*(1-dissent); education_science += 0.2
-go-to: curriculum_minor
+view-if: major_curriculum != "humanist"
+on-arrival: minor_curriculum = "humanist"; new_middle_kmt += 3*(1-dissent); ddp_relation += 3*(1-dissent);
 
 Our educational curriculum should be focused on the humanities, including arts, literature, history, and philosophy. Some criticize this curriculum as focusing too much on "useless" subjects, while others worry that the arts establishment is too closely tied to romantic nationalism.
 
-@vocational_major
+@vocational_minor
 title: Vocational curriculum
 subtitle: Useful technical skills for future careers
-on-arrival: curriculum_timer = 50; major_curriculum = "vocational"; dvp_relation += 3*(1-dissent); ddp_relation += 3*(1-dissent); workers_spd += 4*(1-dissent); rural_spd += 2*(1-dissent); unemployed_spd += 3*(1-dissent); new_middle_spd -= 1; unemployed -= 0.1; education_science += 0.5
-go-to: curriculum_minor
+view-if: major_curriculum != "vocational"
+on-arrival: minor_curriculum = "vocational"; education_science += 0.3; workers_kmt += 3*(1-dissent); unemployed_kmt += 2*(1-dissent);
 
 Education should be focused on providing a useful hands-on education, and teach the skills that will be most useful for students' future lives.
 
 
-@trad_major
+@trad_minor
 title: Traditional curriculum
 subtitle: Classics, discipline, and nationalism
-on-arrival: curriculum_timer = 50; major_curriculum = "traditional"; dvp_relation += 5*(1-dissent); z_relation += 4*(1-dissent); old_middle_spd += 3*(1-dissent); rural_spd += 3*(1-dissent); pacifism -= 1 if pacifism > 0; pro_republic -= 5; education_science += 0.2
-go-to: curriculum_minor
+view-if: major_curriculum != "traditional"
+on-arrival: minor_curriculum = "traditional"; dvp_relation += 2*(1-dissent); z_relation += 2*(1-dissent); old_middle_kmt += 2*(1-dissent); rural_kmt += 2*(1-dissent); pro_republic -= 3
 
-The traditional curriculum had a focus on ancient history and language (particularly Latin and Greek), as well as rigid discipline and some level of militarism.
-
+The traditional curriculum had a focus on ancient history and language (particularly Latin and Greek), as well as rigid discipline.
 
 @curriculum_minor
 
@@ -220,7 +192,7 @@ And what should be a secondary focus of the curriculum?
 title: Democratic curriculum
 subtitle: Critical thinking, democratic citizenship, and collaboration
 view-if: major_curriculum != "democratic"
-on-arrival: minor_curriculum = "democratic"; pro_republic += 3*(1-dissent); workers_spd += 2*(1-dissent); democratization += 1; z_relation -= 2; dvp_relation -= 3;
+on-arrival: minor_curriculum = "democratic"; pro_republic += 3*(1-dissent); workers_kmt += 2*(1-dissent); democratization += 1; z_relation -= 2; dvp_relation -= 3;
 
 We should teach students how to be citizens of a democratic republic, by teaching them to critically evaluate politics and current events, to exercise their rights and to respect the rights of other citizens. Traditionalists of all stripes are critical of this curriculum.
 
@@ -228,7 +200,7 @@ We should teach students how to be citizens of a democratic republic, by teachin
 title: Scientific curriculum
 subtitle: Modern science, mathematics, and technical skills
 view-if: major_curriculum != "scientific"
-on-arrival: minor_curriculum = "scientific"; education_science += 0.5; z_relation -= 3; ddp_relation += 3*(1-dissent); kpd_relation += 2*(1-dissent); new_middle_spd += 2*(1-dissent); workers_spd += 2*(1-dissent)
+on-arrival: minor_curriculum = "scientific"; education_science += 0.5; z_relation -= 3; ddp_relation += 3*(1-dissent); kpd_relation += 2*(1-dissent); new_middle_kmt += 2*(1-dissent); workers_kmt += 2*(1-dissent)
 
 Our educational system should reflect the modern age, and we should teach science and rational thinking. Religious conservatives tend to react negatively against this. 
 
@@ -236,7 +208,7 @@ Our educational system should reflect the modern age, and we should teach scienc
 title: Humanist curriculum
 subtitle: Arts, literature, history, and philosophy
 view-if: major_curriculum != "humanist"
-on-arrival: minor_curriculum = "humanist"; new_middle_spd += 3*(1-dissent); ddp_relation += 3*(1-dissent);
+on-arrival: minor_curriculum = "humanist"; new_middle_kmt += 3*(1-dissent); ddp_relation += 3*(1-dissent);
 
 Our educational curriculum should be focused on the humanities, including arts, literature, history, and philosophy. Some criticize this curriculum as focusing too much on "useless" subjects, while others worry that the arts establishment is too closely tied to romantic nationalism.
 
@@ -244,7 +216,7 @@ Our educational curriculum should be focused on the humanities, including arts, 
 title: Vocational curriculum
 subtitle: Useful technical skills for future careers
 view-if: major_curriculum != "vocational"
-on-arrival: minor_curriculum = "vocational"; education_science += 0.3; workers_spd += 3*(1-dissent); unemployed_spd += 2*(1-dissent);
+on-arrival: minor_curriculum = "vocational"; education_science += 0.3; workers_kmt += 3*(1-dissent); unemployed_kmt += 2*(1-dissent);
 
 Education should be focused on providing a useful hands-on education, and teach the skills that will be most useful for students' future lives.
 
@@ -253,7 +225,7 @@ Education should be focused on providing a useful hands-on education, and teach 
 title: Traditional curriculum
 subtitle: Classics, discipline, and nationalism
 view-if: major_curriculum != "traditional"
-on-arrival: minor_curriculum = "traditional"; dvp_relation += 2*(1-dissent); z_relation += 2*(1-dissent); old_middle_spd += 2*(1-dissent); rural_spd += 2*(1-dissent); pro_republic -= 3
+on-arrival: minor_curriculum = "traditional"; dvp_relation += 2*(1-dissent); z_relation += 2*(1-dissent); old_middle_kmt += 2*(1-dissent); rural_kmt += 2*(1-dissent); pro_republic -= 3
 
 The traditional curriculum had a focus on ancient history and language (particularly Latin and Greek), as well as rigid discipline.
 
