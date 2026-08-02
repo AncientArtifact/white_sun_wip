@@ -2,7 +2,7 @@ title: Liao Zhongkai
 is-pinned-card: true
 tags: advisor, left
 card-image: img/portraits/LiaoZhongkai.jpg
-view-if: liaozhongkai_advisor = 1
+view-if: liaozhongkai_advisor = 1 and liaozhongkai_dead = 0
 new-page: true 
 
 = Liao Zhongkai
