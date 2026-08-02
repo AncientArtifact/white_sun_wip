@@ -38,7 +38,7 @@ Our army can learn much in military organization and training from Soviet adviso
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: left_strength += 1; center_left_strength += 1; east_relation += 2; if cpc_civil_war = 0: cpc_relations += 3;
+on-arrival: left_strength += 1; center_left_strength += 1; east_relation += 2; if cpc_civil_war = 0: cpc_relation += 3;
 
 Sun Yat-sen's support of cooperation with the Soviet Union may bring benefits for our movement.
 
