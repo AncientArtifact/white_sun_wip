@@ -50,6 +50,6 @@ We have built relations with the New Guangxi Clique.
 title: Crack down on any Communists in Guangxi.
 subtitle: Li Zongren will help out with this.
 view-if: cpc_civil_war = 1
-on-arrival: red_strength -2;
+on-arrival: red_strength -= 2;
 
 The CPC elements in Guangxi have been suppressed.
