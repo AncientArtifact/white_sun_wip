@@ -119,9 +119,7 @@ Q.warlordist_disp = Math.round(Q.warlordist);
 Q.socialism_disp = Math.round(Q.socialism);
 !}
 
-= Projected election results
-
-(if the election were to be held now):
+= Popular Support:
 
 KMT: [+ kmt_votes +]%
 
@@ -135,7 +133,7 @@ ANH: [+ anh_votes +]%
 
 Others: [+ other_votes +]%
 
-**Detailed results for each demographic**
+**Detailed support for each demographic**
 
 Workers: KMT: [+ workers_KMT_display +]%, CPC: [+ workers_CPC_display +]%, ZHI: [+ workers_ZHI_display +]%; FENG: [+ workers_FENG_display +]%, ANH: [+ workers_ANH_display +]%, Others: [+ workers_other_display +]%
 
@@ -149,6 +147,6 @@ Unemployed: KMT: [+ unemployed_KMT_display +]%, CPC: [+ unemployed_CPC_display +
 
 Catholics: KMT: [+ catholics_KMT_display +]%, CPC: [+ catholics_CPC_display +]%, ZHI: [+ catholics_ZHI_display +]%; FENG: [+ catholics_FENG_display +]%, ANH: [+ catholics_ANH_display +]%, Others: [+ catholics_other_display +]%
 
-Support for the Republic: [+ pro-tridemist_disp +]%
+Support for the Guomindang: [+ pro_republic_disp +]%
 Support for the Warlords: [+ warlordist_disp +]%
 Support for the Communists: [+ socialism_disp +]%
