@@ -18,31 +18,25 @@ for (var c of Q.classes) {
 // 1. calculate support for each of the parties
 var total_support = 0;
 for (var party of Q.parties) {
+    var party_support = 0;
+    for (var c of Q.classes) {
+        if (Q.old_demographics) {
+            party_support += Q[c]*Q[c+'_'+party];
+        } else  {
+            party_support += Q[c]*Q[c+'_'+party+'_normalized'];
+        }
+    }
+    Q[party + '_support'] = party_support;
+    total_support += party_support;
+}
+// 2. normalize support (fraction)
+// 3. Round to integers with 1 decimal place
+for (var party of Q.parties) {
     Q[party+'_normalized'] = Q[party + '_support']/total_support;
     Q[party+'_votes_dec'] = Math.round(Q[party+'_normalized']*1000)/10;
     // Always use decimal format
     Q[party+'_votes'] = Q[party+'_votes_dec'];
     Q[party + '_votes_disp'] = Q[party+'_votes_dec'].toFixed(1);
-}
-    Q[party + '_support'] = party_support;
-    total_support += party_support;
-}
-// 2. normalize support (fraction)
-// 3. Round to integers
-// TODO: round to 1 decimal instead of rounding to integers
-// to do that, we multiply party_normalized*1000 and divide the rounded number by 10.
-for (var party of Q.parties) {
-    Q[party+'_normalized'] = Q[party + '_support']/total_support;
-    Q[party+'_votes_dec'] = Math.round(Q[party+'_normalized']*1000)/10;
-    if (Q.use_decimals) {
-        Q[party+'_votes'] = Q[party+'_votes_dec'];
-        Q[party + '_votes_disp'] = Q[party+'_votes'];
-    } else {
-        Q[party+'_votes'] = Math.round(Q[party+'_normalized']*100);
-        Q[party + '_votes_disp'] = Q[party+'_votes_dec'].toFixed(1);
-    }
-    //Q[party+'_votes'] = Q[party+'_votes_dec'];
-    // display
 }
 !}
 go-to: jumpScene
