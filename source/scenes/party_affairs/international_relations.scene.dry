@@ -28,7 +28,7 @@ Negotiating with the French and British is undeniably hard. And it may take givi
 
 @comintern
 subtitle: -1 resources 
-choose-if: east_relation >= 1
+choose-if: east_relation >= 1 and resources >= 0
 unavailable-subtitle: The Soviets won't just let us have them for free.
 on-arrival: left_strength += 1; nra_militancy += 0.1; resources -= 1; east_relation -= 1;
 
@@ -38,7 +38,7 @@ Our army can learn much in military organization and training from Soviet adviso
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: left_strength += 1; center_left_strength += 1; east_relation += 2; cpc_realtion += 1;
+on-arrival: left_strength += 1; center_left_strength += 1; east_relation += 2; cpc_relation += 1;
 
 Sun Yat-sen's support of cooperation with the Soviet Union may bring benefits for our movement.
 
