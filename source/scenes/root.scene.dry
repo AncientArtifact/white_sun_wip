@@ -107,6 +107,7 @@ Q.zhi_relation = 0;
 Q.feng_relation = 0;
 Q.anh_relation = 0;
 
+Q.kmt_leader = "Sun Yat-sen";
 Q.cpc_leader = "Chen Duxiu";
 // alternative is the Conciliators as party leader
 Q.cpc_deputy_leader = "Li Dazhao";
@@ -116,7 +117,6 @@ Q.guangxi_deputy_leader = "Bai Chongxi";
 Q.zhili_leader = "Cao Kun";
 Q.zhili_deputy_leader = "Wu Peifu";
 Q.fengtian_leader = "Zhang Zuolin";
-Q.fengtian_deputy_leader = "Zhang Xueliang";
 Q.anhui_leader = "Duan Qirui";
 
 // hmm... maybe we can play nice with Hindenburg???
