@@ -21,7 +21,7 @@ The KMT can decide to strengthen ties with other factions to garner more support
 @communists
 subtitle: -1 resources
 choose-if: resources >= 1
-unavailable-subtitle: Not enough resources.
+unavailable-subtitle: Not enough resources. [? if cpc_civil_war = 1 : The Kuomintang and the Communist Party have split permanently. ?]
 on-arrival: resources -= 1; cpc_relations += 8; east_realtions += 1;
 
 @localwarlords
