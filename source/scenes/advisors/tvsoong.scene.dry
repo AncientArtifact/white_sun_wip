@@ -1,0 +1,42 @@
+title: T.V. Soong
+is-pinned-card: true
+tags: advisor, whampoa
+card-image: img/portraits/TVSoong.jpg
+view-if: tvsoong_advisor = 1
+new-page: true
+#face-image: img/portraits/TVSoong.jpg
+
+= T.V. Soong
+
+T.V. Soong is a chinese businessman associated with Wang Jingwei's faction. He handles government finances.
+  
+- @support_jingwei
+- @middle
+- @finance_policy
+- @root: Return to main
+
+@support_jingwei
+title: Support the Center-Left Faction
+subtitle: T.V. Soong wants to help Wang Jingwei take over the party to advance civil rights and liberties as well as market reform.
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer = 0
+on-arrival: advisor_action_timer = 5; advisor_action_time = time; center_left_strength += 10; center_left_dissent -= 10
+
+We have reduced the strength of the dissident factions in the party.
+
+@middle
+title: Organize the Middle Class
+subtitle: Soong can use his connections to gain support from the businessmen and intellectuals.
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer = 0
+on-arrival: advisor_action_timer = 6; new_middle_kmt += 10; old_middle_kmt += 10;
+
+We have reduced dissent among the anti-toleration factions.
+
+@finance_policy
+title: Fiscal Policy
+subtitle: As Finance Minister, T.V. Soong can enact fiscal policies.
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer == 0
+on-arrival: advisor_action_timer = 6; fiscal_policy_timer -= 6; last_advisor_action = 1
+go-to: fiscal_policy
