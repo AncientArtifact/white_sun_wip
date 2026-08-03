@@ -517,7 +517,7 @@ set-bg: img/bgchina.jpg
 new-page: true
 
 > *"Chinese republican politics is like a child who just started schooling. He must have a good teacher and be surrounded by good friends. By the same token, the Chinese people, new to the republican politics, must be educated properly. The revolutionary government should be the people's tutor to impart advanced awareness and experience."
-- Dr. Sun Yat-sen, Father of the Chinese Nation
+- **Dr. Sun Yat-sen, Father of the Chinese Nation**
 
 This is a mod about the Kuomintang's origins and how it started and became the leading force of the Republic of China. It will explore much of the power struggle between Wang Jingwei, Chiang Kai-shek, Liao Zhongkai and Hu Hanmin, as well as the NRA's preparations to overthrow the Zhili government of Wu Peifu and Sun Chuanfang.
 That is all, enjoy!
@@ -564,7 +564,7 @@ new-page: true
 audio: shuffle audio/ihaveagun.mp3
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
-= 1924
+= **1924**
 
 It is a bright time for Chinese democracy. After a period of struggle against Governor Chen, the state of Guangdong is finally under control, and the economy is expanding steadily. The NRA has begun to consolidate and expand as our party gains a strong military arm. In foreign policy, we have reached agreements with the Soviet Union and CPC that might make reunification a reality. 
 
