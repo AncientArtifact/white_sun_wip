@@ -2,12 +2,10 @@ title: 1924 Legislative Elections
 new-page: true
 tags: event
 priority: -1
-view-if: (year = next_election_year and month >= next_election_month) or (year > next_election_year)
+view-if: year == 1924 and month == 4
 on-arrival: {!
 // Resetting basic election / coalition state for the two-party election
 Q.in_election = 1;
-Q.party_demands_timer = 6;
-Q.king_dismissed_timer = 12;
 
 // Clear previous coalition flags
 Q.in_coalition = 0;
