@@ -159,9 +159,6 @@ Q.kmt_in_government = 1;
 
 The Kuomintang have secured a majority and will form the government.
 
-- Continue with stability measures.
-- Consider reconciliation with local soviets.
-
 @cpc_majority
 title: CPC majority
 subtitle: CPC: [+ cpc_seating_disp +]%
@@ -172,10 +169,7 @@ Q.prime_minister = Q.cpc_leader || "CPC Leader";
 Q.cpc_in_government = 1;
 !}
 
-The Communist Party has come out on top and will lead the new government.
-
-- Consolidate gains: mobilise cadre and secure key ministries.
-- Reach out to rural committees.
+The CPC has come out on top and will lead the new government.
 
 @no_action
 title: No immediate action
@@ -185,7 +179,4 @@ on-arrival: {!
 Q.in_unstable_coalition = 1;
 !}
 
-Neither party achieved an outright majority. Expect negotiations and an unstable government.
-
-- Wait and see.
-- Attempt cross-party negotiations.
+Neither party achieved an outright majority. 
