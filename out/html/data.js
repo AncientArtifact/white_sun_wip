@@ -16,8 +16,6 @@ const colourList = [{
    },
 ];
 
-
-
 const tooltipList = [{
     searchString: "Kuomintang",
     explanationText: "<img src=img/kuomingtang.webp> Chungkuo Kuomintang </br> Zhōngguó Guómíndǎng </br> Chinese Nationalist Party"
