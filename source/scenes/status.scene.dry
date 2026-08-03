@@ -143,17 +143,15 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 **Detailed support for each demographic**
 
-Workers: KMT: [+ workers_KMT_display +]%, CPC: [+ workers_CPC_display +]%, ZHI: [+ workers_ZHI_display +]%; FENG: [+ workers_FENG_display +]%, ANH: [+ workers_ANH_display +]%, Others: [+ workers_other_display +]%
+Workers: <span style="color: #10186e">KMT</span>: [+ workers_KMT_display +]%, <span style="color: #9e1515">CPC</span>: [+ workers_CPC_display +]%, <span style="color: #e0e058">ZHI</span>: [+ workers_ZHI_display +]%; <span style="color: #d1b24b">FENG</span>: [+ workers_FENG_display +]%, <span style="color: #46703e">ANH</span>: [+ workers_ANH_display +]%, <span style="color: #919191">Others</span>: [+ workers_other_display +]%
 
-New Middle Class: KMT: [+ new_middle_KMT_display +]%, CPC: [+ new_middle_cpc_display +]%, ZHI: [+ new_middle_zhi_display +]%, FENG: [+ new_middle_FENG_display +]%, ANH: [+ new_middle_anh_display +]%, Others: [+ new_middle_other_display +]%, 
+New Middle Class: <span style="color: #10186e">KMT</span>: [+ new_middle_KMT_display +]%, <span style="color: #9e1515">CPC</span>: [+ new_middle_cpc_display +]%, <span style="color: #e0e058">ZHI</span>: [+ new_middle_zhi_display +]%, <span style="color: #d1b24b">FENG</span>: [+ new_middle_FENG_display +]%, <span style="color: #46703e">ANH</span>: [+ new_middle_anh_display +]%, <span style="color: #919191">Others</span>: [+ new_middle_other_display +]%, 
 
-Old Middle Class: KMT: [+ old_middle_KMT_display +]%, CPC: [+ old_middle_CPC_display +]%, ZHI: [+ old_middle_ZHI_display +]%; FENG: [+ old_middle_FENG_display +]%, ANH: [+ old_middle_ANH_display +]%, Others: [+ old_middle_other_display +]%
+Old Middle Class: <span style="color: #10186e">KMT</span>: [+ old_middle_KMT_display +]%, <span style="color: #9e1515">CPC</span>: [+ old_middle_CPC_display +]%, <span style="color: #e0e058">ZHI</span>: [+ old_middle_ZHI_display +]%; <span style="color: #d1b24b">FENG</span>: [+ old_middle_FENG_display +]%, <span style="color: #46703e">ANH</span>: [+ old_middle_ANH_display +]%, <span style="color: #919191">Others</span>: [+ old_middle_other_display +]%
 
-Rural: KMT: [+ rural_KMT_display +]%, CPC: [+ rural_CPC_display +]%, ZHI: [+ rural_ZHI_display +]%; FENG: [+ rural_FENG_display +]%, ANH: [+ rural_ANH_display +]%, Others: [+ rural_other_display +]%
+Rural: <span style="color: #10186e">KMT</span>: [+ rural_KMT_display +]%, <span style="color: #9e1515">CPC</span>: [+ rural_CPC_display +]%, <span style="color: #e0e058">ZHI</span>: [+ rural_ZHI_display +]%; <span style="color: #d1b24b">FENG</span>: [+ rural_FENG_display +]%, <span style="color: #46703e">ANH</span>: [+ rural_ANH_display +]%, <span style="color: #919191">Others</span>: [+ rural_other_display +]%
 
-Unemployed: KMT: [+ unemployed_KMT_display +]%, CPC: [+ unemployed_CPC_display +]%, ZHI: [+ unemployed_ZHI_display +]%; FENG: [+ unemployed_FENG_display +]%, ANH: [+ unemployed_ANH_display +]%, Others: [+ unemployed_other_display +]%
-
-Catholics: KMT: [+ catholics_KMT_display +]%, CPC: [+ catholics_CPC_display +]%, ZHI: [+ catholics_ZHI_display +]%; FENG: [+ catholics_FENG_display +]%, ANH: [+ catholics_ANH_display +]%, Others: [+ catholics_other_display +]%
+Unemployed: <span style="color: #10186e">KMT</span>: [+ unemployed_KMT_display +]%, <span style="color: #9e1515">CPC</span>: [+ unemployed_CPC_display +]%, <span style="color: #e0e058">ZHI</span>: [+ unemployed_ZHI_display +]%; <span style="color: #d1b24b">FENG</span>: [+ unemployed_FENG_display +]%, <span style="color: #46703e">ANH</span>: [+ unemployed_ANH_display +]%, <span style="color: #919191">Others</span>: [+ unemployed_other_display +]%
 
 Support for the <span style="color: #10186e">Kuomintang</span>: [+ pro_republic_disp +]%
 Support for the <span style="color: #d1b24b">Warlords</span>: [+ warlordist_disp +]%
