@@ -16,7 +16,7 @@
     // Add your custom code here.
   };
 
-  var TITLE = "Chinese Democracy: Rise of the White Sun" + '_' + "AncientArtifact";
+  var TITLE = "Social Democracy: An Alternate History" + '_' + "Autumn Chen";
 
   // the url is a link to game.json
   // test url: https://aucchen.github.io/social_democracy_mods/v0.1.json
@@ -114,11 +114,12 @@
       window.dendryUI.saveSettings();
   };
 
-  window.enableLightMode = function() {
-      window.dendryUI.dark_mode = false;
-      document.body.classList.remove('dark-mode');
-      window.dendryUI.saveSettings();
+    window.enableLightMode = function() {
+        window.dendryUI.dark_mode = false;
+        document.body.classList.remove('dark-mode');
+        window.dendryUI.saveSettings();
   };
+  
   window.enableDarkMode = function() {
       window.dendryUI.dark_mode = true;
       document.body.classList.add('dark-mode');
@@ -198,15 +199,15 @@
 
         if (!Q) return baseTooltip.explanationText;
 
-       if (searchString === 'KMT' ) {
+        if (searchString === 'KMT' ) {
             return baseTooltip.explanationText 
         }
       
-        if (searchString === 'Guomindang' ) {
+        if (searchString === 'Kuomintang' ) {
             return baseTooltip.explanationText 
         }
             
-        if (searchString === 'Kuomingtang' ) {
+        if (searchString === 'Guomindang' ) {
             return baseTooltip.explanationText 
         }
 
@@ -214,8 +215,8 @@
             var relationText = getRelationshipText(Q.cpc_relation);
             return baseTooltip.explanationText + '<br>Relation: ' + relationText;
         }
-    
-      return baseTooltip.explanationText;
+
+    return baseTooltip.explanationText;
 
     }
 
@@ -262,7 +263,7 @@
             });
         });
     }
-   
+  
   // populates the checkboxes in the options view
   window.populateOptions = function() {
     var disable_bg = window.dendryUI.disable_bg;
@@ -294,13 +295,6 @@
     } else {
         $('#light_mode')[0].checked = true;
     }
-  };
-
-  
-  // This function allows you to modify the text before it's displayed.
-  // E.g. wrapping chat-like messages in spans.
-  window.displayText = function(text) {
-      return text;
   };
 
   // This function allows you to do something in response to signals.
@@ -385,10 +379,15 @@
 
   window.onload = function() {
     window.dendryUI.loadSettings({show_portraits: false});
-    if (window.dendryUI.dark_mode) {
+        if (window.dendryUI.dark_mode) {
         document.body.classList.add('dark-mode');
     }
     window.pinnedCardsDescription = "Advisor cards - actions are only usable once per 6 months.";
   };
-
+  document.addEventListener('mousemove', e => {
+    document.querySelectorAll('.mytooltiptext').forEach(el => {
+        el.style.setProperty('--mouse-x', e.clientX + 'px');
+        el.style.setProperty('--mouse-y', e.clientY + 'px');
+    });
+});  
 }());
