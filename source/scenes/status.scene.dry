@@ -20,15 +20,23 @@ if (Q.economic_growth) {
 
 Resources available: [+ resources +]
 
-KMT Leader: [+ kmt_leader +]
+<span style="color: #10186e">KMT</span> Leader: [+ kmt_leader +]
 
 Internal dissent: [+ dissent_percent : dissent +]
 
 = Government
 
-President of the Beiyang Government: [+ beiyang_leader +] ([+ beiyang_leader_party +])
+President of the <span style="color: #e0e058">Be</span>
+<span style="color: #d1b24b">iy</span>
+<span style="color: #2587b8">a</span>
+<span style="color: #ffffff">n</span>
+<span style="color: #000000">g</span> Government: [+ beiyang_leader +] ([+ beiyang_leader_party +])
 
-Deputy Leader of Beiyang: [+ deputy_beiyang_leader +] ([+ deputy_beiyang_leader_party +])
+Deputy Leader of the <span style="color: #e0e058">Be</span>
+<span style="color: #d1b24b">iy</span>
+<span style="color: #2587b8">a</span>
+<span style="color: #ffffff">n</span>
+<span style="color: #000000">g</span> Government: [+ deputy_beiyang_leader +] ([+ deputy_beiyang_leader_party +])
 
 Budget: [+ budget +]
 
@@ -49,19 +57,19 @@ Economic growth: [+ economic_growth_2 +]%
 = Inter-party Relations
 
 
-{!<span class="tooltip-text" title="New Guangxi Clique">GXC</span>!}: [+ gxc_relation : relationships +]
+<span style="color: #8aa87d">GXC</span>: [+ gxc_relation : relationships +]
 
-{!<span class="tooltip-text" title="Yunnan Clique">YUN</span>!}: [+ yun_relation : relationships +]
+<span style="color: #723d85">YUN</span>: [+ yun_relation : relationships +]
 
-{!<span class="tooltip-text" title="Guizhou Clique">GUI</span>!}: [+ gui_relation : relationships +]
+<span style="color: ##b38e40">GUI:</span>: [+ gui_relation : relationships +]
 
-{!<span class="tooltip-text" title="Communist Party of China">CPC</span>!}: [+ cpc_relation : relationships +]
+<span style="color: #9e1515">CPC</span>: [+ cpc_relation : relationships +]
 
-{!<span class="tooltip-text" title="Zhili Clique">ZHI</span>!}: [+ zhi_relation : relationships +]
+<span style="color: #e0e058">ZHI</span>: [+ zhi_relation : relationships +]
 
-{!<span class="tooltip-text" title="Anhui Clique">ANH</span>!}: [+ anh_relation : relationships +]
+<span style="color: #46703e">ANH</span>: [+ anh_relation : relationships +]
 
-{!<span class="tooltip-text" title="Fengtian Clique">FENG</span>!}: [+ feng_relation : relationships +]
+<span style="color: #d1b24b">FENG</span>: [+ feng_relation : relationships +]
 
 = Internal Factions of the KMT
 
@@ -98,7 +106,7 @@ if (Q.gmj_strength) {
 
 {!<span class="tooltip-text" title="The National Revolutionary Army is the military arm of the KMT.">NRA</span>!} Strength: [+ nra_strength_2 +] thousand
 
-National Revolutionary Army Militarization: [+ nra_militancy : militancy +]
+<span style="color: #10186e">National Revolutionary Army Militarization:</span> [+ nra_militancy : militancy +]
 
 {!<span class="tooltip-text" title="The Chinese Worker's and Peasants Army is the military wing of the CPC.">Red Army</span>!} Strength: [+ red_strength_2 +] thousand
 
@@ -121,17 +129,17 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 = Popular Support:
 
-KMT: [+ kmt_votes +]%
+<span style="color: #10186e">KMT</span>: [+ kmt_votes +]%
 
-CPC: [+ cpc_votes +]%
+<span style="color: #9e1515">CPC</span>: [+ cpc_votes +]%
 
-ZHI: [+ zhi_votes +]%
+<span style="color: #e0e058">ZHI</span>: [+ zhi_votes +]%
 
-FENG: [+ feng_votes +]%
+<span style="color: #d1b24b">FENG</span>: [+ feng_votes +]%
 
-ANH: [+ anh_votes +]%
+<span style="color: #46703e">ANH</span>: [+ anh_votes +]%
 
-Others: [+ other_votes +]%
+<span style="color: #919191">Others:</span>: [+ other_votes +]%
 
 **Detailed support for each demographic**
 
@@ -147,6 +155,6 @@ Unemployed: KMT: [+ unemployed_KMT_display +]%, CPC: [+ unemployed_CPC_display +
 
 Catholics: KMT: [+ catholics_KMT_display +]%, CPC: [+ catholics_CPC_display +]%, ZHI: [+ catholics_ZHI_display +]%; FENG: [+ catholics_FENG_display +]%, ANH: [+ catholics_ANH_display +]%, Others: [+ catholics_other_display +]%
 
-Support for the Guomindang: [+ pro_republic_disp +]%
-Support for the Warlords: [+ warlordist_disp +]%
-Support for the Communists: [+ socialism_disp +]%
+Support for the <span style="color: #10186e">Kuomintang</span>: [+ pro_republic_disp +]%
+Support for the <span style="color: #d1b24b">Warlords</span>: [+ warlordist_disp +]%
+Support for the <span style="color: #9e1515">Communists</span>: [+ socialism_disp +]%
