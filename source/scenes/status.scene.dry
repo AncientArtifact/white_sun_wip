@@ -65,7 +65,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 <span style="color: #ab881f">**FENG**</span>: [+ feng_relation : relationships +]
 
-= Internal Factions of the KMT
+= **Internal Factions of the KMT**
 
 {!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the CPC.">Left</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
 
@@ -96,7 +96,7 @@ if (Q.gmj_strength) {
 }
 !}
 
-= Militaries
+= **Militaries**
 
 <span style="color: #10186e">**National Revolutionary Army**</span> Strength: [+ nra_strength_2 +] thousand
 
@@ -121,7 +121,7 @@ Q.warlordist_disp = Math.round(Q.warlordist);
 Q.socialism_disp = Math.round(Q.socialism);
 !}
 
-= Popular Support:
+= **Popular Support:**
 
 <span style="color: #10186e">**KMT**</span>: [+ kmt_votes +]%
 
@@ -153,7 +153,7 @@ Support for the <span style="color: #9e1515">Communists</span>: [+ socialism_dis
 
 @provinces
 
-= Provinces of China:
+= **Provinces of China:**
 
 **Manchuria**: [+ manchuria_governor +] of [+ manchuria_faction +]
 
@@ -197,4 +197,4 @@ Support for the <span style="color: #9e1515">Communists</span>: [+ socialism_dis
 
 **Guangxi**: [+ guangxi_governor +] of [+ guangxi_faction +]
 
-**Guangdong**: [+ guangdong_governor +] of [+ guangdong_faction +]
+**Guangdong**: [+ guangdong_governor +] of the [+ guangdong_faction +]
