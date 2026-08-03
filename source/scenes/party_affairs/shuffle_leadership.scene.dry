@@ -29,7 +29,7 @@ frequency: 1
 
 @remove_none
 title: Stop changing advisors.
-go-to: easy_discard
+go-to: main
 tags: remove_advisor
 
 @remove_tanyankai
@@ -646,5 +646,3 @@ go-to: advisor_menu
 tags: nonfactional_advisor
 
 Friedrich Stampfer is now an advisor.
-
-
