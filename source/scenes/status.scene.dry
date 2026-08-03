@@ -14,25 +14,27 @@ if (Q.economic_growth) {
 }
 !}
 
-= Status
+= **Status**
 
 [+ month : month +] [+ year +]
 
 Resources available: [+ resources +]
 
-<span style="color: #10186e">KMT</span> Leader: [+ kmt_leader +]
+<span style="color: #10186e">**KMT**</span> Leader: [+ kmt_leader +]
 
 Internal dissent: [+ dissent_percent : dissent +]
 
-= Government
+= **Government**
 
-President of the <span style="color: #9e1515">Be</span><span style="color: #ab881f">iy</span><span style="color: #2587b8">a</span><span style="color: #c7c7c7">n</span><span style="color: #000000">g</span> Government: [+ beiyang_leader +] ([+ beiyang_leader_party +])
+President of the <span style="color: #9e1515">**Be**</span><span style="color: #ab881f">**iy**</span><span style="color: #2587b8">**a**</span><span style="color: #c7c7c7">**n**</span><span style="color: #000000">**g**</span> Government: [+ beiyang_leader +] ([+ beiyang_leader_party +])
 
-Deputy Leader of the <span style="color: #9e1515">Be</span><span style="color: #ab881f">iy</span><span style="color: #2587b8">a</span><span style="color: #c7c7c7">n</span><span style="color: #000000">g</span> Government: [+ deputy_beiyang_leader +] ([+ deputy_beiyang_leader_party +])
+Deputy Leader of the <span style="color: #9e1515">**Be**</span><span style="color: #ab881f">**iy**</span><span style="color: #2587b8">**a**</span><span style="color: #c7c7c7">**n**</span><span style="color: #000000">**g**</span> Government: [+ deputy_beiyang_leader +] ([+ deputy_beiyang_leader_party +])
+
+Governor of Guangdong: <span style="color: #10186e">Sun Yat-sen</span>
 
 Budget: [+ budget +]
 
-= Economics
+= **Economics**
 
 Inflation: [+ inflation_2 +]%
 
@@ -46,22 +48,22 @@ Economic growth: [+ economic_growth_2 +]%
 
 @politics
 
-= Inter-party Relations
+= **Inter-party Relations**
 
 
-<span style="color: #8aa87d">GXC</span>: [+ gxc_relation : relationships +]
+<span style="color: #8aa87d">**GXC**</span>: [+ gxc_relation : relationships +]
 
-<span style="color: #723d85">YUN</span>: [+ yun_relation : relationships +]
+<span style="color: #723d85">**YUN**</span>: [+ yun_relation : relationships +]
 
-<span style="color: #b38e40">GUI:</span>: [+ gui_relation : relationships +]
+<span style="color: #b38e40">**GUI**:</span>: [+ gui_relation : relationships +]
 
-<span style="color: #9e1515">CPC</span>: [+ cpc_relation : relationships +]
+<span style="color: #9e1515">**CPC**</span>: [+ cpc_relation : relationships +]
 
-<span style="color: #aba133">ZHI</span>: [+ zhi_relation : relationships +]
+<span style="color: #aba133">**ZHI**</span>: [+ zhi_relation : relationships +]
 
-<span style="color: #46703e">ANH</span>: [+ anh_relation : relationships +]
+<span style="color: #46703e">**ANH**</span>: [+ anh_relation : relationships +]
 
-<span style="color: #ab881f">FENG</span>: [+ feng_relation : relationships +]
+<span style="color: #ab881f">**FENG**</span>: [+ feng_relation : relationships +]
 
 = Internal Factions of the KMT
 
