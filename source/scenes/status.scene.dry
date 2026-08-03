@@ -26,9 +26,9 @@ Internal dissent: [+ dissent_percent : dissent +]
 
 = Government
 
-President of the <span style="color: #9e1515">Be</span><span style="color: #d1b24b">iy</span><span style="color: #2587b8">a</span><span style="color: #ffffff">n</span><span style="color: #000000">g</span> Government: [+ beiyang_leader +] ([+ beiyang_leader_party +])
+President of the <span style="color: #9e1515">Be</span><span style="color: #d1b24b">iy</span><span style="color: #2587b8">a</span><span style="color: #c7c7c7">n</span><span style="color: #000000">g</span> Government: [+ beiyang_leader +] ([+ beiyang_leader_party +])
 
-Deputy Leader of the <span style="color: #9e1515">Be</span><span style="color: #d1b24b">iy</span><span style="color: #2587b8">a</span><span style="color: #ffffff">n</span><span style="color: #000000">g</span> Government: [+ deputy_beiyang_leader +] ([+ deputy_beiyang_leader_party +])
+Deputy Leader of the <span style="color: #9e1515">Be</span><span style="color: #d1b24b">iy</span><span style="color: #2587b8">a</span><span style="color: #c7c7c7">n</span><span style="color: #000000">g</span> Government: [+ deputy_beiyang_leader +] ([+ deputy_beiyang_leader_party +])
 
 Budget: [+ budget +]
 
