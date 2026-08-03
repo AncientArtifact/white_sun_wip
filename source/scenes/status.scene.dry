@@ -53,7 +53,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 <span style="color: #723d85">YUN</span>: [+ yun_relation : relationships +]
 
-<span style="color: ##b38e40">GUI:</span>: [+ gui_relation : relationships +]
+<span style="color: #b38e40">GUI:</span>: [+ gui_relation : relationships +]
 
 <span style="color: #9e1515">CPC</span>: [+ cpc_relation : relationships +]
 
