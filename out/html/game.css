@@ -3,32 +3,36 @@ body {
   --border-color: #000;
   --content-bg-color: #f3f3f3;
   --text-color: #431;
-  --link-color: #900;
+  --link-color: #1B5E20;
   --link-hover-color: rgba(0, 0, 0, 0.05);
   --unavailable-bg-color: rgba(0, 0, 0, 0.1);
   --unavailable-color: #999;
   --tab-bg-color: #dedede;
   --tab-color: #ddd;
   --tab-hover-color: #ececec;
-  --card-border-color: #ccc; 
+  --card-border-color: #ccc;
+  --face-figure-border-color: #28282B;
   --card-bg-color: #ddd; 
   font-family: "Minion Pro", Georgia, serif;
+  /*font-size: 1.125em;*/
   background-color: var(--bg-color);
   padding: 0;
   line-height: 155%;
   overflow-y: scroll;
 }
+
 body.dark-mode {
   --bg-color: #000;
   --border-color: #fff;
   --content-bg-color: #242424;
-  --text-color: #efefef;
-  --link-color: #ff8080;
-  --link-hover-color: rgba(255, 255, 255, 0.06);
+  --text-color: #fff;
+  --link-color: #37c240;
+  --link-hover-color: rgba(100, 100, 100, 0.1);
   --tab-bg-color: #555555;
   --tab-color: #505050;
   --tab-hover-color: #242424;
   --card-border-color: #4c4c4c;
+  --face-figure-border-color: #28282B;
   --card-bg-color: #3f3f3f;
 }
 body.dark-mode #content {
@@ -41,6 +45,7 @@ body.dark-mode .tools {
   border-width: 4px;
   border-color: #888;
 }
+
 header, #content, footer {
   color: var(--text-color);
   max-width: 540px;
@@ -150,7 +155,7 @@ ul.choices li.unavailable {
   cursor: default !important;
 }
 ul.choices li:hover {
-  background-color: var(--link-hover-color);
+  background-color: rgba(0, 255, 0, 0.05);
   cursor: pointer;
 }
 ul.choices li:last-child {
@@ -236,10 +241,16 @@ blockquote + blockquote.attribution {
     outline: none;
     padding: 10px;
 }
+#foreign_tab {
+  width: 49%;
+}
+#interior_tab {
+  width: 49%;
+}
+
 .tab_button.active {
     background-color: var(--content-bg-color);
 }
-
 /* tooltips from originalname/Dynamic Dev, edited by Communist45*/
 .mytooltip {
   position: relative;
@@ -307,9 +318,6 @@ body.dark-mode .mytooltip .mytooltiptext {
     left: 0;
     z-index: 2;
     overflow: scroll;
-}
-.options {
-    text-align: right;
 }
 .overlay_top {
     position: relative;
@@ -446,8 +454,8 @@ a.card:focus .card-tooltip, a.card:hover .card-tooltip {
 /* Unlike cards, face images can have different sizes. */
 .face-figure {
   /*vertical-align: top;*/
-  display: inline-block;
-  border: 5px solid var(--card-border-color);
+  display: block;
+  border: 2px solid var(--card-border-color);
   float: left;
   max-width: 35%;
   /*max-height: 180px;*/
@@ -455,6 +463,18 @@ a.card:focus .card-tooltip, a.card:hover .card-tooltip {
   margin-bottom: 0.5em;
   overflow: hidden;
 }
+
+.face-figure2 {
+  /*vertical-align: top;*/
+  display: block;
+  border: 2px solid var(--card-border-color);
+  float: left;
+  /*max-height: 180px;*/
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+  overflow: hidden;
+}
+
 .face-img {
   /*max-width: 150px;*/
   vertical-align: bottom;
@@ -588,37 +608,87 @@ table {
 }
 
 /* Styles for parties */
-.seat.kpd {
-    fill: #8B0000;
-}
-.seat.spd {
-    fill: #E3000F;
+.seat.cpc {
+    fill: #0028CC;
     stroke: var(--border-color);
     stroke-width: 1.5px;
 }
-.seat.ddp {
-    fill: #DCCA4A;
+.seat.cpc {
+    fill: #EE1C25;
 }
-.seat.z {
-    fill: #000;
+
+    z-index: 3;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #555;
+    border-radius: 8px;
+    padding: 4px 6px;
+    cursor: pointer;
+    line-height: 0;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
-.seat.bvp {
-    fill: #69A2BE;
+#music-toggle-btn:hover {
+    background: rgba(220, 220, 220, 0.95);
 }
-.seat.dvp {
-    fill: #D5AC27;
+.scrollable-box {
+  width: 540px;
+  /* Default width */
+  height: 200px;
+  /* Fixed height */
+  overflow-y: auto;
+  /* Enable vertical scrolling */
 }
-.seat.other {
-    fill: #909090;
+
+/* Adjust only the width for smaller screens */
+@media (max-width: 600px) {
+  .scrollable-box {
+    width: 102%;
+    /* Make it adapt to screen size */
+    max-width: 540px;
+    /* Prevent it from getting too wide */
+  }
 }
-.seat.dnvp {
-    fill: #3F7BC1;
+
+p.other {
+  display: block;
 }
-.seat.nsdap {
-    fill: #954B00;
+
+/*parliament tooltip code based/from road to ithaca*/
+.parliament-tooltip {
+    position: absolute;
+    z-index: 999999;
+    width: 120px;
+    background: #d8ddef;
+    color: #3b1f0a;
+    text-align: center;
+    border-radius: 8px;
+    padding: 12px 14px;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+    border: 1px solid #2235b2;
+    pointer-events: none;
+    font-size: 14px;
+    line-height: 1.5em;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
 }
-.seat.sapd {
-    fill: #C40000;
+.parliament-tooltip.visible {
+    opacity: 1;
+}
+.parliament-tooltip img {
+    display: block;
+    margin: 0 auto 4px auto;
+    max-width: 90%;
+    height: auto;
+}
+.seat.party-nothovered {
+    opacity: 0.3;
+}
+body.dark-mode .parliament-tooltip {
+    background: #1a1a2e;
+    color: #e0e0e0;
+    border-color: #8093ff;
+    border: 1px solid #2235b2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 }
 
 .tooltip-text {
