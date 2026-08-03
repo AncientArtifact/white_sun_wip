@@ -201,6 +201,68 @@ d3.parliament = function() {
             } else {
                 circles.exit().remove();
             }
+            /*tooltip*/
+            var tooltip = d3.select("body").select(".parliament-tooltip");
+            if (tooltip.empty()) {
+                tooltip = d3.select("body")
+                    .append("div")
+                    .attr("class", "parliament-tooltip");
+            }
+
+            /*hit circles*/
+            var hitCircles = container.selectAll(".seat-hit").data(seats);
+            var hitCirclesEnter = hitCircles.enter().append("circle");
+            hitCirclesEnter.attr("class", function(d) { return "seat-hit " + ((d.party && d.party.id) || ""); });
+            hitCirclesEnter.attr("cx", seatX);
+            hitCirclesEnter.attr("cy", seatY);
+            hitCirclesEnter.attr("r", function(d) { return seatRadius(d) * 2; });
+            hitCirclesEnter.attr("fill", "transparent");
+            hitCirclesEnter.attr("pointer-events", "all");
+
+            hitCirclesEnter.on("mouseenter", function(e) {
+                var partyId = e.target.classList[1];
+                if (!partyId) return;
+
+                container.selectAll(".seat").classed("party-hovered", function(d) {
+                    return d.party && d.party.id === partyId;
+                });
+                container.selectAll(".seat").classed("party-nothovered", function(d) {
+                    return !(d.party && d.party.id === partyId);
+                });
+
+                var partyData = d.filter(function(p) { return p.id === partyId; })[0];
+                var nSeats = partyData ? partyData.seats : '?';
+                var partyName = partyData ? (partyData.legend || partyData.name || partyId.toUpperCase()) : partyId.toUpperCase();
+                var partyColor = partyData ? (partyData.color || '#000') : '#000';
+
+                var img = tooltipList ? tooltipList.find(function(t) {
+                    return t.searchString && (t.searchString.toLowerCase() === partyId.toLowerCase() ||
+                            t.searchString.toLowerCase() === partyId.toUpperCase().toLowerCase());
+                }) : null;
+
+                var imgHtml = img && img.img ? '<img src="' + img.img + '" style="height:36px; width:auto; margin-right:8px; object-fit:contain;">' : '';
+
+                var img = tooltipList ? tooltipList.find(function(t) {
+                    return t.searchString && t.searchString.toUpperCase() === partyId.toUpperCase();
+                }) : null;
+                var tooltipContent = window.getDynamicTooltipContent(partyId.toUpperCase(), img);
+                tooltip.html(tooltipContent + '<br>' + nSeats + ' seat' + (nSeats !== 1 ? 's' : '')).classed("visible", true);
+                tooltip.style("border-color", partyData ? (partyData.color || '#000') : '#000');
+            });
+
+            hitCirclesEnter.on("mousemove", function(event) {
+                tooltip
+                    .style("left", (event.pageX + 10) + "px")
+                    .style("top", (event.pageY - 50) + "px");
+            });
+
+            hitCirclesEnter.on("mouseleave", function() {
+                container.selectAll(".seat").classed("party-hovered", false);
+                container.selectAll(".seat").classed("party-nothovered", false);
+                tooltip.classed("visible", false);
+            });
+
+            hitCircles.exit().remove();
         });
     }
 
