@@ -26,17 +26,9 @@ Internal dissent: [+ dissent_percent : dissent +]
 
 = Government
 
-President of the <span style="color: #e0e058">Be</span>
-<span style="color: #d1b24b">iy</span>
-<span style="color: #2587b8">a</span>
-<span style="color: #ffffff">n</span>
-<span style="color: #000000">g</span> Government: [+ beiyang_leader +] ([+ beiyang_leader_party +])
+President of the <span style="color: #9e1515">Be</span><span style="color: #d1b24b">iy</span><span style="color: #2587b8">a</span><span style="color: #ffffff">n</span><span style="color: #000000">g</span> Government: [+ beiyang_leader +] ([+ beiyang_leader_party +])
 
-Deputy Leader of the <span style="color: #e0e058">Be</span>
-<span style="color: #d1b24b">iy</span>
-<span style="color: #2587b8">a</span>
-<span style="color: #ffffff">n</span>
-<span style="color: #000000">g</span> Government: [+ deputy_beiyang_leader +] ([+ deputy_beiyang_leader_party +])
+Deputy Leader of the <span style="color: #9e1515">Be</span><span style="color: #d1b24b">iy</span><span style="color: #2587b8">a</span><span style="color: #ffffff">n</span><span style="color: #000000">g</span> Government: [+ deputy_beiyang_leader +] ([+ deputy_beiyang_leader_party +])
 
 Budget: [+ budget +]
 
@@ -104,21 +96,21 @@ if (Q.gmj_strength) {
 
 = Militaries
 
-{!<span class="tooltip-text" title="The National Revolutionary Army is the military arm of the KMT.">NRA</span>!} Strength: [+ nra_strength_2 +] thousand
+<span style="color: #10186e">National Revolutionary Army</span> Strength: [+ nra_strength_2 +] thousand
 
-<span style="color: #10186e">National Revolutionary Army Militarization:</span> [+ nra_militancy : militancy +]
+<span style="color: #10186e">National Revolutionary Army</span> Militarization: [+ nra_militancy : militancy +]
 
-{!<span class="tooltip-text" title="The Chinese Worker's and Peasants Army is the military wing of the CPC.">Red Army</span>!} Strength: [+ red_strength_2 +] thousand
+<span style="color: #9e1515">Chinese Red Army</span> Strength: [+ red_strength_2 +] thousand
 
-Red Army Militarization: [+ red_militancy : militancy +]
+<span style="color: #9e1515">Chinese Red Army</span> Militarization: [+ red_militancy : militancy +]
 
-{!<span class="tooltip-text" title="The Beiyang Army is the current military of the Zhili-led Republic of China.">Beiyang</span>!} Strength: [+ bei_strength_2 +] thousand
+<span style="color: #e0e058">Zhili Beiyang Army</span> Strength: [+ bei_strength_2 +] thousand
 
-Beiyang Army Militarization: [+ bei_militancy : militancy +]
+<span style="color: #e0e058">Zhili Beiyang Army</span> Militarization: [+ bei_militancy : militancy +]
 
-{!<span class="tooltip-text" title="The Fengtian Army is the army of Zhang Zuolin and his Fengtian Clique.">Fengtian</span>!} Strength: [+ feng_strength_2 +] thousand
+<span style="color: #d1b24b">Fengtian Army</span> Strength: [+ feng_strength_2 +] thousand
 
-Fengtian Army Militarization: [+ sa_militancy : militancy +]
+<span style="color: #d1b24b">Fengtian Army</span> Militarization: [+ sa_militancy : militancy +]
 
 @polls
 on-arrival: {!
