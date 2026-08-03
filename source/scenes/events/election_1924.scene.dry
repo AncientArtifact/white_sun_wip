@@ -26,7 +26,14 @@ if (typeof Q.cpc_r === 'undefined') Q.cpc_r = 50.0;
 Q.next_election_year = Q.next_election_year || year;
 Q.next_election_month = Q.next_election_month || month;
 !}
-on-departure: week_actions += 1; in_election = 0; next_election_year = next_election_year + 2; n_elections += 1; next_election_time = time + 24;
+on-departure: {!
+  Q.week_actions = (Q.week_actions || 0) + 1;
+  Q.in_election = 0;
+  Q.next_election_year = (typeof Q.next_election_year !== 'undefined' ? Q.next_election_year + 2 : (year || Q.next_election_year || 0) + 2);
+  Q.n_elections = (Q.n_elections || 0) + 1;
+  Q.next_election_time = (typeof time !== 'undefined') ? time + 24 : (Q.next_election_time || 0);
+!}
+
 set-jump: post_election_1924
 
 = Elections, [+ month : month +] [+ year +]
@@ -80,7 +87,7 @@ Q.str_change_cpc = (Q.change_cpc_r >= 0 ? '+' : '') + Q.change_cpc_r.toFixed(1) 
 Q.largest_party = Q.kmt_r >= Q.cpc_r ? 'KMT' : 'CPC';
 
 // store an election record
-var election_result = {'date': new Date(Q.year, Q.month - 1), 'KMT': parseFloat(Q.kmt_r.toFixed(1)), 'CPC': parseFloat(Q.cpc_r.toFixed(1))};
+var election_result = {'date': new Date(typeof year !== 'undefined' ? year : Q.year, (typeof month !== 'undefined' ? month : Q.month) - 1), 'KMT': parseFloat(Q.kmt_r.toFixed(1)), 'CPC': parseFloat(Q.cpc_r.toFixed(1))};
 Q.election_records = Q.election_records || [];
 Q.election_records.push(election_result);
 !}
@@ -100,7 +107,7 @@ data = [
     }
 ];
 
-if (window && d3) {
+if (typeof window !== 'undefined' && typeof d3 !== 'undefined') {
     var width = 500;
     var height = 500;
     var screenWidth = document.getElementById('content').offsetWidth;
