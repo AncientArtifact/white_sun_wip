@@ -18,18 +18,18 @@ const colourList = [{
 
 const tooltipList = [{
     searchString: "Kuomintang",
-    explanationText: "<img src=img/kuomingtang.webp> Chungkuo Kuomintang </br> Zhōngguó Guómíndǎng </br> Chinese Nationalist Party"
+    explanationText: "<img src=img/kuomingtang.webp> 中國國民黨 </br> Zhōngguó Guómíndǎng </br> Chinese Nationalist Party"
     },
     {
     searchString: "Guomindang",
-    explanationText: "<img src=img/kuomingtang.webp> Chungkuo Kuomintang </br> Zhōngguó Guómíndǎng </br> Chinese Nationalist Party"
+    explanationText: "<img src=img/kuomingtang.webp> 中國國民黨 </br> Zhōngguó Guómíndǎng </br> Chinese Nationalist Party"
     },
     {
     searchString: "KMT",
-    explanationText: "<img src=img/kuomingtang.webp> Chungkuo Kuomintang </br> Zhōngguó Guómíndǎng </br> Chinese Nationalist Party"
+    explanationText: "<img src=img/kuomingtang.webp> 中國國民黨 </br> Zhōngguó Guómíndǎng </br> Chinese Nationalist Party"
     },
     {
     searchString: "CPC",
-    explanationText: "<img src=img/cpc.webp> Zhōngguó Gòngchǎndǎng </br> Communist Party Of China"
+    explanationText: "<img src=img/cpc.webp> 中国共产党 </br> Zhōngguó Gòngchǎndǎng </br> Communist Party Of China"
     },
 ];
