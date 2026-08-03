@@ -86,7 +86,6 @@ var election_result = {'date': new Date(Q.year, Q.month - 1), 'KMT': parseFloat(
 Q.election_records = Q.election_records || [];
 Q.election_records.push(election_result);
 !}
-on-departure: // no extra departure effects
 on-display: {!
 data = [
     {
