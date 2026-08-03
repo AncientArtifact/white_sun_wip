@@ -20,7 +20,7 @@ title: Build up the National Revolutionary Army
 subtitle: Increase our propaganda measures to recruit more members into the NRA.
 choose-if: advisor_action_timer == 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: advisor_action_timer = 6; nra_strength += 50*rural_kmt
+on-arrival: advisor_action_timer = 6; nra_strength += 30*rural_kmt
 
 We have recruited more members into the NRA.
 

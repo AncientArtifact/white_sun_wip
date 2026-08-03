@@ -6,7 +6,7 @@ go-to: post_event if started = 1; start_menu if started = 0
 new-page: true
 go-to: start_menu_2
 
-= Chinese Democracy: Rise of the White Sun
+= **Chinese Democracy: Rise of the White Sun**
 
 @start_menu_2
 
@@ -294,37 +294,47 @@ Q.minority_government = 0;
 // starting with the 4th Marx cabinet https://en.wikipedia.org/wiki/Fourth_Marx_cabinet
 // is the agricultural ministry useful at all?
 Q.manchuria_governor = 'Zhang Zuolin';
-Q.manchuria_faction = 'Fengtian';
+Q.manchuria_faction = 'Fengtian Clique';
 Q.hebei_governor = 'Wu Peifu';
-Q.hebei_faction = 'Zhili';
+Q.hebei_faction = 'Zhili Clique';
+Q.hubei_governor = 'Wu Peifu';
+Q.hubei_faction = 'Zhili Clique';
 Q.shandong_governor = 'Zhang Zongchang';
-Q.shandong_faction = 'Zhili';
-Q.nanjing4_governor = 'Sun Chuanfang';
-Q.nanjing4_faction = 'Zhili';
+Q.shandong_faction = 'Zhili Clique';
+Q.nanjing_governor = 'Sun Chuanfang';
+Q.nanjing_faction = 'Zhili Clique';
+Q.anhui_governor = 'Sun Chuanfang';
+Q.anhui_faction = 'Zhili Clique';
+Q.jiangsu_governor = 'Sun Chuanfang';
+Q.jiangsu_faction = 'Zhili Clique';
+Q.fujian_governor = 'Sun Chuanfang';
+Q.fujian_faction = 'Zhili Clique';
+Q.jiangxi_governor = 'Sun Chuanfang';
+Q.jiangxi_faction = 'Zhili Clique';
 Q.zhejiang_governor = 'Duan Qirui';
-Q.zhejiang_faction = 'Anhui';
+Q.zhejiang_faction = 'Anhui Clique';
 Q.henan_governor = 'Wu Peifu';
-Q.henan_faction = 'Zhili';
+Q.henan_faction = 'Zhili Clique';
 Q.shanxi_governor = 'Yan Xishan';
-Q.shanxi_faction = 'Zhili';
+Q.shanxi_faction = 'Zhili Clique';
 Q.suiyuan_governor = 'Feng Yuxiang';
-Q.suiyuan_faction = 'Zhili';
+Q.suiyuan_faction = 'Zhili Clique';
 Q.shaanxi_governor = 'Feng Yuxiang';
-Q.shaanxi_faction = 'Zhili';
+Q.shaanxi_faction = 'Zhili Clique';
 Q.chahar_governor = 'Feng Yuxiang';
-Q.chahar_faction = 'Zhili';
+Q.chahar_faction = 'Zhili Clique';
 Q.wuhan_governor = 'Wu Peifu';
-Q.wuhan_faction = 'Zhili';
+Q.wuhan_faction = 'Zhili Clique';
 Q.hunan_governor = 'Wu Peifu';
-Q.hunan_faction = 'Zhili';
+Q.hunan_faction = 'Zhili Clique';
 Q.sichuan_governor = 'Multiple';
 Q.sichuan_faction = 'N/A';
 Q.guizhou_governor = 'Yuan Zuming';
-Q.guizhou_faction = 'Guizhou';
+Q.guizhou_faction = 'Guizhou Clique';
 Q.yunnan_governor = 'Tang Jiyao';
-Q.yunnan_faction = 'Yunnan';
+Q.yunnan_faction = 'Yunnan Clique';
 Q.guangxi_governor = 'Li Zongren';
-Q.guangxi_faction = 'New Guangxi';
+Q.guangxi_faction = 'New Guangxi Clique';
 Q.guangdong_governor = 'Sun Yat-sen';
 Q.guangdong_faction = 'Guomindang';
 
@@ -509,7 +519,7 @@ set-bg: img/bgchina.jpg
 new-page: true
 
 > *"Chinese republican politics is like a child who just started schooling. He must have a good teacher and be surrounded by good friends. By the same token, the Chinese people, new to the republican politics, must be educated properly. The revolutionary government should be the people's tutor to impart advanced awareness and experience."
-- Dr. Sun Yat-sen, Father of the Chinese Nation
+- **Dr. Sun Yat-sen, Father of the Chinese Nation**
 
 This is a mod about the Kuomintang's origins and how it started and became the leading force of the Republic of China. It will explore much of the power struggle between Wang Jingwei, Chiang Kai-shek, Liao Zhongkai and Hu Hanmin, as well as the NRA's preparations to overthrow the Zhili government of Wu Peifu and Sun Chuanfang.
 That is all, enjoy!
@@ -556,9 +566,9 @@ new-page: true
 audio: shuffle audio/ihaveagun.mp3
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
-= 1924
+= **1924**
 
-It is a bright time for Chinese democracy. After a period of struggle against Governor Jiongming, the state of Guangdong is finally under control, and the economy is expanding steadily. The NRA has begun to consolidate and expand as our party gains a strong military arm. In foreign policy, we have reached agreements with the Soviet Union and <span style="color: #EE1C25;">**CPC**</span> that might make reunification a reality. 
+It is a bright time for Chinese democracy. After a period of struggle against Governor Chen, the state of Guangdong is finally under control, and the economy is expanding steadily. The NRA has begun to consolidate and expand as our party gains a strong military arm. In foreign policy, we have reached agreements with the Soviet Union and CPC that might make reunification a reality. 
 
 Now, the task of the Guomindang is to prepare for the Northern Expedition. The warlord-led government of Wu Peifu is unpopular, and we stand to gain. Perhaps the next government will raise the flag of the White Sun.
 

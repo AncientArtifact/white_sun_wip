@@ -46,6 +46,6 @@ The National Revolutionary Army is already serving the purpose it needs to serve
 
 @cut_nra
 subtitle: +1 resources
-on-arrival: resources += 1; nra_strength -= 50; nra_militancy -= 0.02; left_strength -= 2; left_dissent += 2; red_militancy += 0.05; workers_cpc += 2; unemployed_cpc += 2
+on-arrival: resources += 1; nra_strength -= 25; nra_militancy -= 0.02; left_strength -= 2; left_dissent += 2; red_militancy += 0.05; workers_cpc += 2; unemployed_cpc += 2
 
 Cutting resources to the National Revolutionary Army causes a drop in the membership, and leads some would-be members to join the Communists instead.

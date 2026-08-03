@@ -30,7 +30,9 @@ Our commercialized newspapers are able to bring in more funds. However, the left
 
 @campaign
 title: The purpose of our media is to spread our cause.
-subtitle: Our newspapers will focus on educating the peasants about our goals.
+subtitle: -1 - Our newspapers will focus on educating the peasants about our goals.
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
 on-arrival: campaign_media += 1; rural_kmt += 5*(1 - dissent); workers_kmt += 4*(1 - dissent); unemployed_kmt += 3*(1-dissent);
 
 Our campaign media is teaching the labourers and the illiterate peasants about our beliefs and goals, which resonate well with them.
