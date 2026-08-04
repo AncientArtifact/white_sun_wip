@@ -1,6 +1,5 @@
 title: 1926
 subtitle: A new year
-
 tags: events
 view-if: year = 1926 and month = 1
 priority: 2
