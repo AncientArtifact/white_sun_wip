@@ -3,7 +3,7 @@ new-page: true
 is-card: true
 tags: government_affairs
 view-if: nra_timer <= 0
-card-image: img/nationalarmy.jpg
+card-image: img/nrastreet.jpg
 on-arrival: month_actions += 1; nra_timer += 6; nra_militarization_cost = 2 if nra_militancy > 0.1 else nra_militarization_cost = 1; nra_militarization_cost = 3 if nra_militancy > 0.25
 max-visits: 6
 #subtitle: Military organizing for the Northern Expedition.
