@@ -335,6 +335,6 @@ go-to: events_choice if has_event = 1; main if has_event = 0 and difficulty >= 0
 
 @events_choice
 
-- #event
+- #events
 
 # This scene is solely for updating numbers after events, and routing to special events.
