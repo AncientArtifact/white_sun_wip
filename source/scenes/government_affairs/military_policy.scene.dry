@@ -1,47 +1,51 @@
-title: Military Policy
+title: National Revolutionary Army
 new-page: true
 is-card: true
-tags: govt_affairs, cabinet
-on-arrival: military_policy_timer += 6; month_actions += 1
-view-if: spd_in_government = 1 and reichswehr_minister_party = "SPD" and military_policy_timer <= 0
-card-image: img/portraits/LeberJulius.jpg
-#subtitle: Dealing with the Reichswehr.
+tags: government_affairs
+view-if: nra_timer <= 0
+card-image: img/nationalarmy.jpg
+on-arrival: month_actions += 1; nra_timer += 6; nra_militarization_cost = 2 if nra_militancy > 0.1 else nra_militarization_cost = 1; nra_militarization_cost = 3 if nra_militancy > 0.25
+max-visits: 6
+#subtitle: Military organizing for the Northern Expedition.
 
-= Military Policy
+= National Revolutionary Army
 
-The Reichswehr is a deeply reactionary institution that has been generally hostile to any notion of socialism or democracy. However, we now control the military as part of the government. What should we do to reform it?
+The *National Revolutionary Army* is the Guomindang's military wing. It is still in it's infancy but is quickly expanding in quality and size.
 
-- @increase_funding: Increase funding for the military to purchase its loyalty.
-- @decrease_funding: Reduce funding for the military so we have more for social spending.
-- @reform: Conduct a thorough reform of the ranks, reducing the influence of reactionaries and making it more hospitable to us.
-- @root: No change to military policy.
+- @militant: Fund more military-style training and equipment for the NRA.
+- @militant_2: Use our existing budget to support more training for the NRA.
+- @same: Keep the NRA as it is.
+- @cut_nra: Cut funding for the NRA.
 - @easy_discard
 - @cancel_advisor_action
 
-@increase_funding
-subtitle: -1 budget
-choose-if: budget >= 1
-unavailable-subtitle: We do not have the budget.
-on-arrival: budget -= 1; coalition_dissent -= 1 if coalition_dissent > 0; reichswehr_loyalty += 0.07 if reichswehr_loyalty < 1; reichswehr_strength += 20; left_dissent += 5; kpd_coalition_dissent += 1; west_relation -= 1; east_relation -= 1; reparations_negotiation -= 1; eu_progress -= 1; economic_growth += 0.1
+@militant
+choose-if: budget >= nra_militarization_cost
+unavailable-subtitle: Not enough budget ([+ nra_militarization_cost +] needed).
+subtitle: -[+ nra_militarization_cost +] budget
+on-arrival: budget -= nra_militarization_cost; nra_investment += 1; nra_strength += 25; nra_militancy += 0.05; left_strength += 2; left_dissent -= 2; reformist_dissent += 5;
 
-The military and the center-right parties are pleasantly surprised that we would increase military funding. Our membership tends to be anti-military, and is less enthused. Germany's neighbors are watching our military buildup with worry. [? if reparations >= 0 : This is not good for the reparations negotiations. ?]
+Some in our party decry the increasing militarization of the National Revolutionary Army. They say it is emulating the right-wing nationalists or the communists, and risks alienating our allies in the centrist parties. On the other hand, more left-leaning radicals are being lured to our organizations, away from the communists.
 
-@decrease_funding
+[? if historical_mode : The Center Party decries the militarization of the National Revolutionary Army, and its members are leaving the republican organization. ?]
+
+
+@militant_2
+view-if: funded_nra >= 1
+on-arrival: nra_militancy += 0.1; funded_nra -= 1
+
+As we have already funded our government budget towards the National Revolutionary Army, we can invest in building up their militancy.
+
+
+@same
+
+The National Revolutionary Army is already serving the purpose it needs to serve. There is no reason to change what already works.
+
+- @return: Continue...
+
+
+@cut_nra
 subtitle: +1 budget
-unavailable-subtitle: There is nothing left to cut.
-choose-if: reichswehr_strength > 0
-on-arrival: budget += 1; coalition_dissent += 1 if in_grand_coalition == 1; dvp_relation -= 8; reichswehr_militancy -= 1; reichswehr_strength -= 20; sh_strength += 15; sa_strength += 5; sh_militancy += 0.05; reichswehr_loyalty -= 0.05 if reichswehr_loyalty > 0; coup_progress += 1; coup_progress += 1 if reichswehr_loyalty < 0.2; coup_progress += 1 if reichswehr_loyalty < 0.1; coup_progress += 1 if reichswehr_loyalty <= 0; reichswehr_goal_completed = 1; economic_growth -= 0.1
+on-arrival: budget += 1; nra_strength -= 25; nra_militancy -= 0.02; left_strength -= 2; left_dissent += 2; red_militancy += 0.05; workers_cpc += 2; unemployed_cpc += 2
 
-The military has fewer guns and fewer soldiers. There is no hint of a coup yet, but we do not know where the line will be drawn. The center-right parties are committed to the military and deeply opposed to our budget cuts.
-
-Many demobilized soldiers have joined the right-wing paramilitaries such as the Stahlhelm and SA, and weapons are missing from our stockpiles.
-
-@reform
-subtitle: -1 budget
-choose-if: budget >= 1 and reichswehr_loyalty < 1
-unavailable-subtitle: [? if budget < 1 : We do not have the budget. ?][? if reichswehr_loyalty >= 1 : The Reichswehr is already fully loyal to the democratic government. ?]
-on-arrival: coalition_dissent += 1 if in_grand_coalition == 1; reichswehr_loyalty += 0.15; reichswehr_militancy -= 0.5 if reichswehr_loyalty < 0.5; budget -= 1; coup_progress += 1; dvp_relation -= 5; pacifism += 1; democratization += 1;
-
-Our efforts are at least somewhat successful; we have changed the recruiting and training patterns so that more soldiers from non-reactionary backgrounds can join, hopefully changing the culture of the forces. We have also removed some of the officers who supported the previous Kapp putsch.
-
-The center-right parties are committed to the military and deeply suspicious of our efforts to reform it.
+Cutting our budget to the National Revolutionary Army causes a drop in the membership, and leads some would-be members to join the Communists instead.
