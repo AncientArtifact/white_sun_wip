@@ -11,6 +11,7 @@ Liao Zhongkai is a veteran KMT member staunchly aligned with leftist ideals and 
 
 - @building_the_left
 - @cpc_cooperation
+- @emergency_fundraising
 - @root: Return to main
 
 @building_the_left
@@ -30,3 +31,13 @@ choose-if: advisor_action_timer = 0
 on-arrival: advisor_action_timer = 6; left_strength += 5; cpc_relation += 6*(1-dissent); right_dissent += 3;
 
 Liao Zhongkai has continued Sun Yat-sen's united front with Soviet assistance.
+
+@emergency_fundraising
+title: Emergency Fundraising
+view-if: difficulty < 1
+subtitle: An emergency infusion of resources.
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; resources += dues
+
+We have gained +[+ dues +] resources.
