@@ -23,7 +23,7 @@ This has solidified Sun Yat-sen's control over the party but his unifying power 
 - @congress2: Alliance.
 
 @congress2
-on-arrival: right_dissent += 10, cpc_relation += 5
+on-arrival: right_dissent += 10; cpc_relation += 5;
 
 The party has reaffirmed it's support for the Chinese United Front with the CPC. This has offended much of the anti-communist Right faction under Hu Hanmin. This has however, helped our relations with the Chinese Communist Party and will affirm their support during a planned offensive campaign north.
 
