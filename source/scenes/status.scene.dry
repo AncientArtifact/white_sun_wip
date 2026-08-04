@@ -155,46 +155,46 @@ Support for the <span style="color: #9e1515">Communists</span>: [+ socialism_dis
 
 = **Provinces of China:**
 
-**Manchuria**: [+ manchuria_governor +] of [+ manchuria_faction +]
+**Manchuria**: [+ manchuria_governor +] ([+ manchuria_faction +])
 
-**Hebei**: [+ hebei_governor +] of [+ hebei_faction +]
+**Hebei**: [+ hebei_governor +] ([+ hebei_faction +])
 
-**Chahar**: [+ chahar_governor +] of [+ chahar_faction +]
+**Chahar**: [+ chahar_governor +] ([+ chahar_faction +])
 
-**Suiyuan**: [+ suiyuan_governor +] of [+ suiyuan_faction +]
+**Suiyuan**: [+ suiyuan_governor +] ([+ suiyuan_faction +])
 
-**Shaanxi**: [+ shaanxi_governor +] of [+ shaanxi_faction +]
+**Shaanxi**: [+ shaanxi_governor +] ([+ shaanxi_faction +])
 
-**Shanxi**: [+ shanxi_governor +] of [+ shanxi_faction +]
+**Shanxi**: [+ shanxi_governor +] ([+ shanxi_faction +])
 
-**Shandong**: [+ shandong_governor +] of [+ shandong_faction +]
+**Shandong**: [+ shandong_governor +] ([+ shandong_faction +])
 
-**Henan**: [+ henan_governor +] of [+ henan_faction +]
+**Henan**: [+ henan_governor +] ([+ henan_faction +])
 
-**Hubei**: [+ hubei_governor +] of [+ hubei_faction +]
+**Hubei**: [+ hubei_governor +] ([+ hubei_faction +])
 
-**Wuhan**: [+ wuhan_governor +] of [+ wuhan_faction +]
+**Wuhan**: [+ wuhan_governor +] ([+ wuhan_faction +])
 
-**Hunan**: [+ hunan_governor +] of [+ hunan_faction +]
+**Hunan**: [+ hunan_governor +] ([+ hunan_faction +])
 
-**Jiangsu**: [+ jiangsu_governor +] of [+ jiangsu_faction +]
+**Jiangsu**: [+ jiangsu_governor +] ([+ jiangsu_faction +])
 
-**Anhui**: [+ anhui_governor +] of [+ anhui_faction +]
+**Anhui**: [+ anhui_governor +] ([+ anhui_faction +])
 
-**Nanjing**: [+ nanjing_governor +] of [+ nanjing_faction +]
+**Nanjing**: [+ nanjing_governor +] ([+ nanjing_faction +])
 
-**Fujian**: [+ fujian_governor +] of [+ fujian_faction +]
+**Fujian**: [+ fujian_governor +] ([+ fujian_faction +])
 
-**Jiangxi**: [+ jiangxi_governor +] of [+ jiangxi_faction +]
+**Jiangxi**: [+ jiangxi_governor +] ([+ jiangxi_faction +])
 
-**Zhejiang**: [+ zhejiang_governor +] of [+ zhejiang_faction +]
+**Zhejiang**: [+ zhejiang_governor +] ([+ zhejiang_faction +])
 
-**Guizhou**: [+ guizhou_governor +] of [+ guizhou_faction +]
+**Guizhou**: [+ guizhou_governor +] ([+ guizhou_faction +])
 
-**Sichuan**: [+ sichuan_governor +] of [+ sichuan_faction +]
+**Sichuan**: [+ sichuan_governor +] ([+ sichuan_faction +])
 
-**Yunnan**: [+ yunnan_governor +] of [+ yunnan_faction +]
+**Yunnan**: [+ yunnan_governor +] ([+ yunnan_faction +])
 
-**Guangxi**: [+ guangxi_governor +] of [+ guangxi_faction +]
+**Guangxi**: [+ guangxi_governor +] ([+ guangxi_faction +])
 
-**Guangdong**: [+ guangdong_governor +] of the [+ guangdong_faction +]
+**Guangdong**: [+ guangdong_governor +] ([+ guangdong_faction +])
