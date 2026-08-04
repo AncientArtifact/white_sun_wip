@@ -1,7 +1,7 @@
 title: 1925
 subtitle: A new year
 
-tags: events
+tags: event
 view-if: month = 1 and year = 1925
 priority: 2
 max-visits: 1
