@@ -79,7 +79,7 @@ on-display: {!
 
     var image = new Image();  
     image.className = "face-img";  
-    image.src = "img/nrastreet2.jpg";  
+    image.src = "img/portraits/XuChongzhi.jpg";  
 
     cardEl.appendChild(image);  
     var contentDiv = document.querySelector("#page #mid_panel #content");
@@ -106,7 +106,7 @@ on-display: {!
 
     var image = new Image();  
     image.className = "face-img";  
-    image.src = "img/portraits/XuChongzhi.jpg";  
+    image.src = "img/nrastreet2.jpg";  
 
     cardEl.appendChild(image);  
     var contentDiv = document.querySelector("#page #mid_panel #content");
