@@ -12,18 +12,6 @@ new-page: true
 As outlined in our first party congress, the *Whampoa Military Academy* in Canton has been fully established. In an opening ceremony done by Sun Yat-sen, he called for national unity and to join the Guomindang against the warlords.
 Here, loyal and skilled officers will be trained by Party and Soviet officials. This will introduce an ideological fervor to the *National Revolutionary Army*, giving reasons for officers to fight and to prevent the non-stop betrayals of Chinese warlords.
 As said before, the office of Superintendent of the Academy has to be decided on personally by Sun Yat-sen.
-on-display: {!  
-    var cardEl = document.createElement('div');  
-    cardEl.className = "face-figure2";  
-
-    var image = new Image();  
-    image.className = "face-img";  
-    image.src = "img/whampoaopen.jpg";  
-
-    cardEl.appendChild(image);  
-    var contentDiv = document.querySelector("#page #mid_panel #content");
-    contentDiv.appendChild(cardEl);
-!}
 
 - @chiang: Chiang Kai-shek?
 
