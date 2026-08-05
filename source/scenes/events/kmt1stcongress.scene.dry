@@ -16,6 +16,18 @@ After the opening ceremonies and remarks, the party could now decide on some imp
 - @congress1: Ideology.
 
 @congress1
+on-display: {!  
+    var cardEl = document.createElement('div');  
+    cardEl.className = "face-figure2";  
+
+    var image = new Image();  
+    image.className = "face-img";  
+    image.src = "img/kmtpartyaffairs.jpg";  
+
+    cardEl.appendChild(image);  
+    var contentDiv = document.querySelector("#page #mid_panel #content");
+    contentDiv.appendChild(cardEl);
+!}
 
 The party has completely accepted Sun Yat-sen's doctrine of the Three Principles of the People, Democracy, Nationalism and People's Welfare. The roadmap for Military Rule, Political Tutelage and Constitutional Democracy is accepted by the party and will aim to go underway this path.
 This has solidified Sun Yat-sen's control over the party but his unifying power will break in the case of his death.
@@ -24,12 +36,36 @@ This has solidified Sun Yat-sen's control over the party but his unifying power 
 
 @congress2
 on-arrival: right_dissent += 10; cpc_relation += 5;
+on-display: {!  
+    var cardEl = document.createElement('div');  
+    cardEl.className = "face-figure2";  
+
+    var image = new Image();  
+    image.className = "face-img";  
+    image.src = "img/cpc.jpg";  
+
+    cardEl.appendChild(image);  
+    var contentDiv = document.querySelector("#page #mid_panel #content");
+    contentDiv.appendChild(cardEl);
+!}
 
 The party has reaffirmed it's support for the Chinese United Front with the CPC. This has offended much of the anti-communist Right faction under Hu Hanmin. This has however, helped our relations with the Chinese Communist Party and will affirm their support during a planned offensive campaign north.
 
 - @congress3: Leadership.
 
 @congress3
+on-display: {!  
+    var cardEl = document.createElement('div');  
+    cardEl.className = "face-figure2";  
+
+    var image = new Image();  
+    image.className = "face-img";  
+    image.src = "img/kmtpartydissent.jpg";  
+
+    cardEl.appendChild(image);  
+    var contentDiv = document.querySelector("#page #mid_panel #content");
+    contentDiv.appendChild(cardEl);
+!}
 
 The delegates have elected the first Central Executive Committee of the KMT, the highest body of the party established by it's Leninist reorganization. Notable members include a lot of very high-ranking KMT members, Soviet advisors and CPC delegates.
 The most important of them are Wang Jingwei of the Center-Left, Liao Zhongkai of the Left, Hu Hanmin of the Right, Tan Yankai, Dai Jitao and Lin Sen, made in an effort by Sun Yat-sen to balance the party leadership and factions.
@@ -37,6 +73,18 @@ The most important of them are Wang Jingwei of the Center-Left, Liao Zhongkai of
 - @congress4: War.
 
 @congress4
+on-display: {!  
+    var cardEl = document.createElement('div');  
+    cardEl.className = "face-figure2";  
+
+    var image = new Image();  
+    image.className = "face-img";  
+    image.src = "img/nrastreet2.jpg";  
+
+    cardEl.appendChild(image);  
+    var contentDiv = document.querySelector("#page #mid_panel #content");
+    contentDiv.appendChild(cardEl);
+!}
 
 Sun Yat-sen's biggest goal is the military unification of China, by defeating the three largest warlords, Wu Peifu, Duan Qirui and Zhang Zuolin. Now that Duan Qirui is out of power and Sun Chuanfang has taken his place, the balance of power in the Beiyang warlords is shifting wildly and war may not be far from them.
 This has convinced Sun along with failed attempts of peaceful reunification that peace is unreliable and only war can reunite China and instate democracy within it.
@@ -52,6 +100,18 @@ Xu Chongzhi, a loyal general of ours in Canton has been made commander of the NR
 - @congress5: We're missing something...
 
 @congress5
+on-display: {!  
+    var cardEl = document.createElement('div');  
+    cardEl.className = "face-figure2";  
+
+    var image = new Image();  
+    image.className = "face-img";  
+    image.src = "img/portraits/XuChongzhi.jpg";  
+
+    cardEl.appendChild(image);  
+    var contentDiv = document.querySelector("#page #mid_panel #content");
+    contentDiv.appendChild(cardEl);
+!}
 
 Our biggest problem with establishing the NRA is the lack of capable officers aligned with our cause. Many are with the Northern Warlords and Canton is notably lacking officers.
 That's why the party has approved the construction of the Whampoa Military Academy, in Canton. The Soviets will bankroll our operation and send their advisors to train a new generation of military officers. 
