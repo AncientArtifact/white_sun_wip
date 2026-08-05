@@ -24,11 +24,15 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources. [? if cpc_civil_war = 1 : The Kuomintang and the Communist Party have split permanently. ?]
 on-arrival: resources -= 1; cpc_relations += 8; east_realtions += 1;
 
+Cooperating with the CPC on our United Front is accepted by many in the party, with the exception of the Right.
+
 @localwarlords
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; gxc_relations += 7; yun_relations += 7; gui_relations += 7;
+on-arrival: resources -= 1; gxc_relations += 7; yun_relations += 7; gui_relations += 7; rural_kmt -= 3;
+
+Making friends with warlords do not reflect well on us. Especially to our supporters.
 
 @kmt_alone
 
