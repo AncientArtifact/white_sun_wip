@@ -85,7 +85,7 @@ After defeating the Zhili, the English and Americans now look at us more favoura
 title: The Western Allies are finally willing to return some concessions!
 subtitle: -1 budget - Our negotiations have been successful.
 view-if: concessions_negotiation >= 3 and concessions = 0
-on-arrival: west_relation += 1; concessions += 1; budget -= 2 workers_kmt += 6*(1-dissent); old_middle_kmt += 6*(1-dissent); new_middle_kmt += 6*(1-dissent); rural_kmt += 6*(1-dissent); economic_growth += 0.7; economic_growth += 0.5 if economic_growth < 0
+on-arrival: west_relation += 1; concessions += 1; budget -= 2; workers_kmt += 6*(1-dissent); old_middle_kmt += 6*(1-dissent); new_middle_kmt += 6*(1-dissent); rural_kmt += 6*(1-dissent); economic_growth += 0.7; economic_growth += 0.5 if economic_growth < 0
 max-visits: 1
 
 Finally, after a lot of rounds of negotiations, we can buy out the ports of Hankou, Jiujiang and Zhenjiang from the British. This is a great achievement both in foreign affairs and for our support bases, where anti-imperialists now begin supporting us.
