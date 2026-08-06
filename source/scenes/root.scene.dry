@@ -115,6 +115,8 @@ Q.cpc_deputy_leader = "Li Dazhao";
 Q.guangxi_leader = "Li Zongren";
 // party leader - can be Ludwig Kaas, Joseph Joos, or Adam Stegerwald after the 1928 December conference. Joos will be most friendly to the SPD.
 Q.guangxi_deputy_leader = "Bai Chongxi";
+Q.guizhou_leader = "Yuan Zuming";
+Q.yunnan_leader = "Tang Jiyao";
 Q.zhili_leader = "Cao Kun";
 Q.zhili_deputy_leader = "Wu Peifu";
 Q.fengtian_leader = "Zhang Zuolin";
