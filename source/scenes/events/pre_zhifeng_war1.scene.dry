@@ -1,0 +1,11 @@
+title: A Stir in Fujian
+subtitle: Is something happening up north?
+tags: events
+view-if: year = 1924 and month = 3
+max-visits: 1
+priority: 2
+new-page: true
+
+= Attack on Fujian
+
+
