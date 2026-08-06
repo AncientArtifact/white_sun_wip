@@ -122,6 +122,7 @@ Q.zhili_deputy_leader = "Wu Peifu";
 Q.fengtian_leader = "Zhang Zuolin";
 Q.anhui_leader = "Duan Qirui";
 Q.guominjun_leader = "Feng Yuxiang";
+Q.gmj_enabled = 0;
 
 // hmm... maybe we can play nice with Hindenburg???
 Q.hindenburg_relation = 0;
