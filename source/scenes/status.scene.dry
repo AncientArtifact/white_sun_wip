@@ -65,6 +65,28 @@ Economic growth: [+ economic_growth_2 +]%
 
 <span style="color: #ab881f">**FENG**</span>: [+ feng_relation : relationships +]
 
+= **Faction Leadership**
+
+
+<span style="color: #10186e">KMT</span>: [+ kmt_leader +]
+
+<span style="color: #9e1515">CPC</span>: [+ cpc_leader +] & [+ cpc_deputy_leader +]
+
+<span style="color: #aba133">ZHI</span>: [+ zhili_leader +] & [+ zhili_deputy_leader +]
+
+<span style="color: #d1b24b">FENG</span>: [+ fengtian_leader +] & [+ fengtian_deputy_leader +]
+
+<span style="color: #46703e">ANH</span>: [+ anhui_leader +]
+
+[? if gmj_enabled = 1: <span style="color: #943452">GMJ</span>: [+ guominjun_leader +] ?]
+
+<span style="color: #8aa87d">GXC</span>: [+ guangxi_leader +] & [+ guangxi_deputy_leader +]
+
+<span style="color: #b38e40">GUI:</span>: [+ guizhou_leader +]
+
+<span style="color: #723d85">YUN</span>: [+ yunnan_leader +]
+
+
 = **Internal Factions of the KMT**
 
 {!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the CPC.">Left</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
