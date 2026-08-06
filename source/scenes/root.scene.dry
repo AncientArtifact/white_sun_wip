@@ -316,7 +316,7 @@ Q.fujian_governor = 'Duan Qirui';
 Q.fujian_faction = '<span style="color: #46703e">Anhui</span>';
 Q.jiangxi_governor = 'Sun Chuanfang';
 Q.jiangxi_faction = '<span style="color: #aba133">Zhili</span>';
-Q.zhejiang_governor = 'Duan Qirui';
+Q.zhejiang_governor = 'Lu Yongxiang';
 Q.zhejiang_faction = '<span style="color: #46703e">Anhui</span>';
 Q.henan_governor = 'Wu Peifu';
 Q.henan_faction = '<span style="color: #aba133">Zhili</span>';
