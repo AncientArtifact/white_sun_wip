@@ -120,6 +120,7 @@ Q.yunnan_leader = "Tang Jiyao";
 Q.zhili_leader = "Cao Kun";
 Q.zhili_deputy_leader = "Wu Peifu";
 Q.fengtian_leader = "Zhang Zuolin";
+Q.fengtian_deputy_leader = "Yang Yuting";
 Q.anhui_leader = "Duan Qirui";
 Q.guominjun_leader = "Feng Yuxiang";
 Q.gmj_enabled = 0;
