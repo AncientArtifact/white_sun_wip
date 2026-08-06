@@ -94,7 +94,7 @@ Finally, after a lot of rounds of negotiations, we can buy out the ports of Hank
 title: The Western Allies are finally willing to return some concessions!
 subtitle: -3 budget - Our negotiations have been successful.
 view-if: concessions_negotiation >= 3 and concessions = 1
-on-arrival: west_relation += 1; budget -= 3 workers_kmt += 10*(1-dissent); old_middle_kmt += 8*(1-dissent); new_middle_kmt += 8*(1-dissent); rural_kmt += 12*(1-dissent); economic_growth += 0.7; economic_growth += 0.5 if economic_growth < 0
+on-arrival: west_relation += 1; budget -= 3; workers_kmt += 10*(1-dissent); old_middle_kmt += 8*(1-dissent); new_middle_kmt += 8*(1-dissent); rural_kmt += 12*(1-dissent); economic_growth += 0.7; economic_growth += 0.5 if economic_growth < 0
 max-visits: 1
 
 After many more rounds of negotiation, we can now buy out Weihaiwei and Tianjin from the British, further increasing our support in the masses. 
