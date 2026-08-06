@@ -17,7 +17,9 @@ Since Shanghai is one of the largest cities in China, capturing it for the Zhili
 - @next: What now?
 
 @next
-on-arrival: fujian_governor = Sun Chuanfang and fujian_faction = Zhili
+on-arrival: 
+fujian_governor = Sun Chuanfang
+fujian_faction = Zhili
 on-display: {!
     var cardEl = document.createElement('div');
     cardEl.className = "face-figure2";
