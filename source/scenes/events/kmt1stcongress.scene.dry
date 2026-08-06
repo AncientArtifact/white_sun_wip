@@ -1,7 +1,7 @@
 title: 1st National Congress of the KMT
 subtitle: A large milestone for our party.
 tags: events
-view-if: year = 1924 and month = 1
+view-if: year = 1924 and month = 2
 max-visits: 1
 priority: 2
 face-image: img/kmtpartyaffairs.jpg
