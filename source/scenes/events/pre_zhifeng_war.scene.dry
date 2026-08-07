@@ -30,9 +30,9 @@ on-display: {!
     var contentDiv = document.querySelector("#page #mid_panel #content");
     contentDiv.appendChild(cardEl);
     var factionSpan = document.createElement('span');
-factionSpan.textContent = Zhili;
-factionSpan.style.color = '#aba133'; // or set className and style via CSS
-cardEl.appendChild(factionSpan);
+fujian_factionSpan.textContent = Zhili;
+fujian_factionSpan.style.color = '#aba133'; // or set className and style via CSS
+cardEl.appendChild(fujian_factionSpan);
 !}
 
 The dominant Zhili Clique is now trying to extend it's influence to crush it's political and military opponents once and for all. Zhili's main rival in Fengtian is beginning to prepare against the Zhili as tensions rise between the two cliques.
