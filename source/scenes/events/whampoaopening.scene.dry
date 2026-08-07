@@ -16,7 +16,7 @@ As said before, the office of Superintendent of the Academy has to be decided on
 - @chiang: Chiang Kai-shek?
 
 @chiang
-on-arrival: whampoa_built = 1; n_advisors = 5; chiangkaishek_advisor = 1; xuchongzhi_advisor = 1; whampoa_strength += 10;
+on-arrival: whampoa_built = 1; n_advisors = 4; xuchongzhi_advisor = 1; whampoa_strength += 10;
 on-display: {!  
     var cardEl = document.createElement('div');  
     cardEl.className = "face-figure2";  
