@@ -397,7 +397,7 @@ Q.spd_no_confidence = 0;
 Q.no_confidence_against_spd = 0;
 
 // Advisors/Leaders
-Q.n_advisors = 3;
+Q.n_advisors = 4;
 // timer - this decrements by 1 every turn, and is set to 5 whenever an advisor action is used, so that you can only use one advisor action every 5 months.
 // let's just put all of the timers here...
 // most party affairs and government affairs cards are on a timer.
@@ -480,35 +480,34 @@ Q.march_on_berlin_timer = 0;
 Q.tanyankai_advisor = 1; // Tan Yankai
 Q.sunyatsen_advisor = 1; // Sun Yat-sen
 Q.sunyatsen_dead = 0;
-Q.tvsoong_advisor = 1;
 
 
 // left advisors
-Q.sender_advisor = 0; // Toni Sender
 Q.liaozhongkai_advisor = 0;
 Q.liaozhongkai_dead = 0;
-Q.seydewitz_advisor = 0; // Max Seydewitz
+Q.mikhailborodin_advisor = 1;
+Q.dengyanda_advisor = 0;
+Q.soongchingling_advisor = 0;
 
 // centrist alternate advisors
 Q.pfulf_advisor = 0; // Antonie Pfülf
 Q.breitscheid_advisor = 0; // Rudolf Breitscheid
 
 // Right advisors
-Q.huhanmin_advisor = 0; // Hu Hanmin
-Q.braun_advisor = 0; // Otto Braun
-Q.juchacz_advisor = 0; // Marie Juchacz
-Q.baade_advisor = 0; // Fritz Baade
+Q.huhanmin_advisor = 0;
+Q.daijitao_advisor = 0;
+Q.linsen_advisor = 0;
+Q.zhangrenjie_advisor = 0;
 
 // Labor advisors
 Q.wangjingwei_advisor = 0;
-Q.leipart_advisor = 0; // Theodor Leipart
-Q.aufhauser_advisor = 0; // Siegfried Aufhäuser
-Q.woytinsky_advisor = 0; // Wladimir Woytinsky (post-1930)
-Q.wissell_advisor = 0; // Rudolf Wissell
+Q.tvsoong_advisor = 0;
+Q.zhangfakui_advisor = 0;
+Q.eugenechen_advisor = 0;
 
 // Whampoa advisors
-Q.chiangkaishek_advisor = 0; // Carlo Mierendorf (post-1930)
-Q.xuchongzhi_advisor = 0; // Xu Chongzhi
+Q.chiangkaishek_advisor = 0;
+Q.xuchongzhi_advisor = 0;
 Q.xuchongzhi_dead = 0;
 
 Q.leber_advisor = 0; // Julius Leber (post-1930)
