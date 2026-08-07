@@ -211,11 +211,11 @@ Support for the <span style="color: #9e1515">Communists</span>: [+ socialism_dis
 
 **Zhejiang**: [+ zhejiang_governor +] ([? if zhejiang_faction = "Zhili": <span style="color: #aba133">Zhili</span> ?][? if zhejiang_faction = "Fengtian": <span style="color: #d1b24b">Fengtian</span> ?][? if zhejiang_faction = "Anhui": <span style="color: #46703e">Anhui</span> ?][? if zhejiang_faction = "Guomindang": <span style="color: #10186e">Guomindang</span> ?][? if zhejiang_faction = "Guominjun": <span style="color: #943452">Guominjun</span> ?][? if zhejiang_faction = N/A: <span style="color: #919191">N/A</span> ?][? if zhejiang_faction = "Neutral": <span style="color: #919191">Neutral</span> ?])
 
-**Guizhou**: [+ guizhou_governor +] ([? if guizhou_faction = "Guomindang": <span style="color: #10186e">Guomindang</span> ?][? if guizhou_faction = Guizhou: <span style="color: #b38e40">Guizhou</span> ?][? if guizhou_faction = Yunnan: <span style="color: #723d85">Yunnan</span> ?])
+**Guizhou**: [+ guizhou_governor +] ([? if guizhou_faction = "Guomindang": <span style="color: #10186e">Guomindang</span> ?][? if guizhou_faction = "Guizhou": <span style="color: #b38e40">Guizhou</span> ?][? if guizhou_faction = "Yunnan": <span style="color: #723d85">Yunnan</span> ?])
 
-**Sichuan**: [+ sichuan_governor +] ([? if sichuan_faction = "Guomindang": <span style="color: #10186e">Guomindang</span> ?][? if sichuan_faction = N/A: <span style="color: #919191">N/A</span> ?]
+**Sichuan**: [+ sichuan_governor +] ([? if sichuan_faction = "Guomindang": <span style="color: #10186e">Guomindang</span> ?][? if sichuan_faction = "N/A": <span style="color: #919191">N/A</span> ?])
 
-**Yunnan**: [+ yunnan_governor +] ([? if yunnan_faction = "Guomindang": <span style="color: #10186e">Guomindang</span> ?][? if yunnan_faction = Yunnan: <span style="color: #723d85">Yunnan</span> ?])
+**Yunnan**: [+ yunnan_governor +] ([? if yunnan_faction = "Guomindang": <span style="color: #10186e">Guomindang</span> ?][? if yunnan_faction = "Yunnan": <span style="color: #723d85">Yunnan</span> ?])
 
 **Guangxi**: [+ guangxi_governor +] ([? if guangxi_faction = "Guomindang": <span style="color: #10186e">Guomindang</span> ?][? if guangxi_faction = "New Guangxi": <span style="color: #8aa87d">New Guangxi</span> ?])
 
