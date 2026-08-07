@@ -30,7 +30,7 @@ on-display: {!
     var contentDiv = document.querySelector("#page #mid_panel #content");
     contentDiv.appendChild(cardEl);
     var factionSpan = document.createElement('span');
-factionSpan.textContent = fujian_faction;
+factionSpan.textContent = Zhili;
 factionSpan.style.color = '#aba133'; // or set className and style via CSS
 cardEl.appendChild(factionSpan);
 !}
