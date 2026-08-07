@@ -30,6 +30,7 @@ on-display: {!
     var contentDiv = document.querySelector("#page #mid_panel #content");
     contentDiv.appendChild(cardEl);
     var factionSpan = document.createElement('span');
+!}
 
 The dominant Zhili Clique is now trying to extend it's influence to crush it's political and military opponents once and for all. Zhili's main rival in Fengtian is beginning to prepare against the Zhili as tensions rise between the two cliques.
 The future of the Beiyang government now lies in the hands of these generals and whatever their next move may be could spark a war.
