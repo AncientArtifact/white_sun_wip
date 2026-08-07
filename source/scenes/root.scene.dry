@@ -313,7 +313,7 @@ Q.anhui_faction = '<span style="color: #aba133">Zhili</span>';
 Q.jiangsu_governor = 'Qi Xieyuan';
 Q.jiangsu_faction = '<span style="color: #aba133">Zhili</span>';
 Q.fujian_governor = 'Duan Qirui';
-Q.fujian_faction = '[? if fujian_governor = 'Duan Qirui': <span style="color: #46703e">Anhui</span>' ?][? if fujian_governor = 'Sun Chuanfang': <span style="color: #aba133">Zhili</span> ?];
+Q.fujian_faction = "[? if fujian_governor = 'Duan Qirui': <span style='color: #46703e'>Anhui</span> ?][? if fujian_governor = 'Sun Chuanfang': <span style='color: #aba133'>Zhili</span> ?]";
 Q.jiangxi_governor = 'Sun Chuanfang';
 Q.jiangxi_faction = '<span style="color: #aba133">Zhili</span>';
 Q.zhejiang_governor = 'Lu Yongxiang';
