@@ -1,2 +1,5 @@
 v0.2-
 fixing all the parties, advisors, factions and status
+
+v0.3-
+first events, scenes and advisors
