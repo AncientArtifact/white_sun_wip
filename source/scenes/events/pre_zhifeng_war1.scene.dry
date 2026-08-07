@@ -17,7 +17,7 @@ Since Shanghai is one of the largest cities in China, capturing it for the Zhili
 - @next: What now?
 
 @next
-on-arrival: fujian_governor = "Sun Chuanfang"; fujian_faction = <span style="color: #aba133">ZHI</span>;
+on-arrival: fujian_governor = "Sun Chuanfang"; fujian_faction = Zhili;
 on-display: {!
     var cardEl = document.createElement('div');
     cardEl.className = "face-figure2";
@@ -29,6 +29,10 @@ on-display: {!
     cardEl.appendChild(image);
     var contentDiv = document.querySelector("#page #mid_panel #content");
     contentDiv.appendChild(cardEl);
+    var factionSpan = document.createElement('span');
+factionSpan.textContent = fujian_faction;
+factionSpan.style.color = '#aba133'; // or set className and style via CSS
+cardEl.appendChild(factionSpan);
 !}
 
 The dominant Zhili Clique is now trying to extend it's influence to crush it's political and military opponents once and for all. Zhili's main rival in Fengtian is beginning to prepare against the Zhili as tensions rise between the two cliques.
