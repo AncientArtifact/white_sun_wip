@@ -3,7 +3,7 @@ new-page: true
 is-card: true
 tags: govt_affairs, cabinet
 on-arrival: month_actions += 1; foreign_policy_timer += 8;
-view-if: foreign_policy_timer <= 0; kmt_in_government = 1;
+view-if: foreign_policy_timer <= 0 and kmt_in_government = 1
 card-image: img/portraits/EugeneChen.jpg
 go-to: fp_menu
 #subtitle: International relations and dealing with Concessions.
