@@ -1,0 +1,30 @@
+title: Eugene Chen
+is-pinned-card: true
+tags: advisor, center-left
+card-image: img/portraits/EugeneChen.jpg
+view-if: eugenechen_advisor = 1
+new-page: true 
+
+= Eugene Chen
+
+Eugene Chen is part of the left faction. He has good foreign negotiation skills.
+
+- @international_relations
+- @foreign_affairs
+- @root: Return to main
+
+@international_relations
+title: International Relations
+subtitle: We will contact foreign powers from our base in Guangdong.
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer = 0
+on-arrival: advisor_action_timer = 6;
+go-to: international_relations
+
+@foreign_affairs
+title: Foreign Affairs
+subtitle: Contact the foreign powers directly.
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if kmt_in_government = 0 : We are not yet recognized as a legitimate government of China.?]
+choose-if: advisor_action_timer = 0 and kmt_in_government = 1
+on-arrival: advisor_action_timer = 6;
+go-to: foreign_policy
