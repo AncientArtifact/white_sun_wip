@@ -1,0 +1,43 @@
+title: Zhang Fakui
+is-pinned-card: true
+tags: advisor, center-left
+card-image: img/portraits/ZhangFakui.jpg
+view-if: zhangfakui_advisor = 1
+new-page: true
+#face-image: img/portraits/ZhangFakui.jpg
+
+= Zhang Fakui
+
+Zhang Fakui is a general in the NRA. He is closely associated with the Center-Left wing of the party under Wang Jingwei
+
+- @nra_buildup
+- @nra_quality
+- @antiwhampoa
+- @root: Return to main
+
+@nra_buildup
+title: Build up the National Revolutionary Army
+subtitle: Increase our propaganda measures to recruit more members into the NRA.
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; nra_strength += 10
+
+We have recruited more members into the NRA.
+
+
+@nra_quality
+title: Training the National Revolutionary Army
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; nra_militancy += 0.05;
+
+The NRA's quality has been increased, with more arms and better training.
+  
+
+@antiwhampoa
+title: Root out Whampoa Clique influence
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer =] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; whampoa_strength -= 10; center_left_strength += 10;
+
+We have begun rooting out the NRA officer's influence within the party as well as influencing the army to follow the party.
