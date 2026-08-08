@@ -1,0 +1,43 @@
+title: Soong Ching-ling
+is-pinned-card: true
+tags: advisor, left
+card-image: img/portraits/SoongChing-ling.jpg
+view-if: soongchingling_advisor = 1
+new-page: true 
+
+= Soong Ching-ling
+
+Soong Ching-ling is the [? if sunyatsen_dead = 0 : wife of ?][? if sunyatsen_dead = 1 : widow of the late ?] Sun Yat-sen. She is a left-winger.
+
+- @building_the_left
+- @cpc_cooperation
+- @organize_women
+- @root: Return to main
+
+@building_the_left
+title: Building the Left
+subtitle: Push the KMT to the left.
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer = 0
+on-arrival: advisor_action_timer = 6; left_strength += 10; left_dissent -= 8; right_dissent += 3
+
+We have increased the strength of the left faction with the CPC. This raised concern among the rightists in the party.
+
+@cpc_cooperation
+title: Cooperation with the CPC
+subtitle: Cooperating with the Communists is the main goal of Soong Ching-ling's left faction.
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if cpc_civil_war = 1 : The Communists don't trust us anymore.?]
+choose-if: advisor_action_timer = 0 and cpc_civil_war = 0
+on-arrival: advisor_action_timer = 6; left_strength += 5; cpc_relation += 6*(1-dissent); right_dissent += 3;
+
+Soong Ching-ling has continued Sun Yat-sen's united front with Soviet assistance.
+
+@organize_women
+title: Organizing Women
+view-if: difficulty < 1
+subtitle: Soong Ching-ling can use her status to organize female supporters.
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; worker_kmt += 5; old_middle_kmt += 5; new_middle_kmt += 5; rural_kmt += 5; 
+
+We have organized more women to support our party.
