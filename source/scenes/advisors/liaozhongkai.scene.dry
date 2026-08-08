@@ -26,8 +26,8 @@ We have increased the strength of the left faction with the CPC. This raised con
 @cpc_cooperation
 title: Cooperation with the CPC
 subtitle: Cooperating with the Communists is one of Liao Zhongkai's biggest demands.
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if cpc_civil_war = 1 : The Communists don't trust us anymore.?]
+choose-if: advisor_action_timer = 0 and cpc_civil_war = 0
 on-arrival: advisor_action_timer = 6; left_strength += 5; cpc_relation += 6*(1-dissent); right_dissent += 3;
 
 Liao Zhongkai has continued Sun Yat-sen's united front with Soviet assistance.
