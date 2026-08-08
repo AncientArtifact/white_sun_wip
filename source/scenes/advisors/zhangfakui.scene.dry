@@ -37,7 +37,7 @@ The NRA's quality has been increased, with more arms and better training.
 @antiwhampoa
 title: Root out Whampoa Clique influence
 choose-if: advisor_action_timer == 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer =] months before next advisor action. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 on-arrival: advisor_action_timer = 6; whampoa_strength -= 10; center_left_strength += 10;
 
 We have begun rooting out the NRA officer's influence within the party as well as influencing the army to follow the party.
