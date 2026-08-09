@@ -1,0 +1,32 @@
+title: Mikhail Borodin
+is-pinned-card: true
+tags: advisor, center-left
+card-image: img/portraits/MikhailBorodin.jpg
+view-if: mikhailborodin_advisor = 1
+new-page: true
+#face-image: img/portraits/MikhailBorodin.jpg
+
+= Mikhail Borodin
+
+Mikhail Borodin is a Soviet military and political advisor to the KMT. 
+
+- @internat
+- @nra_quality
+- @root: Return to main
+
+@internat
+title: Contact the Comintern
+subtitle: Borodin is our liason with the Communist Internationale.
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6;
+go-to: international_relations
+
+@nra_quality
+title: Training the National Revolutionary Army
+subtitle: Borodin can use Soviet tactics to train our army.
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; nra_militancy += 0.05;
+
+The NRA's quality has been increased, with more arms and better training.
