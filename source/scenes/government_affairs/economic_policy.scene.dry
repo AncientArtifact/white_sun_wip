@@ -1,0 +1,62 @@
+title: Economic Policy
+new-page: true
+is-card: true
+tags: govt_affairs, cabinet
+on-arrival: economic_policy_timer += 6; month_actions += 1
+card-image: img/portraits/TVSoong.jpg
+go-to: econ_menu
+#subtitle: Issues of investment, centralization and others relating to the economy.
+
+= Economic Policy
+
+Economic Policy concerns our usage of money to improve the economy. 
+
+@econ_menu
+
+- @centralize: We will attempt to centralize the economy.
+- @infrastructure: We will build up infrastructure in the state.
+- @business: We will encourage Chinese businesses.
+- @illegalize: Illegalize Gambling.
+- @relegalize: Relegalize Gambling.
+- @easy_discard
+- @cancel_advisor_action
+
+@centralize
+subtitle: -2 budget - Centralize the tax system and fiscal policy.
+unavailable-subtitle: -2 budget
+choose-if: budget >= 2
+on-arrival: budget -= 2; economic_growth += 0.6; centralize += 1;
+
+Centralizing the tax system will make the economy more efficient and stable.
+
+@infrastructure
+subtitle: -2 budget - Build more roads, railways and improve our ports.
+unavailable-subtitle: -2 budget
+choose-if: budget >= 2
+on-arrival: budget -= 2; economic_growth += 1; inflation -= 1;
+
+Building more infrastructure does well for our income.
+
+@business
+subtitle: -1 budget - Encourage small Chinese businesses and let new ones grow.
+unavailable-subtitle: -1 budget
+choose-if: budget >= 1
+on-arrival: budget -= 1; economic_growth += 0.5; old_middle_kmt += 5; new_middle_kmt += 5;
+
+The middle class likes this, and our economy grows higher.
+
+@illegalize
+subtitle: Gambling was recently relegalized to raise more funds. Should we illegalize it once more?
+view-if: gambling = 1
+choose-if: gambling = 1
+on-arrival: gambling = 0; economic_growth -= 0.5; old_middle_kmt += 4; new_middle_kmt += 4; workers_kmt += 4;
+
+Gambling is illegal once again, giving us some support with the people.
+
+@relegalize
+subtitle: +1 budget - Gambling was recently illegalized. Should we relegalize it once more?
+view-if: gambling = 0
+choose-if: gambling = 0
+on-arrival: gambling = 1; budget += 1; economic_growth += 0.5; old_middle_kmt -= 4; new_middle_kmt -= 4; workers_kmt -= 4;
+
+Gambling is legal once again, giving us more funds but decreasing our support.
