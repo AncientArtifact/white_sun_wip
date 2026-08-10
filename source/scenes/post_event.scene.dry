@@ -23,19 +23,19 @@ if (Q.pro_republic >= 100) {
     Q.pro_republic = 99;
 }
 // re-calculate party support
-// calculate normalized class voting for the achievements
-for (var c of Q.classes) {
-    var class_votes = 0;
-    for (var party of Q.parties) {
-        if (Q[c+'_'+party] < 0) {
-            Q[c+'_'+party] = 0;
-        }
-        class_votes += Q[c+'_'+party];
+// calculate support for each of the parties
+var total_support = 0; 
+for (var party of Q.parties) {
+    var party_support = 0;
+    for (var c of Q.classes) {
+        if (Q.old_demographics) { 
+            partysupport += Q[c]*Q[c+''+party];
+        } else  { 
+            partysupport += Q[c]*Q[c+''+party+'_normalized'];
+        } 
     }
-    for (var party of Q.parties) {
-        Q[c + '_' + party + '_normalized'] = 100*Q[c+'_'+party]/class_votes;
-        Q[c + '_' + party + '_display'] = Math.round(100*Q[c+'_'+party]/class_votes);
-    }
+    Q[party + '_support'] = party_support;
+    total_support += party_support; 
 }
 // calculate support for each of the parties
 var total_support = 0; 
