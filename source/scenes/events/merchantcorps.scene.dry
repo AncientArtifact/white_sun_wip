@@ -17,7 +17,7 @@ Because of this crisis, Sun Yat-sen has left for Shaoguan and Hu Hanmin is now t
 - @beat: Send Chiang Kai-shek's Whampoa Army Cadets over!
 
 @beat
-on-arrival: guangdong_governor = "Hu Hanmin"'; old_middle_kmt -= 5; new_middle_kmt -= 5; whampoa_strength += 5;
+on-arrival: guangdong_governor = "Hu Hanmin"; old_middle_kmt -= 5; new_middle_kmt -= 5; whampoa_strength += 5;
 on-display: {!  
     var cardEl = document.createElement('div');  
     cardEl.className = "face-figure2";  
