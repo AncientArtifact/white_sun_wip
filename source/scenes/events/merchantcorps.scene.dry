@@ -4,5 +4,31 @@ tags: events
 view-if: year = 1924 and month = 8
 max-visits: 1
 priority: 2
-face-image: img/whampoaopen.jpg
+face-image: img/cantonburn.jpg
 new-page: true
+
+= The Merchant Corps Uprising
+
+Days ago, Chiang Kai-shek's ship *Jianggu* had detained a British vessel full of weapons and ammunition purchased by the Cantonese Merchant Corps.
+Now, the Merchant Corps under Chen Lianbo have begun a strike throughout the city of Canton. Multiple counties have also joined the strike. They have begun demanding that Sun's government resign and have begun setting up defenses in the Xiguan region of Canton.
+
+Because of this crisis, Sun Yat-sen has left for Shaoguan and Hu Hanmin is now the Governor of Guangdong.
+
+- @beat: Send Chiang Kai-shek's Whampoa Army Cadets over!
+
+@beat
+on-arrival: guangdong_governor = "Hu Hanmin"'; old_middle_kmt -= 5; new_middle_kmt -= 5; whampoa_strength += 5;
+on-display: {!  
+    var cardEl = document.createElement('div');  
+    cardEl.className = "face-figure2";  
+
+    var image = new Image();  
+    image.className = "face-img";  
+    image.src = "img/portraits/cantonburn.jpg";  
+
+    cardEl.appendChild(image);  
+    var contentDiv = document.querySelector("#page #mid_panel #content");
+    contentDiv.appendChild(cardEl);
+!}
+
+Chiang Kai-shek and the Whampoa officers have successfully defeated the strike, although much of Xiguan has burned. This is a bad day for Canton, but it has increased Chiang Kai-shek's clout.
