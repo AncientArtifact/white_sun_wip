@@ -19,7 +19,21 @@ Now, Feng Yuxiang has completely split from the Zhili Clique, forming his own fa
 
 @next
 on-arrival: bei_strength -= 100; hebei_governor = "Zhang Zuolin"; hebei_faction = "Fengtian"; shaanxi_faction = "Guominjun"; suiyuan_faction = "Guominjun"; chahar_faction = "Guominjun"; shandong_faction = "Fengtian"; zhili_leader = "Wu Peifu"; zhili_deputy_leader = "Sun Chuanfang"; beiyang_leader = "Duan Qirui"; deputy_beiyang_leader = "Zhang Zuolin"; beiyang_leader_party = "Anhui"; deputy_beiyang_leader_party = "Fengtian";
+on-display: {!  
+    var cardEl = document.createElement('div');  
+    cardEl.className = "face-figure2";  
 
-Unfortunately, the Cantonese Merchant Corps Uprising have tied our hands, and we are unable to fight.
+    var image = new Image();  
+    image.className = "face-img";  
+    image.src = "img/portraits/FengYuxiang.jpg";  
 
-However, the fight between Wu Peifu and Zhang Zuolin intensifies in Shanhaiguan. It is not obvious who will win this one.
+    cardEl.appendChild(image);  
+    var contentDiv = document.querySelector("#page #mid_panel #content");
+    contentDiv.appendChild(cardEl);
+!}
+
+This has completely changed the world of Chinese politics. With this betrayal, Feng Yuxiang and Zhang Zuolin have now decisively defeated the Zhili Clique. These two are now the most powerful warlords in China.
+
+Wu Peifu and Sun Chuanfang bitterly stay in their bastions of Wuchang and Nanjing respectively, as the two begin reorganizing the North in their vision.
+
+To avoid further fighting, Feng and Zhang have decided to appoint Duan Qirui to lead a provisional government in Beijing, although he is effectively a puppet of both.
