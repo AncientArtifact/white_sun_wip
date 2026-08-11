@@ -47,7 +47,9 @@ Increasing conscription is pretty unpopular with the people.
 choose-if: conscription > 1
 unavailable-subtitle: Conscription is already way too low.
 subtitle: -25 thousand
-on-arrival: nra_strength -= 25; conscription -= 1;
+on-arrival: nra_strength -= 25; conscription -= 1; rural_kmt += 5;
+
+Decreasing conscription is more popular with the people, although it reduces the NRA's numbers.
 
 @same
 
