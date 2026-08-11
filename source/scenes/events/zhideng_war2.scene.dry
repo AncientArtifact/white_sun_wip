@@ -1,0 +1,25 @@
+title: The Beijing Coup
+subtitle: Feng Yuxiang has taken Beijing!
+tags: events
+view-if: year = 1924 and month = 10
+max-visits: 1
+priority: 2
+new-page: true
+on-arrival: gmj_enabled = 1
+
+= The Beijing Coup
+
+Suddenly, the "Christian Warlord" Feng Yuxiang's 3rd Zhili Army has couped President Cao Kun and have taken control of the government!
+
+This betrayal has shocked the Zhili Clique hard. Wu Peifu angrily withdrew from Shanhaiguan to retake Beijing, but it was no use. Zhang Zuolin defeated the Zhili and Wu Peifu was sent routing south.
+
+Now, Feng Yuxiang has completely split from the Zhili Clique, forming his own faction, the *Guominjun*. The Christian Warlord has begun recieving aid and supplies from the Soviets, further counterbalancing Japanese influence in Manchuria.
+
+- @next: What next?
+
+@next
+on-arrival: bei_strength -= 100; hebei_governor = "Zhang Zuolin"; hebei_faction = "Fengtian"; shaanxi_faction = "Guominjun"; suiyuan_faction = "Guominjun"; chahar_faction = "Guominjun"; shandong_faction = "Fengtian"; zhili_leader = "Wu Peifu"; zhili_deputy_leader = "Sun Chuanfang"; beiyang_leader = "Duan Qirui"; deputy_beiyang_leader = "N/A";
+
+Unfortunately, the Cantonese Merchant Corps Uprising have tied our hands, and we are unable to fight.
+
+However, the fight between Wu Peifu and Zhang Zuolin intensifies in Shanhaiguan. It is not obvious who will win this one.
