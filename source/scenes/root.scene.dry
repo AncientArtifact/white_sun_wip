@@ -279,9 +279,9 @@ Q.economic_records = [];
 
 // State of the government
 Q.beiyang_leader = "Cao Kun";
-Q.beiyang_leader_party = '<span style="color: #aba133">Zhili</span>';
+Q.beiyang_leader_party = 'Zhili';
 Q.deputy_beiyang_leader = "Wu Peifu";
-Q.deputy_beiyang_leader_party = '<span style="color: #aba133">Zhili</span>';
+Q.deputy_beiyang_leader_party = 'Zhili';
 Q.kmt_in_government = 0;
 Q.zhi_in_government = 1;
 Q.feng_in_government = 1;
