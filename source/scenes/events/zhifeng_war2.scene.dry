@@ -18,7 +18,7 @@ Now, Feng Yuxiang has completely split from the Zhili Clique, forming his own fa
 - @next: What next?
 
 @next
-on-arrival: bei_strength -= 100; hebei_governor = "Zhang Zuolin"; hebei_faction = "Fengtian"; shaanxi_faction = "Guominjun"; suiyuan_faction = "Guominjun"; chahar_faction = "Guominjun"; shandong_faction = "Fengtian"; zhili_leader = "Wu Peifu"; zhili_deputy_leader = "Sun Chuanfang"; beiyang_leader = "Duan Qirui"; deputy_beiyang_leader = "N/A";
+on-arrival: bei_strength -= 100; hebei_governor = "Zhang Zuolin"; hebei_faction = "Fengtian"; shaanxi_faction = "Guominjun"; suiyuan_faction = "Guominjun"; chahar_faction = "Guominjun"; shandong_faction = "Fengtian"; zhili_leader = "Wu Peifu"; zhili_deputy_leader = "Sun Chuanfang"; beiyang_leader = "Duan Qirui"; deputy_beiyang_leader = "Zhang Zuolin"; beiyang_leader_party = "Anhui"; deputy_beiyang_leader_party = "Fengtian";
 
 Unfortunately, the Cantonese Merchant Corps Uprising have tied our hands, and we are unable to fight.
 
