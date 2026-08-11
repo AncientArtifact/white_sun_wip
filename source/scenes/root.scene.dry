@@ -149,6 +149,7 @@ Q.red_militancy = 0.1;
 Q.gmj_strength = 100;
 Q.gmj_militancy = 0.5;
 Q.gmj_enabled = 0;
+Q.conscription = 2;
 
 // The state of the country
 
