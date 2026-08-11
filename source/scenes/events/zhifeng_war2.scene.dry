@@ -6,6 +6,18 @@ max-visits: 1
 priority: 2
 new-page: true
 on-arrival: gmj_enabled = 1
+on-display: {!  
+    var cardEl = document.createElement('div');  
+    cardEl.className = "face-figure2";  
+
+    var image = new Image();  
+    image.className = "face-img";  
+    image.src = "img/portraits/FengYuxiang.jpg";  
+
+    cardEl.appendChild(image);  
+    var contentDiv = document.querySelector("#page #mid_panel #content");
+    contentDiv.appendChild(cardEl);
+!}
 
 = The Beijing Coup
 
@@ -25,7 +37,7 @@ on-display: {!
 
     var image = new Image();  
     image.className = "face-img";  
-    image.src = "img/portraits/FengYuxiang.jpg";  
+    image.src = "img/portraits/DuanQirui.jpg";  
 
     cardEl.appendChild(image);  
     var contentDiv = document.querySelector("#page #mid_panel #content");
