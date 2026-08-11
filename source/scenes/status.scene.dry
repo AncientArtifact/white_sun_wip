@@ -59,7 +59,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 <span style="color: #9e1515">**CPC**</span>: [+ cpc_relation : relationships +]
 
-[? if gmj_enabled = 1 : <span style="color: #943452">GMJ</span>: [+ gmj_relation : relationships +] ?]
+[? if gmj_enabled = 1 : <span style="color: #943452">**GMJ**</span>: [+ gmj_relation : relationships +] ?]
 
 <span style="color: #aba133">**ZHI**</span>: [+ zhi_relation : relationships +]
 
@@ -138,9 +138,9 @@ if (Q.gmj_strength) {
 
 <span style="color: #ab881f">**Fengtian Army**</span> Militarization: [+ feng_militancy : militancy +]
 
-[? if gmj_enabled = 1 : <span style="color: #943452">Guominjun</span> Strength: [+ gmj_strength_2 +] thousand ?]
+[? if gmj_enabled = 1 : <span style="color: #943452">**Guominjun**</span> Strength: [+ gmj_strength_2 +] thousand ?]
 
-[? if gmj_enabled = 1 : <span style="color: #943452">Guominjun</span> Strength: [+ gmj_militancy : militancy +] ?]
+[? if gmj_enabled = 1 : <span style="color: #943452">**Guominjun**</span> Strength: [+ gmj_militancy : militancy +] ?]
 
 @polls
 on-arrival: {!
