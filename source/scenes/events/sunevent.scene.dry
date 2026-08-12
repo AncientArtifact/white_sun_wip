@@ -1,0 +1,19 @@
+title: Sun Yat-sen Arrives at Beijing
+subtitle: Can negotiations begin?
+tags: events
+view-if: year = 1924 and month = 12
+max-visits: 1
+priority: 2
+new-page: true
+on-display: {!  
+    var cardEl = document.createElement('div');  
+    cardEl.className = "face-figure2";  
+
+    var image = new Image();  
+    image.className = "face-img";  
+    image.src = "img/SunYat-sen.jpg";  
+
+    cardEl.appendChild(image);  
+    var contentDiv = document.querySelector("#page #mid_panel #content");
+    contentDiv.appendChild(cardEl);
+!}
