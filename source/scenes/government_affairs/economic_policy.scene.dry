@@ -14,6 +14,7 @@ Economic Policy concerns our usage of money to improve the economy.
 @econ_menu
 
 - @centralize: We will attempt to centralize the economy.
+- @central-bank: Found the Canton Central Bank!
 - @infrastructure: We will build up infrastructure in the state.
 - @business: We will encourage Chinese businesses.
 - @illegalize: Illegalize Gambling.
@@ -23,11 +24,20 @@ Economic Policy concerns our usage of money to improve the economy.
 
 @centralize
 subtitle: -2 budget - Centralize the tax system and fiscal policy.
-unavailable-subtitle: -2 budget
-choose-if: budget >= 2
+unavailable-subtitle: -2 budget [? if centralize = 5 : Canton's economy is already strong enough. ?]
+choose-if: budget >= 2 and centralize <= 5
 on-arrival: budget -= 2; economic_growth += 0.6; centralize += 1;
 
 Centralizing the tax system will make the economy more efficient and stable.
+
+@central-bank
+subtitle: -2 budget
+unavailable-subtitle: -2 budget
+view-if: centralize = 3
+choose-if: budget >= 2 and centralize = 3
+on-arrival: budget -= 2; economic_growth += 2; centralize += 2;
+
+Founding the Central Bank of Canton has greatly improved our efforts in managing Guangdong's finances.
 
 @infrastructure
 subtitle: -2 budget - Build more roads, railways and improve our ports.
