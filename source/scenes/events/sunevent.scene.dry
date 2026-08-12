@@ -1,5 +1,5 @@
-title: Sun Yat-sen Arrives at Beijing
-subtitle: Can negotiations begin?
+title: Sun Yat-sen's "Northern Expedition"
+subtitle: His final overtures.
 tags: events
 view-if: year = 1924 and month = 12
 max-visits: 1
@@ -17,3 +17,7 @@ on-display: {!
     var contentDiv = document.querySelector("#page #mid_panel #content");
     contentDiv.appendChild(cardEl);
 !}
+
+= Sun Yat-sen's "Northern Expedition"
+
+An ailment has affected our dear leader's health. 
