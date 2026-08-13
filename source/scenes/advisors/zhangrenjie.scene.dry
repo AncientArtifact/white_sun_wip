@@ -24,10 +24,10 @@ on-arrival: advisor_action_timer = 6; resources += dues
 We have gained +[+ dues +] resources.
 
 @middle
-title: Organize the Middle Class
-subtitle: Soong can use his connections to gain support from the businessmen and intellectuals.
+title: Organize the Businessmen.
+subtitle: Renjie can use his connections to gain support from the businessmen and capitalists.
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 choose-if: advisor_action_timer = 0
-on-arrival: advisor_action_timer = 6; new_middle_kmt += 10; old_middle_kmt += 10;
+on-arrival: advisor_action_timer = 6; old_middle_kmt += 10;
 
-We have organized among the middle class.
+We have organized among the businessmen.
