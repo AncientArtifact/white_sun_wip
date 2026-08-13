@@ -10,6 +10,7 @@ new-page: true
 Zhang Renjie is a financier for the Right faction.
 
 - @emergency_fundraising
+- @middle
 - @root: Return to main
 
 @emergency_fundraising
@@ -21,3 +22,12 @@ unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +
 on-arrival: advisor_action_timer = 6; resources += dues
 
 We have gained +[+ dues +] resources.
+
+@middle
+title: Organize the Middle Class
+subtitle: Soong can use his connections to gain support from the businessmen and intellectuals.
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer = 0
+on-arrival: advisor_action_timer = 6; new_middle_kmt += 10; old_middle_kmt += 10;
+
+We have organized among the middle class.
