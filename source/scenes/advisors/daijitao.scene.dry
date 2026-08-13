@@ -1,0 +1,36 @@
+title: Dai Jitao
+is-pinned-card: true
+tags: advisor, right
+card-image: img/portraits/DaiJitao.jpg
+view-if: daijitao_advisor = 1
+new-page: true 
+
+= Dai Jitao
+
+Dai Jitao is a member of the right and an expert theologist and propagandist.
+
+- @ideology
+- @rally
+- @media
+- @root: Return to main
+
+@ideology
+title: Work on Political Theory.
+choose-if: advisor_action_timer <= 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; last_advisor_action = 1;
+go-to: ideology
+
+@rally
+title: Hold rallies.
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; last_advisor_action = 1;
+go-to: rally
+
+@media
+title: Work on our media campaigns.
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; last_advisor_action = 1;
+go-to: media
