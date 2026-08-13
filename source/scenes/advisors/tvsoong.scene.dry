@@ -22,7 +22,7 @@ unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +
 choose-if: advisor_action_timer = 0
 on-arrival: advisor_action_timer = 5; advisor_action_time = time; center_left_strength += 10; center_left_dissent -= 10
 
-We have reduced the strength of the dissident factions in the party.
+We have increased Wang Jingwei's influence.
 
 @middle
 title: Organize the Middle Class
@@ -31,7 +31,7 @@ unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +
 choose-if: advisor_action_timer = 0
 on-arrival: advisor_action_timer = 6; new_middle_kmt += 10; old_middle_kmt += 10;
 
-We have reduced dissent among the anti-toleration factions.
+We have organized among the middle class.
 
 @finance_policy
 title: Fiscal Policy
