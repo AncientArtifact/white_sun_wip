@@ -1,0 +1,23 @@
+title: Zhang Renjie
+is-pinned-card: true
+tags: advisor, right
+card-image: img/portraits/ZhangRenjie.jpg
+view-if: zhangrenjie_advisor = 1
+new-page: true
+
+= Zhang Renjie
+
+Zhang Renjie is a financier for the Right faction.
+
+- @emergency_fundraising
+- @root: Return to main
+
+@emergency_fundraising
+title: Emergency Fundraising
+view-if: difficulty < 1
+subtitle: An emergency infusion of resources.
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; resources += dues
+
+We have gained +[+ dues +] resources.
