@@ -29,3 +29,5 @@ subtitle: We can increase the Right-KMT's influence.
 choose-if: advisor_action_timer == 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1; right_strength += 10; left_dissent += 10; center_left_dissent += 10;
+
+The R-KMT has been empowered.
