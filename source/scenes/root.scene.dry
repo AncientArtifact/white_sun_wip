@@ -27,7 +27,7 @@ Q.month = 1;
 Q.month_actions = 0;
 
 Q.power_struggle_active = 0;
-Q.northern_expedition = 0;
+Q.northern_expedition_begun = 0;
 
 // 0 = normal difficulty, 1 = hard mode, 2 = hard mode no saves
 Q.difficulty = 0;
