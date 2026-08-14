@@ -130,9 +130,9 @@ if (Q.gmj_strength) {
 
 <span style="color: #9e1515">**Chinese Red Army**</span> Militarization: [+ red_militancy : militancy +]
 
-<span style="color: #aba133">**Zhili Beiyang Army**</span> Strength: [+ bei_strength_2 +] thousand
+<span style="color: #aba133">**Zhili Army**</span> Strength: [+ bei_strength_2 +] thousand
 
-<span style="color: #aba133">**Zhili Beiyang Army**</span> Militarization: [+ bei_militancy : militancy +]
+<span style="color: #aba133">**Zhili Army**</span> Militarization: [+ bei_militancy : militancy +]
 
 <span style="color: #ab881f">**Fengtian Army**</span> Strength: [+ feng_strength_2 +] thousand
 
