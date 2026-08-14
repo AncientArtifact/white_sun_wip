@@ -196,12 +196,8 @@ blockquote + blockquote.attribution {
   left: 0.4em;
 }
 .tools.right {
-  position: fixed;
-  right: 0.8rem;   /* distance from the right edge of the viewport */
-  top: 5rem;       /* adjust vertical position as needed */
-  float: none;
-  z-index: 999;    /* keep it above other content */
-  width: 240px;    /* optional - keep it a fixed width so layout is consistent */
+  float: right;
+  right: 0.4em;
 }
 #qualities {
   text-indent: 0;
