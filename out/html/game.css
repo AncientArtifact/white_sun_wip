@@ -196,7 +196,6 @@ blockquote + blockquote.attribution {
   left: 0.4em;
 }
 .tools.right {
-  .tools.right {
   position: fixed;
   right: 0.8rem;   /* distance from the right edge of the viewport */
   top: 5rem;       /* adjust vertical position as needed */
