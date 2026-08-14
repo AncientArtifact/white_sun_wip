@@ -15,9 +15,9 @@ The KMT is torn between many different ideological currents. What should be our 
 [? if ideology != 0 : We have previously chosen a [+ ideology +] ideology. Changing it will likely have drawbacks. ?]
 
 - @left: Cooperation with the Communists should be prioritized.
-- @center_left: Wang Jingwei's ideas of democracy and worker's rights resonate well with our party.
-- @center: Sun Yat-sen's doctrine should be followed and respected to it's full meaning.
-- @right: We should cut ties with the Communists and inspire more nationalism in our people.
+- @center_left: Wang Jingwei can lead us through the storm.
+- @center: We should stay in the middle, probably.
+- @right: We should cut ties with the Communists and keep conservative policies.
 - @whampoa: Our military arm deserves some attention.
 - @easy_discard
 
@@ -41,7 +41,7 @@ if (Q.ideology && Q.ideology != "center_leftist") {
 go-to: changed if changed = 1
 on-departure: ideology = "center_leftist"; center_left_strength += 10; center_left_dissent -= 10;
 
-The Center-Leftists supporting Wang Jingwei seeks to speed up the path to democracy.
+The Leftists supporting Wang Jingwei seeks to cooperate with the CPC.
 
 @center
 on-arrival: {!
@@ -52,7 +52,7 @@ if (Q.ideology && Q.ideology != "centrist") {
 go-to: changed if changed = 1
 on-departure: ideology = "centrist"; center_strength += 10; center_dissent -= 10; left_dissent -= 5; right_dissent -= 5; center_left_dissent -= 5;
 
-The Centrists follow Sun Yat-sen's ideals and acts as a mediatory force in the party.
+The Centrists are mostly neutral and act as a mediatory force in the party.
 
 @right
 on-arrival: {!
@@ -63,7 +63,7 @@ if (Q.ideology && Q.ideology != "right") {
 go-to: changed if changed = 1
 on-departure: ideology = "right"; right_strength += 10; right_dissent -= 5; cpc_relation -= 8; left_dissent += 8; center_left_dissent += 5;
 
-The right wing of our party seeks to cut ties with the Communists and establish a strong government.
+The right wing of our party seeks to cut ties with the Communists and establish a conservative government.
 
 @whampoa
 on-arrival: {!
