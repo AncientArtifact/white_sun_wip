@@ -6,9 +6,9 @@ is-card: true
 on-arrival: month_actions += 1; inter_party_relationships_timer = 6;
 card-image: img/kmtinterparty.jpg
 max-visits: 12
-#subtitle: Building relations with the other political parties of Germany.
+#subtitle: Building relations with the other factions.
 
-= Inter-Party Relationships
+= Clique Relationships
 
 The KMT can decide to strengthen ties with other factions to garner more support.
 
