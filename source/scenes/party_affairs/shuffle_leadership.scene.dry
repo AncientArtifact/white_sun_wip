@@ -90,7 +90,7 @@ go-to: rm_main
 Zhang Renjie has been removed as an advisor. The right faction disapproves.
 
 
-# center-left
+# left
 
 @remove_wangjingwei
 title: Remove Wang Jingwei
@@ -129,7 +129,7 @@ go-to: rm_main
 
 Eugene Chen has been removed as an advisor. The center_left faction disapproves.
 
-# left
+# communist
 
 @remove_liaozhongkai
 title: Remove Liao Zhongkai
@@ -170,7 +170,7 @@ Soong Ching-ling has been removed as an advisor. The Leftist faction disapproves
 
 
 
-# whampoas
+# whampoa
 
 @remove_xuchongzhi
 title: Remove Xu Chongzhi
@@ -253,9 +253,9 @@ frequency: 1
 
 
 - @centrist: Add Centrists
-- @left: Add Leftists
+- @left: Add Communists
 - @right: Add Rightists
-- @center_left: Add Center Leftists
+- @center_left: Add Leftists
 - @whampoa: Add Whampoa Officers
 - @nonfactional: Add non-factional advisors
 - @rm_main: Remove advisors instead.
