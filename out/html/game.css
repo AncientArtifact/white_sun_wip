@@ -177,12 +177,14 @@ blockquote + blockquote.attribution {
   position: relative;
 }
 #tools_wrapper {
-  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
   width: 100%;
   max-width: 69em;
-  left: 0;
-  right: 0;
   margin: 0 auto;
+  position: relative;
 }
 .tools {
   padding: 0.6em;
@@ -192,11 +194,11 @@ blockquote + blockquote.attribution {
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
 }
 .tools.left {
-  float: left;
+  float: none;
   left: 0.4em;
 }
 .tools.right {
-  float: right;
+  float: none;
   right: 0.4em;
 }
 #qualities {
