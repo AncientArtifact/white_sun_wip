@@ -182,27 +182,39 @@
 
   // TODO: have some code for tabbed sidebar browsing.
   window.updateSidebar = function() {
-      $('#qualities').empty();
-      var scene = dendryUI.game.scenes[window.statusTab];
-      dendryUI.dendryEngine._runActions(scene.onArrival);
-      var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
-      $('#qualities').append(dendryUI.contentToHTML.convert(displayContent));
-  };
+    // decide which container to render into
+    var target = '#qualities';
+    if (window.statusTabId && window.statusTabId.indexOf('concern') !== -1) {
+        // tab button ids that include 'concern' render to the right-side concerns panel
+        target = '#qualities_right';
+    }
 
-  window.changeTab = function(newTab, tabId) {
-      if (tabId == 'poll_tab' && dendryUI.dendryEngine.state.qualities.historical_mode) {
-          window.alert('Polls are not available in historical mode.');
-          return;
-      }
-      var tabButton = document.getElementById(tabId);
-      var tabButtons = document.getElementsByClassName('tab_button');
-      for (i = 0; i < tabButtons.length; i++) {
+    // clear and render into chosen container
+    $(target).empty();
+    var scene = dendryUI.game.scenes[window.statusTab];
+    dendryUI.dendryEngine._runActions(scene.onArrival);
+    var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
+    $(target).append(dendryUI.contentToHTML.convert(displayContent));
+};
+
+window.changeTab = function(newTab, tabId) {
+    if (tabId == 'poll_tab' && dendryUI.dendryEngine.state.qualities.historical_mode) {
+        window.alert('Polls are not available in historical mode.');
+        return;
+    }
+    var tabButton = document.getElementById(tabId);
+    var tabButtons = document.getElementsByClassName('tab_button');
+    for (i = 0; i < tabButtons.length; i++) {
         tabButtons[i].className = tabButtons[i].className.replace(' active', '');
-      }
-      tabButton.className += ' active';
-      window.statusTab = newTab;
-      window.updateSidebar();
-  };
+    }
+    tabButton.className += ' active';
+
+    // store both the scene key and the tab button id
+    window.statusTab = newTab;
+    window.statusTabId = tabId;
+
+    window.updateSidebar();
+};
 
   window.onDisplayContent = function() {
       window.updateSidebar();
@@ -241,6 +253,7 @@
 
 
   window.justLoaded = true;
+  window.statusTabId = "main_tab";
   window.statusTab = "status";
   window.dendryModifyUI = main;
   console.log("Modifying stats: see dendryUI.dendryEngine.state.qualities");
