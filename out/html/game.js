@@ -181,14 +181,47 @@
   };
 
   // TODO: have some code for tabbed sidebar browsing.
-  window.updateSidebar = function() {
+ window.updateSidebar = function() {
+      // clear both to avoid stale content
       $('#qualities').empty();
+      $('#qualities_right').empty();
+
       var scene = dendryUI.game.scenes[window.statusTab];
+      if (!scene) {
+          // nothing to render (guard)
+          return;
+      }
+
+      // run any onArrival actions for that scene
       dendryUI.dendryEngine._runActions(scene.onArrival);
       var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
-      $('#qualities').append(dendryUI.contentToHTML.convert(displayContent));
-  };
 
+      // decide target by checking where the active tab button sits in the DOM
+      var target = '#qualities'; // default to left
+      if (window.statusTabId) {
+          var tabButton = document.getElementById(window.statusTabId);
+          try {
+              if (tabButton && tabButton.closest && tabButton.closest('#concerns')) {
+                  target = '#qualities_right';
+              } else {
+                  target = '#qualities';
+              }
+          } catch (e) {
+              // fallback: if any error, try to infer from statusTab string
+              if (String(window.statusTab).indexOf('concern') !== -1) {
+                  target = '#qualities_right';
+              }
+          }
+      } else {
+          // fallback inference
+          if (String(window.statusTab).indexOf('concern') !== -1) {
+              target = '#qualities_right';
+          }
+      }
+
+      $(target).append(dendryUI.contentToHTML.convert(displayContent));
+  };
+  
   window.changeTab = function(newTab, tabId) {
       if (tabId == 'poll_tab' && dendryUI.dendryEngine.state.qualities.historical_mode) {
           window.alert('Polls are not available in historical mode.');
@@ -196,16 +229,58 @@
       }
       var tabButton = document.getElementById(tabId);
       var tabButtons = document.getElementsByClassName('tab_button');
-      for (i = 0; i < tabButtons.length; i++) {
-        tabButtons[i].className = tabButtons[i].className.replace(' active', '');
+      for (var i = 0; i < tabButtons.length; i++) {
+          tabButtons[i].className = tabButtons[i].className.replace(' active', '');
       }
-      tabButton.className += ' active';
+      if (tabButton) {
+          tabButton.className += ' active';
+      }
+
+      // store both the scene key and the tab button id
       window.statusTab = newTab;
+      window.statusTabId = tabId;
+
       window.updateSidebar();
   };
 
+
   window.onDisplayContent = function() {
       window.updateSidebar();
+  };
+
+  // keep track of initial values
+  window.justLoaded = true;
+  window.statusTab = "status";
+  window.statusTabId = "main_tab";
+  window.dendryModifyUI = main;
+  console.log("Modifying stats: see dendryUI.dendryEngine.state.qualities");
+
+  window.onload = function() {
+    window.dendryUI.loadSettings({show_portraits: false});
+    if (window.dendryUI.dark_mode) {
+        document.body.classList.add('dark-mode');
+    }
+    window.pinnedCardsDescription = "Advisor cards - actions are only usable once per 6 months.";
+
+    // Determine which tab/button is active in the DOM and initialize statusTab/statusTabId accordingly.
+    // Prefer right panel active if present.
+    var rightActive = document.querySelector('#concerns .tab_button.active');
+    var leftActive = document.querySelector('#stats_sidebar .tab_button.active');
+
+    if (rightActive) {
+        window.statusTabId = rightActive.id || 'main_concerns';
+        // right panel buttons use scene key 'concern' in your markup
+        window.statusTab = 'concern';
+    } else if (leftActive) {
+        window.statusTabId = leftActive.id || 'main_tab';
+        // left panel uses 'status' scenes
+        window.statusTab = 'status';
+    } else {
+        window.statusTabId = 'main_tab';
+        window.statusTab = 'status';
+    }
+
+     window.updateSidebar();
   };
 
   /*
