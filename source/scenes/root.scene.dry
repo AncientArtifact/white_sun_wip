@@ -27,7 +27,10 @@ Q.month = 1;
 Q.month_actions = 0;
 
 Q.power_struggle_active = 0;
+Q.wuhan_nanjing_split = 0;
+Q.cpc_civil_war = 0;
 Q.northern_expedition_begun = 0;
+Q.kmt_victory = 0;
 
 // 0 = normal difficulty, 1 = hard mode, 2 = hard mode no saves
 Q.difficulty = 0;
@@ -104,7 +107,6 @@ Q.moderate_plan_adopted = 0;
 // inter-party relations
 Q.gxc_relation = 50;
 Q.cpc_relation = 35;
-Q.cpc_civil_war = 0;
 Q.yun_relation = 60;
 Q.gui_relation = 35;
 Q.zhi_relation = 0;
