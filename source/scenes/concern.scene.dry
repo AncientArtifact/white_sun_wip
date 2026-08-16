@@ -13,7 +13,8 @@ The <span style="color: #9e1515">Be</span><span style="color: #ab881f">iy</span>
 The <span style="color: #9e1515">United</span> <span style="color: #10186e">Front</span> is [? if cpc_civil_war = 0 and cpc_relation > 50 : <span style="color: #66BB6A;">strong.</span> ?][? if cpc_civil_war = 0 and cpc_relation <= 20 : <span style="color: #d42f2f;">breaking.</span> ?]
 [? if cpc_civil_war = 0 and cpc_relation > 20 and cpc_relation < 50 : <span style="color: #FFB74D;">unstable.</span> ?][? if cpc_civil_war = 1 : <span style="color: #d42f2f;">dead.</span> ?]
 
-
+@concern_powerstruggle
+view-if: sunyatsen_dead = 1
 
 
 
