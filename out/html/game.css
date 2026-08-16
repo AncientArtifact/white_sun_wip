@@ -218,7 +218,8 @@ blockquote + blockquote.attribution {
 #qualities h1 + p:first-line {
   font-weight: normal;
 }
-
+#qualities_right { text-indent: 0; line-height: 1.3em; } #qualities_right p { text-indent: 0
+                                                                            }
 
 /* tabs */
 .tab_container {
