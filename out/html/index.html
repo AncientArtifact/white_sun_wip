@@ -307,26 +307,33 @@
                 </div>
             </header>
             <div id="tools_wrapper">
-                <div id='stats_sidebar' class='tools left'>
-                    <div class="tab_container">
-                        <button class="tab_button active" id="main_tab" onclick="window.changeTab('status', 'main_tab');">Main</button>
-                        <button class="tab_button" id="politics_tab" onclick="window.changeTab('status.politics', 'politics_tab');">Politics</button>
-                        <button class="tab_button" id="paramilitary_tab" onclick="window.changeTab('status.paramilitaries', 'paramilitary_tab');">Defense</button>
-                        <button class="tab_button" id="poll_tab" onclick="window.changeTab('status.polls', 'poll_tab');">Polls</button>
-                        <button class="tab_button" id="provinces_tab" onclick="window.changeTab('status.provinces', 'provinces_tab');">Provinces</button>
-                    </div>
-                    <div id="qualities">
-                    </div>
-                   <div id='concerns' class='tools right'>
-                    <div class="tab_container">
-                        <button class="tab_button active" id="main_concerns" onclick="window.changeTab('concern', 'main_concerns');">Main</button>
-                        <button class="tab_button" id="concern_powerstruggle" onclick="window.changeTab('concern', 'concern_powerstruggle');">The Power Struggle</button>
-                        <button class="tab_button" id="concern_northernexpedition" onclick="window.changeTab('concern', 'concern_northernexpedition');">The Northern Expedition</button>
-                        <button class="tab_button" id="concern_wuhannanjing" onclick="window.changeTab('concern', 'concern_wuhannanjing');">The Wuhan-Nanjing Split</button>
-                        <button class="tab_button" id="concern_civilwar" onclick="window.changeTab('concern', 'concern_civilwar');">The Chinese Civil War</button>
-                    </div>
-                    <div id="qualities">
-                    </div>
+                <!-- Left sidebar -->
+<div id='stats_sidebar' class='tools left'>
+  <div class="tab_container">
+    <button class="tab_button active" id="main_tab" onclick="window.changeTab('status', 'main_tab');">Main</button>
+    <button class="tab_button" id="politics_tab" onclick="window.changeTab('status.politics', 'politics_tab');">Politics</button>
+    <button class="tab_button" id="paramilitary_tab" onclick="window.changeTab('status.paramilitaries', 'paramilitary_tab');">Defense</button>
+    <button class="tab_button" id="poll_tab" onclick="window.changeTab('status.polls', 'poll_tab');">Polls</button>
+    <button class="tab_button" id="provinces_tab" onclick="window.changeTab('status.provinces', 'provinces_tab');">Provinces</button>
+  </div>
+  <div id="qualities">
+    <!-- left qualities content -->
+  </div>
+</div> <!-- close left sidebar -->
+
+<!-- Right sidebar (concerns) should be a sibling, not nested -->
+<div id='concerns' class='tools right'>
+  <div class="tab_container">
+    <button class="tab_button active" id="main_concerns" onclick="window.changeTab('concern', 'main_concerns');">Main</button>
+    <button class="tab_button" id="concern_powerstruggle" onclick="window.changeTab('concern', 'concern_powerstruggle');">The Power Struggle</button>
+    <button class="tab_button" id="concern_northernexpedition" onclick="window.changeTab('concern', 'concern_northernexpedition');">The Northern Expedition</button>
+    <button class="tab_button" id="concern_wuhannanjing" onclick="window.changeTab('concern', 'concern_wuhannanjing');">The Wuhan-Nanjing Split</button>
+    <button class="tab_button" id="concern_civilwar" onclick="window.changeTab('concern', 'concern_civilwar');">The Chinese Civil War</button>
+  </div>
+  <div id="qualities_right">
+    <!-- right qualities content (was the second #qualities) -->
+  </div>
+</div>
                 </div>
             </div>
 
