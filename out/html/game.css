@@ -197,11 +197,11 @@ blockquote + blockquote.attribution {
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
 }
 .tools.left {
-  float: left;
+  float: none;
   left: 0.4em;
 }
 .tools.right {
-  float: right;
+  float: none;
   right: 0.4em;
 }
 #qualities {
