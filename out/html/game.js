@@ -182,19 +182,27 @@
 
   // TODO: have some code for tabbed sidebar browsing.
   window.updateSidebar = function() {
-    // decide which container to render into
+    // pick the correct container: default to left
     var target = '#qualities';
-    if (window.statusTabId && window.statusTabId.indexOf('concern') !== -1) {
-        // tab button ids that include 'concern' render to the right-side concerns panel
+
+    // If the active scene key or the active tab id points to concerns, render on the right.
+    if (window.statusTab === 'concern' ||
+        (window.statusTab && window.statusTab.indexOf('concern') !== -1) ||
+        (window.statusTabId && window.statusTabId.indexOf('concern') !== -1)) {
         target = '#qualities_right';
     }
 
-    // clear and render into chosen container
-    $(target).empty();
+    // clear both containers to avoid stale content
+    $('#qualities').empty();
+    $('#qualities_right').empty();
+
+    // render into the chosen container (guard for missing scene)
     var scene = dendryUI.game.scenes[window.statusTab];
-    dendryUI.dendryEngine._runActions(scene.onArrival);
-    var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
-    $(target).append(dendryUI.contentToHTML.convert(displayContent));
+    if (scene) {
+        dendryUI.dendryEngine._runActions(scene.onArrival);
+        var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
+        $(target).append(dendryUI.contentToHTML.convert(displayContent));
+    }
 };
 
 window.changeTab = function(newTab, tabId) {
@@ -208,6 +216,13 @@ window.changeTab = function(newTab, tabId) {
         tabButtons[i].className = tabButtons[i].className.replace(' active', '');
     }
     tabButton.className += ' active';
+
+    // store both the scene key and the tab button id
+    window.statusTab = newTab;
+    window.statusTabId = tabId;
+
+    window.updateSidebar();
+};
 
     // store both the scene key and the tab button id
     window.statusTab = newTab;
@@ -264,6 +279,26 @@ window.changeTab = function(newTab, tabId) {
         document.body.classList.add('dark-mode');
     }
     window.pinnedCardsDescription = "Advisor cards - actions are only usable once per 6 months.";
-  };
+
+    // Initialize statusTabId from whichever tab is currently marked active in the DOM.
+    var leftActive = document.querySelector('#stats_sidebar .tab_button.active');
+    var rightActive = document.querySelector('#concerns .tab_button.active');
+    if (rightActive) {
+        window.statusTabId = rightActive.id;
+        window.statusTab = 'concern';
+    } else if (leftActive) {
+        window.statusTabId = leftActive.id;
+        // try to infer scene key; if leftActive has custom onclick that sets explicit scene,
+        // default to 'status' which is used by left tabs in this project.
+        window.statusTab = 'status';
+    } else {
+        // fallback defaults
+        window.statusTabId = 'main_tab';
+        window.statusTab = 'status';
+    }
+
+    // render initial content into correct panel
+    window.updateSidebar();
+};
 
 }());
