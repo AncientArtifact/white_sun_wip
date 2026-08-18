@@ -23,8 +23,8 @@ Q.started = 1;
 Q.time = 1;
 Q.year = 1924;
 Q.month = 1;
-// how many actions have been taken this month?
-Q.month_actions = 0;
+Q.week = 1;
+Q.week_actions = 0;
 
 Q.power_struggle_active = 0;
 Q.wuhan_nanjing_split = 0;

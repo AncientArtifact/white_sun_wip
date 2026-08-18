@@ -2,7 +2,7 @@ title: Foreign Policy
 new-page: true
 is-card: true
 tags: govt_affairs, cabinet
-on-arrival: month_actions += 1; foreign_policy_timer += 8;
+on-arrival: week_actions += 1; foreign_policy_timer += 8;
 view-if: foreign_policy_timer <= 0 and kmt_in_government = 1
 card-image: img/portraits/EugeneChen.jpg
 go-to: fp_menu
