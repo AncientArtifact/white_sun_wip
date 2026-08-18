@@ -3,7 +3,7 @@ new-page: true
 is-card: true
 tags: party_affairs
 view-if: party_organizations_timer <= 0
-on-arrival: month_actions += 1; party_organizations_timer = 6;
+on-arrival: week_actions += 1; party_organizations_timer = 6;
 card-image: img/kmtpartyorg.jpg
 max-visits: 6
 #subtitle: Outside of electoral politics, the KMT has much work to do within it's own party.
