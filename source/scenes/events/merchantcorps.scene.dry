@@ -1,7 +1,7 @@
 title: Cantonese Merchant Corps Uprising
 subtitle: A crisis in the city!
 tags: events
-view-if: year = 1924 and month = 8
+view-if: year = 1924 and month = 8 and week = 1
 max-visits: 1
 priority: 2
 new-page: true
