@@ -1,7 +1,7 @@
 title: Sun Yat-sen's "Northern Expedition"
 subtitle: His final overtures.
 tags: events
-view-if: year = 1924 and month = 12
+view-if: year = 1924 and month = 12 and week = 1
 max-visits: 1
 priority: 2
 new-page: true
