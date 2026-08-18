@@ -331,7 +331,10 @@ if (Q.month_actions >= 1) {
  !}
 go-to: events_choice if has_event = 1; main if has_event = 0 and difficulty >= 0; main.main_easy if has_event = 0 and difficulty < 0
 
-= [+ month : month +] [+ year +]
+= [+ week : week +] [+ month : month +] [+ year +]
+
+if week > 4 : week -= 5 and month += 1
+if week < 1 : week = 1
 
 @events_choice
 
