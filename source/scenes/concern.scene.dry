@@ -29,7 +29,7 @@ Influence: [+ center_left_strength : strength +]
 Influence: [+ right_strength : strength +]
 <img src="img/portraits/HuHanmin.jpg">
 
-<span style="color: #f55e56">**Whampoa Clique**</span>: Chiang Kai-shek
+<span style="color: #d6d6d6">**Whampoa Clique**</span>: Chiang Kai-shek
 Influence: [+ whampoa_strength : strength +]
 <img src="img/portraits/ChiangKai-shek.jpg">
 
