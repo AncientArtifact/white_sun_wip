@@ -25,7 +25,7 @@ The *National Revolutionary Army* is the Guomindang's military wing. It is still
 choose-if: budget >= nra_militarization_cost
 unavailable-subtitle: Not enough budget ([+ nra_militarization_cost +] needed).
 subtitle: -[+ nra_militarization_cost +] budget
-on-arrival: budget -= nra_militarization_cost; nra_investment += 1; nra_strength += 25; nra_strength += 25 if conscription > 2; nra_strength += 25 if conscription > 3; nra_militancy += 0.05; 
+on-arrival: budget -= nra_militarization_cost; nra_investment += 1; nra_strength += 10; nra_strength += 10 if conscription > 2; nra_strength += 5 if conscription > 3; nra_militancy += 0.05; 
 
 Increasing the strength of the NRA makes us more prepared for the Northern Expedition.
 
@@ -38,16 +38,16 @@ As we have already funded our government budget towards the National Revolutiona
 @increase
 choose-if: conscription < 5
 unavailable-subtitle: Conscription is way too high.
-subtitle: +25 thousand
-on-arrival: nra_strength += 25; conscription += 1; rural_kmt -= 10;
+subtitle: +10 thousand
+on-arrival: nra_strength += 10; conscription += 1; rural_kmt -= 10;
 
 Increasing conscription is pretty unpopular with the people.
 
 @decrease
 choose-if: conscription > 1
 unavailable-subtitle: Conscription is already way too low.
-subtitle: -25 thousand
-on-arrival: nra_strength -= 25; conscription -= 1; rural_kmt += 5;
+subtitle: -10 thousand
+on-arrival: nra_strength -= 10; conscription -= 1; rural_kmt += 5;
 
 Decreasing conscription is more popular with the people, although it reduces the NRA's numbers.
 
@@ -60,6 +60,6 @@ The National Revolutionary Army is already serving the purpose it needs to serve
 
 @cut_nra
 subtitle: +1 budget
-on-arrival: budget += 1; nra_strength -= 25; nra_militancy -= 0.02; left_strength -= 2; left_dissent += 2; red_militancy += 0.05; workers_cpc += 2; unemployed_cpc += 2
+on-arrival: budget += 1; nra_strength -= 10; nra_militancy -= 0.02; left_strength -= 2; left_dissent += 2; red_militancy += 0.05; workers_cpc += 2; unemployed_cpc += 2
 
 Cutting our budget to the National Revolutionary Army causes a drop in the membership, and leads some would-be members to join the Communists instead.
