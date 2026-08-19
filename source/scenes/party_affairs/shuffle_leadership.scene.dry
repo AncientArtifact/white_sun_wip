@@ -262,32 +262,32 @@ frequency: 1
 - @remove_none: Stop changing advisors.
 
 @centrist
-view-if: n_advisors < 3
+view-if: n_advisors < 3 [? if whampoa_built > 0 : n_advisors < 4 ?]
 
 - #center_advisor
 
 @right
-view-if: n_advisors < 3
+view-if: n_advisors < 3 [? if whampoa_built > 0 : n_advisors < 4 ?]
 
 - #right_advisor
 
 @left
-view-if: n_advisors < 3
+view-if: n_advisors < 3 [? if whampoa_built > 0 : n_advisors < 4 ?]
 
 - #left_advisor
 
 @center_left
-view-if: n_advisors < 3
+view-if: n_advisors < 3 [? if whampoa_built > 0 : n_advisors < 4 ?]
 
 - #center_left_advisor
 
 @whampoa
-view-if: whampoa_built > 0 and n_advisors < 3
+view-if: whampoa_built > 0 and n_advisors < 4 
 
 - #whampoa_advisor
 
 @nonfactional
-view-if: n_advisors < 3
+view-if: n_advisors < 3 [? if whampoa_built > 0 : n_advisors < 4 ?]
 
 - #nonfactional_advisor
 
