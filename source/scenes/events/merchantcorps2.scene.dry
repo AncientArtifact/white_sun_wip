@@ -14,7 +14,7 @@ The Merchant Corps have retaliated massively and have begun defenses in Xiguan. 
 - @beat: Send Chiang Kai-shek's Whampoa Cadets over!
 
 @beat
-on-arrival: whampoa_strength += 5; economic_growth += 0.5;
+on-arrival: whampoa_strength += 5; economic_growth -= 0.35;
 face-image: img/cantonburn.jpg
 
 After organizing a quick revolutionary council, Chiang Kai-shek and his Whampoa Academy cadets have defeated the Merchant Corps rebellion!
