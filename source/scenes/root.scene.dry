@@ -105,7 +105,7 @@ Q.moderate_plan_adopted = 0;
 // organizations
 
 // inter-party relations
-Q.gxc_relation = 50;
+Q.gxc_relation = 20;
 Q.cpc_relation = 35;
 Q.yun_relation = 60;
 Q.gui_relation = 35;
@@ -345,8 +345,8 @@ Q.guizhou_governor = 'Wang Wenhua';
 Q.guizhou_faction = 'Guizhou';
 Q.yunnan_governor = 'Tang Jiyao';
 Q.yunnan_faction = 'Yunnan';
-Q.guangxi_governor = 'Li Zongren';
-Q.guangxi_faction = 'New Guangxi';
+Q.guangxi_governor = 'Lu Rongting';
+Q.guangxi_faction = 'Old Guangxi';
 Q.guangdong_governor = 'Sun Yat-sen';
 Q.guangdong_faction = 'Guomindang';
 
