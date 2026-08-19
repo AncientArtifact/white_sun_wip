@@ -11,7 +11,7 @@ on-display: {!
 
     var image = new Image();  
     image.className = "face-img";  
-    image.src = "img/portraits/ChenLianbo.jpg";  
+    image.src = "img/portraits/ChenLianbo.png";  
 
     cardEl.appendChild(image);  
     var contentDiv = document.querySelector("#page #mid_panel #content");
