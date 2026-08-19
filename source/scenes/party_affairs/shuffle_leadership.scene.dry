@@ -55,7 +55,7 @@ Sun Yat-sen has been removed as an advisor. The Centrist faction disapproves.
 
 @remove_huhanmin
 title: Remove Hu Hanmin
-view-if: huhanmin= 1
+view-if: huhanmin_advisor = 1
 tags: remove_advisor
 on-arrival: huhanmin_advisor = 0; right_dissent += 5; n_advisors -= 1
 go-to: rm_main
@@ -262,22 +262,22 @@ frequency: 1
 - @remove_none: Stop changing advisors.
 
 @centrist
-view-if: n_advisors < 3, n_advisors < 4 if whampoa_built > 0
+view-if: n_advisors < 3
 
 - #center_advisor
 
 @right
-view-if: n_advisors < 3, n_advisors < 4 if whampoa_built > 0
+view-if: n_advisors < 3
 
 - #right_advisor
 
 @left
-view-if: n_advisors < 3, n_advisors < 4 if whampoa_built > 0
+view-if: n_advisors < 3
 
 - #left_advisor
 
 @center_left
-view-if: n_advisors < 3, n_advisors < 4 if whampoa_built > 0
+view-if: n_advisors < 3
 
 - #center_left_advisor
 
@@ -287,7 +287,7 @@ view-if: whampoa_built > 0 and n_advisors < 4
 - #whampoa_advisor
 
 @nonfactional
-view-if: n_advisors < 3, n_advisors < 4 if whampoa_built > 0 
+view-if: n_advisors < 3
 
 - #nonfactional_advisor
 
