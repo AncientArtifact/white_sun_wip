@@ -20,7 +20,7 @@ We have some limited contacts with foreign powers, we should use this to our adv
 
 @west
 subtitle: -1 resources
-choose-if: resources >= 0
+choose-if: resources > 0
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; west_relation += 1;
 
@@ -28,7 +28,7 @@ Negotiating with the French and British is undeniably hard. And it may take givi
 
 @comintern
 subtitle: -1 resources 
-choose-if: east_relation >= 1 and resources >= 0
+choose-if: east_relation >= 1 and resources > 0
 unavailable-subtitle: The Soviets won't just let us have them for free.
 on-arrival: left_strength += 1; nra_militancy += 0.1; resources -= 1; east_relation -= 1;
 
@@ -36,7 +36,7 @@ Our army can learn much in military organization and training from Soviet adviso
 
 @soviet
 subtitle: -1 resources
-choose-if: resources >= 0
+choose-if: resources > 0
 unavailable-subtitle: Not enough resources.
 on-arrival: left_strength += 1; center_left_strength += 1; east_relation += 2;
 
@@ -44,7 +44,7 @@ Sun Yat-sen's support of cooperation with the Soviet Union may bring benefits fo
 
 @japan
 subtitle: -1 resources
-choose-if: resources >= 0
+choose-if: resources > 0
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; japan_relations += 1;
 
