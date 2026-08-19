@@ -574,7 +574,7 @@ go-to: 1924_main
 
 @1924_main
 new-page: true
-audio: shuffle audio/ihaveagun.mp3
+audio: shuffle audio/ihaveagun.mp3, audio/amaidenslonging.mp3, audio/annoyingmorning.mp3, audio/thewanderinggirlsinger.mp3
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
 = **1924**
