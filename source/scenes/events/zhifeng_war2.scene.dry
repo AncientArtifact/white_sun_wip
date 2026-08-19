@@ -1,7 +1,7 @@
 title: The Beijing Coup
 subtitle: Feng Yuxiang has taken Beijing!
 tags: events
-view-if: year = 1924 and month = 10 and week = 2
+view-if: year = 1924 and month = 10 and week = 3
 max-visits: 1
 priority: 2
 new-page: true
