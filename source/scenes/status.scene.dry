@@ -223,6 +223,6 @@ Support for the <span style="color: #9e1515">Communists</span>: [+ socialism_dis
 
 **Yunnan**: [+ yunnan_governor +] ([? if yunnan_faction = "Guomindang": <span style="color: #10186e">Guomindang</span>?][? if yunnan_faction = "Yunnan": <span style="color: #723d85">Yunnan</span>?])
 
-**Guangxi**: [+ guangxi_governor +] ([? if guangxi_faction = "Guomindang": <span style="color: #10186e">Guomindang</span>?][? if guangxi_faction = "New Guangxi": <span style="color: #8aa87d">New Guangxi</span>?])
+**Guangxi**: [+ guangxi_governor +] ([? if guangxi_faction = "Guomindang": <span style="color: #10186e">Guomindang</span>?][? if guangxi_faction = "New Guangxi": <span style="color: #8aa87d">New Guangxi</span>?][? if guangxi_faction = "Old Guangxi": <span style="color: #aba133">Old Guangxi</span>?])
 
 **Guangdong**: [+ guangdong_governor +] (<span style="color: #10186e">Guomindang</span>)
