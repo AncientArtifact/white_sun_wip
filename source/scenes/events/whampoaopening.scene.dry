@@ -1,7 +1,7 @@
 title: Opening of the Whampoa Military Academy
 subtitle: A new base for recruitment.
 tags: events
-view-if: year = 1924 and month = 6 and week = 2
+view-if: year = 1924 and month = 6 and week = 3
 max-visits: 1
 priority: 2
 on-display: {!  
