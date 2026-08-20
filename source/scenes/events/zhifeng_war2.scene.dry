@@ -30,7 +30,7 @@ Now, Feng Yuxiang has completely split from the Zhili Clique, forming his own fa
 - @next: What next?
 
 @next
-on-arrival: bei_strength -= 100; hebei_governor = "Zhang Zuolin"; hebei_faction = "Fengtian"; shaanxi_faction = "Guominjun"; suiyuan_faction = "Guominjun"; chahar_faction = "Guominjun"; shandong_faction = "Fengtian"; zhili_leader = "Wu Peifu"; zhili_deputy_leader = "Sun Chuanfang"; beiyang_leader = "Duan Qirui"; deputy_beiyang_leader = "Xu Shiying"; beiyang_leader_party = "Anhui"; deputy_beiyang_leader_party = "Anhui";
+on-arrival: bei_strength -= 100; hebei_governor = "Zhang Zuolin"; hebei_faction = "Fengtian"; shaanxi_faction = "Guominjun"; suiyuan_faction = "Guominjun"; chahar_faction = "Guominjun"; shandong_faction = "Fengtian"; zhili_leader = "Wu Peifu"; zhili_deputy_leader = "Sun Chuanfang"; beiyang_leader = "Duan Qirui"; deputy_beiyang_leader = "Xu Shiying"; beiyang_leader_party = "Anhui"; deputy_beiyang_leader_party = "Anhui"; shandong_governor = "Zhang Zongchang"; shandong_faction = "Fengtian"; anhui_governor = "Zheng Shiqi"; anhui_faction = "Anhui;
 on-display: {!  
     var cardEl = document.createElement('div');  
     cardEl.className = "face-figure2";  
