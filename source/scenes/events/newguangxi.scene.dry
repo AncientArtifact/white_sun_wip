@@ -6,18 +6,7 @@ max-visits: 1
 priority: 2
 new-page: true
 on-arrival: guangxi_leader = "Li Zongren"; guangxi_deputy_leader = "Bai Chongxi"; guangxi_governor = "Li Zongren"; guangxi_faction = "New Guangxi"
-on-display: {!  
-    var cardEl = document.createElement('div');  
-    cardEl.className = "face-figure2";  
-
-    var image = new Image();  
-    image.className = "face-img";  
-    image.src = "img/portraits/LiZongren.jpg";  
-
-    cardEl.appendChild(image);  
-    var contentDiv = document.querySelector("#page #mid_panel #content");
-    contentDiv.appendChild(cardEl);
-!}
+face-image: img/portraits/LiZongren.jpg
 
 = Conclusion of the Guangxi Civil War
 
