@@ -21,17 +21,12 @@ The <span style="color: #9e1515">United</span> <span style="color: #10186e">Fron
 
 <span style="color: #9e1515">**Communists**</span>: Liao Zhongkai
 Influence: [+ left_strength : strength +]
-<img src="img/portraits/LiaoZhongkai.jpg">
 
 <span style="color: #f55e56">**Left-KMT**</span>: Wang Jingwei
 Influence: [+ center_left_strength : strength +]
-<img src="img/portraits/WangJingwei.jpg">
 
 <span style="color: #10186e">**Right-KMT**</span>: Hu Hanmin
 Influence: [+ right_strength : strength +]
-<img src="img/portraits/HuHanmin.jpg">
 
 <span style="color: #d6d6d6">**Whampoa Clique**</span>: Chiang Kai-shek
 Influence: [+ whampoa_strength : strength +]
-<img src="img/portraits/ChiangKai-shek.jpg">
-
