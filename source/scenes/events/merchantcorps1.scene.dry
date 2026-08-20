@@ -5,18 +5,7 @@ view-if: year = 1924 and month = 8 and week = 1
 max-visits: 1
 priority: 2
 new-page: true
-on-display: {!  
-    var cardEl = document.createElement('div');  
-    cardEl.className = "face-figure2";  
-
-    var image = new Image();  
-    image.className = "face-img";  
-    image.src = "img/portraits/ChenLianbo.png";  
-
-    cardEl.appendChild(image);  
-    var contentDiv = document.querySelector("#page #mid_panel #content");
-    contentDiv.appendChild(cardEl);
-!}
+face-image: img/portraits/ChenLianbo.png
 
 = The Merchant Corps Uprising
 
