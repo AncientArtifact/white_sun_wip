@@ -4,18 +4,7 @@ tags: events
 view-if: year = 1924 and month = 1 and week = 3
 max-visits: 1
 priority: 2
-on-display: {!  
-    var cardEl = document.createElement('div');  
-    cardEl.className = "face-figure2";  
-
-    var image = new Image();  
-    image.className = "face-img";  
-    image.src = "img/kmtpartyaffairs.jpg";  
-
-    cardEl.appendChild(image);  
-    var contentDiv = document.querySelector("#page #mid_panel #content");
-    contentDiv.appendChild(cardEl);
-!}
+face-image: img/kmtpartyaffairs.jpg
 new-page: true
 
 = First National Congress of the Zhongguo Guomindang
@@ -41,18 +30,7 @@ The party has reaffirmed it's support for the Chinese United Front with the CPC.
 - @congress3: Leadership.
 
 @congress3
-on-display: {!  
-    var cardEl = document.createElement('div');  
-    cardEl.className = "face-figure2";  
-
-    var image = new Image();  
-    image.className = "face-img";  
-    image.src = "img/kmtpartydissent.jpg";  
-
-    cardEl.appendChild(image);  
-    var contentDiv = document.querySelector("#page #mid_panel #content");
-    contentDiv.appendChild(cardEl);
-!}
+face-image: img/kmtpartydissent.jpg
 
 The delegates have elected the first Central Executive Committee of the KMT, the highest body of the party established by it's Leninist reorganization. Notable members include a lot of very high-ranking KMT members, Soviet advisors and CPC delegates.
 The most important of them are Wang Jingwei and Liao Zhongkai of the Left, Hu Hanmin of the Right, Tan Yankai, Dai Jitao and Lin Sen, made in an effort by Sun Yat-sen to balance the party leadership and factions.
@@ -60,18 +38,7 @@ The most important of them are Wang Jingwei and Liao Zhongkai of the Left, Hu Ha
 - @congress4: War.
 
 @congress4
-on-display: {!  
-    var cardEl = document.createElement('div');  
-    cardEl.className = "face-figure2";  
-
-    var image = new Image();  
-    image.className = "face-img";  
-    image.src = "img/portraits/XuChongzhi.jpg";  
-
-    cardEl.appendChild(image);  
-    var contentDiv = document.querySelector("#page #mid_panel #content");
-    contentDiv.appendChild(cardEl);
-!}
+face-image: img/portraits/XuChongzhi.jpg
 
 Sun Yat-sen's biggest goal is the military unification of China, by defeating the warlords, mainly the dominant Zhili Clique. Now that Duan Qirui is out of power and Lu Yongxiang has practically taken his place, the balance of power in the Beiyang warlords is shifting wildly and war may not be far from them.
 This has convinced Sun along with failed attempts of peaceful reunification that peace is unreliable and only war can reunite China and instate democracy within it.
@@ -87,18 +54,7 @@ Xu Chongzhi, a loyal general of ours in Canton has been made commander of the NR
 - @congress5: We're missing something...
 
 @congress5
-on-display: {!  
-    var cardEl = document.createElement('div');  
-    cardEl.className = "face-figure2";  
-
-    var image = new Image();  
-    image.className = "face-img";  
-    image.src = "img/nrastreet2.jpg";  
-
-    cardEl.appendChild(image);  
-    var contentDiv = document.querySelector("#page #mid_panel #content");
-    contentDiv.appendChild(cardEl);
-!}
+face-image: img/nrastreet2.jpg
 
 Our biggest problem with establishing the NRA is the lack of capable officers aligned with our cause. Many are with the Northern Warlords and Canton is notably lacking officers.
 That's why the party has approved the construction of the Whampoa Military Academy, in Canton. The Soviets will bankroll our operation and send their advisors to train a new generation of military officers. 
