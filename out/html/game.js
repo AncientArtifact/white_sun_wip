@@ -231,7 +231,7 @@ window.changeTab = function(newTab, tabId) {
   window.onDisplayContent = function() {
       window.updateSidebar();
   };
-
+  
   // keep track of initial values
   window.justLoaded = true;
   window.statusTab = "status";
@@ -248,8 +248,19 @@ window.changeTab = function(newTab, tabId) {
 
     // Determine which tab/button is active in the DOM and initialize statusTab/statusTabId accordingly.
     // Prefer right panel active if present.
-    var rightActive = document.querySelector('#concerns .tab_button.active');
-    var leftActive = document.querySelector('#stats_sidebar_right .tab_button.active');
+    var rightActive = document.querySelector('#stats_sidebar_right .tab_button.active');
+    var leftActive = document.querySelector('#status .tab_button.active');
+     if (rightActive) {
+        window.statusTabId = rightActive.id || 'concerns';
+        window.statusTab = 'status_right';
+    } else if (leftActive) {
+        window.statusTabId = leftActive.id || 'main_tab';
+        window.statusTab = 'status';
+    } else {
+        window.statusTabId = 'main_tab';
+        window.statusTab = 'status';
+    }
+
 
   /*
    * This function copied from the code for Infinite Space Battle Simulator
