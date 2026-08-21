@@ -1,1 +1,26 @@
 title: Death of Sun Yat-sen
+subtitle: End of an era.
+tags: events
+view-if: year = 1925 and month = 3 and week = 1
+max-visits: 1
+priority: 2
+new-page: true
+face-image: img/sundeath1.jpg
+on-arrival: sunyatsen_dead = 1; sunyatsen_advisor = 0;
+
+= Death of Sun Yat-sen
+
+Today, Premier of the Guomindang, Sun Yixian (also known as Zhongshan) has passed away in Beijing. This was after a long fight against gallbladder cancer that metastasized to his liver, which took his life after many attempts to treat it.
+
+At his deathbed, Sun gave out three final testaments. One to the party, one to his family, and one to the Soviet Union. His funeral has taken place in Beijing and he was shortly preserved in the Temple of the Azure Clouds.
+
+With this, his legacy as the man who took down the Qing Dynasty and established the Republic will never be forgotten.
+
+- @continue: Continue...
+
+@continue
+face-image: img/sundeath2.jpg
+
+Now, since Sun had failed to appoint a successor, three factions have now begun fighting for power. The Communists and Party Elders under Liao Zhongkai, the Leftists under Wang Jingwei and the Right Anti-Communist Party Elders under Hu Hanmin.
+
+It is unclear who will win the succession crisis. It seems the KMT will face turmoil once again.
