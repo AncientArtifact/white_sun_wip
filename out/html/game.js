@@ -294,6 +294,12 @@ window.changeTab = function(newTab, tabId) {
         document.body.classList.add('dark-mode');
     }
     window.pinnedCardsDescription = "Advisor cards - actions are only usable once per 6 months.";
+     window.statusTab = "status";
+    window.updateSidebar();
+    window.statusTabRight = "status_right";
+    window.updateSidebarRight();
+  };
+
   };
 
 }());
