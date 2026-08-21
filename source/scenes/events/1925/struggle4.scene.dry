@@ -1,0 +1,21 @@
+title: Chiang Kai-shek Succeeds Xu Chongzhi
+subtitle: A new candidate rises.
+tags: events
+view-if: year = 1925 and month = 10 and week = 1
+max-visits: 1
+priority: 2
+new-page: true
+face-image: img/chiangkaishek2.jpg
+on-arrival: chiangkaishek_advisor = 1; xuchongzhi_advisor = 0; whampoa_strength += 25; center_strength -= 5; right_strength -= 5;
+
+= Chiang Kai-shek Succeeds Xu Chongzhi
+
+Hu Hanmin's exile had sent shockwaves throughout the party, but this has become it's greatest consequence.
+
+Also suspected in Liao Zhongkai's murder is General Xu Chongzhi, the commander of the National Revolutionary Army. Because of this, Xu Chongzhi was removed from his position.
+
+Since the Right faction's other leaders were demoted, and the Communists had banded with Wang Jingwei after Liao Zhongkai's death, Chiang Kai-shek has suddenly become the second-most influential man in the party.
+
+By convincing the Right Faction and many of the party's centrists, as well as Chiang Kai-shek's control over the NRA, he is now the final contender against Wang Jingwei.
+
+The KMT is now approaching an impasse, and it will take a sudden event to take down one of the other candidates. Who will win this now?
