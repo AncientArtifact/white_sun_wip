@@ -1,0 +1,17 @@
+title: Establishment of the Western Hills Group
+subtitle: The Right tries to revive itself.
+tags: events
+view-if: year = 1925 and month = 11 and week = 3
+max-visits: 1
+priority: 2
+new-page: true
+face-image: img/westernhills.jpg
+on-arrival: right_strength += 5; whampoa_strength += 5;
+
+= Establishment of the Western Hills Group
+
+In the aftermath of Hu Hanmin's exile, Lin Sen has organized the Western Hills Group in Beijing.
+
+The Western Hills group is a right, anti-communist, conservative faction within the Kuomintang. Members include Lin Sen and Dai Jitao.
+
+Due to the ongoing power struggle, the Western Hills have given their support to Chiang Kai-shek.
