@@ -34,8 +34,6 @@ Influence: [+ right_strength : strength +]
 Influence: [+ whampoa_strength : strength +]
 <img src="img/portraits/ChiangKai-shek.jpg" width="150px" height="205px">
 
-[? if sunyatsen_dead = 0 : The Party is mostly **unified**. ?]
-
 @northernexpedition
 
 WIP
