@@ -1,0 +1,28 @@
+title: Hu Hanmin Suspected
+subtitle: The cracks begin to show.
+tags: events
+view-if: year = 1925 and month = 9 and week = 1
+max-visits: 1
+priority: 2
+new-page: true
+face-image: img/portraits/HuHanmin.jpg
+
+= Hu Hanmin Suspected
+
+After Liao Zhongkai's death, an internal KMT investigation was held to find out the truth about his death. After noticing shady connections with the Right faction, the Party has now suspected Hu Hanmin to be involved in Liao Zhongkai's murder.
+
+Hu Hanmin's faction is in outrage, and the rest of the party is demanding for either him to confess or leave Canton.
+
+- @exile: Hu Hanmin goes in exile.
+- @refusal: The Right faction defends Hu Hanmin!
+
+@refusal
+choose-if: false
+unavailable-subtitle: You can't yet, there's no path.
+
+@exile
+on-arrival: right_strength -= 15; huhanmin_advisor = 0;
+
+Hu Hanmin has gone in exile and the Right faction quickly began breaking down afterwards without a strong candidate.
+
+Now, Wang Jingwei emerges as the most powerful successor to Sun Yat-sen, after both of his rivals have disappeared.
