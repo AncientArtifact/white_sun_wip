@@ -246,10 +246,10 @@ window.changeTab = function(newTab, tabId) {
     }
     window.pinnedCardsDescription = "Advisor cards - actions are only usable once per 6 months.";
 
-    // Determine which tab/button is active in the DOM and initialize statusTab/statusTabId accordingly.
-    // Prefer right panel active if present.
-    var rightActive = document.querySelector('#concerns .tab_button.active');
-    var leftActive = document.querySelector('#stats_sidebar_right .tab_button.active');
+     window.onDisplayContent = function() {
+      window.updateSidebar();
+      window.updateSidebarRight();
+  };
 
   /*
    * This function copied from the code for Infinite Space Battle Simulator
