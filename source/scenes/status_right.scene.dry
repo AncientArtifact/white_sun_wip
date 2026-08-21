@@ -19,19 +19,19 @@ The <span style="color: #9e1515">United</span> <span style="color: #10186e">Fron
 
 <span style="color: #9e1515">**Communists**</span>: Liao Zhongkai
 Influence: [+ left_strength : strength +]
-face-image: img/portraits/LiaoZhongkai.jpg
+<img src="img/portraits/LiaoZhongkai.jpg">
 
 <span style="color: #f55e56">**Left-KMT**</span>: Wang Jingwei
 Influence: [+ center_left_strength : strength +]
-face-image: img/portraits/WangJingwei.jpg
+<img src="img/portraits/WangJingwei.jpg">
 
 <span style="color: #10186e">**Right-KMT**</span>: Hu Hanmin
 Influence: [+ right_strength : strength +]
-face-image: img/portraits/HuHanmin.jpg
+<img src="img/portraits/HuHanmin.jpg">
 
 <span style="color: #46703e">**Whampoa Clique**</span>: Chiang Kai-shek
 Influence: [+ whampoa_strength : strength +]
-face-image: img/portraits/ChiangKai-shek.jpg
+<img src="img/portraits/ChiangKai-shek.jpg">
 
 @northernexpedition
 
