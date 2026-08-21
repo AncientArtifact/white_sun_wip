@@ -16,29 +16,7 @@ After Sun Yat-sen's death, a power struggle has erupted between the three main f
 - @center: None of them, i'll pick my own advisors.
 
 @left
-on-arrival:
-tanyankai_advisor = 0;
-sunyatsen_advisor = 0;
-sunyatsen_dead = 1;
-liaozhongkai_advisor = 1;
-liaozhongkai_dead = 0;
-mikhailborodin_advisor = 1;
-dengyanda_advisor = 1;
-soongchingling_advisor = 1;
-huhanmin_advisor = 0;
-daijitao_advisor = 0;
-linsen_advisor = 0;
-zhangrenjie_advisor = 0;
-wangjingwei_advisor = 0;
-tvsoong_advisor = 0;
-zhangfakui_advisor = 0;
-eugenechen_advisor = 0;
-chiangkaishek_advisor = 0;
-xuchongzhi_advisor = 0;
-xuchongzhi_dead = 0;
-left_strength += 10;
-left_dissent -= 10;
-right_dissent += 10;
+on-arrival: tanyankai_advisor = 0; sunyatsen_advisor = 0; sunyatsen_dead = 1; liaozhongkai_advisor = 1; liaozhongkai_dead = 0; mikhailborodin_advisor = 1; dengyanda_advisor = 1; soongchingling_advisor = 1; huhanmin_advisor = 0; daijitao_advisor = 0; linsen_advisor = 0; zhangrenjie_advisor = 0; wangjingwei_advisor = 0; tvsoong_advisor = 0; zhangfakui_advisor = 0; eugenechen_advisor = 0; chiangkaishek_advisor = 0; xuchongzhi_advisor = 0; xuchongzhi_dead = 0; left_strength += 10; left_dissent -= 10; right_dissent += 10;
 
 You have chosen the Communist Faction. You have picked the advisors: Liao Zhongkai, Mikhail Borodin, Deng Yanda and Soong Ching-ling. Is your choice correct?
 
@@ -57,29 +35,7 @@ You have chosen to start over, what advisors do you want to pick?
 - @center: None of them, i'll pick my own advisors.
 
 @centerleft
-on-arrival:
-tanyankai_advisor = 0;
-sunyatsen_advisor = 0;
-sunyatsen_dead = 1;
-liaozhongkai_advisor = 0;
-liaozhongkai_dead = 0;
-mikhailborodin_advisor = 0;
-dengyanda_advisor = 0;
-soongchingling_advisor = 0;
-huhanmin_advisor = 0;
-daijitao_advisor = 0;
-linsen_advisor = 0;
-zhangrenjie_advisor = 0;
-wangjingwei_advisor = 1;
-tvsoong_advisor = 1;
-zhangfakui_advisor = 1;
-eugenechen_advisor = 1;
-chiangkaishek_advisor = 0;
-xuchongzhi_advisor = 0;
-xuchongzhi_dead = 0;
-center_left_strength += 10;
-center_left_dissent -= 10;
-right_dissent += 10;
+on-arrival: tanyankai_advisor = 0; sunyatsen_advisor = 0; sunyatsen_dead = 1; liaozhongkai_advisor = 0; liaozhongkai_dead = 0; mikhailborodin_advisor = 0; dengyanda_advisor = 0; soongchingling_advisor = 0; huhanmin_advisor = 0; daijitao_advisor = 0; linsen_advisor = 0; zhangrenjie_advisor = 0; wangjingwei_advisor = 1; tvsoong_advisor = 1; zhangfakui_advisor = 1; eugenechen_advisor = 1; chiangkaishek_advisor = 0; xuchongzhi_advisor = 0; xuchongzhi_dead = 0; center_left_strength += 10; center_left_dissent -= 10; right_dissent += 10;
 
 You have chosen the Leftist Faction. You have picked the advisors: Wang Jingwei, T.V. Soong, Zhang Fakui and Eugene Chen. Is your choice correct?
 
@@ -98,30 +54,7 @@ You have chosen to start over, what advisors do you want to pick?
 - @center: None of them, i'll pick my own advisors.
 
 @right
-on-arrival:
-tanyankai_advisor = 0;
-sunyatsen_advisor = 0;
-sunyatsen_dead = 1;
-liaozhongkai_advisor = 0;
-liaozhongkai_dead = 0;
-mikhailborodin_advisor = 0;
-dengyanda_advisor = 0;
-soongchingling_advisor = 0;
-huhanmin_advisor = 1;
-daijitao_advisor = 1;
-linsen_advisor = 1;
-zhangrenjie_advisor = 1;
-wangjingwei_advisor = 0;
-tvsoong_advisor = 0;
-zhangfakui_advisor = 0;
-eugenechen_advisor = 0;
-chiangkaishek_advisor = 0;
-xuchongzhi_advisor = 0;
-xuchongzhi_dead = 0;
-right_strength += 10;
-right_dissent -= 10;
-left_dissent += 10;
-center_left_dissent += 10;
+on-arrival: tanyankai_advisor = 0; sunyatsen_advisor = 0; sunyatsen_dead = 1; liaozhongkai_advisor = 0; liaozhongkai_dead = 0; mikhailborodin_advisor = 0; dengyanda_advisor = 0; soongchingling_advisor = 0; huhanmin_advisor = 1; daijitao_advisor = 1; linsen_advisor = 1; zhangrenjie_advisor = 1; wangjingwei_advisor = 0; tvsoong_advisor = 0; zhangfakui_advisor = 0; eugenechen_advisor = 0; chiangkaishek_advisor = 0; xuchongzhi_advisor = 0; xuchongzhi_dead = 0; right_strength += 10; right_dissent -= 10; left_dissent += 10; center_left_dissent += 10;
 
 You have chosen the Rightist Faction. You have picked the advisors: Hu Hanmin, Dai Jitao, Lin Sen and Zhang Renjie. Is your choice correct?
 
