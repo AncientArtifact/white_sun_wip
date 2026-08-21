@@ -301,13 +301,6 @@
       return bar;
   };
 
-const powerstruggle_tab = document.getElementById('powerstruggle_tab')
-  if (dendryEngine.state.qualities.sunyatsen_dead true) {
-        powerstruggle_tab.hidden = false;
-    } else {
-        powerstruggle_tab.hidden = true;
-    }
-
   window.justLoaded = true;
   window.statusTab = "status";
   window.dendryModifyUI = main;
