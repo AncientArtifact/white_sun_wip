@@ -1,0 +1,145 @@
+title: The Kuomintang Succession Crisis
+subtitle: Who will come out on top?
+tags: events
+view-if: year = 1925 and month = 3 and week = 2
+max-visits: 1
+priority: 2
+new-page: true
+
+= The Kuomintang Succession Crisis
+
+After Sun Yat-sen's death, a power struggle has erupted between the three main factions, the Communists under Liao Zhongkai, the Leftists under Wang Jingwei, and the Right under Hu Hanmin. Now, which do you choose to carry through this conflict?
+
+- @left: Liao Zhongkai and his Communist Faction.
+- @centerleft: Wang Jingwei and his Leftist Faction.
+- @right: Hu Hanmin and his Right Faction.
+- @center: None of them, i'll pick my own advisors.
+
+@left
+on-arrival:
+tanyankai_advisor = 0;
+sunyatsen_advisor = 0;
+sunyatsen_dead = 1;
+liaozhongkai_advisor = 1;
+liaozhongkai_dead = 0;
+mikhailborodin_advisor = 1;
+dengyanda_advisor = 1;
+soongchingling_advisor = 1;
+huhanmin_advisor = 0;
+daijitao_advisor = 0;
+linsen_advisor = 0;
+zhangrenjie_advisor = 0;
+wangjingwei_advisor = 0;
+tvsoong_advisor = 0;
+zhangfakui_advisor = 0;
+eugenechen_advisor = 0;
+chiangkaishek_advisor = 0;
+xuchongzhi_advisor = 0;
+xuchongzhi_dead = 0;
+left_strength += 10;
+left_dissent -= 10;
+right_dissent += 10;
+
+You have chosen the Communist Faction. You have picked the advisors: Liao Zhongkai, Mikhail Borodin, Deng Yanda and Soong Ching-ling. Is your choice correct?
+
+- @yesleft: Yes.
+- @noleft: No, i'll start over.
+
+@yesleft
+go-to: main
+
+@noleft
+You have chosen to start over, what advisors do you want to pick?
+
+- @left: Liao Zhongkai and his Communist Faction.
+- @centerleft: Wang Jingwei and his Leftist Faction.
+- @right: Hu Hanmin and his Right Faction.
+- @center: None of them, i'll pick my own advisors.
+
+@centerleft
+on-arrival:
+tanyankai_advisor = 0;
+sunyatsen_advisor = 0;
+sunyatsen_dead = 1;
+liaozhongkai_advisor = 0;
+liaozhongkai_dead = 0;
+mikhailborodin_advisor = 0;
+dengyanda_advisor = 0;
+soongchingling_advisor = 0;
+huhanmin_advisor = 0;
+daijitao_advisor = 0;
+linsen_advisor = 0;
+zhangrenjie_advisor = 0;
+wangjingwei_advisor = 1;
+tvsoong_advisor = 1;
+zhangfakui_advisor = 1;
+eugenechen_advisor = 1;
+chiangkaishek_advisor = 0;
+xuchongzhi_advisor = 0;
+xuchongzhi_dead = 0;
+center_left_strength += 10;
+center_left_dissent -= 10;
+right_dissent += 10;
+
+You have chosen the Leftist Faction. You have picked the advisors: Wang Jingwei, T.V. Soong, Zhang Fakui and Eugene Chen. Is your choice correct?
+
+- @yescenterleft: Yes.
+- @nocenterleft: No, i'll start over.
+
+@yescenterleft
+go-to: main
+
+@nocenterleft
+You have chosen to start over, what advisors do you want to pick?
+
+- @left: Liao Zhongkai and his Communist Faction.
+- @centerleft: Wang Jingwei and his Leftist Faction.
+- @right: Hu Hanmin and his Right Faction.
+- @center: None of them, i'll pick my own advisors.
+
+@right
+on-arrival:
+tanyankai_advisor = 0;
+sunyatsen_advisor = 0;
+sunyatsen_dead = 1;
+liaozhongkai_advisor = 0;
+liaozhongkai_dead = 0;
+mikhailborodin_advisor = 0;
+dengyanda_advisor = 0;
+soongchingling_advisor = 0;
+huhanmin_advisor = 1;
+daijitao_advisor = 1;
+linsen_advisor = 1;
+zhangrenjie_advisor = 1;
+wangjingwei_advisor = 0;
+tvsoong_advisor = 0;
+zhangfakui_advisor = 0;
+eugenechen_advisor = 0;
+chiangkaishek_advisor = 0;
+xuchongzhi_advisor = 0;
+xuchongzhi_dead = 0;
+right_strength += 10;
+right_dissent -= 10;
+left_dissent += 10;
+center_left_dissent += 10;
+
+You have chosen the Rightist Faction. You have picked the advisors: Hu Hanmin, Dai Jitao, Lin Sen and Zhang Renjie. Is your choice correct?
+
+- @yesright: Yes.
+- @noright: No, i'll start over.
+
+@yesright
+go-to: main
+
+@noright
+You have chosen to start over, what advisors do you want to pick?
+
+- @left: Liao Zhongkai and his Communist Faction.
+- @centerleft: Wang Jingwei and his Leftist Faction.
+- @right: Hu Hanmin and his Right Faction.
+- @center: None of them, i'll pick my own advisors.
+
+@center
+go-to: shuffle_leadership
+
+You have chosen to pick your own advisors. To which: here's the advisor shuffle card.
