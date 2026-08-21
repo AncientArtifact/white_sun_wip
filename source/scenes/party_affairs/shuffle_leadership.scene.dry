@@ -242,8 +242,8 @@ Radbruch has been removed as an advisor.
 
 @add_advisors
 title: Add advisors
-choose-if: n_advisors < 3
-unavailable-subtitle: Maximum of 3 advisors.
+choose-if: n_advisors < 4
+unavailable-subtitle: Maximum of 4 advisors.
 go-to: advisor_menu
 
 @advisor_menu
@@ -262,22 +262,22 @@ frequency: 1
 - @remove_none: Stop changing advisors.
 
 @centrist
-view-if: n_advisors < 3
+view-if: n_advisors < 4
 
 - #center_advisor
 
 @right
-view-if: n_advisors < 3
+view-if: n_advisors < 4
 
 - #right_advisor
 
 @left
-view-if: n_advisors < 3
+view-if: n_advisors < 4
 
 - #left_advisor
 
 @center_left
-view-if: n_advisors < 3
+view-if: n_advisors < 4
 
 - #center_left_advisor
 
@@ -287,7 +287,7 @@ view-if: whampoa_built > 0 and n_advisors < 4
 - #whampoa_advisor
 
 @nonfactional
-view-if: n_advisors < 3
+view-if: n_advisors < 4
 
 - #nonfactional_advisor
 
