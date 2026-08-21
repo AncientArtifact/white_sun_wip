@@ -18,6 +18,7 @@ view-if: sunyatsen_dead = 1
 
 = **The Power Struggle**
 
+[? if sunyatsen_dead = 1 :
 <span style="color: #9e1515">**Communists**</span>: Liao Zhongkai
 Influence: [+ left_strength : strength +]
 <img src="img/portraits/LiaoZhongkai.jpg" width="150px" height="205px">
@@ -33,6 +34,7 @@ Influence: [+ right_strength : strength +]
 <span style="color: #46703e">**Whampoa Clique**</span>: Chiang Kai-shek
 Influence: [+ whampoa_strength : strength +]
 <img src="img/portraits/ChiangKai-shek.jpg" width="150px" height="205px">
+?]
 
 [? if sunyatsen_dead = 0 : The Party is mostly **unified**. ?]
 
