@@ -1,0 +1,22 @@
+title: Second Zhili-Fengtian War
+subtitle: A storm rocks the north...
+tags: events
+view-if: year = 1924 and month = 9 and week = 3
+max-visits: 1
+priority: 2
+new-page: true
+face-image: img/2zhifengwar.jpg
+
+= Second Zhili-Fengtian War
+
+War has erupted between the Zhili and Fengtian cliques after the Zhili attacked Anhui-ruled Zhejiang. In response, Zhang Zuolin's Fengtian Clique have marched against the Zhili in *Shanhaiguan*.
+Zhang Zuolin has invited us into a three-pronged alliance against Cao Kun and Wu Peifu along with Lu Yongxiang, governor of Zhejiang.
+
+- @next: We march to defeat Zhili and liberate Zhejiang!
+
+@next
+on-arrival: bei_strength -= 10; feng_strength -= 10;
+
+Unfortunately, the Cantonese Merchant Corps Uprising have tied our hands, and we are unable to fight. Chen Jiongming's influence in the east also halts our advance.
+
+However, the fight between Wu Peifu and Zhang Zuolin intensifies in Shanhaiguan. It is not obvious who will win this one.

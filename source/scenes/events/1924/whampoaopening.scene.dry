@@ -1,0 +1,26 @@
+title: Opening of the Whampoa Military Academy
+subtitle: A new base for recruitment.
+tags: events
+view-if: year = 1924 and month = 6 and week = 3
+max-visits: 1
+priority: 2
+face-image: img/whampoaopen.jpg
+new-page: true
+
+= Opening of the Whampoa Military Academy
+
+As outlined in our first party congress, the *Whampoa Military Academy* in Canton has been fully established. In an opening ceremony done by Sun Yat-sen, he called for national unity and to join the Guomindang against the warlords.
+Here, loyal and skilled officers will be trained by Party and Soviet officials. This will introduce an ideological fervor to the *National Revolutionary Army*, giving reasons for officers to fight and to prevent the non-stop betrayals of Chinese warlords.
+As said before, the office of Superintendent of the Academy has to be decided on personally by Sun Yat-sen.
+
+- @chiang: Chiang Kai-shek?
+
+@chiang
+on-arrival: whampoa_built = 1; n_advisors = 4; xuchongzhi_advisor = 1; whampoa_strength += 10;
+face-image: img/portraits/ChiangKai-shek.jpg
+
+Chiang Kai-shek is a young officer from Zhejiang. He was part of the *Tongmenghui* and then rejoined Sun Yat-sen during the *Constitutional Protection Movement*. He recently came back from Moscow, studying Russian military tactics.
+
+He was with Sun Yat-sen during Chen Jiongming's revolt on the *SS Yongfeng* and became sort of a protege to Sun, which he seems have not forgotten and recognized his military talents.
+
+Chiang Kai-shek now controls the Whampoa Military Academy, influencing many young officers in the party and strengthening his influence. Although, he has guaranteed that the Academy will operate smoothly.

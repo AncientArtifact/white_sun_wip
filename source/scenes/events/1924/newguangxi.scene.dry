@@ -1,0 +1,20 @@
+title: Conclusion of the Guangxi Civil War
+subtitle: A new clique rises.
+tags: events
+view-if: year = 1924 and month = 6 and week = 3
+max-visits: 1
+priority: 2
+new-page: true
+on-arrival: guangxi_leader = "Li Zongren"; guangxi_deputy_leader = "Bai Chongxi"; guangxi_governor = "Li Zongren"; guangxi_faction = "New Guangxi"
+face-image: img/portraits/LiZongren.jpg
+
+= Conclusion of the Guangxi Civil War
+
+Ever since Chen Jiongming defeated Lu Rongting in the Second Yue-Gui war, Guangxi has fallen into anarchy. 
+
+After a series of fights between the returning Lu Rongting, warlord Shen Hongying and warlord Li Zongren, the New Guangxi Clique has formed between Li Zongren, Bai Chongxi and Huang Shaohong.
+The New Guangxi Clique has successfully taken over Nanning and have become the most powerful Clique in Guangxi.
+
+This bodes well for us as Li Zongren is a Guomindang member. He has effectively become our ally in Guangxi. His forces will become part of our National Revolutionary Army.
+
+While Li Zongren hasn't completely reunified Guangxi yet, his control has already reached much of the province.

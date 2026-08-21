@@ -1,0 +1,29 @@
+title: The Beijing Coup
+subtitle: Feng Yuxiang has taken Beijing!
+tags: events
+view-if: year = 1924 and month = 10 and week = 3
+max-visits: 1
+priority: 2
+new-page: true
+on-arrival: gmj_enabled = 1
+face-image: img/portraits/FengYuxiang.jpg
+
+= The Beijing Coup
+
+Suddenly, the "Christian Warlord" Feng Yuxiang's 3rd Zhili Army has couped President Cao Kun and have taken control of the government!
+
+This betrayal has shocked the Zhili Clique hard. Wu Peifu angrily withdrew from Shanhaiguan to retake Beijing, but it was no use. Zhang Zuolin defeated the Zhili and Wu Peifu was sent routing south.
+
+Now, Feng Yuxiang has completely split from the Zhili Clique, forming his own faction, the *Guominjun*. The Christian Warlord has begun recieving aid and supplies from the Soviets, further counterbalancing Japanese influence in Manchuria.
+
+- @next: What next?
+
+@next
+on-arrival: bei_strength -= 100; hebei_governor = "Zhang Zuolin"; hebei_faction = "Fengtian"; shaanxi_faction = "Guominjun"; suiyuan_faction = "Guominjun"; chahar_faction = "Guominjun"; shandong_faction = "Fengtian"; zhili_leader = "Wu Peifu"; zhili_deputy_leader = "Sun Chuanfang"; beiyang_leader = "Duan Qirui"; deputy_beiyang_leader = "Xu Shiying"; beiyang_leader_party = "Anhui"; deputy_beiyang_leader_party = "Anhui"; shandong_governor = "Zhang Zongchang"; shandong_faction = "Fengtian"; anhui_governor = "Zheng Shiqi"; anhui_faction = "Anhui";
+face-image: img/portraits/DuanQirui.jpg
+
+This has completely changed the world of Chinese politics. With this betrayal, Feng Yuxiang and Zhang Zuolin have now decisively defeated the Zhili Clique. These two are now the most powerful warlords in China.
+
+Wu Peifu and Sun Chuanfang bitterly stay in their bastions of Wuchang and Nanjing respectively, as the two begin reorganizing the North in their vision.
+
+To avoid further fighting, Feng and Zhang have decided to appoint Duan Qirui to lead a provisional government in Beijing, although he is effectively a puppet of both.
