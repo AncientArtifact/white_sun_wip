@@ -189,36 +189,67 @@
       $('#qualities').append(dendryUI.contentToHTML.convert(displayContent));
   };
 
-  window.updateSidebar = function() {
-      $('#qualities_right').empty();
-    var scene = dendryUI.game.scenes[window.statusTabRight];
-    dendryUI.dendryEngine._runActions(scene.onArrival);
-    var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
-    $('#qualities_right').append(dendryUI.contentToHTML.convert(displayContent));
-  };
+window.changeTab = function(newTab, tabId) {
+    if (tabId == 'poll_tab' && dendryUI.dendryEngine.state.qualities.historical_mode) {
+        window.alert('Polls are not available in historical mode.');
+        return;
+    }
 
-  window.changeTab = function(newTab, tabId) {
-      if (tabId == 'poll_tab' && dendryUI.dendryEngine.state.qualities.historical_mode) {
-          window.alert('Polls are not available in historical mode.');
-          return;
-      }
-      var tabButton = document.getElementById(tabId);
-      var tabButtons = document.getElementsByClassName('tab_button');
-      for (i = 0; i < tabButtons.length; i++) {
-        tabButtons[i].className = tabButtons[i].className.replace(' active', '');
-      }
-      tabButton.className += ' active';
-     if (isRight) {
+    var tabButton = document.getElementById(tabId);
+
+    if (tabId.endsWith('_right')) {
+        var rightTabs = document.querySelectorAll('#stats_sidebar_right .tab_button');
+
+        for (var i = 0; i < rightTabs.length; i++) {
+            rightTabs[i].classList.remove('active');
+        }
+
+        tabButton.classList.add('active');
+
         window.statusTabRight = newTab;
         window.updateSidebarRight();
-        } else {
-          window.statusTab = newTab;
-          window.updateSidebar();
+    } else {
+        var leftTabs = document.querySelectorAll('#stats_sidebar .tab_button');
+
+        for (var i = 0; i < leftTabs.length; i++) {
+            leftTabs[i].classList.remove('active');
+        }
+
+        tabButton.classList.add('active');
+
+        window.statusTab = newTab;
+        window.updateSidebar();
+    }
+};
+
+  window.onDisplayContent = function() {
+    window.updateSidebarRight();
+      window.updateSidebar();
   };
+
 
   window.onDisplayContent = function() {
       window.updateSidebar();
   };
+
+  // keep track of initial values
+  window.justLoaded = true;
+  window.statusTab = "status";
+  window.statusTabId = "main_tab";
+  window.dendryModifyUI = main;
+  console.log("Modifying stats: see dendryUI.dendryEngine.state.qualities");
+
+  window.onload = function() {
+    window.dendryUI.loadSettings({show_portraits: false});
+    if (window.dendryUI.dark_mode) {
+        document.body.classList.add('dark-mode');
+    }
+    window.pinnedCardsDescription = "Advisor cards - actions are only usable once per 6 months.";
+
+    // Determine which tab/button is active in the DOM and initialize statusTab/statusTabId accordingly.
+    // Prefer right panel active if present.
+    var rightActive = document.querySelector('#concerns .tab_button.active');
+    var leftActive = document.querySelector('#stats_sidebar_right .tab_button.active');
 
   /*
    * This function copied from the code for Infinite Space Battle Simulator
@@ -254,7 +285,6 @@
 
   window.justLoaded = true;
   window.statusTab = "status";
-  window.statusTabRight = "status_right";
   window.dendryModifyUI = main;
   console.log("Modifying stats: see dendryUI.dendryEngine.state.qualities");
 
@@ -264,12 +294,6 @@
         document.body.classList.add('dark-mode');
     }
     window.pinnedCardsDescription = "Advisor cards - actions are only usable once per 6 months.";
-    window.statusTab = "status";
-    window.updateSidebar();
-    window.statusTabRight = "status_right";
-    window.updateSidebarRight();
   };
-
-}());
 
 }());
