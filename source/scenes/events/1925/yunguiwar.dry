@@ -1,7 +1,27 @@
 title: Tang Jiyao Attacks!
 subtitle: What the-?
 tags: events
-view-if: year = 1925 and month = 3 and week = 2
+view-if: year = 1925 and month = 3 and week = 3
 max-visits: 1
 priority: 2
 new-page: true
+face-image: img/portraits/TangJiyao.jpg
+
+= Tang Jiyao's Attack
+
+Only six days after Sun Yat-sen's death, the warlord of Yunnan, Tang Jiyao has suddenly proclaimed himself the true successor of the Kuomintang! His Yunnanese troops have begun marching south to seize Guangzhou!
+
+- @next: Li Zongren will fight to protect Guangzhou!
+
+@next
+face-image: img/portraits/LiZongren.jpg
+
+Li Zongren, warlord of Guangxi is directly south of Yunnan and is the one province blocking Yunnan from Guangdong. Thus, Tang Jiyao must march through Guangxi to reach Guangzhou.
+
+It seems he will not let Tang Jiyao pass without a fight. Along with NRA troops commanded by Chiang Kai-shek, they have begun the defense of Guangxi.
+
+- @win: Yunnan is stopped in it's tracks.
+
+@win
+
+The *Yunnan-Guangxi War* has slowed down as the Guangxi and NRA troops block Tang Jiyao's advance. This is a victory for Guangzhou.
