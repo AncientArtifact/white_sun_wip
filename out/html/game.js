@@ -194,7 +194,7 @@
 
     window.updateSidebarRight = function () {
         $('#qualities_right').empty();
-        var statusScene = dendryUI.game.scenes["concern"];
+        var statusScene = dendryUI.game.scenes["status_right"];
         var scene = dendryUI.game.scenes[window.statusTabRight];
         dendryUI.dendryEngine._runActions(statusScene.onArrival);
         dendryUI.dendryEngine._runActions(scene.onArrival);
