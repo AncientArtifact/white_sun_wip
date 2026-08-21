@@ -15,7 +15,8 @@ The <span style="color: #9e1515">United</span> <span style="color: #10186e">Fron
 
 @powerstruggle
 view-if: sunyatsen_dead = 1;
-[? if sunyatsen_dead = 0 : The Party is mostly **unified**.
+
+[? if sunyatsen_dead = 0 : The Party is mostly **unified**. ?]
 
 = **The Power Struggle**
 
