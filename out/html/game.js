@@ -231,7 +231,7 @@ window.changeTab = function(newTab, tabId) {
   window.onDisplayContent = function() {
       window.updateSidebar();
   };
-  
+
   // keep track of initial values
   window.justLoaded = true;
   window.statusTab = "status";
@@ -248,19 +248,24 @@ window.changeTab = function(newTab, tabId) {
 
     // Determine which tab/button is active in the DOM and initialize statusTab/statusTabId accordingly.
     // Prefer right panel active if present.
-    var rightActive = document.querySelector('#status_right .tab_button.active');
-    var leftActive = document.querySelector('#status .tab_button.active');
-     if (rightActive) {
+    var rightActive = document.querySelector('#concerns .tab_button.active');
+    var leftActive = document.querySelector('#stats_sidebar .tab_button.active');
+
+    if (rightActive) {
         window.statusTabId = rightActive.id || 'main_concerns';
-        window.statusTab = 'status_right';
+        // right panel buttons use scene key 'concern' in your markup
+        window.statusTab = 'concern';
     } else if (leftActive) {
         window.statusTabId = leftActive.id || 'main_tab';
+        // left panel uses 'status' scenes
         window.statusTab = 'status';
     } else {
         window.statusTabId = 'main_tab';
         window.statusTab = 'status';
     }
 
+     window.updateSidebar();
+  };
 
   /*
    * This function copied from the code for Infinite Space Battle Simulator
