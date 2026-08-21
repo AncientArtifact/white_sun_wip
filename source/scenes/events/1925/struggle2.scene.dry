@@ -6,7 +6,7 @@ max-visits: 1
 priority: 2
 new-page: true
 face-image: img/deadliao.jpg
-on-arrival: left_strength -= 10; liaozhongkai_dead = 1; liaozhongkai_advisor = 0;
+on-arrival: left_strength -= 15; center_left_strength += 15; liaozhongkai_dead = 1; liaozhongkai_advisor = 0;
 
 = Assasination of Liao Zhongkai
 
