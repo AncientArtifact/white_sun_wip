@@ -1,0 +1,24 @@
+title: May Thirtieth Movement
+subtitle: The workers have risen...
+tags: events
+view-if: year = 1925 and month = 5 and week = 3
+max-visits: 1
+priority: 2
+new-page: true
+face-image: img/may30th1.jpg
+
+= The May Thirtieth Movement
+
+Crisis has rocked Shanghai as mass protests erupt, after worker Gu Zhengzhong was shot and killed in May 15th by a Japanese guard hired by his employer.
+
+Because of this, many students began protesting on the streets. Taking a turn for the worse, British guards fired on these protestors on May 30.
+
+This has now turned into open revolt! Because of this, the CPC triggered a general strike and mass protests and the protestors are now calling for the end of the Shanghai International Settlement.
+
+- @next: What happens next?
+
+@next
+on-arrival: kmt_workers += 7; cpc_workers += 10;
+face-image: img/may30th2.jpg
+
+The Municipal Authority has declared marshal law to crack down on the protests. Although, the radical ideas of the CPC and the anti-imperialist stances of our KMT have strengthened our support.
