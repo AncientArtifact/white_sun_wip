@@ -21,7 +21,7 @@ choose-if: false
 unavailable-subtitle: You can't yet, there's no path.
 
 @exile
-on-arrival: right_strength -= 15; huhanmin_advisor = 0;
+on-arrival: right_strength -= 10; center_left_strength += 10; huhanmin_advisor = 0;
 
 Hu Hanmin has gone in exile and the Right faction quickly began breaking down afterwards without a strong candidate.
 
