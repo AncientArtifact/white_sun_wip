@@ -181,51 +181,54 @@
   };
 
   // TODO: have some code for tabbed sidebar browsing.
-  window.updateSidebar = function() {
-      $('#qualities').empty();
-      var scene = dendryUI.game.scenes[window.statusTab];
-      dendryUI.dendryEngine._runActions(scene.onArrival);
-      var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
-      $('#qualities').append(dendryUI.contentToHTML.convert(displayContent));
-  };
+  window.updateSidebar = function () {
+        $('#qualities').empty();
+        var statusScene = dendryUI.game.scenes["status"];
+        var scene = dendryUI.game.scenes[window.statusTab];
+        dendryUI.dendryEngine._runActions(statusScene.onArrival);
+        dendryUI.dendryEngine._runActions(scene.onArrival);
+        var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
+        $('#qualities').append(dendryUI.contentToHTML.convert(displayContent));
+        dendryUI.dendryEngine._runActions(scene.onDisplay);
+    };
 
-window.changeTab = function(newTab, tabId) {
-    if (tabId == 'poll_tab' && dendryUI.dendryEngine.state.qualities.historical_mode) {
-        window.alert('Polls are not available in historical mode.');
-        return;
-    }
-
-    var tabButton = document.getElementById(tabId);
-
-    if (tabId.endsWith('_right')) {
-        var rightTabs = document.querySelectorAll('#stats_sidebar_right .tab_button');
-
-        for (var i = 0; i < rightTabs.length; i++) {
-            rightTabs[i].classList.remove('active');
+    window.updateSidebarRight = function () {
+        $('#qualities_right').empty();
+        var statusScene = dendryUI.game.scenes["status_right"];
+        var scene = dendryUI.game.scenes[window.statusTabRight];
+        dendryUI.dendryEngine._runActions(statusScene.onArrival);
+        dendryUI.dendryEngine._runActions(scene.onArrival);
+        var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
+        $('#qualities_right').append(dendryUI.contentToHTML.convert(displayContent));
+        dendryUI.dendryEngine._runActions(scene.onDisplay);
+    };
+    window.changeTab = function (newTab, tabId, isRight) {
+        if (tabId == 'poll_tab_left' && dendryUI.dendryEngine.state.qualities.historical_mode) {
+            window.alert('Polls are not available in historical mode.');
+            return;
         }
-
-        tabButton.classList.add('active');
-
-        window.statusTabRight = newTab;
-        window.updateSidebarRight();
-    } else {
-        var leftTabs = document.querySelectorAll('#stats_sidebar .tab_button');
-
-        for (var i = 0; i < leftTabs.length; i++) {
-            leftTabs[i].classList.remove('active');
+        var tabButton = document.getElementById(tabId);
+        var tabButtons = isRight ?
+            document.querySelectorAll('#stats_sidebar_right .tab_button') :
+            document.querySelectorAll('#stats_sidebar .tab_button');
+        for (var i = 0; i < tabButtons.length; i++) {
+            tabButtons[i].className = tabButtons[i].className.replace(' active', '');
         }
+        tabButton.className += ' active';
 
-        tabButton.classList.add('active');
+        if (isRight) {
+            window.statusTabRight = newTab;
+            window.updateSidebarRight();
+        } else {
+            window.statusTab = newTab;
+            window.updateSidebar();
+        }
+    };
 
-        window.statusTab = newTab;
+    window.onDisplayContent = function () {
         window.updateSidebar();
+        window.updateSidebarRight();
     }
-};
-
-  window.onDisplayContent = function() {
-    window.updateSidebarRight();
-      window.updateSidebar();
-  };
 
 
   window.onDisplayContent = function() {
