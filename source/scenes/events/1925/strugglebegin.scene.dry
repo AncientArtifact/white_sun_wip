@@ -27,7 +27,6 @@ You have chosen the Communist Faction. You have picked the advisors: Liao Zhongk
 go-to: main
 
 @noleft
-You have chosen to start over, what advisors do you want to pick?
 
 - @left: Liao Zhongkai and his Communist Faction.
 - @centerleft: Wang Jingwei and his Leftist Faction.
@@ -46,7 +45,6 @@ You have chosen the Leftist Faction. You have picked the advisors: Wang Jingwei,
 go-to: main
 
 @nocenterleft
-You have chosen to start over, what advisors do you want to pick?
 
 - @left: Liao Zhongkai and his Communist Faction.
 - @centerleft: Wang Jingwei and his Leftist Faction.
@@ -65,7 +63,6 @@ You have chosen the Rightist Faction. You have picked the advisors: Hu Hanmin, D
 go-to: main
 
 @noright
-You have chosen to start over, what advisors do you want to pick?
 
 - @left: Liao Zhongkai and his Communist Faction.
 - @centerleft: Wang Jingwei and his Leftist Faction.
