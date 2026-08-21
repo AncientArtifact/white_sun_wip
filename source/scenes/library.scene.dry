@@ -67,21 +67,21 @@ go-to: menu
 @parties
 go-to: menu
 
-<span style="color: #9e1515">CPC</span>: The Chinese Communist Party founded by Chen Duxiu and Li Dazhao is supported by the Soviet Union and shares their Marxist-Leninist ideals.
+<span style="color: #9e1515">**CPC**</span>: The Chinese Communist Party founded by Chen Duxiu and Li Dazhao is supported by the Soviet Union and shares their Marxist-Leninist ideals.
 
-<span style="color: #aba133">Zhili</span>: The Zhili Clique is the most dominant faction of warlords in China. It is led by Cao Kun and Wu Peifu. It is named after Hebei (Zhili) Province.
+<span style="color: #aba133">**Zhili**</span>: The Zhili Clique is the most dominant faction of warlords in China. It is led by Cao Kun and Wu Peifu. It is named after Hebei (Zhili) Province.
 
-<span style="color: #d1b24b">Fengtian</span>: The Fengtian Clique is based in Manchuria, as Zhang Zuolin's personal fiefdom. It is supported by Japan.
+<span style="color: #d1b24b">**Fengtian**</span>: The Fengtian Clique is based in Manchuria, as Zhang Zuolin's personal fiefdom. It is supported by Japan.
 
-<span style="color: #46703e">Anhui</span>: The Anhui Clique is led by Duan Qirui and is based in Anhui province, and also controls Zhejiang and Fujian.
+<span style="color: #46703e">**Anhui**</span>: The Anhui Clique is led by Duan Qirui and is based in Anhui province, and also controls Zhejiang and Fujian.
 
-<span style="color: #8aa87d">Guangxi</span>: The New Guangxi Clique is led by Li Zongren and Bai Chongxi. They are close allies of the KMT after replacing Lu Rongting's Old Guangxi Clique.
+<span style="color: #8aa87d">**Guangxi**</span>: The New Guangxi Clique is led by Li Zongren and Bai Chongxi. They are close allies of the KMT after replacing Lu Rongting's Old Guangxi Clique.
 
-<span style="color: #723d85">Yunnan</span>: The Yunnan Clique is led by Tang Jiyao and is based in Yunnan.
+<span style="color: #723d85">**Yunnan**</span>: The Yunnan Clique is led by Tang Jiyao and is based in Yunnan.
 
-<span style="color: #b38e40">Guizhou</span>: The Guizhou Clique is relatively small, based in Guizhou and often outshadowed by Yunnan.
+<span style="color: #b38e40">**Guizhou**</span>: The Guizhou Clique is relatively small, based in Guizhou and often outshadowed by Yunnan.
 
-<span style="color: #943452">Guominjun</span>: The Guominjun is an Anti-Zhili faction founded by Feng Yuxiang.
+<span style="color: #943452">**Guominjun**</span>: The Guominjun is an Anti-Zhili faction founded by Feng Yuxiang.
 
 @paramilitaries
 on-arrival: {!
@@ -94,31 +94,31 @@ go-to: menu
 
 **Paramilitary groups:**
 
-**National Revolutionary Army**: The NRA is the Kuomintang's military wing founded to avoid reliance on warlords.
+<span style="color: #10186e">**National Revolutionary Army**</span>: The NRA is the Kuomintang's military wing founded to avoid reliance on warlords.
 
 Strength: [+ nra_strength +] thousand
 
 Militarization: [+ nra_militancy : militancy +]
 
-**Chinese Red Army**: The Chinese Worker's and Peasant's Army is the CPC's military wing.
+<span style="color: #9e1515">**Chinese Red Army**</span>: The Chinese Worker's and Peasant's Army is the CPC's military wing.
 
 Strength: [+ red_strength +] thousand
 
 Militarization: [+ red_militancy : militancy +]
 
-**Zhili Army**: The Armies of the Zhili Clique split from the Beiyang Army.
+<span style="color: #aba133">**Zhili Army**</span>: The Armies of the Zhili Clique split from the Beiyang Army.
 
 Strength: [+ sh_strength +] thousand
 
 Militarization: [+ sh_militancy : militancy +]
 
-**Fengtian**: The Armies of the Fengtian Clique split from the Beiyang Army.
+<span style="color: #d1b24b">**Fengtian**</span>: The Armies of the Fengtian Clique split from the Beiyang Army.
 
 Strength: [+ feng_strength +] thousand
 
 Militarization: [+ feng_militancy : militancy +]
 
-**Guominjun**: The Armies of Feng Yuxiang that split from the Zhili Army.
+<span style="color: #943452">**Guominjun**</span>: The Armies of Feng Yuxiang that split from the Zhili Army.
 
 Strength: [+ gmj_strength +] thousand
 
