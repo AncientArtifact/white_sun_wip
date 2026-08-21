@@ -1,0 +1,18 @@
+title: Liao Zhongkai Assasinated!
+subtitle: A sudden end?
+tags: events
+view-if: year = 1925 and month = 8 and week = 3
+max-visits: 1
+priority: 2
+new-page: true
+face-image: img/deadliao.jpg
+on-arrival: left_strength -= 10; liaozhongkai_dead = 1; liaozhongkai_advisor = 0;
+
+= Assasination of Liao Zhongkai
+
+After the tough struggle between Liao Zhongkai, Wang Jingwei and Hu Hanmin began, no one expected violence to occur.
+  
+This seemed to be wrong, as Liao Zhongkai was assasinated by five gunmen before an executive meeting. Condolences were given to the family but many began suspecting the Right faction.
+
+Although his beliefs may have differed from others, this is still an unfortunate thing to happen for us.
+
