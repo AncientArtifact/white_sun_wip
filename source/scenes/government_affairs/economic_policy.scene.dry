@@ -35,6 +35,7 @@ subtitle: -2 budget
 unavailable-subtitle: -2 budget
 view-if: centralize >= 3
 choose-if: budget >= 2 and centralize >= 3
+frequency: 1
 on-arrival: budget -= 2; economic_growth += 2; centralize += 2;
 
 Founding the Central Bank of Canton has greatly improved our efforts in managing Guangdong's finances.
