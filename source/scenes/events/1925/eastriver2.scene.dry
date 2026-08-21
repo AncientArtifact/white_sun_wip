@@ -9,3 +9,29 @@ new-page: true
 = Second East River Campaign
 
 Chen Jiongming has since fled Guangdong in April after we defeated his forces. Now, it's time to defeat the remaining resistance.
+
+The outcome is...
+
+- @win: Victory!
+- @lose: Defeat.. Wait, what the fuck?!
+
+@win
+view-if: nra_strength > 20 and nra_militancy > 0.1
+choose-if: nra_strength > 20 and nra_militancy > 0.1
+
+Chiang Kai-shek has defeated the last of Chen Jiongming's forces. Now, Guangdong is finally safe.
+
+@lose
+view-if: nra_strength <= 20 and nra_militancy > 0.1
+choose-if: nra_strength <= 20 and nra_militancy > 0.1
+
+We have somehow LOST to Chen Jiongming's armies in Eastern Guandong! Seeing how weak the NRA is after the battle, Chen Jiongming marched into Canton and seized the city.
+
+Our party leadership has been arrested, Yunnan and Guangxi are stuck in fighting and the Soviets cannot reach us anymore. We cannot be saved.
+
+The Guomindang has failed.
+
+- @freeachievementlolol: Congratulations.
+
+@freeachievementlolol
+go-to: game_over
