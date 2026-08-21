@@ -16,8 +16,6 @@ The <span style="color: #9e1515">United</span> <span style="color: #10186e">Fron
 @powerstruggle
 view-if: sunyatsen_dead = 1
 
-[? if sunyatsen_dead = 0 : The Party is mostly **unified**. ?]
-
 = **The Power Struggle**
 
 <span style="color: #9e1515">**Communists**</span>: Liao Zhongkai
@@ -35,6 +33,8 @@ Influence: [+ right_strength : strength +]
 <span style="color: #46703e">**Whampoa Clique**</span>: Chiang Kai-shek
 Influence: [+ whampoa_strength : strength +]
 <img src="img/portraits/ChiangKai-shek.jpg" width="150px" height="205px">
+
+[? if sunyatsen_dead = 0 : The Party is mostly **unified**. ?]
 
 @northernexpedition
 
