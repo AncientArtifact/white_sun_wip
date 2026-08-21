@@ -1,7 +1,6 @@
 title: Game Over.
 new-page: true
-on-arrival: {!
-Q.game_over = 1;
+on-arrival: game_over = 1;
 
 = Game Over
 
