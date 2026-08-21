@@ -248,10 +248,10 @@ window.changeTab = function(newTab, tabId) {
 
     // Determine which tab/button is active in the DOM and initialize statusTab/statusTabId accordingly.
     // Prefer right panel active if present.
-    var rightActive = document.querySelector('#stats_sidebar_right .tab_button.active');
+    var rightActive = document.querySelector('#status_right .tab_button.active');
     var leftActive = document.querySelector('#status .tab_button.active');
      if (rightActive) {
-        window.statusTabId = rightActive.id || 'concerns';
+        window.statusTabId = rightActive.id || 'main_concerns';
         window.statusTab = 'status_right';
     } else if (leftActive) {
         window.statusTabId = leftActive.id || 'main_tab';
