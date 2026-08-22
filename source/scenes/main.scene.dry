@@ -37,6 +37,7 @@ max-cards: 4
 
 - @party
 - @govt
+- @warlord
 - #advisor
 - @shuffle_leadership_pinned
 
@@ -55,8 +56,15 @@ is-deck: true
 
 - #govt_affairs
 
+@warlord
+title: Warlord Affairs
+card-image: img/warlord.jpg
+is-deck: true
+
+- #warlord_affairs
+
 @shuffle_leadership_pinned
 title: Shuffle Leadership
 card-image: img/kmtshuffle.jpg
-is-deck: false
+is-deck: true
 go-to: shuffle_leadership.rm_main
