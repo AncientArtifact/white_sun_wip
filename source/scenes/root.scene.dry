@@ -475,6 +475,7 @@ Q.sh_ban_timer = 0;
 Q.kpd_ultimatum_timer = 0;
 Q.march_on_berlin_timer = 0;
 Q.gcw_timer = 0;
+Q.gcw_over = 0;
 Q.guangxi_affairs_timer = 0;
 
 
