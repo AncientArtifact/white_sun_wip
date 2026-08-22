@@ -5,12 +5,23 @@ view-if: year = 1924 and month = 6 and week = 3
 max-visits: 1
 priority: 2
 new-page: true
-on-arrival: guangxi_leader = "Li Zongren"; guangxi_deputy_leader = "Bai Chongxi"; guangxi_governor = "Li Zongren"; guangxi_faction = "New Guangxi"
-face-image: img/portraits/LiZongren.jpg
 
 = Conclusion of the Guangxi Civil War
 
-Ever since Chen Jiongming defeated Lu Rongting in the Second Yue-Gui war, Guangxi has fallen into anarchy. 
+Ever since Chen Jiongming defeated Lu Rongting in the Second Yue-Gui war, Guangxi has fallen into anarchy. The Guangxi civil war seems to be reaching an end as one faction defeats another...
+
+- @next: The winner is...
+
+@next
+go-to: lu if gxc_relations < 20; shen if gxc_relations >= 20 and < 30; li if gxc_relations >= 30;
+
+- @li: Li Zongren!
+- @shen: Shen Hongying?
+- @lu: Lu Rongting?
+
+@li
+on-arrival: guangxi_leader = "Li Zongren"; guangxi_deputy_leader = "Bai Chongxi"; guangxi_governor = "Li Zongren"; guangxi_faction = "New Guangxi"
+face-image: img/portraits/LiZongren.jpg
 
 After a series of fights between the returning Lu Rongting, warlord Shen Hongying and warlord Li Zongren, the New Guangxi Clique has formed between Li Zongren, Bai Chongxi and Huang Shaohong.
 The New Guangxi Clique has successfully taken over Nanning and have become the most powerful Clique in Guangxi.
@@ -18,3 +29,18 @@ The New Guangxi Clique has successfully taken over Nanning and have become the m
 This bodes well for us as Li Zongren is a Guomindang member. He has effectively become our ally in Guangxi. His forces will become part of our National Revolutionary Army.
 
 While Li Zongren hasn't completely reunified Guangxi yet, his control has already reached much of the province.
+
+@shen
+on-arrival: guangxi_leader = "Shen Hongying"; guangxi_governor = "Shen Hongying";
+face-image: img/portraits/ShenHongying.jpg
+
+Somehow, Shen Hongying has managed to defeat both Li Zongren and Lu Rongting. Shen had previously rebelled against Sun's government but he has gone on record to swear his loyalty to the generalissimo once again.
+
+Although, Shen is still a warlord with his own interests. It is uknown if we can trust him.
+
+@lu
+face-image: img/portraits/LuRongting.jpg
+
+Somehow, Lu Rongting has re-emerged to his place in Guangxi. He is quite distrusted by us because of the Guangdong-Guangxi war and his rivalry to our ambitions.
+
+It seems we have run out of allies to fight with in our twin province.
