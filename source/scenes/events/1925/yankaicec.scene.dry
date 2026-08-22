@@ -1,0 +1,13 @@
+title: Tan Yankai Appointed as CEC Chairman
+subtitle: The Power Struggle deepens.
+tags: events
+view-if: year = 1925 and month = 5 and week = 1 and cecjingwei = 0 and ceczhongkai = 0 and cechanmin = 0
+max-visits: 1
+priority: 2
+new-page: true
+face-image: img/portraits/TanYankai.jpg
+on-arrival: left_strength -= 5; center_left_strength -= 5; right_strength -= 5;
+
+= Tan Yankai Appointed as CEC Chairman
+
+After a quick election due to Sun Yat-sen's death, Hu Hanmin came out on top as the Chairman of the Central Executive Committee. This has strengthened the Rightist faction significantly, as Hu Hanmin now takes the highest position in the Party.
