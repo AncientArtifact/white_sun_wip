@@ -32,6 +32,6 @@ Li Zongren's clique has recieved aid from us, which helps in their fight.
 
 @raid
 subtitle: +1 resource - Why would we do this?
-on-arrival: resources +1; gxc_relations -= 10;
+on-arrival: resources +1; gxc_relations -= 5;
 
 We raided Guangxi border regions instead. This choice is questionable.
