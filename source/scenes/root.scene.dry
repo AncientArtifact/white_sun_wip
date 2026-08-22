@@ -26,7 +26,6 @@ Q.month = 1;
 Q.week = 1;
 Q.week_actions = 0;
 
-Q.power_struggle_active = 0;
 Q.wuhan_nanjing_split = 0;
 Q.cpc_civil_war = 0;
 Q.northern_expedition_begun = 0;
