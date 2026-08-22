@@ -1,0 +1,47 @@
+title: CEC Elections
+subtitle: The Power Struggle deepens.
+tags: events
+view-if: year = 1925 and month = 4 and week = 3
+max-visits: 1
+priority: 2
+new-page: true
+
+= CEC Elections
+
+After a quick election due to Sun Yat-sen's death, we have finally decided who to become Chairman of the CEC.
+
+- @next: The winner is...
+
+@next
+go-to: left if left_strength > center_strength + right_strength; centerleft if center_left_strength + center_strength > right strength + left_strength; right if right_strength > left_strength + center_left_strength; center
+
+- @left: Liao Zhongkai!
+- @centerleft: Wang Jingwei!
+- @right: Hu Hanmin!
+- @center: Tan Yankai!
+
+@left
+on-arrival: left_strength += 10; ceczhongkai = 1;
+face-image: img/portraits/LiaoZhongkai.jpg
+
+After a quick election due to Sun Yat-sen's death, Liao Zhongkai came out on top as the Chairman of the Central Executive Committee. This has strengthened the Communist faction significantly, as Liao now takes the highest position in the Party.
+
+@right
+face-image: img/portraits/HuHanmin.jpg
+on-arrival: right_strength += 10; cechanmin = 1; guangdong_governor = "Xu Chongzhi";
+
+After a quick election due to Sun Yat-sen's death, Hu Hanmin came out on top as the Chairman of the Central Executive Committee. This has strengthened the Rightist faction significantly, as Hu Hanmin now takes the highest position in the Party.
+
+Since Hu Hanmin has two roles at once, Xu Chongzhi has been appointed governor of Guangdong.
+
+@centerleft
+on-arrival: center_left_strength += 10; cecjingwei = 1;
+face-image: img/wangjingwei2.jpg
+
+After a quick election due to Sun Yat-sen's death, Wang Jingwei came out on top as the Chairman of the Central Executive Committee. This has strengthened the Leftist faction significantly, as Wang now takes the highest position in the Party.
+
+@center
+on-arrival: center_left_strength -= 5; left_strength -= 5; right_strength -=5;
+face-image img/portraits/TanYankai.jpg
+
+Unexpectedly, Tan Yankai was voted in as none of the other three factions managed to gain a majority. This has decreased the influence of all three sides.
