@@ -11,17 +11,95 @@ face-image: img/portraits/TangJiyao.jpg
 
 Only six days after Sun Yat-sen's death, the warlord of Yunnan, Tang Jiyao has suddenly proclaimed himself the true successor of the Kuomintang! His Yunnanese troops have begun marching south to seize Guangzhou!
 
-- @next: Li Zongren will fight to protect Guangzhou!
+- @li: Li Zongren will fight to protect Guangzhou!
+- @shen: Shen Hongying must be courted in our favour.
+- @lu: Will Lu Rongting fight to protect Guangzhou?
 
-@next
+@li
+view-if: guangxi_governor = "Li Zongren"
 face-image: img/portraits/LiZongren.jpg
 
 Li Zongren, warlord of Guangxi is directly south of Yunnan and is the one province blocking Yunnan from Guangdong. Thus, Tang Jiyao must march through Guangxi to reach Guangzhou.
 
 It seems he will not let Tang Jiyao pass without a fight. Along with NRA troops commanded by Chiang Kai-shek, they have begun the defense of Guangxi.
 
-- @win: Yunnan is stopped in it's tracks.
+- @winli: Yunnan is stopped in it's tracks.
 
-@win
+@winli
 
-The *Yunnan-Guangxi War* has slowed down as the Guangxi and NRA troops block Tang Jiyao's advance. This is a victory for Guangzhou.
+The *Yunnan-Guangxi War* has slowed down as the Guangxi and NRA troops block Tang Jiyao's advance. This is a victory for the Guomindang.
+
+@shen
+view-if: guangxi_governor = "Shen Hongying"
+face-image: img/portraits/ShenHongying.jpg
+
+Shen Hongying is the only obstacle blocking Yunnan for us. His loyalties are also questionable. Will he still support us?
+
+- @bribe: Send a bribe.
+- @relations: Use good relations.
+- @refuse: Let them come.
+
+@bribe
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable_subtitle: Not enough resources.
+on-arrival: resources -= 1; gxc_relation += 5;
+
+- @endingshenbribed: The outcome is...
+
+@relations
+choose-if: gxc_relation > 20
+unavailable_subtitle: Not enough relations.
+
+- @endingshenbribed: The outcome is...
+
+@endingshenbribed
+go-to: winshenbribe if gxc_relation > 20; betrayshenbribe
+
+@winshenbribe
+
+Shen Hongying stands with us! Now, Tang Jiyao must fight his forces combined with ours to reach Guangzhou.
+
+- @winshen: Yunnan is stopped in it's tracks.
+
+@winshen
+
+The *Yunnan-Guangxi War* has slowed down as the Guangxi and NRA troops block Tang Jiyao's advance. This is a victory for the Guomindang.
+
+@betrayshenbribe
+
+Shen Hongying has refused to stand with us! He has let Tang Jiyao's forces pass through Guangxi. 
+
+Tang Jiyao is at the gates of Guangdong. We have no choice but to fight.
+
+- @battlejiyao: The outcome is...
+
+@battlejiyao:
+go-to: winself if nra_strength > 100; loseself
+
+@winself
+
+We have miraculously defeated Tang Jiyao in the battle! This is a major victory for the Guomindang!
+
+@loseself
+
+We have been defeated by Tang Jiyao's Yunnanese forces. Guangzhou has been seized and our leadership is forced into exile.
+
+The Communists and Soviets refuse to help us as Tang Jiyao conquers the rest of Guangdong.
+
+The Guomindang has failed.
+
+- @freeachiev: Congratulations.
+
+@freeachiev
+go-to: game_over
+
+@lu
+view-if: guangxi_governor = "Lu Rongting"
+face-image: img/portraits/LuRongting.jpg
+
+Lu Rongting, the warlord of the Old Guangxi Clique, completely distrusts us and our revolutionary movement. He completely lets Tang Jiyao's forces through Guangxi.
+
+Tang Jiyao is at the gates of Guangdong. We have no choice but to fight ourselves.
+
+- @battlejiyao: The outcome is...
