@@ -4,6 +4,7 @@ is-card: true
 on-arrival: agricultural_policy_timer += 6; week_actions += 1
 card-image: img/kmtagri.jpg
 tags: govt_affairs, cabinet
+view-if: agricultural_policy_timer = 0
 #subtitle: Policies we can establish to help Guangdong's farmers.
 
 = Agricultural Policy
