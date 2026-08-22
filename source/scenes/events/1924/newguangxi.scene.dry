@@ -20,7 +20,7 @@ go-to: lu if gxc_relations < 20; shen if gxc_relations >= 20 and < 30; li if gxc
 - @lu: Lu Rongting?
 
 @li
-on-arrival: guangxi_leader = "Li Zongren"; guangxi_deputy_leader = "Bai Chongxi"; guangxi_governor = "Li Zongren"; guangxi_faction = "New Guangxi"
+on-arrival: guangxi_leader = "Li Zongren"; guangxi_deputy_leader = "Bai Chongxi"; guangxi_governor = "Li Zongren"; guangxi_faction = "New Guangxi";
 face-image: img/portraits/LiZongren.jpg
 
 After a series of fights between the returning Lu Rongting, warlord Shen Hongying and warlord Li Zongren, the New Guangxi Clique has formed between Li Zongren, Bai Chongxi and Huang Shaohong.
