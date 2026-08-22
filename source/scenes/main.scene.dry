@@ -66,5 +66,5 @@ is-deck: true
 @shuffle_leadership_pinned
 title: Shuffle Leadership
 card-image: img/kmtshuffle.jpg
-is-deck: true
+is-deck: false
 go-to: shuffle_leadership.rm_main
