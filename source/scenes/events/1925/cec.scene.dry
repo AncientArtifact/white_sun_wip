@@ -13,7 +13,7 @@ After a quick election due to Sun Yat-sen's death, we have finally decided who t
 - @next: The winner is...
 
 @next
-go-to: left if left_strength > center_strength + right_strength; centerleft if center_left_strength + center_strength > right strength + left_strength; right if right_strength > left_strength + center_left_strength; center
+go-to: left if left_strength > center_strength + right_strength; centerleft if center_left_strength > right strength + left_strength; right if right_strength > left_strength + center_left_strength; center
 
 - @left: Liao Zhongkai!
 - @centerleft: Wang Jingwei!
