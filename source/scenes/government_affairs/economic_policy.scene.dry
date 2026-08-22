@@ -57,10 +57,10 @@ on-arrival: budget -= 1; economic_growth += 0.5; old_middle_kmt += 5; new_middle
 The middle class likes this, and our economy grows higher.
 
 @illegalize
-subtitle: Gambling was recently relegalized to raise more funds. Should we illegalize it once more?
+subtitle: -1 budget - Gambling was recently relegalized to raise more funds. Should we illegalize it once more?
 view-if: gambling = 1
 choose-if: gambling = 1
-on-arrival: gambling = 0; economic_growth -= 0.5; old_middle_kmt += 4; new_middle_kmt += 4; workers_kmt += 4;
+on-arrival: gambling = 0; economic_growth -= 0.5; old_middle_kmt += 4; new_middle_kmt += 4; workers_kmt += 4; budget -= 1;
 
 Gambling is illegal once again, giving us some support with the people.
 
