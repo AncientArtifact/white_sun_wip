@@ -18,7 +18,7 @@ Guangxi has split between several factions after Chen Jiongming's invasion. Our 
 subtitle: -2 resources.
 choose-if: resources >= 2
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -2; gxc_relation += 10;
+on-arrival: resources -= 2; gxc_relation += 10;
 
 Li Zongren's soldiers recieve more weapons.
 
@@ -26,12 +26,12 @@ Li Zongren's soldiers recieve more weapons.
 subtitle: -1 resource.
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -1; gxc_relation += 5;
+on-arrival: resources -= 1; gxc_relation += 5;
 
 Li Zongren's clique has recieved aid from us, which helps in their fight.
 
 @raid
 subtitle: +1 resource - Why would we do this?
-on-arrival: resources +1; gxc_relation -= 5;
+on-arrival: resources += 1; gxc_relation -= 5;
 
 We raided Guangxi border regions instead. This choice is questionable.
