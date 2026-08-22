@@ -5,6 +5,7 @@ tags: govt_affairs, cabinet
 on-arrival: fiscal_policy_timer += 6; week_actions += 1
 card-image: img/portraits/TVSoong.jpg
 go-to: fiscal_menu
+view-if: fiscal_policy_timer = 0
 #subtitle: Issues of taxation, budget, and tariffs.
 
 = Fiscal Policy
