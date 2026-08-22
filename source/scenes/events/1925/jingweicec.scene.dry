@@ -1,12 +1,12 @@
 title: Wang Jingwei Appointed as CEC Chairman
 subtitle: The Power Struggle deepens.
 tags: events
-view-if: year = 1925 and month = 4 and week = 3 and center_left_strength > 25
+view-if: year = 1925 and month = 4 and week = 3 and center_left_strength > Math.round(right_strength + left_strength) and cechanmin = 0 and ceczhongkai = 0
 max-visits: 1
 priority: 2
 new-page: true
 face-image: img/wangjingwei2.jpg
-on-arrival: center_left_strength += 10;
+on-arrival: center_left_strength += 10; cecjingwei = 1;
 
 = Wang Jingwei Appointed as CEC Chairman
 
