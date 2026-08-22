@@ -15,12 +15,12 @@ Because of this, many students began protesting on the streets. Taking a turn fo
 
 This has now turned into open revolt! Because of this, the CPC triggered a general strike and mass protests and the protestors are now calling for the end of the Shanghai International Settlement.
 
-- @next: What happens next?
+- @next: Support the protests!
 
 @next
-on-arrival: kmt_workers += 7; cpc_workers += 10;
+on-arrival: kmt_workers += 10; cpc_workers += 15;
 face-image: img/may30th2.jpg
 
-The Municipal Authority has declared marshal law to crack down on the protests. Although, the radical ideas of the CPC and the anti-imperialist stances of our KMT have strengthened our support.
+The Municipal Authority has declared marshal law to crack down on the protests. Although, the radical ideas of the CPC and the anti-imperialist stances of our KMT have incredibly strengthened our support.
 
-The protests in Hong Kong, however, do not seem to end just yet.
+The protests in Hong Kong, however, do not seem to end just yet. We can stir up more strikes soon.
