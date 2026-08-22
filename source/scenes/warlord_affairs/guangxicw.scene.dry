@@ -5,3 +5,26 @@ on-arrival: week_actions += 1; gcw_timer += 3;
 card-image: img/portraits/LuRongting.jpg
 tags: warlord_affairs
 view-if: gcw_timer = 0 and gcw_over = 0
+
+= Guangxi Civil War
+
+Guangxi has split between several factions after Chen Jiongming's invasion. Our favoured faction is Li Zongren, Bai Chongxi, and Huang Shaohong's clique, also known as the "New Guangxi Clique". Other factions include Shen Hongying, a Zhili-favored warlord and Lu Rongting, the Old Guangxi Clique Leader.
+
+- @support: Supply Li Zongren's armies.
+- @aid: Give monetary aid to Li Zongren's clique.
+
+@support
+subtitle: -2 resources.
+choose-if: resources >= 2
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -2; gxc_relations += 10;
+
+Li Zongren's soldiers recieve more weapons.
+
+@aid
+subtitle: -1 resource.
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -1; gxc_relations += 5;
+
+Li Zongren's clique has recieved aid from us, which helps in their fight.
