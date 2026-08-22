@@ -42,6 +42,6 @@ After a quick election due to Sun Yat-sen's death, Wang Jingwei came out on top 
 
 @center
 on-arrival: center_left_strength -= 5; left_strength -= 5; right_strength -=5;
-face-image img/portraits/TanYankai.jpg
+face-image: img/portraits/TanYankai.jpg
 
 Unexpectedly, Tan Yankai was voted in as none of the other three factions managed to gain a majority. This has decreased the influence of all three sides.
