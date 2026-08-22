@@ -10,12 +10,10 @@ new-page: true
 
 Ever since Chen Jiongming defeated Lu Rongting in the Second Yue-Gui war, Guangxi has fallen into anarchy. The Guangxi civil war seems to be reaching an end as one faction defeats another.
 
-- @next: The winner is...
+- @winner: The winner is...
 
-@next
+@winner
 go-to: lu if gxc_relations < 20; shen if gxc_relations >= 20 and < 30; li if gxc_relations >= 30;
-
-.
 
 - @li: Li Zongren!
 - @shen: Shen Hongying?
