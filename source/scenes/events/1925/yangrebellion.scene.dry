@@ -32,7 +32,7 @@ Chiang Kai-shek has assembled his army to defend against his betrayal.
 - @result: The outcome is...
 
 @result
-go-to: winyang if nra_strength > 20; loseyang
+go-to: winyang if nra_strength > 20; loseyang if nra_strength < 20
 
 @winyang
 on-arrival: nra_strength -= 10; nra_militancy += 0.05;
