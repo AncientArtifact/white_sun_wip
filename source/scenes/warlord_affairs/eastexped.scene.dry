@@ -1,0 +1,65 @@
+title: Eastern Expedition
+new-page: true
+is-card: true
+on-arrival: week_actions += 1; eastexped_timer += 3;
+card-image: img/portraits/ChenJiongming.jpg
+tags: warlord_affairs
+view-if: eastexped_timer = 0 and easatexped_active = 1
+
+Q.firsttrialdone = 0;
+Q.secondtrialdone = 0;
+Q.nrapower = Q.nra_strength*Q.nra_militancy;
+Q.chenpower = Q.chen_strength*Q.chen_militancy;
+Q.chen_strength = 50;
+Q.chen_militancy = 0.2;
+
+= The Eastern Expedition
+
+We finally have a chance to defeat Chen Jiongming in battle. Now, it's time to march east!
+
+- @firsttrial: March into Huizhou.
+- @secondtrial: March into Shanwei.
+
+@firsttrial
+choose-if: firsttrialdone = 0
+unavailable-subtitle: Huizhou has fallen into our hands.
+go-to: winhuizhou if nrapower > chenpower; losehuizhou
+
+@winhuizhou
+on-arrival: nra_strength -= 10; chen_strength -= 20; firsttrialdone = 1;
+
+We have defeated Chen Jiongming in Huizhou and have inflicted large casualties against his army! This is a cause to celebrate.
+
+- @done: Hurrah!
+
+@done
+go-to: main
+
+@donelose
+go-to: main
+
+@losehuizhou
+on-arrival: nra_strength -= 20; chen_strength -= 10;
+
+Chen Jiongming's armies have defeated us! We have been repelled back to our starting position.
+
+- @donelose: Unfortunate.
+
+@secondtrial
+choose-if: firsttrialdone = 1
+unavailable-subtitle: We must march into Huizhou before reaching Shanwei.
+go-to: winshanwei if nrapower > chenpower; loseshanwei
+
+@winshanwei
+on-arrival: nra_strength -= 10; chen_strength -= 20; firsttrialdone = 1; eastexped_active = 0; eastexped_done = 1;
+
+We have defeated Chen Jiongming in Shanwei and have sent him all the way to Shantou! This is a great victory for us.
+
+- @done: Hurrah!
+
+@loseshanwei
+on-arrival: nra_strength -= 20; chen_strength -= 10; firsttrialdone = 0;
+
+Chen Jiongming's armies have defeated us! We have been repelled back to our starting position.
+
+- @donelose: Unfortunate.
