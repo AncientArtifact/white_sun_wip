@@ -6,6 +6,7 @@ max-visits: 1
 priority: 2
 new-page: true
 face-image: img/portraits/ChenJiongming.jpg
+on-arrival: eastexped_active = 0;
 
 = First East River Campaign
 
