@@ -4,7 +4,7 @@ is-card: true
 on-arrival: week_actions += 1; guangxicivilwar_timer += 3;
 card-image: img/portraits/LuRongting.jpg
 tags: warlord_affairs
-view-if: gcw_timer = 0 and gcw_over = 0
+view-if: guangxicivilwar_timer = 0 and gcw_over = 0
 
 = Guangxi Civil War
 
