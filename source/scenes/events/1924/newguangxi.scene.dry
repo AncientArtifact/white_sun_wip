@@ -14,7 +14,7 @@ Ever since Chen Jiongming defeated Lu Rongting in the Second Yue-Gui war, Guangx
 - @winner: The winner is...
 
 @winner
-go-to: lu if gxc_relation < 20; shen if gxc_relation >= 20 and gxc_relation < 30; li
+go-to: lu if gxc_relation < 19; shen if gxc_relation > 19 and gxc_relation < 29; li if gxc_relation > 29
 
 - @li: Li Zongren!
 - @shen: Shen Hongying?
