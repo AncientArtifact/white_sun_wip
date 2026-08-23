@@ -1,0 +1,53 @@
+title: Yang Ximin's Contract
+subtitle: More obstacles in our journey.
+tags: events
+view-if: year = 1925 and month = 4 and week = 1
+max-visits: 1
+priority: 2
+new-page: true
+face-image: img/portraits/YangXimin.jpg
+
+= Yang Ximin's Contract
+
+Yang Ximin, leader of the Yunnan Guest Army in Guangzhou and one of the armies we pay for to protect us has recently upped his prices ten times to use his services against Chen Jiongming.
+
+He is already unreliable in our eyes, and we see fit for us to break ties with him. What do we do now?
+
+- @pay: -5 budget - We have no choice but to pay him off. 
+- @refuse: Yang Ximin will leave this instant!
+
+@pay
+choose-if: budget >= 5
+unavailable-subtitle: Not enough budget.
+on-arrival: budget -= 5; nra_strength += 20; nra_militancy -= 0.05;
+
+We have reluctantly payed Yang Ximin for his armies to join ours.
+
+@refuse
+
+We have refused Yang Ximin's offer and have broken ties with him. In retaliation, he rebels against our government and attacks Guangzhou!
+
+Chiang Kai-shek has assembled his army to defend against his betrayal.
+
+- @result: The outcome is...
+
+@result
+go-to: winyang if nra_strength > 20; loseyang
+
+@winyang
+on-arrival: nra_strength -= 10; nra_militancy += 0.05;
+
+We have easily crushed Yang Ximin's guest army and now he has retreated from Guangdong. It seems our reliance on warlords have reached an end.
+
+@loseyang
+
+Yang Ximin has sacked Guangzhou! Our party members have been forced into exile.
+
+The Communists and Soviets refuse to help us. Yunnan and Guangxi have begun fighting against themselves.
+
+The Guomindang has failed.
+
+- @freeachievig: Congratulations.
+
+@freeachievig
+go-to: game_over
