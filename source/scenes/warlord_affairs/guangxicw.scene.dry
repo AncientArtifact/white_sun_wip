@@ -1,7 +1,7 @@
 title: Guangxi Civil War
 new-page: true
 is-card: true
-on-arrival: week_actions += 1; gcw_timer += 3;
+on-arrival: week_actions += 1; guangxicivilwar_timer += 3;
 card-image: img/portraits/LuRongting.jpg
 tags: warlord_affairs
 view-if: gcw_timer = 0 and gcw_over = 0
