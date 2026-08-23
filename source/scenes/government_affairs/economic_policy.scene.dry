@@ -34,7 +34,7 @@ Centralizing the tax system will make the economy more efficient and stable.
 @central-bank
 subtitle: -2 budget
 unavailable-subtitle: -2 budget
-view-if: centralize >= 3
+view-if: centralize >= 3 and centralbank = 0
 choose-if: budget >= 2 and centralize >= 3
 frequency: 1
 on-arrival: budget -= 2; economic_growth += 2; centralize += 2;
