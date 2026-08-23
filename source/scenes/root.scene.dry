@@ -137,7 +137,7 @@ Q.ceczhongkai = 0;
 // The array of forces - paramilitary groups
 // Number of members in 1928 (in thousands)
 // Reichsbanner, stahlhelm, SA, rotfrontkämpferbund
-Q.nra_strength = 50;
+Q.nra_strength = 20;
 Q.nra_militancy = 0.1;
 Q.bei_strength = 300;
 Q.bei_militancy = 0.5;
