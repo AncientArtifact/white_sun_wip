@@ -27,6 +27,7 @@ Q.week = 1;
 Q.week_actions = 0;
 
 Q.eastexped_active = 0;
+Q.eastexped_done = 0;
 Q.wuhan_nanjing_split = 0;
 Q.cpc_civil_war = 0;
 Q.northern_expedition_begun = 0;
