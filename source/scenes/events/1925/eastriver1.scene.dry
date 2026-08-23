@@ -9,32 +9,13 @@ face-image: img/portraits/ChenJiongming.jpg
 
 = First East River Campaign
 
-Ever since his betrayal in 1922, Chen Jiongming has been a pain in our backside while trying to govern Guangdong. Now, we have a chance to beat him.
+Chen Jiongming is an enigma to us. After successfully defeating the Old Guangxi Clique and taking Guangdong for us, he eventually betrayed us over disagreements in the Northern Expedition.
 
-We have organized an NRA army to go into East Guangdong to defeat Chen Jiongming's armies. Hopefully this will make us safer.
+Now, the National Revolutionary Army has reached heights never seen by warlord armies. Due to Sun's ailing health, our borders now feel more unsafe.
 
-The outcome is...
+Thus, we finally have a chance to beat him. We will begin an expedition to oust Chen Jiongming and unify Guangdong once and for all!
 
-- @win: Victory!
-- @lose: Defeat.. Wait, what the fuck?!
+- @next: You have a new card in your Warlord Affairs deck.
 
-@win
-view-if: nra_strength > 30 and nra_militancy > 0.2
-choose-if: nra_strength > 30 and nra_militancy > 0.2
-
-With the help of Soviet equipment and superior military training, Chiang Kai-shek has crushed Chen Jiongming's armies! He is now preparing to flee Guangdong like the coward he is.
-
-@lose
-view-if: nra_strength <= 30 and nra_militancy > 0.2
-choose-if: nra_strength <= 30 and nra_militancy > 0.2
-
-We have somehow LOST to Chen Jiongming's armies in Eastern Guandong! Seeing how weak the NRA is after the battle, Chen Jiongming marched into Canton and seized the city.
-
-Our party leadership has been arrested, Yunnan and Guangxi have begun fighting and the Soviets cannot reach us anymore. We cannot be saved.
-
-The Guomindang has failed.
-
-- @freeachievementlolol: Congratulations.
-
-@freeachievementlolol
-go-to: game_over
+@next
+go-to: main
