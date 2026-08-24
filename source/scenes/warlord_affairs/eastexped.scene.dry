@@ -1,17 +1,21 @@
 title: Eastern Expedition
 new-page: true
 is-card: true
-on-arrival: week_actions += 1; eastexped_timer += 3;
 card-image: img/portraits/ChenJiongming.jpg
 tags: warlord_affairs
 view-if: eastexped_timer = 0 and eastexped_active = 1
+on-arrival: {!
 
+Q.week_actions += 1;
+Q.eastexped_timer += 3;
 Q.firsttrialdone = 0;
 Q.secondtrialdone = 0;
 Q.nrapower = Q.nra_strength*Q.nra_militancy;
 Q.chenpower = Q.chen_strength*Q.chen_militancy;
 Q.chen_strength = 50;
 Q.chen_militancy = 0.2;
+
+!}
 
 = The Eastern Expedition
 
