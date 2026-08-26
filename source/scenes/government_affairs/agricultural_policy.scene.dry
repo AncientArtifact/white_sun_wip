@@ -11,36 +11,24 @@ view-if: agricultural_policy_timer = 0
 
 The Chinese peasantry is still incredibly poor, so we should enact some policies to garner their support.
 
-- @land_reform
 - @agricultural_finance
 - @pro_consumer
 - @root: Do not enact any policies for now.
 - @easy_discard
 - @cancel_advisor_action
 
-@land_reform
-title: Land Reform
-subtitle: -3 budget - Break up the large aristocratic estates and give land to farmers. This is extremely unprecedented and expensive and will destroy our support with the landowners. This will certainly destroy the CPC's support.
-unavailable-subtitle: [? if year >= 1925 : We have yet to think about doing land reform. ?][? if budget <= 0 : Requires 3 budget. ?][? if kmt_leader = "Chiang Kai-shek" : Chiang will never allow this. ?]
-choose-if: budget > 0 and year >= 1925
-on-arrival: budget -= 3; land_reform += 1; rural_kmt += 15*(1-dissent); left_strength += 8; left_dissent -= 5; rural_cpc -= 15; cpc_relations -= 20; old_middle_kmt -= 10; new_middle_kmt -= 10;
-max-visits: 4
-
-With our policy of land reform, we are acquiring farmland from large estates, and giving the land to farmworkers' associations and small peasants. In essence, this brings class struggle to the countryside, breaking the semi-feudal property relations present in the country. The businessmen and large farmers despise our intrusion into the sacredness of private property, while leftists are cautiously optimistic.
-
-
 @agricultural_finance
 title: Agricultural Financing
-subtitle: -1 budget - Increase financing for agricultural credit and insurance.
-choose-if: budget >= 1
-on-arrival: budget -= 1; agricultural_finance += 1; rural_kmt += 5*(1-dissent); rural_cpc -= 3*(1-dissent); rural_sol += 4; economic_growth += 0.2;
+subtitle: -1 funds - Increase financing for agricultural credit and insurance.
+choose-if: funds >= 1
+on-arrival: funds -= 1; agricultural_finance += 1; rural_kmt += 5*(1-dissent); rural_cpc -= 3*(1-dissent); rural_sol += 4; economic_growth += 0.2;
 
 We have increased financial support for small farmers, as well as providing subsidies to strengthen the agricultural industry.
 
 @pro_consumer
 title: Food Procurement
-subtitle: -1 budget - Provide inexpensive food for the people.
-choose-if: budget >= 1
-on-arrival: budget -= 1; workers_kmt += 4*(1-dissent); unemployed_kmt += 4*(1-dissent); workers_sol += 4; economic_growth += 0.2;
+subtitle: -1 funds - Provide inexpensive food for the people.
+choose-if: funds >= 1
+on-arrival: funds -= 1; workers_kmt += 4*(1-dissent); unemployed_kmt += 4*(1-dissent); workers_sol += 4; economic_growth += 0.2;
 
 We have increased state purchasing of food staples to provide to urban workers and the poor. This benefits workers more than it benefits farmers, as we are negotiating for lower purchase prices.
