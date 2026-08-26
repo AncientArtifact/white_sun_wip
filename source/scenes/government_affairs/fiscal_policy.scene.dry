@@ -6,11 +6,11 @@ on-arrival: fiscal_policy_timer += 6; week_actions += 1
 card-image: img/portraits/TVSoong.jpg
 go-to: fiscal_menu
 view-if: fiscal_policy_timer = 0
-#subtitle: Issues of taxation, budget, and tariffs.
+#subtitle: Issues of taxation and money printing.
 
 = Fiscal Policy
 
-Fiscal policy involves issues of taxation and budget.
+Fiscal policy involves issues of taxation and funds.
 
 
 @fiscal_menu
@@ -23,25 +23,25 @@ Fiscal policy involves issues of taxation and budget.
 - @cancel_advisor_action
 
 @cut
-subtitle: -2 budget
-unavailable-subtitle: -2 budget - [? if upper_tax_rates < -5 or lower_tax_rates < -5 : Tax rates are already too low. ?]
-choose-if: budget >= 2 and upper_tax_rates >= -5 and lower_tax_rates >= -5
-on-arrival: budget -= 2; upper_tax_rates -= 1; lower_tax_rates -= 1; new_middle_kmt += 5*(1-dissent); old_middle_kmt += 4*(1-dissent); workers_kmt += 3*(1-dissent); unemployed -= 0.5; economic_growth += 0.6; inflation += 1;
+subtitle: -2 funds
+unavailable-subtitle: -2 funds - [? if upper_tax_rates < -5 or lower_tax_rates < -5 : Tax rates are already too low. ?]
+choose-if: funds >= 2 and upper_tax_rates >= -5 and lower_tax_rates >= -5
+on-arrival: funds -= 2; upper_tax_rates -= 1; lower_tax_rates -= 1; new_middle_kmt += 5*(1-dissent); old_middle_kmt += 4*(1-dissent); workers_kmt += 3*(1-dissent); unemployed -= 0.5; economic_growth += 0.6; inflation += 1;
 
 Cutting taxes benefits most the rich and middle-class, who pay more taxes than the working class. Our coalition partners are happy at our orthodox economic course.
 
 @raise
-subtitle: +2 budget [? if centralize < 0 : Our efforts to centralize taxes will give us +1 extra as a result. ?]
+subtitle: +2 funds [? if centralize < 0 : Our efforts to centralize taxes will give us +1 extra as a result. ?]
 unavailable-subtitle: Tax rates are already too high.
 choose-if: upper_tax_rates <= 5 and lower_tax_rates <= 5
-on-arrival: budget += 2; budget += 1 if centralize > 0; new_middle_kmt -= 4; old_middle_kmt -= 4; workers_kmt -= 4; unemployed += 0.2; lower_tax_rates += 1; upper_tax_rates += 1; workers_kmt -= 5 if lower_tax_rates > 1; inflation -= 1.1; economic_growth -= 0.6; new_middle_kmt -= 2 if upper_tax_rates > 1; old_middle_kmt -= 2 if upper_tax_rates > 1;
+on-arrival: funds += 2; funds += 1 if centralize > 0; new_middle_kmt -= 4; old_middle_kmt -= 4; workers_kmt -= 4; unemployed += 0.2; lower_tax_rates += 1; upper_tax_rates += 1; workers_kmt -= 5 if lower_tax_rates > 1; inflation -= 1.1; economic_growth -= 0.6; new_middle_kmt -= 2 if upper_tax_rates > 1; old_middle_kmt -= 2 if upper_tax_rates > 1;
 
 Raising taxes hurts our support among all those who pay taxes. [? if in_grand_coalition or in_weimar_coalition : However, our coalition partners are more supportive of the idea of "shared sacrifice" than simply taxing the rich. ?] Increasing taxes also decreases economic demand, which may lead to more unemployment.
 
 @issue
-subtitle: +2 budget - this will considerably level up inflation.
+subtitle: +2 funds - this will considerably level up inflation.
 unavailable-subtitle: Inflation is getting too high.
 choose-if: inflation < 10
-on-arrival: budget += 2; inflation += 3; new_middle_kmt -= 4; old_middle_kmt -= 4; workers_kmt -= 4; unemployed += 2; workers_kmt -= 5 if lower_tax_rates > 1; inflation -= 1.1; economic_growth -= 0.6; new_middle_kmt -= 2 if upper_tax_rates > 1; old_middle_kmt -= 2 if upper_tax_rates > 1;
+on-arrival: funds += 2; inflation += 3; new_middle_kmt -= 4; old_middle_kmt -= 4; workers_kmt -= 4; unemployed += 2; workers_kmt -= 5 if lower_tax_rates > 1; inflation -= 1.1; economic_growth -= 0.6; new_middle_kmt -= 2 if upper_tax_rates > 1; old_middle_kmt -= 2 if upper_tax_rates > 1;
 
 Issuing more sums of cash will start taking a toll on our inflation.
