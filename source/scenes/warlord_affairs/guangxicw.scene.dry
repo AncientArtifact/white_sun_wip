@@ -25,7 +25,7 @@ on-arrival: funds -= 2; gxc_relation += 10;
 Li Zongren's soldiers recieve more weapons.
 
 @aid
-subtitle: -1 fund.
+subtitle: -1 funds.
 choose-if: funds >= 1
 unavailable-subtitle: Not enough funds.
 on-arrival: funds -= 1; gxc_relation += 5;
@@ -33,7 +33,7 @@ on-arrival: funds -= 1; gxc_relation += 5;
 Li Zongren's clique has recieved aid from us, which helps in their fight.
 
 @raid
-subtitle: +1 fund - Why would we do this?
+subtitle: +1 funds - Why would we do this?
 on-arrival: funds += 1; gxc_relation -= 5;
 
 We raided Guangxi border regions instead. This choice is questionable.
