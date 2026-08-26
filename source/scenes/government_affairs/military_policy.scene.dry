@@ -12,7 +12,7 @@ on-arrival: week_actions += 1; nra_timer += 3; nra_militarization_cost = 2 if nr
 The *National Revolutionary Army* is the Guomindang's military wing. It is still in it's infancy but is quickly expanding in quality and size.
 
 - @militant: Fund more military-style training and equipment for the NRA.
-- @militant_2: Use our existing budget to support more training for the NRA.
+- @militant_2: Use our existing funds to support more training for the NRA.
 - @increase: Increase conscription.
 - @decrease: Decrease conscription.
 - @same: Keep the NRA as it is.
@@ -21,10 +21,10 @@ The *National Revolutionary Army* is the Guomindang's military wing. It is still
 - @cancel_advisor_action
 
 @militant
-choose-if: budget >= nra_militarization_cost
-unavailable-subtitle: Not enough budget ([+ nra_militarization_cost +] needed).
-subtitle: -[+ nra_militarization_cost +] budget
-on-arrival: budget -= nra_militarization_cost; nra_investment += 1; nra_strength += 10; nra_strength += 10 if conscription > 2; nra_strength += 5 if conscription > 3; nra_militancy += 0.05; 
+choose-if: funds >= nra_militarization_cost
+unavailable-subtitle: Not enough funds ([+ nra_militarization_cost +] needed).
+subtitle: -[+ nra_militarization_cost +] funds
+on-arrival: funds -= nra_militarization_cost; nra_investment += 1; nra_strength += 10; nra_strength += 10 if conscription > 2; nra_strength += 5 if conscription > 3; nra_militancy += 0.05; 
 
 Increasing the strength of the NRA makes us more prepared for the Northern Expedition.
 
@@ -32,7 +32,7 @@ Increasing the strength of the NRA makes us more prepared for the Northern Exped
 view-if: funded_nra >= 1
 on-arrival: nra_militancy += 0.1; funded_nra -= 1
 
-As we have already funded our government budget towards the National Revolutionary Army, we can invest in building up their militancy.
+As we have already funded our government funds towards the National Revolutionary Army, we can invest in building up their militancy.
 
 @increase
 choose-if: conscription < 5
@@ -58,7 +58,7 @@ The National Revolutionary Army is already serving the purpose it needs to serve
 
 
 @cut_nra
-subtitle: +1 budget
-on-arrival: budget += 1; nra_strength -= 10; nra_militancy -= 0.02; left_strength -= 2; left_dissent += 2; red_militancy += 0.05; workers_cpc += 2; unemployed_cpc += 2
+subtitle: +1 funds
+on-arrival: funds += 1; nra_strength -= 10; nra_militancy -= 0.02; left_strength -= 2; left_dissent += 2; red_militancy += 0.05; workers_cpc += 2; unemployed_cpc += 2
 
-Cutting our budget to the National Revolutionary Army causes a drop in the membership, and leads some would-be members to join the Communists instead.
+Cutting our funds to the National Revolutionary Army causes a drop in the membership, and leads some would-be members to join the Communists instead.
