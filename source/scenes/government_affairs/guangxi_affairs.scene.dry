@@ -24,7 +24,7 @@ We can enact policies in Guangxi with Zongren's help.
 @nrabuildup
 title: Build up the National Revolutionary Army
 subtitle: -1 funds - Increase our propaganda measures to recruit more members into the NRA.
-choose-if: funds >= 0
+choose-if: funds >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: funds -= 1; nra_strength += 30
 
@@ -33,7 +33,7 @@ We have recruited more members into the NRA.
 @nraquality
 title: Training the 7th Army
 subtitle: -1 funds - Better training and arms will ensure a more quality force.
-choose-if: funds >= 0
+choose-if: funds >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: funds -= 1; nra_militancy += 0.05; gxc_relations += 5;
 
