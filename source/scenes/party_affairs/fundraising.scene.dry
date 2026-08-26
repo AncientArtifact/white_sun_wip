@@ -26,12 +26,12 @@ subtitle: [+ income - 1 +] funds gained.
 choose-if: income > 1
 on-arrival: income -= 1; funds += income; left_dissent -= 8; center_left_dissent -= 8; center_dissent -= 8; right_dissent -= 8; whmapoa_dissent -= 8
 
-Our current members appreciate this, but no one decides to join a party because of the low income.
+We decreased fundraising for our party within the province.
 
 @increase
 subtitle: [+ income + 1 +] funds gained.
 on-arrival: income += 1; funds += income; left_dissent += 8; center_left_dissent += 8; center_dissent += 8; right_dissent += 8; whmapoa_dissent += 8
 view-if: income <= 4
 
-Our members grumble at this, and some of the less committed members leave. But now, we have access to additional funds. 
+We increased fundraising for our party within the province.
 
