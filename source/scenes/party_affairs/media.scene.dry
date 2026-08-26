@@ -24,15 +24,15 @@ The KMT's new leninist organization allows us to spread propaganda further among
 @commercial
 title: Make our newspapers more commercialized by broadening their appeal beyond party supporters.
 subtitle: This might upset ideological purists, but it may bring in more funds and perhaps expose the middle class to our views.
-on-arrival: resources += 1; commercialized_media += 1; new_middle_kmt += 4*(1 - dissent); old_middle_kmt += 3*(1-dissent);
+on-arrival: funds += 1; commercialized_media += 1; new_middle_kmt += 4*(1 - dissent); old_middle_kmt += 3*(1-dissent);
 
 Our commercialized newspapers are able to bring in more funds.
 
 @campaign
 title: The purpose of our media is to spread our cause.
-subtitle: -1 resources - Our newspapers will focus on educating the peasants about our goals.
-choose-if: resources >= 1
-unavailable-subtitle: Not enough resources.
+subtitle: -1 funds - Our newspapers will focus on educating the peasants about our goals.
+choose-if: funds >= 1
+unavailable-subtitle: Not enough funds.
 on-arrival: campaign_media += 1; rural_kmt += 5*(1 - dissent); workers_kmt += 4*(1 - dissent); unemployed_kmt += 3*(1-dissent);
 
 Our campaign media is teaching the labourers and the illiterate peasants about our beliefs and goals, which resonate well with them.
@@ -46,27 +46,27 @@ This is a pretty new idea, but it might solve some tensions within our party.
 
 @newspaper
 title: Why not build a party newspaper?
-subtitle: -1 resources
-choose-if: resources >= 1
-unavailable-subtitle: Not enough resources.
+subtitle: -1 funds
+choose-if: funds >= 1
+unavailable-subtitle: Not enough funds.
 view-if: paper = 0
-on-arrival: paper += 1; resources -= 1; new_middle_kmt += 4*(1 - dissent); old_middle_kmt += 3*(1 - dissent); workers_kmt += 2*(1 - dissent); pro_republic += 3*(1-dissent)
+on-arrival: paper += 1; funds -= 1; new_middle_kmt += 4*(1 - dissent); old_middle_kmt += 3*(1 - dissent); workers_kmt += 2*(1 - dissent); pro_republic += 3*(1-dissent)
 
 We have founded the Central Daily News, to spread our messages better to the public. We are aware that much in China cannot read, so only the urban workers and middle class get swayed by this.
 
 @newspaper_2
 title: We must keep on building up our newspaper.
-subtitle: -1 resources
-choose-if: resources >= 1
-unavailable-subtitle: Not enough resources.
+subtitle: -1 funds
+choose-if: funds >= 1
+unavailable-subtitle: Not enough funds.
 view-if: radio > 0 and radio <= 3
-on-arrival: radio += 1; resources -= 1; new_middle_kmt += 5*(1 - dissent); old_middle_kmt += 3*(1 - dissent); workers_kmt += 3*(1 - dissent); pro_republic += 3*(1-dissent)
+on-arrival: radio += 1; funds -= 1; new_middle_kmt += 5*(1 - dissent); old_middle_kmt += 3*(1 - dissent); workers_kmt += 3*(1 - dissent); pro_republic += 3*(1-dissent)
 
 Our new newspaper has a mix of popular and political programming, and is proving a success.
 
 @newspaper_3
 title: We must keep on building up our newspaper.
-subtitle: It is now financially self-sufficient, and does not require any more resources.
+subtitle: It is now financially self-sufficient, and does not require any more funds.
 view-if: radio > 3 and radio <= 5 and year <= 1931
 on-arrival: radio += 1; new_middle_kmt += 6*(1 - dissent); old_middle_kmt += 5*(1 - dissent); workers_kmt += 4*(1 - dissent); rural_kmt += 2*(1 - dissent); unemployed_kmt += 2*(1-dissent); pro_republic += 3*(1-dissent)
 
