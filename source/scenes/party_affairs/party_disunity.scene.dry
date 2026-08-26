@@ -41,35 +41,35 @@ Enforcing party discipline reduces dissent, but it could lead to an exit of diss
 # each party has a concessions action and an expulsions action.
 
 @concessions_right
-title: Give concessions to the right.
+title: Give concessions to the Rightists.
 view-if: right_dissent > 30
 on-arrival: right_dissent -= 7; left_dissent += 5
 
 We have promised to adopt a more right posture. This may alienate the left, however.
 
 @concessions_center
-title: Give concessions to the centrists.
+title: Give concessions to the Centrists.
 view-if: center_dissent > 30
 on-arrival: center_dissent -= 7; right_dissent += 2; left_dissent += 2; whampoa_dissent += 2
 
 We have promised to take more policy suggestions from the centrists. Both the left and right wings of the party might be displeased.
 
 @concessions_left
-title: Give concessions to the left.
+title: Give concessions to the Communists.
 view-if: left_dissent > 30
 on-arrival: left_dissent -= 7; right_dissent += 5
 
 We have promised that we will listen to the left wing of the party. Of course, this leads to increased dissent from the centrists.
 
 @concessions_center_left
-title: Give concessions to center_left.
+title: Give concessions to the left.
 view-if: center_left_dissent > 30
 on-arrival: center_left_dissent -= 7; center_dissent += 5
 
 The center-left will be granted more influence in party decision making. This upsets the centrists, who would prefer to centralize political decision making within the party.
 
 @concessions_whampoa
-title: Give concessions to the whampoa.
+title: Give concessions to the Whampoa.
 view-if: whampoa_dissent > 30 and neorevisionism = 1
 on-arrival: whampoa_dissent -= 7; center_dissent += 5;
 
