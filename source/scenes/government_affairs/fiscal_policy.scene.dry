@@ -31,7 +31,7 @@ on-arrival: funds -= 2; upper_tax_rates -= 1; lower_tax_rates -= 1; new_middle_k
 Cutting taxes benefits most the rich and middle-class, who pay more taxes than the working class. Our coalition partners are happy at our orthodox economic course.
 
 @raise
-subtitle: +2 funds [? if centralize < 0 : Our efforts to centralize taxes will give us +1 extra as a result. ?]
+subtitle: +2 funds [? if centralize > 0 : (+1 for tax reforms) ?]
 unavailable-subtitle: Tax rates are already too high.
 choose-if: upper_tax_rates <= 5 and lower_tax_rates <= 5
 on-arrival: funds += 2; funds += 1 if centralize > 0; new_middle_kmt -= 4; old_middle_kmt -= 4; workers_kmt -= 4; unemployed += 0.2; lower_tax_rates += 1; upper_tax_rates += 1; workers_kmt -= 5 if lower_tax_rates > 1; inflation -= 1.1; economic_growth -= 0.6; new_middle_kmt -= 2 if upper_tax_rates > 1; old_middle_kmt -= 2 if upper_tax_rates > 1;
