@@ -40,10 +40,10 @@ Shen Hongying is the only obstacle blocking Yunnan for us. His loyalties are als
 - @refuse: Let them come.
 
 @bribe
-subtitle: -1 resources
-choose-if: resources >= 1
-unavailable_subtitle: Not enough resources.
-on-arrival: resources -= 1; gxc_relation += 5;
+subtitle: -1 funds
+choose-if: funds >= 1
+unavailable_subtitle: Not enough funds.
+on-arrival: funds -= 1; gxc_relation += 5;
 
 - @endingshenbribed: The outcome is...
 
