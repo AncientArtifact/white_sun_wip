@@ -21,41 +21,41 @@ In addition to being a political party, the KMT also serves as a newspaper, a te
 - @easy_discard
 
 @cadres
-choose-if: resources > 0
-unavailable-subtitle: Not enough resources.
-subtitle: -1 resources
-on-arrival: resources -= 1; media_timer = 0;
+choose-if: funds > 0
+unavailable-subtitle: Not enough funds.
+subtitle: -1 funds
+on-arrival: funds -= 1; media_timer = 0;
 go-to: media
 
 @welfare
-choose-if: resources > 0
-unavailable-subtitle: Not enough resources.
-subtitle: -1 resources
-on-arrival: resources -= 1; workers_aid += 1; unemployed_kmt += 5*(1 - dissent); rural_kmt += 5*(1 - dissent);
+choose-if: funds > 0
+unavailable-subtitle: Not enough funds.
+subtitle: -1 funds
+on-arrival: funds -= 1; workers_aid += 1; unemployed_kmt += 5*(1 - dissent); rural_kmt += 5*(1 - dissent);
 
 We have increased funding to welfare and aid programs for poor folk.
 
 @culture
-choose-if: resources > 0
-unavailable-subtitle: Not enough resources.
-subtitle: -1 resources
-on-arrival: resources -= 1; cultural_organizations += 1; left_dissent -= 6; center_dissent -= 6; center_left_dissent -= 6; right_dissent -= 6; whampoa_dissent -= 6
+choose-if: funds > 0
+unavailable-subtitle: Not enough funds.
+subtitle: -1 funds
+on-arrival: funds -= 1; cultural_organizations += 1; left_dissent -= 6; center_dissent -= 6; center_left_dissent -= 6; right_dissent -= 6; whampoa_dissent -= 6
 
 The KMT can fund educational and cultural programs to let our members and supporters enjoy and learn more about our cause.
 
 @nra
-choose-if: resources > 0
-unavailable-subtitle: Not enough resources.
-subtitle: -1 resources
-on-arrival: resources -= 1; nra_strength  += 10; nra_militancy += 0.01; nra_timer = 0; funded_nra += 1
+choose-if: funds > 0
+unavailable-subtitle: Not enough funds.
+subtitle: -1 funds
+on-arrival: funds -= 1; nra_strength  += 10; nra_militancy += 0.01; nra_timer = 0; funded_nra += 1
 
 We have increased recruiting to the NRA.
 
 @youth
-choose-if: resources > 0
-unavailable-subtitle: Not enough resources.
-subtitle: -1 resources
-on-arrival: resources -= 1; nra_strength += 10; nra_militancy += 0.02; left_strength += 5; whampoa_strength += 5; new_middle_kmt += 5 if education >= 2;
+choose-if: funds > 0
+unavailable-subtitle: Not enough funds.
+subtitle: -1 funds
+on-arrival: funds -= 1; nra_strength += 10; nra_militancy += 0.02; left_strength += 5; whampoa_strength += 5; new_middle_kmt += 5 if education >= 2;
 
 Our new youth members flock to the Left or Whampoa wings of the party, and also bring new radicalism to the NRA. [? if education >= 2 : Our education policies have also garnered the support of the new middle class youth. ?]
 
