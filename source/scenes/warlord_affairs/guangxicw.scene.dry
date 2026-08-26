@@ -13,8 +13,8 @@ Guangxi has split between several factions after Chen Jiongming's invasion. Our 
 - @support: Supply Li Zongren's armies.
 - @aid: Give monetary aid to Li Zongren's clique.
 - @raid: Begin raids along the Guangxi border instead.
+- @root: We will not do anything in Guangxi yet.
 - @easy_discard
-- @root: Back.
 
 @support
 subtitle: -2 funds.
