@@ -19,34 +19,34 @@ We have some limited contacts with foreign powers, we should use this to our adv
 - @cancel_advisor_action
 
 @west
-subtitle: -1 resources
-choose-if: resources > 0
-unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; west_relation += 1;
+subtitle: -1 funds
+choose-if: funds > 0
+unavailable-subtitle: Not enough funds.
+on-arrival: funds -= 1; west_relation += 1;
 
 Negotiating with the French and British is undeniably hard. And it may take giving up a few cities to renegotiate our indemnities.
 
 @comintern
-subtitle: -1 resources 
-choose-if: east_relation >= 1 and resources > 0
+subtitle: -1 funds 
+choose-if: east_relation >= 1 and funds > 0
 unavailable-subtitle: The Soviets won't just let us have them for free.
-on-arrival: left_strength += 1; nra_militancy += 0.1; resources -= 1; east_relation -= 1;
+on-arrival: left_strength += 1; nra_militancy += 0.1; funds -= 1; east_relation -= 1;
 
 Our army can learn much in military organization and training from Soviet advisors and guns.
 
 @soviet
-subtitle: -1 resources
-choose-if: resources > 0
-unavailable-subtitle: Not enough resources.
+subtitle: -1 funds
+choose-if: funds > 0
+unavailable-subtitle: Not enough funds.
 on-arrival: left_strength += 1; center_left_strength += 1; east_relation += 2;
 
 Sun Yat-sen's support of cooperation with the Soviet Union may bring benefits for our movement.
 
 @japan
-subtitle: -1 resources
-choose-if: resources > 0
-unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; japan_relations += 1;
+subtitle: -1 funds
+choose-if: funds > 0
+unavailable-subtitle: Not enough funds.
+on-arrival: funds -= 1; japan_relations += 1;
 
 Japan doesn't care for us at all right now.
 
