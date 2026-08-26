@@ -43,9 +43,9 @@ Q.old_demographics = 0;
 Q.use_decimals = 0;
 
 // party resources
-Q.resources = 2;
+Q.funds = 5;
 // party dues
-Q.dues = 2;
+Q.income = 2;
 
 // the state of the party
 // overall dissent reduces every increase in party support.
@@ -166,7 +166,6 @@ Q.pro_republic = 59;
 Q.coup_progress = 0;
 Q.capital_strike_progress = 0;
 
-Q.budget = 4;
 Q.centralize = 0;
 Q.gambling = 1;
 Q.centralbank = 0;
@@ -543,22 +542,20 @@ That is all, enjoy!
 @1924_easy
 on-arrival: {!
 difficulty = -1;
-resources = 4;
-dues = 3; 
-budget = 5;
+income = 3; 
+funds = 6;
 !}
 go-to: 1924_main
 
 @1924_hard
 on-arrival: {! difficulty = 1;
-resources = 0;
-dues = 1;
+income = 1;
 rb_strength = 10; 
 right_dissent = 25; 
 left_dissent = 30; 
 center_left_dissent = 25; 
 center_dissent = 25; 
-budget = 3;
+funds = 3;
 !}
 go-to: 1924_main
 
@@ -566,8 +563,8 @@ go-to: 1924_main
 on-arrival: {!
 Q.difficulty = 2;
 Q.historical_mode = 1;
-Q.resources = 2;
-Q.dues = 1;
+Q.funds = 2;
+Q.income = 1;
 this.state.disableSaves = true;
 !}
 go-to: 1924_main
