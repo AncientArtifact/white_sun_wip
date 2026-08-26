@@ -13,13 +13,13 @@ Yang Ximin, leader of the Yunnan Guest Army in Guangzhou and one of the armies w
 
 He is already unreliable in our eyes, and we see fit for us to break ties with him. What do we do now?
 
-- @pay: -5 budget - We have no choice but to pay him off. 
+- @pay: -5 funds - We have no choice but to pay him off. 
 - @refuse: Yang Ximin will leave this instant!
 
 @pay
-choose-if: budget >= 5
-unavailable-subtitle: Not enough budget.
-on-arrival: budget -= 5; nra_strength += 20; nra_militancy -= 0.05;
+choose-if: funds >= 5
+unavailable-subtitle: Not enough funds.
+on-arrival: funds -= 5; nra_strength += 20; nra_militancy -= 0.05;
 
 We have reluctantly payed Yang Ximin for his armies to join ours.
 
