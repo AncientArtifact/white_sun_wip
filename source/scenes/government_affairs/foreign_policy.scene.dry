@@ -49,10 +49,10 @@ The Soviet Union has been supporting our movement since 1924, and it is necessar
 - @soviet_improve_no: We choose not to cooperate with the Russians for now.
 
 @soviet_military_aid
-choose-if: budget >= 1 and cpc_civil_war = 0
+choose-if: funds >= 1 and cpc_civil_war = 0
 unavailable-subtitle: The Soviets distrust us after Chiang's massacre.
-subtitle: -1 budget
-on-arrival: budget -= 1; soviet_relation += 1; nra_militancy += 0.1;
+subtitle: -1 funds
+on-arrival: funds -= 1; soviet_relation += 1; nra_militancy += 0.1;
 
 The Soviets have agreed to help train and supply our military. The NRA appreciates our support.
 
@@ -84,18 +84,18 @@ After defeating the Zhili, the English and Americans now look at us more favoura
 
 @concession1
 title: The Western Allies are finally willing to return some concessions!
-subtitle: -1 budget - Our negotiations have been successful.
+subtitle: -1 funds - Our negotiations have been successful.
 view-if: concessions_negotiation >= 3 and concessions = 0
-on-arrival: west_relation += 1; concessions += 1; budget -= 2; workers_kmt += 6*(1-dissent); old_middle_kmt += 6*(1-dissent); new_middle_kmt += 6*(1-dissent); rural_kmt += 6*(1-dissent); economic_growth += 0.7; economic_growth += 0.5 if economic_growth < 0
+on-arrival: west_relation += 1; concessions += 1; funds -= 2; workers_kmt += 6*(1-dissent); old_middle_kmt += 6*(1-dissent); new_middle_kmt += 6*(1-dissent); rural_kmt += 6*(1-dissent); economic_growth += 0.7; economic_growth += 0.5 if economic_growth < 0
 max-visits: 1
 
 Finally, after a lot of rounds of negotiations, we can buy out the ports of Hankou, Jiujiang and Zhenjiang from the British. This is a great achievement both in foreign affairs and for our support bases, where anti-imperialists now begin supporting us.
 
 @concession2
 title: The Western Allies are finally willing to return some concessions!
-subtitle: -3 budget - Our negotiations have been successful.
+subtitle: -3 funds - Our negotiations have been successful.
 view-if: concessions_negotiation >= 3 and concessions = 1
-on-arrival: west_relation += 1; budget -= 3; workers_kmt += 10*(1-dissent); old_middle_kmt += 8*(1-dissent); new_middle_kmt += 8*(1-dissent); rural_kmt += 12*(1-dissent); economic_growth += 0.7; economic_growth += 0.5 if economic_growth < 0
+on-arrival: west_relation += 1; funds -= 3; workers_kmt += 10*(1-dissent); old_middle_kmt += 8*(1-dissent); new_middle_kmt += 8*(1-dissent); rural_kmt += 12*(1-dissent); economic_growth += 0.7; economic_growth += 0.5 if economic_growth < 0
 max-visits: 1
 
 After many more rounds of negotiation, we can now buy out Weihaiwei and Tianjin from the British, further increasing our support in the masses. 
