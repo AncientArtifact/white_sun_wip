@@ -35,9 +35,9 @@ Liao Zhongkai has continued Sun Yat-sen's united front with Soviet assistance.
 @emergency_fundraising
 title: Emergency Fundraising
 view-if: difficulty < 1
-subtitle: An emergency infusion of resources.
+subtitle: An emergency infusion of funds.
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: advisor_action_timer = 6; resources += dues
+on-arrival: advisor_action_timer = 6; funds += dues
 
-We have gained +[+ dues +] resources.
+We have gained +[+ dues +] funds.
