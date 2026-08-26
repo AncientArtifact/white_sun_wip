@@ -34,7 +34,6 @@ Education in Germany is an area of mixed responsibility between the state govern
 view-if: not last_advisor_action
 
 - @increase_education
-- @structure
 - @curriculum
 - @return: Do not enact any policies for now.
 - @easy_discard
@@ -55,69 +54,36 @@ China is still backwards. We must teach the people to build a better society for
 
 @schoolbuild
 title: Fund building schools in the countryside.
-subtitle: -1 budget
-choose-if: budget >= 1
-on-arrival: budget -= 1; education += 1; economic_growth += 0.3; unemployed -= 0.2; west_relation += 1; rural_kmt += 3;
+subtitle: -1 funds
+choose-if: funds >= 1
+on-arrival: funds -= 1; education += 1; economic_growth += 0.3; unemployed -= 0.2; west_relation += 1; rural_kmt += 3;
 
 Building schools in rural areas increases our popular support as well as their education.
 
 @schoolsupplies
 title: Fund school supplies to existing schools.
-subtitle: -1 budget
-choose-if: budget >= 1
-on-arrival: budget -= 1; education += 1; economic_growth += 0.5; new_middle_kmt += 5*(1-dissent); workers_kmt += 3*(1-dissent);
+subtitle: -1 funds
+choose-if: funds >= 1
+on-arrival: funds -= 1; education += 1; economic_growth += 0.5; new_middle_kmt += 5*(1-dissent); workers_kmt += 3*(1-dissent);
 
 Giving more supplies to existing schools provide them with more means to learn and think.
 
 @medical
 title: Fund biomedical research at the hospitals and medical schools.
-subtitle: -1 budget
-choose-if: budget >= 1
-on-arrival: budget -= 1; education += 1; economic_growth += 0.4 if economic_growth <= 8; new_middle_kmt += 5*(1-dissent); workers_kmt += 3*(1-dissent);unemployed -= 0.2 if unemployed >= 4;
+subtitle: -1 funds
+choose-if: funds >= 1
+on-arrival: funds -= 1; education += 1; economic_growth += 0.4 if economic_growth <= 8; new_middle_kmt += 5*(1-dissent); workers_kmt += 3*(1-dissent);unemployed -= 0.2 if unemployed >= 4;
 
 Our research program focuses on medical research to improve the treatment of diseases and public health.
 
 @cut_funding
 title: Cut science funding.
-subtitle: +1 budget
+subtitle: +1 funds
 choose-if: science_funding >= 1
 unavailable-subtitle: We have not funded science.
-on-arrival: budget += 1; education -= 1; economic_growth -= 0.5; new_middle_kmt -= 5; workers_kmt -= 2; unemployed += 0.3
+on-arrival: funds += 1; education -= 1; economic_growth -= 0.5; new_middle_kmt -= 5; workers_kmt -= 2; unemployed += 0.3
 
 We have cut funding for science. This has a negative effect on our economic growth, and the advancement of our society.
-
-@structure
-title: Change the structure and funding of education.
-
-Education in China has traditionally been organized on religious and class lines. In addition, the working class has at most eight years of public education in primary and middle schools, while the middle and upper classes have access to private schools and Gymnasiums that prepare students for universities. Thus, the universities tend to be dominated by conservatives and reactionaries, which has negative consequences for bureaucratic recruitment.
-
-- @westernize
-- @public_hs
-- @propaganda
-- @ed_menu: Do not change school funding or organization.
-- @cancel_advisor_action
-
-@westernize
-title: Support organizing schools more on Western systems.
-on-arrival: education += 1; west_relations += 1; new_middle_kmt += 3;
-
-More schools are now operating on Western systems instead of Japanese ones.
-
-@public_hs
-title: Increase educational opportunities for the working class by funding public high schools.
-subtitle: -1 budget
-choose-if: budget >= 1
-on-arrival: budget -= 1; workers_kmt += 6*(1-dissent); unemployed_kmt += 3*(1-dissent); education += 0.5; unemployed -= 0.2; economic_growth += 0.2; pro_republic += 4*(1-dissent);
-max-visits: 3
-
-# this makes the bureaucracy more proletarian
-We have funded more public secondary schools so that proletarian children may receive the same education as middle and upper-class children, and can be prepared for universities.
-
-@propaganda
-title: Add our propaganda campaigns as part of the curriculum.
-on-arrival: workers_kmt += 3*(1-dissent); new_middle_kmt += 3*(1-dissent); old_middle_kmt += 2*(1-dissent); pro_republic += 5;
-
-We have oriented schools to spread our message further.
 
 @curriculum
 title: Change the educational curriculum.
