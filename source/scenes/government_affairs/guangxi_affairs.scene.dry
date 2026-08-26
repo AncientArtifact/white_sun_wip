@@ -23,19 +23,19 @@ We can enact policies in Guangxi with Zongren's help.
 
 @nrabuildup
 title: Build up the National Revolutionary Army
-subtitle: -1 budget - Increase our propaganda measures to recruit more members into the NRA.
-choose-if: budget >= 0
+subtitle: -1 funds - Increase our propaganda measures to recruit more members into the NRA.
+choose-if: funds >= 0
 unavailable-subtitle: Not enough resources.
-on-arrival: budget -= 1; nra_strength += 30
+on-arrival: funds -= 1; nra_strength += 30
 
 We have recruited more members into the NRA.
 
 @nraquality
 title: Training the 7th Army
-subtitle: -1 budget - Better training and arms will ensure a more quality force.
-choose-if: budget >= 0
+subtitle: -1 funds - Better training and arms will ensure a more quality force.
+choose-if: funds >= 0
 unavailable-subtitle: Not enough resources.
-on-arrival: budget -= 1; nra_militancy += 0.05; gxc_relations += 5;
+on-arrival: funds -= 1; nra_militancy += 0.05; gxc_relations += 5;
 
 Li Zongren's 7th Army has been better trained. Li Zongren approves.
 
