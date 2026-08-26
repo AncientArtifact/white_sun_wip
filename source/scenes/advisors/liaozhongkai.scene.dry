@@ -38,6 +38,6 @@ view-if: difficulty < 1
 subtitle: An emergency infusion of funds.
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: advisor_action_timer = 6; funds += dues
+on-arrival: advisor_action_timer = 6; funds += income
 
-We have gained +[+ dues +] funds.
+We have gained +[+ income +] funds.
