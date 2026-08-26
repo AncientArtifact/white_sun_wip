@@ -23,8 +23,8 @@ We finally have a chance to defeat Chen Jiongming in battle. Now, it's time to m
 
 - @firsttrial: March into Huizhou.
 - @secondtrial: March into Shanwei.
+- @root: We need more time to prepare!
 - @easy_discard
-- @root: Back.
 
 @firsttrial
 choose-if: firsttrialdone = 0
