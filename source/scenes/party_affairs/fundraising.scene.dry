@@ -11,27 +11,27 @@ tags: party_affairs
 
 For better or for worse, the party cannot exist without money.
 
-- @maintain: Maintain our current dues.
-- @reduce: Reduce dues.
-- @increase: Increase dues.
+- @maintain: Maintain fundraising efforts.
+- @reduce: Reduce fundraising efforts.
+- @increase: Increase fundraising efforts.
 
 @maintain
-subtitle: [+ dues +] resources gained.
-on-arrival: resources += dues;
+subtitle: [+ income +] funds gained.
+on-arrival: funds += income;
 
-We maintain our current dues.
+We maintain our current income.
 
 @reduce
-subtitle: [+ dues - 1 +] resources gained.
-choose-if: dues > 1
-on-arrival: dues -= 1; resources += dues; left_dissent -= 8; center_left_dissent -= 8; center_dissent -= 8; right_dissent -= 8; whmapoa_dissent -= 8
+subtitle: [+ income - 1 +] funds gained.
+choose-if: income > 1
+on-arrival: income -= 1; funds += income; left_dissent -= 8; center_left_dissent -= 8; center_dissent -= 8; right_dissent -= 8; whmapoa_dissent -= 8
 
-Our current members appreciate this, but no one decides to join a party because of the low dues.
+Our current members appreciate this, but no one decides to join a party because of the low income.
 
 @increase
-subtitle: [+ dues + 1 +] resources gained.
-on-arrival: dues += 1; resources += dues; left_dissent += 8; center_left_dissent += 8; center_dissent += 8; right_dissent += 8; whmapoa_dissent += 8
-view-if: dues <= 4
+subtitle: [+ income + 1 +] funds gained.
+on-arrival: income += 1; funds += income; left_dissent += 8; center_left_dissent += 8; center_dissent += 8; right_dissent += 8; whmapoa_dissent += 8
+view-if: income <= 4
 
-Our members grumble at this, and some of the less committed members leave. But now, we have access to additional resources. 
+Our members grumble at this, and some of the less committed members leave. But now, we have access to additional funds. 
 
