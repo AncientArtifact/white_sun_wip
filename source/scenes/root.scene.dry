@@ -47,6 +47,7 @@ Q.funds = 5;
 // party dues
 Q.income = 2;
 Q.military_costs = 1;
+Q.total_income = 1;
 Q.education = 0;
 
 // the state of the party
