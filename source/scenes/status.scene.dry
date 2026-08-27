@@ -12,7 +12,6 @@ Q.economic_growth_2 = '0';
 if (Q.economic_growth) {
     Q.economic_growth_2 = Q.economic_growth.toFixed(1);
 }
-Q.total_income = Q.income -= Q.military_costs
 !}
 
 = **Status**
