@@ -130,6 +130,9 @@ if (Q.month = 12) {
 Q.funds += Q.income;
 Q.funds -= Q.military_costs;
 }
+
+Q.total_income = Q.income -= Q.military_costs;
+
     // decrement timers
     for (timer of Q.timers) {
         if (Q[timer+'_timer'] && Q[timer+'_timer'] > 0) {
