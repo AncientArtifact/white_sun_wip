@@ -40,7 +40,7 @@ Income: [? if income > 0 : <span style="color: #66BB6A;">+[+ income +]</span> ?]
 
 Military Expenses: [? if total_income > 0 : <span style="color: #66BB6A;">+[+ total_income +]</span> ?][? if total_income < 0 : <span style="color: #d42f2f;">-[+ total_income +]</span> ?][? if total_income = 0 : <span style="color: #FFB74D;">-[+ total_income +]</span> ?]
 
-Total: [? if total_income < 0 : <span style="color: #d42f2f;">-[+ total_income +]</span> ?][? if total_income = 0 : <span style="color: #FFB74D;">-[+ total_income +]</span> ?]
+Total: [? if total_income > 0 : <span style="color: #66BB6A;">+[+ total_income +]</span> ?][? if total_income < 0 : <span style="color: #d42f2f;">-[+ total_income +]</span> ?][? if total_income = 0 : <span style="color: #FFB74D;">-[+ total_income +]</span> ?]
 
 Inflation: [+ inflation_2 +]%
 
