@@ -1,0 +1,4 @@
+
+(-1000..-1) -[+ total_income +]
+(0..0) [+ total_income +]
+(1..1000) +[+ total_income +]
