@@ -38,7 +38,7 @@ Premier of the <span style="color: #9e1515">Be</span><span style="color: #ab881f
 
 Income: [+ income : income +]
 
-Military Expenses: -[+ military_costs : military_costs +]
+Military Expenses: [+ military_costs : military_costs +]
 
 Total: [+ total_income : total_income +]
 
