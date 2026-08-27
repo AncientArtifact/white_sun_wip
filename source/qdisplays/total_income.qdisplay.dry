@@ -1,4 +1,0 @@
-
-(-1000..-1) <span style="color: #c9201a;">-[+ total_income +]</span>
-(0..0) <span style="color: #eded28;">-[+ total_income +]</span>
-(1..1000) <span style="color: #53d433;">+[+ total_income +]</span>
