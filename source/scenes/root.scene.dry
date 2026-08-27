@@ -46,6 +46,7 @@ Q.use_decimals = 0;
 Q.funds = 5;
 // party dues
 Q.income = 2;
+Q.education = 0;
 
 // the state of the party
 // overall dissent reduces every increase in party support.
