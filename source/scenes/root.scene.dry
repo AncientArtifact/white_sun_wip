@@ -46,6 +46,7 @@ Q.use_decimals = 0;
 Q.funds = 5;
 // party dues
 Q.income = 2;
+Q.military_costs = 1;
 Q.education = 0;
 
 // the state of the party
@@ -496,10 +497,6 @@ Q.liaozhongkai_dead = 0;
 Q.mikhailborodin_advisor = 1;
 Q.dengyanda_advisor = 0;
 Q.soongchingling_advisor = 0;
-
-// centrist alternate advisors
-Q.pfulf_advisor = 0; // Antonie Pfülf
-Q.breitscheid_advisor = 0; // Rudolf Breitscheid
 
 // Right advisors
 Q.huhanmin_advisor = 0;
