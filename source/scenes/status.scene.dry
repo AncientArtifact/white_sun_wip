@@ -20,7 +20,7 @@ if (Q.economic_growth) {
 
 Funds: [+ funds +]
 
-Quarterly Income: [ ? if total_income < 0 : -[+ total_income +] ?][ ? if total_income > 0 : +[+ total_income +] ?][ ? if total_income = 0 : [+ total_income +] ?]
+Quarterly Income: [+ total_income : total_income +]
 
 <span style="color: #10186e">**KMT**</span> Leader: [+ kmt_leader +]
 
@@ -36,11 +36,11 @@ Premier of the <span style="color: #9e1515">Be</span><span style="color: #ab881f
 
 = **Economics**
 
-Income: [ ? if income < 0 : -[+ income +] ?][ ? if income > 0 : +[+ income +] ?][ ? if income = 0 : [+ income +] ?]
+Income: [+ income : income +]
 
 Military Expenses: -[+ military_costs +]
 
-Total: [ ? if total_income < 0 : -[+ total_income +] ?][ ? if total_income > 0 : +[+ total_income +] ?][ ? if total_income = 0 : [+ total_income +] ?]
+Total: [+ total_income : total_income +]
 
 Inflation: [+ inflation_2 +]%
 
