@@ -114,24 +114,11 @@ if (Q.week >= 5) {
         }
     }
 }
-if (Q.month = 3) {
-Q.funds += Q.income;
-Q.funds -= Q.military_costs;
-}
-if (Q.month = 6) {
-Q.funds += Q.income;
-Q.funds -= Q.military_costs;
-}
-if (Q.month = 9) {
-Q.funds += Q.income;
-Q.funds -= Q.military_costs;
-}
-if (Q.month = 12) {
-Q.funds += Q.income;
-Q.funds -= Q.military_costs;
+if (Q.month === 3 || Q.month === 6 || Q.month === 9 || Q.month === 12) {
+    Q.funds += Q.total_income;
 }
 
-Q.total_income = Q.income -= Q.military_costs;
+Q.total_income = Q.income + Q.military_costs;
 
     // decrement timers
     for (timer of Q.timers) {
