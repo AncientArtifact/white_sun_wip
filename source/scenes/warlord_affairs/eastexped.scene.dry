@@ -27,7 +27,7 @@ We finally have a chance to defeat Chen Jiongming in battle. Now, it's time to m
 - @easy_discard
 
 @firsttrial
-choose-if: Q.firsttrialdone = 0
+choose-if: firsttrialdone = 0
 unavailable-subtitle: Huizhou has fallen into our hands.
 go-to: losehuizhou if nrapower < chenpower; winhuizhou if nrapower >= chenpower
 
@@ -52,7 +52,7 @@ Chen Jiongming's armies have defeated us! We have been repelled back to our star
 - @donelose: Unfortunate.
 
 @secondtrial
-choose-if: Q.firsttrialdone = 1
+choose-if: firsttrialdone = 1
 unavailable-subtitle: We must march into Huizhou before reaching Shanwei.
 go-to: loseshanwei if nrapower < chenpower; winshanwei if nrapower >= chenpower
 
