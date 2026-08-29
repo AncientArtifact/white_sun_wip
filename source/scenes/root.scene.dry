@@ -426,7 +426,7 @@ Q.timers = ['advisor_action', 'confronting_nazis', 'crisis_program',
             'war_guilt', 'womens_rights', 'economic_democracy',
             'dealing_with_toleration',
             'constitutional_reform', 'labor_rights',
-            'education_science', 'curriculum',
+            'education_science', 'curriculum', 'opium',
             // events
             'emergency_cuts', 'unemployment_insurance',
             'sa_ban', 'sh_ban', 'papen_chancellor',
@@ -488,6 +488,7 @@ Q.guangxicivilwar_timer = 0;
 Q.gcw_over = 0;
 Q.guangxi_affairs_timer = 0;
 Q.eastexped_timer = 0;
+Q.opium_timer = 0;
 
 
 // all the initial advisors are centrists.
