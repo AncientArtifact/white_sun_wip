@@ -4,7 +4,6 @@ is-card: true
 on-arrival: judiciary_timer += 9; week_actions += 1
 view-if: judiciary_timer = 0
 card-image: img/portraits/XuQian.jpg
-go-to: ed_menu
 tags: govt_affairs, cabinet
 
 = Judicial Reform
