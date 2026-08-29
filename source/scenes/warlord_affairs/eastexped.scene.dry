@@ -8,8 +8,6 @@ on-arrival: {!
 
 Q.week_actions += 1;
 Q.eastexped_timer += 3;
-Q.firsttrialdone = 0;
-Q.secondtrialdone = 0;
 Q.chen_strength = 50;
 Q.chen_militancy = 0.2;
 Q.nrapower = Q.nra_strength*Q.nra_militancy;
