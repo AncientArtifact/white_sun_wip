@@ -42,7 +42,6 @@ You have chosen the Leftist Faction. You have picked the advisors: Wang Jingwei,
 - @nocenterleft: No, i'll start over.
 
 @yescenterleft
-go-to: main
 
 @nocenterleft
 
@@ -60,7 +59,6 @@ You have chosen the Rightist Faction. You have picked the advisors: Hu Hanmin, D
 - @noright: No, i'll start over.
 
 @yesright
-go-to: main
 
 @noright
 
