@@ -19,7 +19,7 @@ It is necessary to keep order in our regions and keep our citizens safe from cri
 subtitle: -1 funds
 choose-if: funds >= 1
 unavailable-subtitle: Not enough funds.
-on-arrival: funds -= 1; police_reform += 1; worker_kmt += 5*;
+on-arrival: funds -= 1; police_reform += 1; workers_kmt += 5;
 
 We have successfully reformed the city police, kicking out corrupt officials, funding more equipment and hiring more officers.
 
