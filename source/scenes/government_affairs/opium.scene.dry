@@ -1,0 +1,48 @@
+title: Opium Policy
+new-page: true
+is-card: true
+tags: govt_affairs, cabinet
+on-arrival: opium_timer += 9; month_actions += 1
+view-if: opium_timer <= 0
+card-image: img/kmtopium.jpg
+
+= Opium Policy
+
+Opium poppies have terrorized China since the British came knocking on the Manchu government. Now, it is still widespread with warlords and underground smugglers keeping the illegal product going.
+
+- @beat: Crack down on Opium production.
+- @yun: Block imports from Tang Jiyao in Yunnan.
+- @produce: Start producing our own product.
+- @produce2: Keep producing more product.
+- @no: Leave the Opium trade alone for now.
+- @easy_discard
+
+@beat
+subtitle: -1 funds
+choose-if: funds >= 1
+unavailable-subtitle: Not enough funds.
+on-arrival: funds -= 1; rural_kmt -= 5; workers_kmt += 5; old_middle_kmt += 5; new_middle_kmt += 5;
+
+We have begun cracking down on Opium farms. The farmers are angry about this but the people in the city like this.
+
+@yun
+subtitle: Tang Jiyao won't like this.
+on-arrival: yun_relation -= 10; workers_kmt += 5; old_middle_kmt += 5; new_middle_kmt += 5;
+face-image: img/portraits/TangJiyao.jpg
+
+Tang Jiyao is heavily involved in the production of Opium. Cutting his profits pisses him off.
+
+@produce
+subtitle: +2 funds every quarter - no one will like this.
+view-if: opium_producing = 0
+on-arrival: income += 2; opium_producing += 1; rural_kmt -= 2; workers_kmt -= 8; old_middle_kmt -= 8; new_middle_kmt -= 8; gxc_relation -= 10; gui_relation -= 10; cpc_relation -= 5;
+
+We have begun producing our own poppies in Guangdong. This looks very dangerous for us and the other warlords.
+
+@produce2
+subtitle: +3 funds every quarter - no one will like this.
+view-if: opium_producing >= 1
+on-arrival: income += 3; opium_producing += 1; rural_kmt -= 5; workers_kmt -= 15; old_middle_kmt -= 15; new_middle_kmt -= 15; gxc_relation -= 10; gui_relation -= 10; cpc_relation -= 5; nra_militancy -= 0.1;
+
+We keep producing more opium in Guangdong. Everyone hates us for this. Even our soldiers are getting addicted.
+
