@@ -28,11 +28,11 @@ Internal dissent: [+ dissent_percent : dissent +]
 
 = **Government**
 
-President of the <span style="color: #9e1515">Be</span><span style="color: #ab881f">iy</span><span style="color: #2587b8">a</span><span style="color: #c7c7c7">n</span><span style="color: #000000">g</span> Government: [+ beiyang_leader +] ([? if beiyang_leader_party = "Zhili": <span style="color: #aba133">Zhili</span>?][? if beiyang_leader_party = "Fengtian": <span style="color: #d1b24b">Fengtian</span>?][? if beiyang_leader_party = "Anhui": <span style="color: #46703e">Anhui</span>?][? if beiyang_leader_party = "Guomindang": <span style="color: #10186e">Guomindang</span>?])
+[? if kmt_in_government = 0: President of the <span style="color: #9e1515">Be</span><span style="color: #ab881f">iy</span><span style="color: #2587b8">a</span><span style="color: #c7c7c7">n</span><span style="color: #000000">g</span> Government: [+ beiyang_leader +] ([? if beiyang_leader_party = "Zhili": <span style="color: #aba133">Zhili</span>?][? if beiyang_leader_party = "Fengtian": <span style="color: #d1b24b">Fengtian</span>?][? if beiyang_leader_party = "Anhui": <span style="color: #46703e">Anhui</span>?][? if beiyang_leader_party = "Guomindang": <span style="color: #10186e">Guomindang</span>?]) ?]
 
-Premier of the <span style="color: #9e1515">Be</span><span style="color: #ab881f">iy</span><span style="color: #2587b8">a</span><span style="color: #c7c7c7">n</span><span style="color: #000000">g</span> Government: [+ deputy_beiyang_leader +] ([? if deputy_beiyang_leader_party = "Zhili": <span style="color: #aba133">Zhili</span>?][? if deputy_beiyang_leader_party = "Fengtian": <span style="color: #d1b24b">Fengtian</span>?][? if deputy_beiyang_leader_party = "Anhui": <span style="color: #46703e">Anhui</span>?][? if deputy_beiyang_leader_party = "Guomindang": <span style="color: #10186e">Guomindang</span>?])
+[? if kmt_in_government = 0: Premier of the <span style="color: #9e1515">Be</span><span style="color: #ab881f">iy</span><span style="color: #2587b8">a</span><span style="color: #c7c7c7">n</span><span style="color: #000000">g</span> Government: [+ deputy_beiyang_leader +] ([? if deputy_beiyang_leader_party = "Zhili": <span style="color: #aba133">Zhili</span>?][? if deputy_beiyang_leader_party = "Fengtian": <span style="color: #d1b24b">Fengtian</span>?][? if deputy_beiyang_leader_party = "Anhui": <span style="color: #46703e">Anhui</span>?][? if deputy_beiyang_leader_party = "Guomindang": <span style="color: #10186e">Guomindang</span>?]) ?]
 
-[? if kmt_in_government = 0: President of the <span style="color: #10186e">Nationalist Government</span>: [+ national_gov_leader +] (<span style="color: #10186e">Guomindang</span>) ?]
+President of the <span style="color: #10186e">Nationalist Government</span>: [+ national_gov_leader +] (<span style="color: #10186e">Guomindang</span>)
 
 = **Economics**
 
