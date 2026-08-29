@@ -50,6 +50,9 @@ Q.income = 2;
 Q.military_costs = 1;
 Q.total_income = 1;
 Q.education = 0;
+Q.justice_reform = 0;
+Q.police_reform = 0;
+Q.opium_producing = 0;
 
 // the state of the party
 // overall dissent reduces every increase in party support.
