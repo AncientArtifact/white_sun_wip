@@ -24,7 +24,7 @@ on-arrival: funds -= 1; workers_kmt += 3*(1-dissent); old_middle_kmt += 3*(1-dis
 
 We have begun constructing a better, fairer and more efficient judicial system in Canton. 
 
-@minor_reforms
+@minor_reform
 on-arrival: workers_kmt += 1*(1-dissent); old_middle_kmt += 1*(1-dissent); new_middle_kmt += 1*(1-dissent); judicial_reform += 1; pro_republic += 2*(1-dissent);
 
 We try to remove the most obviously biased and corrupt jurists, while leaving some of the old system intact, replacing more with new ones.
