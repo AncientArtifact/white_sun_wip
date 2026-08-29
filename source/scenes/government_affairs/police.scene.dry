@@ -1,4 +1,4 @@
-title: Interior Police
+title: Internal Security
 new-page: true
 is-card: true
 tags: govt_affairs, cabinet
@@ -6,6 +6,22 @@ on-arrival: police_timer += 6; month_actions += 1
 view-if: police_timer <= 0
 card-image: img/kmtpolice.jpg
 
-= Interior Police
+= Internal Security
 
 It is necessary to keep order in our regions and keep our citizens safe from criminals.
+
+- @reform: Reform the Guangzhou police.
+- @back: Leave security alone for now.
+- @easy-discard
+- @cancel_advisor_action
+
+@reform
+subtitle: -1 funds
+choose-if: funds >= 1
+unavailable-subtitle: Not enough funds.
+on-arrival: funds -= 1; police_reform += 1; worker_kmt += 5*;
+
+We have successfully reformed the city police, kicking out corrupt officials, funding more equipment and hiring more officers.
+
+@back
+go-to: root
