@@ -1,0 +1,11 @@
+title: Interior Police
+new-page: true
+is-card: true
+tags: govt_affairs, cabinet
+on-arrival: police_timer += 6; month_actions += 1
+view-if: police_timer <= 0
+card-image: img/kmtpolice.jpg
+
+= Interior Police
+
+It is necessary to keep order in our regions and keep our citizens safe from criminals.
