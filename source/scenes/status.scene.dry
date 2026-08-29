@@ -20,7 +20,7 @@ if (Q.economic_growth) {
 
 Funds: [+ funds +]
 
-Quarterly Income: [? if total_income > 0 : <span style="color: #66BB6A;">+[+ total_income +]</span> ?][? if total_income < 0 : <span style="color: #d42f2f;">-[+ total_income +]</span> ?][? if total_income = 0 : <span style="color: #FFB74D;">-[+ total_income +]</span> ?]
+Quarterly Income: [? if total_income > 0 : <span style="color: #66BB6A;">+[+ total_income +]</span> ?][? if total_income < 0 : <span style="color: #d42f2f;">-[+ total_income +]</span> ?][? if total_income = 0 : <span style="color: #FFB74D;">[+ total_income +]</span> ?]
 
 <span style="color: #10186e">**KMT**</span> Leader: [+ kmt_leader +]
 
@@ -36,11 +36,11 @@ Premier of the <span style="color: #9e1515">Be</span><span style="color: #ab881f
 
 = **Economics**
 
-Income: [? if income > 0 : <span style="color: #66BB6A;">+[+ income +]</span> ?][? if income < 0 : <span style="color: #d42f2f;">-[+ income +]</span> ?][? if income = 0 : <span style="color: #FFB74D;">-[+ income +]</span> ?]
+Income: [? if income > 0 : <span style="color: #66BB6A;">+[+ income +]</span> ?][? if income < 0 : <span style="color: #d42f2f;">-[+ income +]</span> ?][? if income = 0 : <span style="color: #FFB74D;">[+ income +]</span> ?]
 
-Military Expenses: [? if military_costs < 0 : <span style="color: #66BB6A;">+[+ military_costs +]</span> ?][? if military_costs > 0 : <span style="color: #d42f2f;">-[+ military_costs +]</span> ?][? if military_costs = 0 : <span style="color: #FFB74D;">-[+ military_costs +]</span> ?]
+Military Expenses: [? if military_costs < 0 : <span style="color: #66BB6A;">+[+ military_costs +]</span> ?][? if military_costs > 0 : <span style="color: #d42f2f;">-[+ military_costs +]</span> ?][? if military_costs = 0 : <span style="color: #FFB74D;">[+ military_costs +]</span> ?]
 
-Total: [? if total_income > 0 : <span style="color: #66BB6A;">+[+ total_income +]</span> ?][? if total_income < 0 : <span style="color: #d42f2f;">-[+ total_income +]</span> ?][? if total_income = 0 : <span style="color: #FFB74D;">-[+ total_income +]</span> ?]
+Total: [? if total_income > 0 : <span style="color: #66BB6A;">+[+ total_income +]</span> ?][? if total_income < 0 : <span style="color: #d42f2f;">-[+ total_income +]</span> ?][? if total_income = 0 : <span style="color: #FFB74D;">[+ total_income +]</span> ?]
 
 Inflation: [+ inflation_2 +]%
 
