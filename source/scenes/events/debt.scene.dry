@@ -1,0 +1,42 @@
+title: The Guomindang out of Funds
+new-page: true
+view-if: funds < 0
+
+= The Guomindang out of Funds
+
+We're in trouble. Because of our recent expenditures, we are now in debt. What should we do?
+
+- @tax: Increase taxes.
+- @print: Print more money.
+- @cutnra: Take some funds out of the army.
+- @bad: There's nothing we can do.
+
+@tax
+subtitle: +2 funds [? if centralize > 0 : (+1 for tax reforms) ?], +1 every quarter
+unavailable-subtitle: Tax rates are already too high.
+choose-if: upper_tax_rates <= 5 and lower_tax_rates <= 5
+on-arrival: funds += 2; income += 1; funds += 1 if centralize > 0; new_middle_kmt -= 4; old_middle_kmt -= 4; workers_kmt -= 4; unemployed += 0.2; lower_tax_rates += 1; upper_tax_rates += 1; workers_kmt -= 5 if lower_tax_rates > 1; inflation -= 1.1; economic_growth -= 0.6; new_middle_kmt -= 2 if upper_tax_rates > 1; old_middle_kmt -= 2 if upper_tax_rates > 1;
+
+People hate taxes, that's a given.
+
+@print
+subtitle: +2 funds - this will considerably level up inflation.
+unavailable-subtitle: Inflation is getting too high.
+choose-if: inflation < 10
+on-arrival: funds += 2; inflation += 3; new_middle_kmt -= 4; old_middle_kmt -= 4; workers_kmt -= 4; unemployed += 2; workers_kmt -= 5 if lower_tax_rates > 1; inflation -= 1.1; economic_growth -= 0.6; new_middle_kmt -= 2 if upper_tax_rates > 1; old_middle_kmt -= 2 if upper_tax_rates > 1;
+
+Issuing more sums of cash will start taking a toll on our inflation.
+  
+@cutnra
+subtitle: +2 funds - the officers won't like this, and certainly not your men either.
+unavailable-subtitle: The army is already barebones.
+choose-if: nra_militancy > 0
+on-arrival: funds += 2; nra_militancy -= 0.1; whampoa_dissent += 10;
+
+The army has been defunded. What does this do for us?
+
+@bad
+subtitle: -1 quarterly income - we are forced to pay loan interest.
+on-arrival: income -= 1;
+
+Looks like our financial situation is getting dire. We now have to pay loan interests to keep our deficit managable.
