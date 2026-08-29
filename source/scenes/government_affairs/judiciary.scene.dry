@@ -20,12 +20,12 @@ The old Manchu-era systems of justice definitely needs reform. What should we do
 subtitle: -1 funds
 unavailable-subtitle: Not enough funds.
 choose-if: funds >= 1
-on-arrival: funds -= 1; workers_kmt += 3*(1-dissent); old_middle_kmt += 3*(1-dissent); new_middle_kmt += 3*(1-dissent); judicial_reform += 2; pro_republic += 4*(1-dissent);
+on-arrival: funds -= 1; workers_kmt += 3*(1-dissent); old_middle_kmt += 3*(1-dissent); new_middle_kmt += 3*(1-dissent); justice_reform += 2; pro_republic += 4*(1-dissent);
 
 We have begun constructing a better, fairer and more efficient judicial system in Canton. 
 
 @minor_reform
-on-arrival: workers_kmt += 1*(1-dissent); old_middle_kmt += 1*(1-dissent); new_middle_kmt += 1*(1-dissent); judicial_reform += 1; pro_republic += 2*(1-dissent);
+on-arrival: workers_kmt += 1*(1-dissent); old_middle_kmt += 1*(1-dissent); new_middle_kmt += 1*(1-dissent); justice_reform += 1; pro_republic += 2*(1-dissent);
 
 We try to remove the most obviously biased and corrupt jurists, while leaving some of the old system intact, replacing more with new ones.
 
