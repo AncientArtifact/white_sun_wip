@@ -57,7 +57,7 @@ unavailable-subtitle: We must march into Huizhou before reaching Shanwei.
 go-to: loseshanwei if nrapower < chenpower; winshanwei if nrapower >= chenpower
 
 @winshanwei
-on-arrival: nra_strength -= 10; chen_strength -= 20; firsttrialdone = 1; eastexped_active = 0; eastexped_done = 1;
+on-arrival: nra_strength -= 10; chen_strength -= 20; secondtrialdone = 1; eastexped_active = 0; eastexped_done = 1;
 
 We have defeated Chen Jiongming in Shanwei and have sent him all the way to Shantou! This is a great victory for us.
 
