@@ -1,18 +1,16 @@
 title: Chiang Kai-shek Succeeds Xu Chongzhi
 subtitle: A new candidate rises.
 tags: events
-view-if: year = 1925 and month = 10 and week = 1
+view-if: year = 1925 and month = 9 and week = 1
 max-visits: 1
 priority: 2
 new-page: true
 face-image: img/chiangkaishek2.jpg
-on-arrival: chiangkaishek_advisor = 1; xuchongzhi_advisor = 0; whampoa_strength += 25; center_strength -= 5; right_strength -= 5;
+on-arrival: chiangkaishek_advisor = 1; xuchongzhi_advisor = 0; xuchongzhi_dead = 1; whampoa_strength += 25; center_strength -= 5; right_strength -= 5;
 
 = Chiang Kai-shek Succeeds Xu Chongzhi
 
-Hu Hanmin's exile had sent shockwaves throughout the party, but this has become it's greatest consequence.
-
-Also suspected in Liao Zhongkai's murder is General Xu Chongzhi, the commander of the National Revolutionary Army. Because of this, Xu Chongzhi was removed from his position.
+Chiang Kai-shek, by accusing Xu Chongzhi of manipulating Chen Jiongming through truce agreements has successfully exiled the general to Shanghai back in August.
 
 Since the Right faction's other leaders were demoted, and the Communists had banded with Wang Jingwei after Liao Zhongkai's death, Chiang Kai-shek has suddenly become the second-most influential man in the party.
 
