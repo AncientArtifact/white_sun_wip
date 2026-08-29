@@ -1,0 +1,34 @@
+title: Judicial Reform
+new-page: true
+is-card: true
+on-arrival: judiciary_timer += 9; week_actions += 1
+view-if: judiciary_timer = 0
+card-image: img/portraits/XuQian.jpg
+go-to: ed_menu
+tags: govt_affairs, cabinet
+
+= Judicial Reform
+
+The old Manchu-era systems of justice definitely needs reform. What should we do?
+
+- @reform: Make substantial reforms in the judiciary.
+- @minor_reform: Make smaller reforms in the judiciary.
+- @as_is: Leave the judiciary alone first.
+- @easy_discard
+- @cancel_advisor_action
+
+@reform
+subtitle: -1 funds
+unavailable-subtitle: Not enough funds.
+choose-if: funds >= 1
+on-arrival: funds -= 1; workers_kmt += 3*(1-dissent); old_middle_kmt += 3*(1-dissent); new_middle_kmt += 3*(1-dissent); judicial_reform += 2; pro_republic += 4*(1-dissent);
+
+We have begun constructing a better, fairer and more efficient judicial system in Canton. 
+
+@minor_reforms
+on-arrival: workers_kmt += 1*(1-dissent); old_middle_kmt += 1*(1-dissent); new_middle_kmt += 1*(1-dissent); judicial_reform += 1; pro_republic += 2*(1-dissent);
+
+We try to remove the most obviously biased and corrupt jurists, while leaving some of the old system intact, replacing more with new ones.
+
+@as_is 
+go-to: root
