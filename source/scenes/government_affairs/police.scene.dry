@@ -12,7 +12,7 @@ It is necessary to keep order in our regions and keep our citizens safe from cri
 
 - @reform: Reform the Guangzhou police.
 - @back: Leave security alone for now.
-- @easy-discard
+- @easy_discard
 - @cancel_advisor_action
 
 @reform
