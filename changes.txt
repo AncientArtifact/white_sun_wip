@@ -8,4 +8,7 @@ v0.4-
 almost all advisors finished, events until 1924
 
 v0.5-
-events until 1925, right sidebar
+events until 1925, right sidebar, biweekly turns
+
+v0.6-
+all economy reforms done, warlord affairs cards
