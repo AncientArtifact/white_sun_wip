@@ -27,6 +27,7 @@ We have begun cracking down on Opium farms. The farmers are angry about this but
 
 @yun
 subtitle: Tang Jiyao won't like this.
+view-if: yunnan_governor = "Tang Jiyao"
 on-arrival: yun_relation -= 10; workers_kmt += 5; old_middle_kmt += 5; new_middle_kmt += 5;
 face-image: img/portraits/TangJiyao.jpg
 
