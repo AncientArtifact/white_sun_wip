@@ -1,0 +1,17 @@
+title: March 18th Massacre
+subtitle: The Northern Warlords get a little more unstable...
+tags: events
+view-if: year = 1926 and month = 3 and week = 1
+max-visits: 1
+priority: 2
+new-page: true
+face-image: img/march18.jpg
+on-arrival: workers_kmt += 10; new_middle_kmt += 10; workers_cpc += 10; new_middle_cpc += 8;
+
+= March 18th Massacre
+
+Feng Yuxiang's army and Japanese ships reportedly opened fire against eachother.
+
+The KMT and CPC used this as a pretense to spark anti-imperialist protests in Beijing. The Beiyang Government subsequently cracked down on these protests and issued arrest warrants for KMT and CPC leaders, including Li Dazhao and Xu Qian.
+
+This has strengthened our support and the Northern Warlords of the Beiyang Government face the blame.
