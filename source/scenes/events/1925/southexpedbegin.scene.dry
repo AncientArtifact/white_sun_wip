@@ -1,0 +1,19 @@
+title: The Southern Expedition
+subtitle: One last thorn.
+tags: events
+view-if: year = 1925 and month = 10 and week = 1 and eastexped_done = 1
+max-visits: 1
+priority: 3
+new-page: true
+face-image: img/portraits/DengBenyin.jpg
+on-arrival: southexped_active = 1;
+
+= The Southern Expedition
+
+After defeating Chen Jiongming, we are only one last step from unifying Guangdong. Warlord Deng Benyin and his coalition of southern warlords in Beihai and Hainan is still running rampant in the south and resisting our control.
+
+Now, our final job for the NRA is to crush this menace once and for all.
+
+- @next: You have a new card in your Warlord Affairs deck.
+
+@next
