@@ -74,7 +74,7 @@ Tang Jiyao is at the gates of Guangdong. We have no choice but to fight.
 
 - @battlejiyao: The outcome is...
 
-@battlejiyao:
+@battlejiyao
 go-to: winself if nra_strength > 100; loseself
 
 @winself
