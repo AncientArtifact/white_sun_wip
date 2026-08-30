@@ -26,12 +26,14 @@ In the following months, the Guomindang prepared. Now, what is the result of thi
 go-to: winarmy if nra_power >= 4; losearmy if nra_power <= 4
 
 @winarmy
+face-image: img/nrastreet.jpg
 
 The army is <span style="color: #66BB6A;">very ready</span> for the campaign. We have [+ nra_strength +] thousand soldiers ready and armed to fight.
 
 - @two: The United Front.
 
 @losearmy
+face-image: img/nrastreet.jpg
 
 The army is <span style="color: #d42f2f;">less than ready</span>, we will have to improvise during our campaign.
 
@@ -41,13 +43,82 @@ The army is <span style="color: #d42f2f;">less than ready</span>, we will have t
 go-to: winfront if cpc_relation >= 50; losefront if cpc_relation < 50
 
 @winfront
+face-image: img/cpc.jpg
 
 Our alliance with the Chinese Communist Party is <span style="color: #66BB6A;">still strong</span>, even after some unsavory moments.
 
-- @three: The Party.
+- @three: The Warlords.
 
 @losefront
+face-image: img/cpc.jpg
 
 Our alliance with the Chinese Communist Party is <span style="color: #d42f2f;">tenuous, if not hostile</span>. We probably won't get their services in peasant recruiting.
 
-- @three: The Party.
+- @three: The Warlords.
+
+@three
+face-image: img/portraits/TangShengzhi.jpg
+on-arrival: nra_strength += 20;
+
+Warlord Tang Shengzhi of Hunan has defected and joined us. We have a strong foothold leading up to the city of Wuchang, the base of Wu Peifu.
+
+As for-
+
+- @four: -Guangxi.
+
+@four
+go-to: wingxc if guangxi_governor = "Li Zongren"; losegxc
+
+@wingxc
+face-image: img/lizongren2.jpg
+on-arrival: guangxi_faction = "Guomindang"; gxc_relation += 10; nra_strength += 20;
+
+Li Zongren has sworn to join the Guomindang in our national revolution. His forces will be of good use.
+
+- @five: Yunnan?
+
+@losegxc
+
+[+ guangxi_governor +] has refused to fight with us. Looks like we have to contact more warlords for help.
+
+- @five: Yunnan?
+
+@five
+go-to: winyun if yun_relation >= 40; loseyun if yun_relation < 40
+
+@winyun
+on-arrival: yun_relation += 10; nra_strength += 20;
+
+After Tang Jiyao's failed invasion of Yunnan, our relations have soured. Still, Tang joins our efforts to reunify China.
+
+- @six: Guangdong.
+
+@loseyun
+
+After Tang Jiyao's failed invasion of Yunnan, our relations have soured. Looks like we're better off without him.
+
+- @six: Guangdong.
+
+@six
+go-to: wingdc if fourthtrialdone = 1; losegdc if fourthtrialdone = 0;
+
+@wingdc
+
+After defeating Chen Jiongming, Yang Ximin, Liu Zhenhuan and Deng Benyin, Guangdong is finally <span style="color: #66BB6A;">completely secure</span>. There won't be any problems back there while we march north.
+
+- @seven: Are we ready?
+
+@losegdc
+
+Deng Benyin <span style="color: #d42f2f;">still controls the south</span>. Looks like we'll have some problems back home while fighting.
+
+- @seven: Are we ready?
+
+@seven
+
+Probably. Maybe, maybe not. But whatever the costs, we'll fight for the National Revolution.
+
+- @eight: Whatever it takes.
+
+@eight
+on-arrival: northern_expedition_begun = 1;
