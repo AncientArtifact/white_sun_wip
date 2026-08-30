@@ -27,8 +27,12 @@ Q.week_actions = 0;
 
 Q.eastexped_active = 0;
 Q.eastexped_done = 0;
+Q.southexped_active = 0;
+Q.southexped_done = 0;
 Q.firsttrialdone = 0;
 Q.secondtrialdone = 0;
+Q.thirdtrialdone = 0;
+Q.fourthtrialdone = 0;
 Q.wuhan_nanjing_split = 0;
 Q.cpc_civil_war = 0;
 Q.northern_expedition_begun = 0;
@@ -432,7 +436,7 @@ Q.timers = ['advisor_action', 'confronting_nazis', 'crisis_program',
             'sa_ban', 'sh_ban', 'papen_chancellor',
             'kpd_policy', 'kpd_ultimatum', 'popular_front_dispute',
             'high_inflation', 'banking_crisis', 'march_on_berlin',
-            'understanding_enemy', 'schleichers_schemes', 'guangxicivilwar', 'eastexped'];
+            'understanding_enemy', 'schleichers_schemes', 'guangxicivilwar', 'eastexped', 'southexped'];
 Q.advisor_action_timer = 0;
 // party affairs timers
 Q.confronting_nazis_timer = 0;
@@ -489,6 +493,7 @@ Q.gcw_over = 0;
 Q.guangxi_affairs_timer = 0;
 Q.eastexped_timer = 0;
 Q.opium_timer = 0;
+Q.southexped_timer = 0;
 
 
 // all the initial advisors are centrists.
