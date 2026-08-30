@@ -108,9 +108,9 @@ Militarization: [+ red_militancy : militancy +]
 
 <span style="color: #aba133">**Zhili Army**</span>: The Armies of the Zhili Clique split from the Beiyang Army.
 
-Strength: [+ sh_strength +] thousand
+Strength: [+ bei_strength +] thousand
 
-Militarization: [+ sh_militancy : militancy +]
+Militarization: [+ bei_militancy : militancy +]
 
 <span style="color: #d1b24b">**Fengtian**</span>: The Armies of the Fengtian Clique split from the Beiyang Army.
 
