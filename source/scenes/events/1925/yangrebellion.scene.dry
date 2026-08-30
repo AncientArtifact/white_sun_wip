@@ -24,15 +24,18 @@ on-arrival: funds -= 5; nra_strength += 20; nra_militancy -= 0.05;
 We have reluctantly payed Yang Ximin for his armies to join ours.
 
 @refuse
+face-image: img/portraits/LiuZhenhuan.jpg
 
 We have refused Yang Ximin's offer and have broken ties with him. In retaliation, he rebels against our government and attacks Guangzhou!
+
+Liu Zhenhuan, leader of the Guangxi Guest Army joins him in rebellion.
 
 Chiang Kai-shek has assembled his army to defend against his betrayal.
 
 - @result: The outcome is...
 
 @result
-go-to: winyang if nra_strength > 20; loseyang if nra_strength < 20
+go-to: winyang if nra_strength > 40; loseyang if nra_strength < 40
 
 @winyang
 on-arrival: nra_strength -= 10; nra_militancy += 0.05;
