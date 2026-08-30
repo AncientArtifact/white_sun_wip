@@ -6,7 +6,7 @@ max-visits: 1
 priority: 2
 new-page: true
 face-image: img/sundeath1.jpg
-on-arrival: sunyatsen_dead = 1; sunyatsen_advisor = 0; national_gov_leader = "N/A";
+on-arrival: sunyatsen_dead = 1; sunyatsen_advisor = 0; national_gov_leader = "Tan Yankai"; kmt_leader = "Power Struggle";
 
 = Death of Sun Yat-sen
 
