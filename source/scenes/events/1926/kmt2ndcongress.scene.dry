@@ -1,0 +1,19 @@
+title: Second National Congress of the KMT
+subtitle: Rising up once more?
+tags: events
+view-if: year = 1926 and month = 1 and week = 1
+max-visits: 1
+priority: 2
+new-page: true
+face-image: img/chiangkaishek3.jpg
+on-arrival: whampoa_strength += 5;
+
+= Second National Congress of the Zhongguo Guomindang
+
+The Second National Congress has been held in Canton, two years after the first one.
+
+Today, nothing special happened except the election of Chiang Kai-shek to the Central Executive Committee.
+
+Now that Chiang Kai-shek has reached the highest body in the party, his influence grows even larger.
+
+The counter to Wang Jingwei might just win the power struggle entirely.
