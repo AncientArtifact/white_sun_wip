@@ -38,7 +38,7 @@ unavailable-subtitle: -2 funds
 view-if: centralize >= 3 and centralbank = 0
 choose-if: funds >= 2 and centralize >= 3
 frequency: 1
-on-arrival: funds -= 2; economic_growth += 2; centralize += 2;
+on-arrival: funds -= 2; economic_growth += 2; centralize += 2; centralbank = 1;
 
 Founding the Central Bank of Canton has greatly improved our efforts in managing Guangdong's finances.
 
