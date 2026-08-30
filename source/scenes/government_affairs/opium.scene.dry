@@ -44,5 +44,8 @@ subtitle: +3 funds every quarter - no one will like this.
 view-if: opium_producing >= 1
 on-arrival: income += 3; opium_producing += 1; rural_kmt -= 5; workers_kmt -= 15; old_middle_kmt -= 15; new_middle_kmt -= 15; gxc_relation -= 10; gui_relation -= 10; cpc_relation -= 5; nra_militancy -= 0.1;
 
+@no
+go-to: root
+
 We keep producing more opium in Guangdong. Everyone hates us for this. Even our soldiers are getting addicted.
 
