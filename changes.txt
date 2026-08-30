@@ -11,4 +11,14 @@ v0.5-
 events until 1925, right sidebar, biweekly turns
 
 v0.6-
-all economy reforms done, warlord affairs cards
+quarterly income, budget and resource merge, first warlord affairs card,
+
+v0.7-
+police, justice, opium cards, deng benyin & liu zhenhuan added
+
+v0.8-
+all 1926 events, northern expedition opener
+
+**v1- The National Revolution**
+
+*Coming soon..*
