@@ -18,3 +18,20 @@ On March 19th, Li Zhilong then telegrammed Chiang Kai-shek to let the warships i
 Chiang, arriving back to Guangzhou the next day, immediately declared martial law to stop "a coup led by the CPC and the Soviet Union under Nikolai Kuybyshev". Under orders sent to Ouyang Ge and Chen Zhaoying, the Zhongshan Warship was occupied, Li Zhilong detained and multiple CPC members arrested.
 
 What happens now?
+
+- @chiang: Chiang Kai-shek gets his way.
+- @wang: We will not go down without a fight!
+
+@wang
+choose-if: false
+unavailable-subtitle: No path yet, sorry. :(
+
+@chiang
+face-image: img/portraits/ChiangKai-shek.jpg
+on-arrival: center_left_strength -= 10; whampoa_strength += 10; cpc_relation -= 5; east_relation -= 1; kmt_leader = "Chiang Kai-shek"; 
+
+Chiang's order of martial law worked. The Left faction under Wang Jingwei went completely silent.
+
+He has repeatedly said that this was only targeted at specific individuals and hoped it wouldn't jeopardize cooperation with Russia and the CPC.
+
+Now, Chiang Kai-shek has completely secured control over Guangzhou and the Guomindang. He has emerged as the true successor to Sun Yat-sen. The Northern Expedition gets ever closer as Chiang Kai-shek goes full speed ahead in preparation.
