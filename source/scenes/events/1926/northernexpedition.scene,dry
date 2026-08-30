@@ -6,3 +6,48 @@ max-visits: 1
 priority: 2
 new-page: true
 face-image: img/northernexpedition.jpg
+on-arrival: {!
+
+Q.nra_power = Q.nra_strength*Q.nra_militancy
+
+!}
+
+= The Northern Expedition
+
+Four years ago, Sun Yat-sen planned the Northern Expedition. This was cut short after Chen Jiongming rebelled. 
+
+Three years later, Sun Yat-sen passed away. In the midst of the chaos, [+ kmt_leader +] emerged victorious.
+
+In the following months, the Guomindang prepared. Now, what is the result of this preparation?
+
+- @one: The Army.
+
+@one
+go-to: winarmy if nra_power >= 4; losearmy if nra_power <= 4
+
+@winarmy
+
+The army is <span style="color: #66BB6A;">very ready</span> for the campaign. We have [+ nra_strength +] thousand soldiers ready and armed to fight.
+
+- @two: The United Front.
+
+@losearmy
+
+The army is <span style="color: #d42f2f;">less than ready</span>, we will have to improvise during our campaign.
+
+- @two: The United Front.
+
+@two
+go-to: winfront if cpc_relation >= 50; losefront if cpc_relation < 50
+
+@winfront
+
+Our alliance with the Chinese Communist Party is <span style="color: #66BB6A;">still strong</span>, even after some unsavory moments.
+
+- @three: The Party.
+
+@losefront
+
+Our alliance with the Chinese Communist Party is <span style="color: #d42f2f;">tenuous, if not hostile</span>. We probably won't get their services in peasant recruiting.
+
+- @three: The Party.
