@@ -1,0 +1,71 @@
+title: Southern Expedition
+new-page: true
+is-card: true
+card-image: img/portraits/DengBenyin.jpg
+tags: warlord_affairs
+view-if: southexped_timer = 0 and southexped_active = 1
+on-arrival: {!
+
+Q.week_actions += 1;
+Q.southexped_timer += 3;
+Q.deng_strength = 60;
+Q.deng_militancy = 0.1;
+Q.nrapower = Q.nra_strength*Q.nra_militancy;
+Q.dengpower = Q.deng_strength*Q.deng_militancy;
+
+!}
+
+= The Southern Expedition
+
+Deng Benyin's Bashu Alliance in Beihai and Hainan has been a pain in our backside in Guangdong ever since deng Jiongming broke with us. Now that deng Jiongming is gone, it's time to tie up loose ends and unify Guangdong.
+
+- @thirdtrial: March through Beihai.
+- @fourthtrial: March into Hainan.
+- @root: We need more time to prepare!
+- @easy_discard
+
+@thirdtrial
+choose-if: thirdtrialdone = 0
+unavailable-subtitle: Beihai is already ours.
+go-to: losebeihai if nrapower < dengpower; winbeihai if nrapower >= dengpower
+
+@winbeihai
+on-arrival: nra_strength -= 10; deng_strength -= 20; thirdtrialdone = 1;
+
+We have defeated Deng Benyin in Beihai and have inflicted large casualties against his army! This is a cause to celebrate.
+
+- @done: Hurrah!
+
+@done
+go-to: main
+
+@donelose
+go-to: main
+
+@losehuizhou
+on-arrival: nra_strength -= 20; deng_strength -= 10;
+
+Deng Benyin's armies have defeated us! We have been repelled back to our starting position.
+
+- @donelose: Unfortunate.
+
+@fourthtrial
+choose-if: thirdtrialdone = 1
+unavailable-subtitle: We must march into Huizhou before reaching hainan.
+go-to: losehainan if nrapower < dengpower; winhainan if nrapower >= dengpower
+
+@winhainan
+on-arrival: nra_strength -= 10; deng_strength -= 20; fourthtrialdone = 1; southexped_active = 0; southexped_done = 1;
+
+We have defeated Deng Benyin in Hainan and have finally crushed the last remaining resistance in Guangdong!
+
+With Chen Jiongming in exile, Yang Ximin and Liu Zhenhuan's armies crushed, Shen Hongying defeated in Guangxi and now Deng Benyin's defeat, Canton is **fully** under Guomindang control. What a victory!
+
+- @done: Hurrah!
+
+@losehainan
+on-arrival: nra_strength -= 20; deng_strength -= 10; thirdtrialdone = 0;
+
+Deng Benyin's armies have defeated us! We have been repelled back to our starting position.
+
+- @donelose: Unfortunate.
