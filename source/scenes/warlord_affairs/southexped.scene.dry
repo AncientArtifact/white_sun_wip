@@ -42,7 +42,7 @@ go-to: main
 @donelose
 go-to: main
 
-@losehuizhou
+@losebeihai
 on-arrival: nra_strength -= 20; deng_strength -= 10;
 
 Deng Benyin's armies have defeated us! We have been repelled back to our starting position.
