@@ -1,0 +1,8 @@
+title: The Northern Expedition
+subtitle: *"We write our own destiny; we become what we do."- Soong Mei-ling*
+tags: events
+view-if: year = 1926 and month = 7 and week = 1
+max-visits: 1
+priority: 2
+new-page: true
+face-image: img/northernexpedition.jpg
