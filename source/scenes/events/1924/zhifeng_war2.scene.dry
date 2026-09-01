@@ -19,7 +19,7 @@ Now, Feng Yuxiang has completely split from the Zhili Clique, forming his own fa
 - @next: What next?
 
 @next
-on-arrival: bei_strength -= 100; hebei_governor = "Zhang Zuolin"; hebei_faction = "Fengtian"; shaanxi_faction = "Guominjun"; suiyuan_faction = "Guominjun"; chahar_faction = "Guominjun"; shandong_faction = "Fengtian"; zhili_leader = "Wu Peifu"; zhili_deputy_leader = "Sun Chuanfang"; beiyang_leader = "Duan Qirui"; deputy_beiyang_leader = "Xu Shiying"; beiyang_leader_party = "Anhui"; deputy_beiyang_leader_party = "Anhui"; shandong_governor = "Zhang Zongchang"; shandong_faction = "Fengtian"; anhui_governor = "Zheng Shiqi"; anhui_faction = "Anhui"; henan_governor = "Feng Yuxiang"; henan_faction = "Guominjun"; fujian_governor = "Zhou Yinren"; fujian_faction = "Zhili";
+on-arrival: bei_strength -= 100; hebei_governor = "Zhang Zuolin"; hebei_faction = "Fengtian"; shaanxi_faction = "Guominjun"; suiyuan_faction = "Guominjun"; chahar_faction = "Guominjun"; shandong_faction = "Fengtian"; zhili_leader = "Wu Peifu"; zhili_deputy_leader = "Sun Chuanfang"; beiyang_leader = "Duan Qirui"; deputy_beiyang_leader = "Xu Shiying"; beiyang_leader_party = "Anhui"; deputy_beiyang_leader_party = "Anhui"; shandong_governor = "Zhang Zongchang"; shandong_faction = "Fengtian"; anhui_governor = "Zheng Shiqi"; anhui_faction = "Anhui"; henan_governor = "Feng Yuxiang"; henan_faction = "Guominjun"; fujian_governor = "Zhou Yinren"; fujian_faction = "Zhili"; rehe_faction = "Guominjun"; rehe_governor = "Feng Yuxiang";
 face-image: img/portraits/DuanQirui.jpg
 
 This has completely changed the world of Chinese politics. With this betrayal, Feng Yuxiang and Zhang Zuolin have now decisively defeated the Zhili Clique. These two are now the most powerful warlords in China.
