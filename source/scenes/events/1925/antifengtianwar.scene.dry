@@ -14,7 +14,7 @@ After Feng Yuxiang's betrayal against the Zhili, the political balance in China 
 - @next: The outcome is...
 
 @next
-on-arrival: henan_governor = "Liu Zhenhua"; henan_faction = "Zhili"; hebei_faction = "Fengtian"; hebei_governor = "Zhang Zuolin"; beiyang_leader = "Zhang Zuolin"; deputy_beiyang_leader = "N/A"; beiyang_leader_party = "Fengtian"; deputy_beiyang_leader_party = "N/A"; 
+on-arrival: henan_governor = "Liu Zhenhua"; henan_faction = "Zhili"; hebei_faction = "Fengtian"; hebei_governor = "Zhang Zuolin"; beiyang_leader = "Zhang Zuolin"; deputy_beiyang_leader = "N/A"; beiyang_leader_party = "Fengtian"; deputy_beiyang_leader_party = "N/A"; rehe_governor = "Zhang Zuolin"; rehe_faction = "Fengtian";
 
 After a failed campaign into Mukden, the Guominjun has been defeated by Zhang Zuolin and Wu Peifu. Zhang Zuolin has effectively taken Beijing and became the Beiyang Government's most powerful leader and dictator. Dark times are ahead for the north.
 
