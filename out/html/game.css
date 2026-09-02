@@ -298,6 +298,7 @@ blockquote + blockquote.attribution {
     border: none;
     outline: none;
     padding: 10px;
+    text-align: center;
 }
 
 .mapcontent button:hover {
@@ -310,6 +311,7 @@ blockquote + blockquote.attribution {
   padding: 0;
   line-height: 155%;
   overflow-y: scroll;
+  text-align: center;
 }
 
 .overlay {
