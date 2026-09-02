@@ -270,7 +270,7 @@ blockquote + blockquote.attribution {
 
 .mapcontent {
     position: fixed;
-    background: #dedede;
+    background-color: #dedede;
     padding: 20px;
     border-radius: 0px;
     width: 100%;
@@ -281,9 +281,11 @@ blockquote + blockquote.attribution {
 
 .mapcontent img {
     max-width: 100%;
+    background-color: #f6f6f6;
     height: auto;
     display: block;
-    margin-bottom: 10px;
+    margin: auto;
+    object-fit: contain;
 }
 
 .mapcontent button {
