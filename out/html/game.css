@@ -273,7 +273,7 @@ blockquote + blockquote.attribution {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0,0,0,0.7);
+    background: #f3f3f3;
     padding: 20px;
     border-radius: 8px;
     max-width: 80%;
@@ -321,7 +321,6 @@ blockquote + blockquote.attribution {
 }
 
 .overlay_map {
-    background: #f3f3f3;
     display: none;
     position: fixed;
     width: 100%;
