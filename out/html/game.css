@@ -269,24 +269,24 @@ blockquote + blockquote.attribution {
 }
 
 .mapcontent {
-    position: fixed;
-    background-color: #dedede;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f3f3f3;
     padding: 20px;
-    border-radius: 0px;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    border-radius: 8px;
+    max-width: 140%;
+    max-height: 140%;
+    overflow: auto;
     z-index: 10;
 }
 
 .mapcontent img {
     max-width: 100%;
-    background-color: #f6f6f6;
     height: auto;
     display: block;
-    margin: auto;
-    object-fit: contain;
-    overflow-y: auto;
+    margin-bottom: 10px;
 }
 
 .mapcontent button {
@@ -307,11 +307,9 @@ blockquote + blockquote.attribution {
 .map-title {
   font-family: "Minion Pro", Georgia, serif;
   background-color: #dedede;
-  padding: 20px;
+  padding: 10;
   line-height: 155%;
   text-align: center;
-  margin: 0px;
-  flex-shrink: 0;
 }
 
 .overlay {
