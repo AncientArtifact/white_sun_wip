@@ -1,7 +1,7 @@
 title: Chiang Kai-shek Succeeds Xu Chongzhi
 subtitle: A new candidate rises.
 tags: events
-view-if: year = 1925 and month = 9 and week = 1
+view-if: year = 1925 and month = 9 and week = 3
 max-visits: 1
 priority: 3
 new-page: true
