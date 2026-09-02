@@ -62,9 +62,7 @@ on-arrival: nra_strength += 20;
 
 Warlord Tang Shengzhi of Hunan has defected and joined us. We have a strong foothold leading up to the city of Wuchang, the base of Wu Peifu.
 
-As for-
-
-- @four: -Guangxi.
+- @four: Guangxi?
 
 @four
 go-to: wingxc if guangxi_governor = "Li Zongren"; losegxc
