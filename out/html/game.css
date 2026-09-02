@@ -275,7 +275,6 @@ blockquote + blockquote.attribution {
     transform: translate(-50%, -50%);
     background: #f3f3f3;
     padding: 20px;
-    padding-color: #dedede;
     border-radius: 8px;
     max-width: 140%;
     max-height: 140%;
