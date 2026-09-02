@@ -74,6 +74,14 @@ Tang Jiyao is at the gates of Guangdong. We have no choice but to fight.
 
 - @battlejiyao: The outcome is...
 
+@refuse
+
+Shen Hongying has refused to stand with us! He has let Tang Jiyao's forces pass through Guangxi. 
+
+Tang Jiyao is at the gates of Guangdong. We have no choice but to fight.
+
+- @battlejiyao: The outcome is...
+
 @battlejiyao
 go-to: winself if nra_strength > 100; loseself
 
