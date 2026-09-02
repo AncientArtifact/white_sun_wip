@@ -100,7 +100,7 @@ After Tang Jiyao's failed invasion of Yunnan, our relations have soured. Looks l
 - @six: Guangdong.
 
 @six
-go-to: wingdc if fourthtrialdone = 1; losegdc if fourthtrialdone = 0;
+go-to: wingdc if fourthtrialdone = 1; losegdc if fourthtrialdone = 0
 
 @wingdc
 
