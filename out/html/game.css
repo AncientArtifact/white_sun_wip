@@ -276,8 +276,8 @@ blockquote + blockquote.attribution {
     background: #f3f3f3;
     padding: 20px;
     border-radius: 8px;
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 100%;
+    max-height: 100%;
     overflow: auto;
     z-index: 10;
 }
