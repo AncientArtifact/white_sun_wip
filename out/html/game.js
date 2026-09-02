@@ -125,6 +125,14 @@
       window.dendryUI.saveSettings();
   };
 
+  function openMap() {
+    document.getElementById('map').style.display = 'block';
+}
+
+function closeMap() {
+    document.getElementById('map').style.display = 'none';
+}
+
   // populates the checkboxes in the options view
   window.populateOptions = function() {
     var disable_bg = window.dendryUI.disable_bg;
