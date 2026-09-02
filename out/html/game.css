@@ -286,10 +286,6 @@ blockquote + blockquote.attribution {
     text-align: right;
 }
 
-.map {
-    display: true;
-}
-
 .overlay_map {
     background: rgba(0,0,0,0.7);
     display: none;
