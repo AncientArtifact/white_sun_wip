@@ -321,6 +321,7 @@ blockquote + blockquote.attribution {
 }
 
 .overlay_map {
+    background: #f3f3e3;
     display: none;
     position: fixed;
     width: 100%;
