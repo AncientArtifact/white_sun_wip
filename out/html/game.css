@@ -271,14 +271,14 @@ blockquote + blockquote.attribution {
 .mapcontent {
     position: absolute;
     top: 50%;
-    left: 550%;
+    left: 50%;
     transform: translate(-50%, -50%);
     background: #f3f3f3;
     padding: 20px;
     padding-color: #dedede;
     border-radius: 8px;
-    max-width: 800px;
-    max-height: 600px;
+    max-width: 120%;
+    max-height: 120%;
     overflow: auto;
     z-index: 10;
 }
