@@ -307,7 +307,7 @@ blockquote + blockquote.attribution {
 .map-title {
   font-family: "Minion Pro", Georgia, serif;
   background-color: #dedede;
-  padding: 0;
+  padding: 10;
   line-height: 155%;
   text-align: center;
 }
