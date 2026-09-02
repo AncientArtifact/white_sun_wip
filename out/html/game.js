@@ -57,11 +57,31 @@
       }
   };
 
+   window.showMap = function() {
+      var map_element = document.getElementById('map');
+      window.populateOptions();
+      map_element.style.display = "block";
+      if (!map_element.onclick) {
+          map_element.onclick = function(evt) {
+              var target = evt.target;
+              var map_element = document.getElementById('map');
+              if (target == map_element) {
+                  window.hideMap();
+              }
+          };
+      }
+  };
+
   window.hideOptions = function() {
       var save_element = document.getElementById('options');
       save_element.style.display = "none";
   };
 
+   window.hideMap = function() {
+      var map_element = document.getElementById('map');
+      map_element.style.display = "none";
+  };
+  
   window.disableBg = function() {
       window.dendryUI.disable_bg = true;
       document.body.style.backgroundImage = 'none';
