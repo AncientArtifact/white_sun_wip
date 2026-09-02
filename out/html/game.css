@@ -268,6 +268,40 @@ blockquote + blockquote.attribution {
     background-color: var(--tab-hover-color);
 }
 
+.mapcontent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.7);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+    z-index: 10;
+}
+
+.mapcontent img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.mapcontent button {
+    font-family: "Minion Pro", Georgia, serif;
+    background-color: var(--tab-color);
+    color: var(--text-color);
+    /*float: left;*/
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.mapcontent button:hover {
+    background-color: var(--content-bg-color);
+}
 
 .overlay {
     background: rgba(0,0,0,0.7);
