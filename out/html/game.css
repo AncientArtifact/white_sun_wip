@@ -277,8 +277,8 @@ blockquote + blockquote.attribution {
     padding: 20px;
     padding-color: #dedede;
     border-radius: 8px;
-    max-width: 120%;
-    max-height: 120%;
+    max-width: 140%;
+    max-height: 140%;
     overflow: auto;
     z-index: 10;
 }
@@ -307,10 +307,9 @@ blockquote + blockquote.attribution {
 
 .map-title {
   font-family: "Minion Pro", Georgia, serif;
-  background-color: var(--bg-color);
+  background-color: #dedede;
   padding: 0;
   line-height: 155%;
-  overflow-y: scroll;
   text-align: center;
 }
 
