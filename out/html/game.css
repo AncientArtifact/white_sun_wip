@@ -304,6 +304,14 @@ blockquote + blockquote.attribution {
     background-color: var(--content-bg-color);
 }
 
+.map-title {
+  font-family: "Minion Pro", Georgia, serif;
+  background-color: var(--bg-color);
+  padding: 0;
+  line-height: 155%;
+  overflow-y: scroll;
+}
+
 .overlay {
     display: none;
     position: fixed;
