@@ -270,8 +270,8 @@ blockquote + blockquote.attribution {
 
 .mapcontent {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 100%;
+    left: 100%;
     transform: translate(-50%, -50%);
     background: #f3f3f3;
     padding: 20px;
