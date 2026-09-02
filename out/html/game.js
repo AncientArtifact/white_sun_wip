@@ -58,26 +58,30 @@
   };
 
    window.showMap = function() {
-      var map_element = document.getElementById('map');
-      window.populateOptions();
-      map_element.style.display = "block";
-      if (!map_element.onclick) {
-          map_element.onclick = function(evt) {
-              var target = evt.target;
-              var map_element = document.getElementById('map');
-              if (target == map_element) {
-                  window.hideMap();
-              }
-          };
-      }
-  };
+    var map_element = document.getElementById('map');
+    map_element.style.display = "block";
+    if (!map_element.onclick) {
+        map_element.onclick = function(evt) {
+            var target = evt.target;
+            var map_element = document.getElementById('map');
+            if (target == map_element) {
+                window.closeMap();
+            }
+        };
+    }
+};
+
+window.hideMap = function() {
+    var map_element = document.getElementById('map');
+    map_element.style.display = "none";
+};
 
   window.hideOptions = function() {
       var save_element = document.getElementById('options');
       save_element.style.display = "none";
   };
 
-   window.hideMap = function() {
+   window.closeMap = function() {
       var map_element = document.getElementById('map');
       map_element.style.display = "none";
   };
@@ -144,14 +148,6 @@
       document.body.classList.add('dark-mode');
       window.dendryUI.saveSettings();
   };
-
-  function openMap() {
-    document.getElementById('map').style.display = 'block';
-}
-
-function closeMap() {
-    document.getElementById('map').style.display = 'none';
-}
 
   // populates the checkboxes in the options view
   window.populateOptions = function() {
