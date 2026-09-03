@@ -4,8 +4,6 @@ is-special: true
 
 = **Concerns**
 
-Sun Yat-sen is [? if sunyatsen_dead = 0 : <span style="color: #66BB6A;">alive.</span> ?][? if sunyatsen_dead = 1 : <span style="color: #d42f2f;">dead.</span> ?]
-
 The party is [? if sunyatsen_dead = 0 and left_dissent + center_left_dissent + center_dissent + right_dissent + whampoa_dissent <= 50: <span style="color: #66BB6A;">united.</span> ?][? if sunyatsen_dead = 0 and left_dissent + center_left_dissent + center_dissent + right_dissent + whampoa_dissent > 50: <span style="color: #FFB74D;">unstable.</span> ?][? if power_struggle_active = 1 : <span style="color: #d42f2f;">breaking.</span> ?]
 
 The <span style="color: #9e1515">Be</span><span style="color: #ab881f">iy</span><span style="color: #2587b8">a</span><span style="color: #c7c7c7">n</span><span style="color: #000000">g</span> warlords are [? if kmt_in_government = 0 and northern_expedition_begun = 0 : <span style="color: #d42f2f;">in power.</span>?][? if northern_expedition_begun = 1 : <span style="color: #FFB74D;">at war.</span>?][? if kmt_in_government = 1 and kmt_victory = 1 : <span style="color: #66BB6A;">defeated.</span>?]
@@ -13,14 +11,32 @@ The <span style="color: #9e1515">Be</span><span style="color: #ab881f">iy</span>
 The <span style="color: #9e1515">United</span> <span style="color: #10186e">Front</span> is [? if cpc_civil_war = 0 and cpc_relation > 50 : <span style="color: #66BB6A;">strong.</span> ?][? if cpc_civil_war = 0 and cpc_relation <= 20 : <span style="color: #d42f2f;">breaking.</span> ?]
 [? if cpc_civil_war = 0 and cpc_relation > 20 and cpc_relation < 50 : <span style="color: #FFB74D;">unstable.</span> ?][? if cpc_civil_war = 1 : <span style="color: #d42f2f;">dead.</span> ?]
 
+[? if kmt_leader = "Sun Yat-sen" : <img src ="img/portraits/SunYat-sen.jpg" width="150px" height="205px"> ?]
+[? if kmt_leader = "Wang Jingwei" : <img src ="img/wangjingwei2.jpg" width="150px" height="205px"> ?]
+[? if kmt_leader = "Hu Hanmin" : <img src ="img/portraits/HuHanmin.jpg" width="150px" height="205px"> ?]
+[? if kmt_leader = "Chiang Kai-shek" : <img src ="img/chiangkaishek4.jpg" width="150px" height="205px"> ?]
+
+<span style="color: #10186e">**KMT**</span> Leader: [+ kmt_leader +]
+
+Place Holder
+Place Holder
+Place Holder
+Place Holder
+Place Holder
+Place Holder
+Place Holder
+Place Holder
+
 @powerstruggle
 view-if: sunyatsen_dead = 1
 
 = **The Power Struggle**
 
+[? if liaozhongkai_dead = 0 :
 <span style="color: #9e1515">**Communists**</span>: Liao Zhongkai
 Influence: [+ left_strength : strength +]
 <img src="img/portraits/LiaoZhongkai.jpg" width="150px" height="205px">
+?]
 
 <span style="color: #f55e56">**Left-KMT**</span>: Wang Jingwei
 Influence: [+ center_left_strength : strength +]
