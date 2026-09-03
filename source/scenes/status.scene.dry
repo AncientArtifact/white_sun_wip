@@ -22,8 +22,6 @@ Funds: [+ funds +]
 
 Quarterly Income: [? if total_income > 0 : <span style="color: #66BB6A;">+[+ total_income +]</span> ?][? if total_income < 0 : <span style="color: #d42f2f;">-[+ total_income +]</span> ?][? if total_income = 0 : <span style="color: #FFB74D;">[+ total_income +]</span> ?]
 
-<span style="color: #10186e">**KMT**</span> Leader: [+ kmt_leader +]
-
 Internal dissent: [+ dissent_percent : dissent +]
 
 = **Government**
