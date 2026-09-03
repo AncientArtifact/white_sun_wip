@@ -279,7 +279,7 @@ window.hideMap = function() {
     var leftActive = document.querySelector('#stats_sidebar .tab_button.active');
 
     if (rightActive) {
-        window.statusTabId = rightActive.id || 'main_concerns';
+        window.statusTabId = rightActive.id || 'main_concerns_tab';
         // right panel buttons use scene key 'concern' in your markup
         window.statusTab = 'concern';
     } else if (leftActive) {
