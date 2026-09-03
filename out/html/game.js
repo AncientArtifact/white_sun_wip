@@ -257,6 +257,7 @@ window.hideMap = function() {
 
   window.onDisplayContent = function() {
       window.updateSidebar();
+      window.updateSidebarRight();
   };
 
   // keep track of initial values
