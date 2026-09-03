@@ -254,6 +254,10 @@ window.hideMap = function() {
         window.updateSidebarRight();
     }
 
+ window.onDisplayContent = function () {
+        window.updateSidebar();
+ };
+  
   // keep track of initial values
   window.justLoaded = true;
   window.statusTab = "status";
