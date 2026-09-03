@@ -275,7 +275,7 @@ window.hideMap = function() {
 
     // Determine which tab/button is active in the DOM and initialize statusTab/statusTabId accordingly.
     // Prefer right panel active if present.
-    var rightActive = document.querySelector('#concerns .tab_button.active');
+    var rightActive = document.querySelector('#stats_sidebar_right .tab_button.active');
     var leftActive = document.querySelector('#stats_sidebar .tab_button.active');
 
     if (rightActive) {
