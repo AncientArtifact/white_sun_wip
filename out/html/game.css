@@ -655,3 +655,9 @@ table {
     text-decoration: underline;
     text-decoration-style: dotted;
 }
+
+.kmtleader_portrait {
+  padding: 5px;
+  background-color: #dedede;
+  margin: 0 auto;
+}
