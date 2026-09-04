@@ -16,6 +16,7 @@ After the opening ceremonies and remarks, the party could now decide on some imp
 - @congress1: Ideology.
 
 @congress1
+new-page: true
 
 The party has completely accepted Sun Yat-sen's doctrine of the Three Principles of the People, Democracy, Nationalism and People's Welfare. The roadmap for Military Rule, Political Tutelage and Constitutional Democracy is accepted by the party and will aim to go underway this path.
 This has solidified Sun Yat-sen's control over the party but his unifying power will break in the case of his death.
@@ -23,6 +24,7 @@ This has solidified Sun Yat-sen's control over the party but his unifying power 
 - @congress2: Alliance.
 
 @congress2
+new-page: true
 on-arrival: right_dissent += 10; cpc_relation += 5;
 
 The party has reaffirmed it's support for the Chinese United Front with the CPC. This has offended much of the anti-communist Right faction under Hu Hanmin. This has however, helped our relations with the Chinese Communist Party and will affirm their support during a planned offensive campaign north.
@@ -30,6 +32,7 @@ The party has reaffirmed it's support for the Chinese United Front with the CPC.
 - @congress3: Leadership.
 
 @congress3
+new-page: true
 face-image: img/kmtpartydissent.jpg
 
 The delegates have elected the first Central Executive Committee of the KMT, the highest body of the party established by it's Leninist reorganization. Notable members include a lot of very high-ranking KMT members, Soviet advisors and CPC delegates.
@@ -38,6 +41,7 @@ The most important of them are Wang Jingwei and Liao Zhongkai of the Left, Hu Ha
 - @congress4: War.
 
 @congress4
+new-page: true
 face-image: img/portraits/XuChongzhi.jpg
 
 Sun Yat-sen's biggest goal is the military unification of China, by defeating the warlords, mainly the dominant Zhili Clique. Now that Duan Qirui is out of power and Lu Yongxiang has practically taken his place, the balance of power in the Beiyang warlords is shifting wildly and war may not be far from them.
@@ -54,6 +58,7 @@ Xu Chongzhi, a loyal general of ours in Canton has been made commander of the NR
 - @congress5: We're missing something...
 
 @congress5
+new-page: true
 face-image: img/nrastreet2.jpg
 
 Our biggest problem with establishing the NRA is the lack of capable officers aligned with our cause. Many are with the Northern Warlords and Canton is notably lacking officers.
